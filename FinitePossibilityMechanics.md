@@ -1,4 +1,4 @@
-﻿# Finite Possibility Mechanics
+# Finite Possibility Mechanics
 
 ## A Plain-Language Introduction
 
@@ -385,7 +385,38 @@ Stable matter is organized cost.
 
 ---
 
-## 12. Why Wrong Expectations Cost Energy
+## 12. Why Complex Matter Folds
+
+Matter does not only form simple layers.
+
+Complex matter can also fold.
+
+Molecules, chains, proteins, and materials often settle into compact shapes. In this model, that happens because spread-out patterns can cost more to maintain than organized compact ones.
+
+But compact does not mean everything can collapse into the same place.
+
+Stable matter still has no-overlap rules. Two parts of the same structure cannot simply occupy the same local state if doing that would break the pattern.
+
+![Why Complex Matter Folds](assets/complex-matter-folds.svg)
+
+So folding is a balance:
+
+1. Spread-out arrangements can waste change cost.
+2. Compact arrangements can save change cost.
+3. Overlap and crowding create new cost.
+4. The final shape is the cheapest stable compromise.
+
+This gives a plain rule:
+
+> Complex matter folds when compact stability becomes cheaper than staying spread out, while overlap remains forbidden.
+
+This helps explain why matter can become organized without needing every piece to be placed by hand.
+
+The pattern settles toward a cheaper stable form.
+
+---
+
+## 13. Why Wrong Expectations Cost Energy
 
 There is another important idea:
 
@@ -413,7 +444,75 @@ This matters because stable reality is not only about energy. It is also about a
 
 ---
 
-## 13. Cheap Does Not Always Mean Light
+## 14. When Memory Becomes a Trap
+
+Memory is useful because it saves work.
+
+A stable pattern can reuse what already worked instead of recalculating everything from the beginning.
+
+But memory has a danger:
+
+> If the stored pattern is wrong, repeating it can become a trap.
+
+Stability does not automatically mean truth.
+
+A pattern can become stable because it is cheap to repeat, even if it is not the best match to the larger system around it.
+
+![When Memory Becomes a Trap](assets/memory-becomes-trap.svg)
+
+Imagine a person who keeps using an old map after the roads have changed. The map saves time at first because they do not have to rethink every turn. But if the map is wrong, the shortcut becomes a problem.
+
+The same idea applies here.
+
+If a pattern stores the wrong expectation too strongly, it may keep pulling future updates back toward that bad expectation.
+
+That creates false stability:
+
+> A pattern can become settled, sharp, and cheap, while still being locally wrong.
+
+This matters because the model is not saying:
+
+> Whatever becomes stable must be correct.
+
+It is saying:
+
+> Stable patterns survive when they are affordable, but affordability and truth are not always the same thing.
+
+The most reliable memory is memory that stays aligned with the world around it.
+
+---
+
+## 15. Smooth Changes Are Cheaper Than Sharp Jumps
+
+Reality does not only care about the cost of one update point by itself.
+
+Nearby update points also have to fit together.
+
+A sudden jump between neighboring states creates mismatch. That mismatch has to be corrected, carried, or resolved.
+
+Smooth change is usually cheaper because each local update agrees better with the next one.
+
+![Smooth Changes Are Cheaper](assets/smooth-changes-cheaper.svg)
+
+This helps explain why stable patterns do not usually change like random glitches.
+
+Fields are smooth because sharp breaks are expensive.
+
+Matter has structure because neighboring parts must keep agreement.
+
+Gravity behaves like a gradient because nearby change costs vary in an organized way, not as disconnected jumps.
+
+The plain rule is:
+
+> Smooth changes are cheaper because they create less mismatch between neighboring update points.
+
+This does not mean sharp changes can never happen.
+
+It means sharp changes have to be paid for.
+
+---
+
+## 16. Cheap Does Not Always Mean Light
 
 There is an important detail here.
 
@@ -439,7 +538,7 @@ Stable does not mean weightless. Stable means the pattern has become hard to cha
 
 ---
 
-## 14. Light Is the Cheapest Motion
+## 17. Light Is the Cheapest Motion
 
 > Light is the cheapest kind of moving information.
 
@@ -474,7 +573,7 @@ It is a cheap, fast, transferable pattern moving through the update network.
 
 ---
 
-## 15. The Double-Slit Experiment
+## 18. The Double-Slit Experiment
 
 The double-slit experiment is a famous physics experiment where a particle seems to act like a wave when no interaction records which slit it went through.
 
@@ -500,7 +599,41 @@ This does not require consciousness. A detector does not need to "know" anything
 
 ---
 
-## 16. A Simple Walkthrough: Light Hitting a Wall
+## 19. How Quantum Possibility Fades
+
+In ordinary quantum physics, open possibilities fade when a system interacts with its environment.
+
+Finite Possibility Mechanics explains that fading as a budget effect.
+
+When a pattern has more than one possible path open, the system has to keep those possibilities coordinated.
+
+That coordination is not free.
+
+If the pattern stays isolated enough, the open possibilities can remain active.
+
+If the pattern interacts strongly with matter, a detector, or a noisy environment, the cost changes.
+
+![How Quantum Possibility Fades](assets/quantum-possibility-fades.svg)
+
+The interaction spends budget and creates records.
+
+As the budget for openness drains, the spread-out pattern loses its ability to stay spread out.
+
+The open possibilities fade into one definite result.
+
+The plain rule is:
+
+> Quantum possibility fades when interaction drains the budget needed to keep multiple outcomes coordinated.
+
+This does not replace quantum physics with a cartoon.
+
+It gives the beginner-level meaning of the model:
+
+> Collapse is not magic. It is the loss of affordable openness.
+
+---
+
+## 20. A Simple Walkthrough: Light Hitting a Wall
 
 Now we can put several pieces together.
 
@@ -536,7 +669,7 @@ The system simply reaches a point where keeping all possibilities open is more e
 
 ---
 
-## 17. Gravity Is a Change-Cost Gradient
+## 21. Gravity Is a Change-Cost Gradient
 
 Gravity is usually described as the bending of spacetime.
 
@@ -566,7 +699,7 @@ In this model:
 
 ---
 
-## 18. Time Is the Order of Updates
+## 22. Time Is the Order of Updates
 
 In this model, time is not just a background stage.
 
@@ -612,7 +745,7 @@ The plain-language meaning is simple:
 
 ---
 
-## 19. Heavy Regions Make Local Clocks Run Slower
+## 23. Heavy Regions Make Local Clocks Run Slower
 
 If time is the order of updates, then time can slow down when updates become harder.
 
@@ -636,7 +769,7 @@ This is one of the places where the model tries to connect everyday time, gravit
 
 ---
 
-## 20. Entanglement Means Shared State
+## 24. Entanglement Means Shared State
 
 Quantum entanglement sounds mysterious because it seems like two far-away things communicate instantly.
 
@@ -664,7 +797,7 @@ This does not mean distance is fake. It means distance belongs to moving pattern
 
 ---
 
-## 21. Are We All One Thing?
+## 25. Are We All One Thing?
 
 In one sense, yes.
 
@@ -693,7 +826,7 @@ Local things are still real.
 
 ---
 
-## 22. Life as a Budget-Positive Pattern
+## 26. Life as a Budget-Positive Pattern
 
 Life is not treated as magic in this model.
 
@@ -721,7 +854,7 @@ In this model, life is a special kind of stable pattern:
 
 ---
 
-## 23. Cooperation Saves Energy
+## 27. Cooperation Saves Energy
 
 If wrong expectations cost energy, then shared information can be useful.
 
@@ -751,7 +884,7 @@ If sharing information lowers mismatch, cooperation becomes physically useful.
 
 ---
 
-## 24. Decay and Instability
+## 28. Decay and Instability
 
 Not every pattern can last.
 
@@ -775,7 +908,7 @@ It is the failure of an expensive structure under finite budget and disturbance.
 
 ---
 
-## 25. Confinement
+## 29. Confinement
 
 Some patterns are hard to pull apart.
 
@@ -803,7 +936,7 @@ You are trying to rewrite the structure that makes them what they are.
 
 ---
 
-## 26. Extreme Wells Are Not Infinite
+## 30. Extreme Wells Are Not Infinite
 
 Some regions may be extremely hard to escape.
 
@@ -829,7 +962,7 @@ So even its most extreme objects should still be understood as bounded structure
 
 ---
 
-## 27. What This Model Is Not Saying
+## 31. What This Model Is Not Saying
 
 This model can easily be misunderstood, so this section matters.
 
@@ -857,7 +990,7 @@ This document is the plain-language version of the model. The equations, simulat
 
 ---
 
-## 28. How the Math Touches Measurement
+## 32. How the Math Touches Measurement
 
 Finite Possibility Mechanics is not only a metaphor about patterns.
 
@@ -926,7 +1059,7 @@ It is a physical picture with a measurement scale.
 
 ---
 
-## 29. Galaxy Rotation
+## 33. Galaxy Rotation
 
 Galaxies are not shaped like single round objects.
 
@@ -968,7 +1101,7 @@ The difference is scale and shape. A galaxy is not a particle. A galaxy is a gia
 
 ---
 
-## 30. The Final Settled State
+## 34. The Final Settled State
 
 If the universe has a finite budget, then it cannot keep wasting energy forever.
 
@@ -1016,7 +1149,36 @@ The same idea appears at every scale:
 
 ---
 
-## 31. What Would Prove It Wrong?
+## 35. What the Model Claims to Match So Far
+
+Finite Possibility Mechanics is not meant to be only a mood or metaphor.
+
+It makes contact with several physical patterns that can be checked.
+
+![What the Model Claims to Match So Far](assets/claims-matched-so-far.svg)
+
+The plain-language list is:
+
+1. **Time-order overhead:** Reversing or shuffling event order costs more than native order in tested traces.
+2. **Gravity-like falloff:** A large stable pattern creates a change-cost gradient close to familiar gravity-like behavior in one radial probe.
+3. **Electron-scale calibration:** The model's mass-scale bridge lands close to the electron mass in one benchmark.
+4. **Double-slit collapse:** Open paths stay wave-like until recording them becomes too expensive.
+5. **Decay and confinement:** Unstable patterns fail, while some bound patterns become more expensive to separate.
+6. **Galaxy disk behavior:** A disk-shaped cost field can keep outer motion flatter than a simple central-source picture.
+
+These matches do not make the model automatically true.
+
+They are checkpoints.
+
+A checkpoint matters because it gives the model a place to be tested.
+
+The goal is not to protect the model from failure.
+
+The goal is to make the model clear enough that failure would be visible.
+
+---
+
+## 36. What Would Prove It Wrong?
 
 A good model must be able to fail.
 
@@ -1044,6 +1206,11 @@ Things that would challenge this model include:
 16. If black-hole-like regions require true infinities rather than extreme finite wells.
 17. If disk-shaped galaxy cost fields cannot reproduce the broad flattening seen in galaxy rotation.
 18. If the condensate-like final state cannot be reached even when mismatch, noise, and unnecessary possibility are driven toward zero.
+19. If wrong memory cannot trap a system in false stability under low-budget conditions.
+20. If sharp jumps are not more expensive than smooth neighboring changes.
+21. If complex matter cannot be described as compact stability balanced against no-overlap constraints.
+22. If quantum possibility does not fade with interaction, recording, or environment cost.
+23. If the claimed checkpoints cannot be reproduced outside their original tests.
 
 The model does not need to be treated as sacred.
 
@@ -1053,7 +1220,7 @@ If the map helps explain reality, keep improving it. If the map fails, mark wher
 
 ---
 
-## 32. Important Words in Plain Language
+## 37. Important Words in Plain Language
 
 Here are the main words without the fog:
 
@@ -1081,6 +1248,8 @@ Here are the main words without the fog:
 
 **Memory:** A stable pattern that is cheaper to reuse than to recalculate.
 
+**False stability:** A pattern that becomes cheap and stable even though it is not well aligned with the larger system.
+
 **Agreement:** How well nearby update points fit together.
 
 **Collapse loop:** The feedback cycle where low budget reduces open possibility, reduced possibility settles into memory, and memory makes the pattern harder to change.
@@ -1093,7 +1262,13 @@ Here are the main words without the fog:
 
 **Layering:** The way matter forms shells or levels because attraction, crowding, and change cost have to balance.
 
+**Folding:** The way complex matter can settle into compact stable shapes while still avoiding overlap.
+
+**Smoothness:** The idea that gradual changes between neighboring update points are usually cheaper than sharp jumps.
+
 **Light:** Cheap moving information.
+
+**Quantum fading:** The loss of open quantum possibility when interaction drains the budget needed to keep multiple outcomes coordinated.
 
 **Gravity:** Motion bending toward lower-cost changes.
 
@@ -1119,9 +1294,11 @@ Here are the main words without the fog:
 
 **Synchronous update:** The idea that each new moment is produced from the previous moment as a whole, like a full-frame refresh.
 
+**Checkpoint:** A place where the model claims its picture touches measurable behavior and can be tested.
+
 ---
 
-## 33. The Simplest Summary
+## 38. The Simplest Summary
 
 Finite Possibility Mechanics can be summarized like this:
 
@@ -1139,26 +1316,31 @@ Finite Possibility Mechanics can be summarized like this:
 10. Matter is compressed, stable information that resists being overwritten.
 11. Mass is the cost of holding or redirecting a stable pattern.
 12. Matter forms layers when attraction, crowding, and change cost balance.
-13. Wrong expectations cost energy because mismatch must be corrected.
-14. Large matter-patterns change the cost of nearby motion.
-15. Light is low-cost moving information.
-16. Quantum wave behavior means multiple possibilities stayed open.
-17. Recorded outcomes appear when open possibility becomes too expensive to maintain.
-18. A light hitting a wall is a cheap moving pattern interacting with a stable memory pattern.
-19. Gravity is motion through change-cost gradients.
-20. Time is the order in which the universe updates, and history changes what later updates cost.
-21. Heavy regions make local clocks run slower because local updates cost more.
-22. Entanglement is shared state, not faster-than-light messaging.
-23. Life is a pattern that must stay budget-positive.
-24. Cooperation is useful when shared information saves more energy than it costs.
-25. Unstable patterns decay when they cannot keep paying to remain themselves.
-26. Some patterns stay confined because separation raises change cost too sharply.
-27. Extreme traps should be finite wells, not true infinities.
-28. Reality is one connected system forming many local patterns.
-29. The model connects update cost to real measurements like joules, seconds, meters, mass, and gravity.
-30. Galaxy rotation can be shaped by broad disk-like change-cost fields.
-31. A final settled state would be a pattern with almost no extra drag beyond its lowest unavoidable cost.
-32. Reality is what the universe can afford to keep physically maintaining.
+13. Complex matter folds when compact stability becomes cheaper than staying spread out, while overlap remains forbidden.
+14. Wrong expectations cost energy because mismatch must be corrected.
+15. Memory helps when aligned, but wrong memory can become a trap.
+16. Smooth changes are usually cheaper than sharp jumps.
+17. Large matter-patterns change the cost of nearby motion.
+18. Light is low-cost moving information.
+19. Quantum wave behavior means multiple possibilities stayed open.
+20. Recorded outcomes appear when open possibility becomes too expensive to maintain.
+21. Quantum possibility fades when interaction drains the budget needed to keep outcomes coordinated.
+22. A light hitting a wall is a cheap moving pattern interacting with a stable memory pattern.
+23. Gravity is motion through change-cost gradients.
+24. Time is the order in which the universe updates, and history changes what later updates cost.
+25. Heavy regions make local clocks run slower because local updates cost more.
+26. Entanglement is shared state, not faster-than-light messaging.
+27. Life is a pattern that must stay budget-positive.
+28. Cooperation is useful when shared information saves more energy than it costs.
+29. Unstable patterns decay when they cannot keep paying to remain themselves.
+30. Some patterns stay confined because separation raises change cost too sharply.
+31. Extreme traps should be finite wells, not true infinities.
+32. Reality is one connected system forming many local patterns.
+33. The model connects update cost to real measurements like joules, seconds, meters, mass, and gravity.
+34. Galaxy rotation can be shaped by broad disk-like change-cost fields.
+35. A final settled state would be a pattern with almost no extra drag beyond its lowest unavoidable cost.
+36. The model has checkpoints where its claims touch measurable behavior.
+37. Reality is what the universe can afford to keep physically maintaining.
 
 The deepest summary is:
 

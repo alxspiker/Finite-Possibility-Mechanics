@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">How Quantum Possibility Fades</title><desc id="desc">Open possibilities fade when interaction drains the budget needed to keep them coherent.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.wave{stroke:#2563eb;stroke-width:7;fill:none;stroke-linecap:round}.fade1{stroke:#93c5fd;stroke-width:6;fill:none;stroke-linecap:round}.fade2{stroke:#cbd5e1;stroke-width:5;fill:none;stroke-linecap:round}.record{fill:#ccfbf1;stroke:#0f766e;stroke-width:5;rx:18}.det{fill:#fee2e2;stroke:#ef4444;stroke-width:4;rx:16}.arrow{stroke:#334155;stroke-width:5;fill:none;marker-end:url(#m)}.h{font:700 23px Arial,sans-serif;fill:#0f172a}</style>
+  <defs><marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2L10 6L2 10Z" fill="#334155"/></marker></defs>
+  <rect class="bg" width="1200" height="560"/><text x="600" y="58" text-anchor="middle" class="t">Quantum Possibility Fades When It Gets Too Expensive</text><text x="600" y="92" text-anchor="middle" class="s">Interaction drains the budget needed to keep overlapping possibilities open.</text>
+  <path d="M115 260C170 190 245 330 310 260C375 190 450 330 515 260" class="wave"/><text x="315" y="390" text-anchor="middle" class="h">open coherent possibility</text>
+  <path d="M545 260H655" class="arrow"/><rect x="670" y="220" width="145" height="80" class="det"/><text x="742" y="268" text-anchor="middle" class="h">interaction</text>
+  <path d="M845 260H945" class="arrow"/><path d="M970 245C1000 220 1030 270 1060 245" class="fade1"/><path d="M970 285C1000 270 1030 300 1060 285" class="fade2"/><rect x="980" y="330" width="180" height="70" class="record"/><text x="1070" y="373" text-anchor="middle" class="h">recorded result</text>
+</svg>
