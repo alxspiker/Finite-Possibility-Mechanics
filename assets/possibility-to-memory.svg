@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Possibility Becomes Memory</title>
+  <desc id="desc">Many possible paths narrow into one stable recorded pattern as energy budget tightens.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}
+      .title{font:700 34px Arial, sans-serif; fill:#0f172a}
+      .sub{font:400 20px Arial, sans-serif; fill:#475569}
+      .panel{fill:#ffffff; stroke:#cbd5e1; stroke-width:3; rx:20}
+      .label{font:700 25px Arial, sans-serif; fill:#0f172a}
+      .small{font:400 18px Arial, sans-serif; fill:#475569}
+      .path{fill:none; stroke-width:7; stroke-linecap:round}
+      .muted{stroke:#93c5fd}
+      .chosen{stroke:#0f766e}
+      .fade{stroke:#cbd5e1}
+      .arrow{stroke:#334155; stroke-width:5; fill:none; marker-end:url(#arrow)}
+      .node{fill:#ffffff; stroke:#334155; stroke-width:4}
+      .memory{fill:#ccfbf1; stroke:#0f766e; stroke-width:5}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="640"/>
+  <text x="600" y="58" text-anchor="middle" class="title">Possibility Becomes Memory</text>
+  <text x="600" y="91" text-anchor="middle" class="sub">When keeping every path open gets too expensive, one path becomes the recorded pattern.</text>
+
+  <rect x="70" y="140" width="430" height="390" class="panel"/>
+  <text x="285" y="190" text-anchor="middle" class="label">High Budget</text>
+  <text x="285" y="220" text-anchor="middle" class="small">many outcomes can stay open</text>
+  <circle cx="160" cy="340" r="18" class="node"/>
+  <path d="M178 340 C245 260 320 245 410 210" class="path muted"/>
+  <path d="M178 340 C260 310 325 318 410 300" class="path muted"/>
+  <path d="M178 340 C260 370 325 392 410 420" class="path muted"/>
+  <path d="M178 340 C240 430 320 465 410 485" class="path muted"/>
+  <circle cx="422" cy="208" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <circle cx="422" cy="300" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <circle cx="422" cy="420" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <circle cx="422" cy="485" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+
+  <path d="M530 335 L665 335" class="arrow"/>
+  <text x="600" y="304" text-anchor="middle" class="label">budget tightens</text>
+  <text x="600" y="366" text-anchor="middle" class="small">open paths cost energy</text>
+
+  <rect x="700" y="140" width="430" height="390" class="panel"/>
+  <text x="915" y="190" text-anchor="middle" class="label">Low Budget</text>
+  <text x="915" y="220" text-anchor="middle" class="small">one stable outcome is recorded</text>
+  <circle cx="790" cy="340" r="18" class="node"/>
+  <path d="M808 340 C870 255 945 235 1040 210" class="path fade"/>
+  <path d="M808 340 C870 430 945 465 1040 485" class="path fade"/>
+  <path d="M808 340 C895 330 955 320 1040 300" class="path chosen"/>
+  <path d="M1040 300 L1080 300 L1080 345 L1040 345 Z" class="memory"/>
+  <text x="1060" y="333" text-anchor="middle" class="label">M</text>
+  <text x="915" y="475" text-anchor="middle" class="small">memory is cheaper to reuse than to recalculate</text>
+</svg>

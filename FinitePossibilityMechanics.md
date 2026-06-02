@@ -168,6 +168,8 @@ In this plain version, we call that cost **change cost**.
 
 Change cost is the price of updating from one state to another.
 
+![Change Cost Ledger](assets/change-cost-ledger.svg)
+
 The same basic idea appears again and again:
 
 1. **Collapse:** Open possibility becomes too expensive, so the pattern narrows into one recorded result.
@@ -228,6 +230,8 @@ In this model, memory means a stable pattern that repeats cheaply. It does not m
 This gives us a simple rule:
 
 > When possibility becomes too expensive, it hardens into memory.
+
+![Possibility Becomes Memory](assets/possibility-to-memory.svg)
 
 This may be the deeper meaning of physical matter.
 
@@ -509,6 +513,8 @@ Gravity is usually described as the bending of spacetime.
 Finite Possibility Mechanics describes it in a different language:
 
 > Gravity is what happens when motion bends toward lower-cost changes.
+
+![Gravity as a Change-Cost Gradient](assets/gravity-cost-gradient.svg)
 
 A large object, like a planet or star, is a huge stable memory pattern. Because it is stable and persistent, it changes the update costs around it.
 
@@ -876,6 +882,8 @@ Many spiral galaxies are more like huge flat disks.
 
 That matters because a disk spreads change cost differently than a sphere.
 
+![Galaxy Rotation and Disk Cost Fields](assets/galaxy-rotation-cost-field.svg)
+
 Near a round object, gravity-like change cost can fall away in a familiar steep pattern. But inside a wide disk, the cost field spreads sideways through the disk.
 
 In plain language:
@@ -915,6 +923,8 @@ If the universe has a finite budget, then it cannot keep wasting energy forever.
 Over time, expensive open possibility tends to collapse into cheaper stable memory.
 
 This raises a huge question:
+
+![The Final Settled State](assets/final-settled-state.svg)
 
 > What happens if this settling process keeps going for an extremely long time?
 
