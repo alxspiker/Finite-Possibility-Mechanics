@@ -595,7 +595,25 @@ The simple rule is:
 
 > If the universe can afford to keep both paths open, the particle behaves like a wave. If the interaction becomes too expensive, the open paths collapse into one recorded outcome.
 
-This does not require consciousness. A detector does not need to "know" anything like a person. It only needs to create an interaction that makes one path definite.
+### What "Observation" Means Here
+
+This does not require consciousness.
+
+In this model, observation means:
+
+> A physical interaction that leaves a record, not a person becoming aware of the result.
+
+Looking at the final screen does not destroy the interference pattern. The final screen is where the particle is recorded anyway.
+
+What changes the experiment is whether the path was recorded before the particle reached the screen.
+
+If no which-path record exists, the interference pattern builds up over many hits.
+
+If a which-path record exists, the interference disappears, and the pattern becomes more like two piles behind the two slits.
+
+One particle does not show the whole pattern by itself. The pattern appears after many particles.
+
+A detector changes the experiment only when it leaves which-path information in the physical world.
 
 ---
 
