@@ -1,4 +1,4 @@
-# Finite Possibility Mechanics
+﻿# Finite Possibility Mechanics
 
 ## A Plain-Language Introduction
 
@@ -122,7 +122,62 @@ Change cost is the price of updating from what reality is now into what reality 
 
 ---
 
-## 4. The Four Things Every Update Point Tracks
+## 4. Information Is Not Free
+
+The phrase "possibility costs energy" is not meant as poetry.
+
+There is a real physical idea behind it:
+
+> Changing, recording, copying, correcting, or erasing information has a physical price.
+
+In physics and computing, this is related to **Landauer's principle**. The simple version is that erasing information is not free. It produces heat. It spends energy.
+
+Finite Possibility Mechanics extends that intuition into a bigger picture.
+
+If the universe keeps many outcomes open, it has to maintain information about all those possible outcomes.
+
+If the universe records one definite outcome, that record also costs something.
+
+If a pattern expects the wrong next state, correcting the mismatch costs something.
+
+So information is not a ghostly, weightless idea floating above physics.
+
+In this model:
+
+> Information is part of the physical budget.
+
+That is why possibility cannot stay open forever for free.
+
+---
+
+## 5. One Rule Behind Many Effects
+
+A key idea of this model is:
+
+> One kind of cost can show up as many different physical effects.
+
+In this plain version, we call that cost **change cost**.
+
+Change cost is the price of updating from one state to another.
+
+The same basic idea appears again and again:
+
+1. **Collapse:** Open possibility becomes too expensive, so the pattern narrows into one recorded result.
+2. **Matter:** A stable pattern is cheaper to repeat than to recalculate, but it can become hard to change.
+3. **Gravity:** Motion bends because some nearby changes cost less than others.
+4. **Time slowing:** Heavy or difficult regions process fewer local changes.
+5. **Decay:** Expensive unstable patterns eventually fail to maintain themselves.
+6. **Life:** Living systems survive by taking in more usable energy than they spend maintaining their pattern.
+
+This is why the model is not a collection of separate explanations.
+
+It is one accounting idea wearing different masks.
+
+> Different physics may be different faces of the same change-cost ledger.
+
+---
+
+## 6. The Four Things Every Update Point Tracks
 
 To keep the model simple, imagine every update point tracks four basic things.
 
@@ -148,7 +203,7 @@ These four things create the basic pressure of the model:
 
 ---
 
-## 5. Possibility vs. Memory
+## 7. Possibility vs. Memory
 
 When a system has plenty of energy, it can explore.
 
@@ -180,7 +235,7 @@ There is no extra physical stuff underneath the pattern. In this model, the patt
 
 ---
 
-## 6. The Collapse Loop
+## 8. The Collapse Loop
 
 The model needs one more piece before matter makes sense.
 
@@ -214,7 +269,7 @@ This is how a flexible possibility can become a definite event.
 
 ---
 
-## 7. Why Matter Feels Solid
+## 9. Why Matter Feels Solid
 
 If matter is a stable pattern, an obvious question appears:
 
@@ -236,7 +291,69 @@ This gives us another simple rule:
 
 ---
 
-## 8. Why Wrong Expectations Cost Energy
+## 10. Mass as Pattern Cost
+
+If matter is stable information, then another question appears:
+
+> Why are some things heavier than others?
+
+In this model, mass is not treated as a magical substance added on top of matter.
+
+Mass is the cost of holding a pattern together.
+
+Some patterns are simple. They are easy to move, easy to pass along, and cheap to maintain.
+
+Other patterns are more locked, more structured, and harder to change. They require more update points to stay coordinated. They resist being moved or rewritten.
+
+That resistance appears as mass.
+
+A plain way to say it is:
+
+> Mass is pattern-cost made physical.
+
+This does not mean a heavy object is "more real" than a light one. It means the heavy object is a more expensive stable pattern to maintain and redirect.
+
+Light is cheap motion.
+
+Matter is stable pattern.
+
+Mass is the cost of that stability.
+
+---
+
+## 11. Why Matter Forms Layers
+
+Matter is not just solid. It is structured.
+
+Atoms have shells. Materials have layers. Molecules fold. Crystals arrange themselves into repeating shapes.
+
+Finite Possibility Mechanics explains this through cost and crowding.
+
+A stable center can make nearby changes cheaper, so patterns gather around it.
+
+But they cannot all occupy the same exact local state. If too many patterns try to crowd into the same region, they interfere, mismatch, and raise the cost.
+
+So matter forms layers.
+
+The first layer fills because it is cheap.
+
+Once that layer becomes crowded, adding more structure there becomes expensive.
+
+The next available layer becomes the better option.
+
+This gives a simple picture:
+
+> Matter forms shells and layers because attraction, crowding, and change cost must balance.
+
+This is not yet the full explanation of chemistry. It is the beginner-level shape of the idea.
+
+Stable matter is not a pile.
+
+Stable matter is organized cost.
+
+---
+
+## 12. Why Wrong Expectations Cost Energy
 
 There is another important idea:
 
@@ -262,7 +379,7 @@ This matters because stable reality is not only about energy. It is also about a
 
 ---
 
-## 9. Cheap Does Not Always Mean Light
+## 13. Cheap Does Not Always Mean Light
 
 There is an important detail here.
 
@@ -286,7 +403,7 @@ Stable does not mean weightless. Stable means the pattern has become hard to cha
 
 ---
 
-## 10. Light Is the Cheapest Motion
+## 14. Light Is the Cheapest Motion
 
 > Light is the cheapest kind of moving information.
 
@@ -319,7 +436,7 @@ It is a cheap, fast, transferable pattern moving through the update network.
 
 ---
 
-## 11. The Double-Slit Experiment
+## 15. The Double-Slit Experiment
 
 The double-slit experiment is a famous physics experiment where a particle seems to act like a wave when no interaction records which slit it went through.
 
@@ -343,7 +460,7 @@ This does not require consciousness. A detector does not need to "know" anything
 
 ---
 
-## 12. A Simple Walkthrough: Light Hitting a Wall
+## 16. A Simple Walkthrough: Light Hitting a Wall
 
 Now we can put several pieces together.
 
@@ -377,7 +494,7 @@ The system simply reaches a point where keeping all possibilities open is more e
 
 ---
 
-## 13. Gravity Is a Change-Cost Gradient
+## 17. Gravity Is a Change-Cost Gradient
 
 Gravity is usually described as the bending of spacetime.
 
@@ -405,7 +522,7 @@ In this model:
 
 ---
 
-## 14. Time Is the Order of Updates
+## 18. Time Is the Order of Updates
 
 In this model, time is not just a background stage.
 
@@ -449,7 +566,29 @@ The plain-language meaning is simple:
 
 ---
 
-## 15. Entanglement Means Shared State
+## 19. Heavy Regions Make Local Clocks Run Slower
+
+If time is the order of updates, then time can slow down when updates become harder.
+
+A heavy region is a region with a lot of stable pattern-cost.
+
+Near a huge matter-pattern, like a planet or star, local updates carry more burden. There is more agreement to preserve, more structure to maintain, and more change cost around every motion.
+
+That means fewer local changes can be completed for the same outside interval.
+
+From far away, this looks like a clock running slower.
+
+The clock is not broken. It is updating inside a heavier workload.
+
+This gives a plain-language version of time slowing:
+
+> Heavy regions make local clocks run slower because local updates cost more.
+
+This is one of the places where the model tries to connect everyday time, gravity, and information cost into one picture.
+
+---
+
+## 20. Entanglement Means Shared State
 
 Quantum entanglement sounds mysterious because it seems like two far-away things communicate instantly.
 
@@ -475,7 +614,7 @@ This does not mean distance is fake. It means distance belongs to moving pattern
 
 ---
 
-## 16. Are We All One Thing?
+## 21. Are We All One Thing?
 
 In one sense, yes.
 
@@ -502,7 +641,133 @@ Local things are still real.
 
 ---
 
-## 17. What This Model Is Not Saying
+## 22. Life as a Budget-Positive Pattern
+
+Life is not treated as magic in this model.
+
+A living thing is a pattern that keeps maintaining itself.
+
+But maintenance costs energy.
+
+Cells repair themselves. Bodies regulate heat. Brains update predictions. Organisms search for food, avoid damage, and rebuild what breaks.
+
+All of that costs energy.
+
+So the plain rule is:
+
+> A living pattern survives when it takes in more usable energy than it spends maintaining itself.
+
+If the pattern keeps earning enough budget, it can stay flexible, repair damage, and adapt.
+
+If it spends more than it can take in, it loses flexibility. It simplifies, breaks down, or dies.
+
+In this model, life is a special kind of stable pattern:
+
+> Life is stability that must keep paying for itself.
+
+---
+
+## 23. Cooperation Saves Energy
+
+If wrong expectations cost energy, then shared information can be useful.
+
+Two nearby patterns can sometimes lower their total cost by matching each other better.
+
+That is the plain version of cooperation.
+
+Cooperation does not have to mean kindness or intention. It can mean:
+
+> Two patterns share or align information because the shared version costs less to maintain than the conflicting version.
+
+For example, if neighboring update points are constantly correcting disagreement, they waste budget.
+
+If they settle into a shared expectation, the mismatch drops.
+
+The result is easier to maintain.
+
+This gives a simple rule:
+
+> Communication is useful when it reduces more cost than it creates.
+
+If sharing information costs more than it saves, the system will not benefit from it.
+
+If sharing information lowers mismatch, cooperation becomes physically useful.
+
+---
+
+## 24. Decay and Instability
+
+Not every pattern can last.
+
+Some patterns are stable because they are cheap enough to maintain.
+
+Other patterns are temporary because they are too expensive, too strained, or too exposed to noise.
+
+In this model, decay happens when a pattern can no longer pay the cost of staying itself.
+
+It may hold together for a while. It may look real and stable for a short time. But if the cost remains too high, eventually the pattern breaks into cheaper patterns.
+
+This gives a simple rule:
+
+> Unstable things decay because their current pattern is too expensive to keep maintaining.
+
+Decay is not random magic.
+
+It is the failure of an expensive structure under finite budget and disturbance.
+
+---
+
+## 25. Confinement
+
+Some patterns are hard to pull apart.
+
+At first, that seems strange. If two things are bound together, why not just separate them?
+
+In Finite Possibility Mechanics, the answer is cost.
+
+Some bound patterns become more expensive as you try to separate them. Pulling them apart does not simply move two pieces away from each other. It stretches the whole relationship between them.
+
+The farther apart they are forced, the more change cost builds up.
+
+At some point, separating them may cost more than creating a new stable arrangement.
+
+This gives a plain version of confinement:
+
+> Some things stay bound because pulling them apart raises change cost faster than the system can afford.
+
+Confinement means the relationship is part of the pattern.
+
+You are not just moving objects.
+
+You are trying to rewrite the structure that makes them what they are.
+
+---
+
+## 26. Extreme Wells Are Not Infinite
+
+Some regions may be extremely hard to escape.
+
+A black-hole-like region would be a place where change costs are so steep that nearly every local path bends inward or stays trapped.
+
+But this model is cautious about infinities.
+
+It does not need a truly infinite pit.
+
+It only needs an extremely deep finite well: a region where escape is possible in principle, but so costly that ordinary patterns cannot do it.
+
+This gives a simple rule:
+
+> The model prefers extreme-but-finite traps, not infinite holes.
+
+That matters because infinities often signal that a model has reached the edge of its own language.
+
+Finite Possibility Mechanics is built around finite budgets, finite updates, and finite change costs.
+
+So even its most extreme objects should still be understood as bounded structures.
+
+---
+
+## 27. What This Model Is Not Saying
 
 This model can easily be misunderstood, so this section matters.
 
@@ -528,7 +793,7 @@ This document is also not the full mathematical proof. It is the plain-language 
 
 ---
 
-## 18. Where the Math Comes Back In
+## 28. Where the Math Comes Back In
 
 This introduction is only the doorway.
 
@@ -559,7 +824,7 @@ The technical work has to prove the picture can touch measurement.
 
 ---
 
-## 19. What Would Prove It Wrong?
+## 29. What Would Prove It Wrong?
 
 A good model must be able to fail.
 
@@ -578,6 +843,11 @@ Things that would challenge this model include:
 9. If the reported time-order overhead disappears under better tests.
 10. If the gravity-like falloff cannot be reproduced outside a narrow artificial setup.
 11. If the mass-scale calibration fails when tested against a wider particle set.
+12. If information processing turns out to have no unavoidable physical cost.
+13. If living systems cannot be described as budget-positive self-maintaining patterns.
+14. If unstable patterns do not decay toward cheaper arrangements under finite budget.
+15. If bound patterns can always be separated without rising change cost.
+16. If black-hole-like regions require true infinities rather than extreme finite wells.
 
 The model does not need to be treated as sacred.
 
@@ -587,7 +857,7 @@ If the map helps explain reality, keep improving it. If the map fails, mark wher
 
 ---
 
-## 20. Important Words in Plain Language
+## 30. Important Words in Plain Language
 
 Here are the main words without the fog:
 
@@ -598,6 +868,8 @@ Here are the main words without the fog:
 **Change cost:** The price of updating from one state into another.
 
 **Path choice:** Choosing which nearby update point should hold a moving pattern next, or choosing which pattern is cheapest to maintain.
+
+**Information cost:** The physical price of changing, recording, correcting, or erasing information.
 
 **Energy budget:** How much freedom a local pattern has before it must simplify.
 
@@ -613,19 +885,35 @@ Here are the main words without the fog:
 
 **Matter:** Stable memory-like information that resists change.
 
+**Mass:** The physical expression of how costly a stable pattern is to hold together or redirect.
+
+**Layering:** The way matter forms shells or levels because attraction, crowding, and change cost have to balance.
+
 **Light:** Cheap moving information.
 
 **Gravity:** Motion bending toward lower-cost changes.
 
 **Time:** The order in which the update system changes.
 
+**Time slowing:** The idea that heavy regions complete fewer local updates because nearby changes carry more burden.
+
 **Entanglement:** Two visible patterns sharing one deeper state.
+
+**Life:** A self-maintaining pattern that survives by taking in more usable energy than it spends.
+
+**Cooperation:** Pattern alignment that saves more energy than it costs.
+
+**Decay:** The failure of an expensive unstable pattern to keep maintaining itself.
+
+**Confinement:** A binding condition where pulling patterns apart raises change cost faster than the system can afford.
+
+**Extreme well:** A very deep but finite trap where escape is possible in principle but too expensive for ordinary patterns.
 
 **Synchronous update:** The idea that each new moment is produced from the previous moment as a whole, like a full-frame refresh.
 
 ---
 
-## 21. The Simplest Summary
+## 31. The Simplest Summary
 
 Finite Possibility Mechanics can be summarized like this:
 
@@ -633,21 +921,31 @@ Finite Possibility Mechanics can be summarized like this:
 2. Reality updates through tiny local update points.
 3. What moves is not solid stuff, but patterns of state.
 4. Every possible next state has a change cost.
-5. Keeping many possibilities open costs energy.
-6. When energy is limited, possibility collapses into stable memory.
-7. Collapse is a feedback loop: low budget reduces possibility, and reduced possibility settles into memory.
-8. Matter is compressed, stable information that resists being overwritten.
-9. Wrong expectations cost energy because mismatch must be corrected.
-10. Large matter-patterns change the cost of nearby motion.
-11. Light is low-cost moving information.
-12. Quantum wave behavior means multiple possibilities stayed open.
-13. Recorded outcomes appear when open possibility becomes too expensive to maintain.
-14. A light hitting a wall is a cheap moving pattern interacting with a stable memory pattern.
-15. Gravity is motion through change-cost gradients.
-16. Time is the order in which the universe updates, and history changes what later updates cost.
-17. Entanglement is shared state, not faster-than-light messaging.
-18. Reality is one connected system forming many local patterns.
-19. Reality is what the universe can afford to keep rendering.
+5. Change cost is the shared ledger behind collapse, gravity, mass, time slowing, decay, and stability.
+6. Information is not free: changing, recording, correcting, and erasing it have physical cost.
+7. Keeping many possibilities open costs energy.
+8. When energy is limited, possibility collapses into stable memory.
+9. Collapse is a feedback loop: low budget reduces possibility, and reduced possibility settles into memory.
+10. Matter is compressed, stable information that resists being overwritten.
+11. Mass is the cost of holding or redirecting a stable pattern.
+12. Matter forms layers when attraction, crowding, and change cost balance.
+13. Wrong expectations cost energy because mismatch must be corrected.
+14. Large matter-patterns change the cost of nearby motion.
+15. Light is low-cost moving information.
+16. Quantum wave behavior means multiple possibilities stayed open.
+17. Recorded outcomes appear when open possibility becomes too expensive to maintain.
+18. A light hitting a wall is a cheap moving pattern interacting with a stable memory pattern.
+19. Gravity is motion through change-cost gradients.
+20. Time is the order in which the universe updates, and history changes what later updates cost.
+21. Heavy regions make local clocks run slower because local updates cost more.
+22. Entanglement is shared state, not faster-than-light messaging.
+23. Life is a pattern that must stay budget-positive.
+24. Cooperation is useful when shared information saves more energy than it costs.
+25. Unstable patterns decay when they cannot keep paying to remain themselves.
+26. Some patterns stay confined because separation raises change cost too sharply.
+27. Extreme traps should be finite wells, not true infinities.
+28. Reality is one connected system forming many local patterns.
+29. Reality is what the universe can afford to keep rendering.
 
 This is only the beginning.
 
