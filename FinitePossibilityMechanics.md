@@ -132,6 +132,14 @@ There is a real physical idea behind it:
 
 In physics and computing, this is related to **Landauer's principle**. The simple version is that erasing information is not free. It produces heat. It spends energy.
 
+You do not need the equation yet. The important point is simple:
+
+> Information has to be carried by something physical.
+
+On a computer, a saved photo is not magic. It is a real pattern in real hardware. Changing it, copying it, or deleting it means the hardware has to physically change.
+
+Those changes may be tiny, but they are not nothing.
+
 Finite Possibility Mechanics extends that intuition into a bigger picture.
 
 If the universe keeps many outcomes open, it has to maintain information about all those possible outcomes.
@@ -558,7 +566,7 @@ Finite Possibility Mechanics says time has a direction for a similar reason:
 
 > Once energy has been spent and memory has formed, the later state is not equivalent to the earlier state.
 
-The technical version of this model tested this idea by comparing normal event order against reversed and shuffled versions. In those tests, reversed order carried about **8.83%** extra overhead, and shuffled order carried about **17.67%** extra overhead.
+When normal event order is compared against reversed and shuffled order, the reversed order carries about **8.83%** extra overhead, and the shuffled order carries about **17.67%** extra overhead.
 
 The plain-language meaning is simple:
 
@@ -789,42 +797,164 @@ In everyday life, objects are real. Tables are real. Stars are real. Your hand i
 
 The claim is about what reality may be made of underneath the everyday level.
 
-This document is also not the full mathematical proof. It is the plain-language doorway. A separate technical version would need the equations, simulations, predictions, and comparisons to known physics.
+This document is the plain-language version of the model. The equations, simulations, predictions, and comparisons to known physics are the mathematical layer underneath this explanation.
 
 ---
 
-## 28. Where the Math Comes Back In
+## 28. How the Math Touches Measurement
 
-This introduction is only the doorway.
+Finite Possibility Mechanics is not only a metaphor about patterns.
 
-The full technical version has to do more than tell a good story. It has to connect the story to numbers.
+The model has a way to connect its hidden update picture to ordinary measurements like seconds, meters, joules, mass, and gravity.
 
-That means the deeper version must show things like:
+The bridge starts with one idea already introduced earlier:
 
-1. How much extra cost appears when events are reversed or shuffled.
-2. Whether gravity-like motion follows the expected falloff.
-3. Whether stable particle-like patterns can connect to real mass scales.
-4. Whether the model can be calibrated to ordinary units like meters, seconds, and joules.
-5. Whether simulations produce results that could have failed.
+> Information has a physical price.
 
-The technical archive already attempts some of this. For example, it reports:
+If changing or erasing information costs energy, then an update budget can be connected to real energy. Real energy is measured in **joules**.
 
-- about **8.83%** extra overhead for reversed event order
-- about **17.67%** extra overhead for shuffled event order
-- a gravity-like falloff within about **6.4%** of an inverse-square trend in one probe
-- a mass-scale calibration landing within about **1.97%** of the electron mass in one benchmark
+Once the model has joules, it can also connect to mass, because physics already links mass and energy.
 
-Those numbers should not be dumped into the beginner explanation too early.
+The simple version is:
 
-But they matter because they show the difference between a metaphor and a physical model.
+> A stable pattern has a change cost. That change cost can be translated into energy. Energy can be translated into mass.
 
-The plain-language paper explains the picture.
+This is why mass is not treated as a separate mystery in this model.
 
-The technical work has to prove the picture can touch measurement.
+Mass is the physical weight of a stable pattern's cost.
+
+The model also connects update distance and update time to the speed of light.
+
+If one update step is the fastest possible local change, then the largest distance covered per update has to match the speed limit of the universe: **light speed**.
+
+That gives the model a way to talk about **meters** and **seconds** instead of only abstract update steps.
+
+In the current calibration, the universal update tick is about:
+
+> **0.00000000000000000000001152 seconds**
+
+That is roughly **1.152 x 10^-23 seconds**.
+
+The matching update distance is about:
+
+> **0.00000000000000345 meters**
+
+That is roughly **3.45 femtometers**, which is a subatomic distance.
+
+These numbers matter because they mean the model is not floating in imaginary units. It has a way to touch the scale of real particles and real measurements.
+
+The same calibration also places the electron-scale pattern close to the known electron energy scale. The mass-scale result lands within about **1.97%** of the electron mass.
+
+Gravity also fits into the same bridge.
+
+The model treats gravity as motion through a change-cost gradient. To connect that idea to ordinary physics, the calibration uses the relationship between light speed, quantum action, and the Planck mass to close the value of the gravitational constant.
+
+That gives:
+
+> **G is about 6.674 x 10^-11 m^3 kg^-1 s^-2**
+
+That is the familiar size of Newton's gravitational constant.
+
+So the measurement bridge has four jobs:
+
+1. Connect update budget to **joules**.
+2. Connect update distance and update time to **meters** and **seconds**.
+3. Connect stable pattern cost to **mass**.
+4. Connect change-cost gradients to **gravity**.
+
+This is why the model is not just a story about possibility.
+
+It is a physical picture with a measurement scale.
 
 ---
 
-## 29. What Would Prove It Wrong?
+## 29. Galaxy Rotation
+
+Galaxies are not shaped like single round objects.
+
+Many spiral galaxies are more like huge flat disks.
+
+That matters because a disk spreads change cost differently than a sphere.
+
+Near a round object, gravity-like change cost can fall away in a familiar steep pattern. But inside a wide disk, the cost field spreads sideways through the disk.
+
+In plain language:
+
+> A disk-shaped memory pattern can keep influencing motion farther outward than a simple ball-shaped pattern would.
+
+This matters for galaxy rotation.
+
+In many galaxies, stars far from the center move faster than simple visible-matter gravity seems to predict.
+
+Finite Possibility Mechanics explains this by saying that the whole disk is part of the cost structure.
+
+The visible matter in the disk does not only pull like a point in the center. It helps shape a broad change-cost sheet across the galaxy.
+
+Inside that sheet, the cheapest paths for stars can stay nearly balanced over a long distance.
+
+That makes the outer rotation curve flatter.
+
+So the model's plain claim is:
+
+> Galaxy rotation can be affected by the disk-wide change-cost pattern created by visible matter.
+
+This does not require the galaxy to become a different kind of physics.
+
+It is the same rule again:
+
+> Patterns move along cheaper changes.
+
+The difference is scale and shape. A galaxy is not a particle. A galaxy is a giant disk-shaped pattern, so its cost field has disk-shaped behavior.
+
+---
+
+## 30. The Final Settled State
+
+If the universe has a finite budget, then it cannot keep wasting energy forever.
+
+Over time, expensive open possibility tends to collapse into cheaper stable memory.
+
+This raises a huge question:
+
+> What happens if this settling process keeps going for an extremely long time?
+
+Finite Possibility Mechanics points toward a final kind of state where almost every unnecessary cost has been removed.
+
+In that state:
+
+1. Open possibility has mostly collapsed.
+2. Mismatch has mostly disappeared.
+3. Random disturbance has faded.
+4. The pattern has become extremely stable.
+5. Updates continue only at the lowest unavoidable baseline cost.
+
+This can be imagined like a perfectly smooth current.
+
+Nothing is fighting itself.
+
+Nothing is constantly correcting errors.
+
+Nothing is wasting energy on unnecessary alternatives.
+
+The technical name for a state like this is a **condensate-like state**.
+
+For this paper, the simple meaning is enough:
+
+> A condensate-like state is what a pattern becomes when it has settled into the cheapest stable form it can reach.
+
+This does not mean "nothing exists."
+
+It means the opposite: the pattern is so settled that it has almost no extra drag left.
+
+In this model, the far future of the universe may be pulled toward that kind of deep stability.
+
+The same idea appears at every scale:
+
+> When the budget gets tight, reality stops paying for unnecessary possibility.
+
+---
+
+## 31. What Would Prove It Wrong?
 
 A good model must be able to fail.
 
@@ -838,9 +968,9 @@ Things that would challenge this model include:
 4. If gravity cannot be described in any way as motion through a change-cost gradient.
 5. If stable matter does not behave like information that resists being overwritten.
 6. If the order of events turns out not to matter for how physical systems evolve.
-7. If the model cannot produce new predictions beyond familiar digital-physics ideas.
+7. If the model cannot produce predictions beyond familiar digital-physics ideas.
 8. If its predictions cannot be connected to measurements in ordinary physical units.
-9. If the reported time-order overhead disappears under better tests.
+9. If the time-order overhead disappears under better tests.
 10. If the gravity-like falloff cannot be reproduced outside a narrow artificial setup.
 11. If the mass-scale calibration fails when tested against a wider particle set.
 12. If information processing turns out to have no unavoidable physical cost.
@@ -848,6 +978,8 @@ Things that would challenge this model include:
 14. If unstable patterns do not decay toward cheaper arrangements under finite budget.
 15. If bound patterns can always be separated without rising change cost.
 16. If black-hole-like regions require true infinities rather than extreme finite wells.
+17. If disk-shaped galaxy cost fields cannot reproduce the broad flattening seen in galaxy rotation.
+18. If the condensate-like final state cannot be reached even when mismatch, noise, and unnecessary possibility are driven toward zero.
 
 The model does not need to be treated as sacred.
 
@@ -857,7 +989,7 @@ If the map helps explain reality, keep improving it. If the map fails, mark wher
 
 ---
 
-## 30. Important Words in Plain Language
+## 32. Important Words in Plain Language
 
 Here are the main words without the fog:
 
@@ -870,6 +1002,12 @@ Here are the main words without the fog:
 **Path choice:** Choosing which nearby update point should hold a moving pattern next, or choosing which pattern is cheapest to maintain.
 
 **Information cost:** The physical price of changing, recording, correcting, or erasing information.
+
+**Calibration:** Connecting the model's internal ideas to real measurements like seconds, meters, joules, masses, and gravity.
+
+**Universal update tick:** The model's proposed smallest natural update interval, about **1.152 x 10^-23 seconds**.
+
+**Universal update distance:** The model's proposed smallest natural update distance, about **3.45 femtometers**.
 
 **Energy budget:** How much freedom a local pattern has before it must simplify.
 
@@ -893,6 +1031,8 @@ Here are the main words without the fog:
 
 **Gravity:** Motion bending toward lower-cost changes.
 
+**Galaxy cost field:** A broad disk-shaped change-cost pattern that can keep influencing star motion far from a galaxy's center.
+
 **Time:** The order in which the update system changes.
 
 **Time slowing:** The idea that heavy regions complete fewer local updates because nearby changes carry more burden.
@@ -909,11 +1049,13 @@ Here are the main words without the fog:
 
 **Extreme well:** A very deep but finite trap where escape is possible in principle but too expensive for ordinary patterns.
 
+**Condensate-like state:** A deeply settled pattern with almost no extra drag beyond its lowest unavoidable cost.
+
 **Synchronous update:** The idea that each new moment is produced from the previous moment as a whole, like a full-frame refresh.
 
 ---
 
-## 31. The Simplest Summary
+## 33. The Simplest Summary
 
 Finite Possibility Mechanics can be summarized like this:
 
@@ -945,8 +1087,11 @@ Finite Possibility Mechanics can be summarized like this:
 26. Some patterns stay confined because separation raises change cost too sharply.
 27. Extreme traps should be finite wells, not true infinities.
 28. Reality is one connected system forming many local patterns.
-29. Reality is what the universe can afford to keep rendering.
+29. The model connects update cost to real measurements like joules, seconds, meters, mass, and gravity.
+30. Galaxy rotation can be shaped by broad disk-like change-cost fields.
+31. A final settled state would be a pattern with almost no extra drag beyond its lowest unavoidable cost.
+32. Reality is what the universe can afford to keep physically maintaining.
 
-This is only the beginning.
+The deepest summary is:
 
-The next step is to explain each piece more carefully, one at a time, without burying the reader in equations before they understand the idea.
+> The universe becomes solid, directional, heavy, time-slowed, structured, and stable because keeping everything open is too expensive.
