@@ -343,7 +343,41 @@ This does not require consciousness. A detector does not need to "know" anything
 
 ---
 
-## 12. Gravity Is a Change-Cost Gradient
+## 12. A Simple Walkthrough: Light Hitting a Wall
+
+Now we can put several pieces together.
+
+Imagine a tiny flash of light traveling through a dark room and hitting a wall.
+
+In everyday language, we say:
+
+> A photon moved through space and hit matter.
+
+In Finite Possibility Mechanics, the same event looks like this:
+
+1. A light-pattern is handed from one update point to the next.
+2. Because light is cheap motion, the pattern moves at the fastest allowed update speed.
+3. While traveling, the pattern may keep several possible paths open.
+4. The wall is a large stable pattern that strongly resists being overwritten.
+5. When the light-pattern reaches the wall-pattern, the local update points cannot keep every possible interaction open for free.
+6. The interaction creates a recorded outcome.
+7. The light-pattern is absorbed, reflected, scattered, or transformed into another local change.
+
+This one example shows the whole model in miniature.
+
+Motion is pattern handoff.  
+Matter is stable memory.  
+Interaction has a cost.  
+Collapse is a narrowing of open possibility.  
+A recorded event is a stable update that remains in the world.
+
+Nothing mystical has to happen.
+
+The system simply reaches a point where keeping all possibilities open is more expensive than settling into one physical result.
+
+---
+
+## 13. Gravity Is a Change-Cost Gradient
 
 Gravity is usually described as the bending of spacetime.
 
@@ -371,7 +405,7 @@ In this model:
 
 ---
 
-## 13. Time Is the Order of Updates
+## 14. Time Is the Order of Updates
 
 In this model, time is not just a background stage.
 
@@ -415,7 +449,7 @@ The plain-language meaning is simple:
 
 ---
 
-## 14. Entanglement Means Shared State
+## 15. Entanglement Means Shared State
 
 Quantum entanglement sounds mysterious because it seems like two far-away things communicate instantly.
 
@@ -441,7 +475,7 @@ This does not mean distance is fake. It means distance belongs to moving pattern
 
 ---
 
-## 15. Are We All One Thing?
+## 16. Are We All One Thing?
 
 In one sense, yes.
 
@@ -468,7 +502,7 @@ Local things are still real.
 
 ---
 
-## 16. What This Model Is Not Saying
+## 17. What This Model Is Not Saying
 
 This model can easily be misunderstood, so this section matters.
 
@@ -494,7 +528,7 @@ This document is also not the full mathematical proof. It is the plain-language 
 
 ---
 
-## 17. Where the Math Comes Back In
+## 18. Where the Math Comes Back In
 
 This introduction is only the doorway.
 
@@ -525,7 +559,7 @@ The technical work has to prove the picture can touch measurement.
 
 ---
 
-## 18. What Would Prove It Wrong?
+## 19. What Would Prove It Wrong?
 
 A good model must be able to fail.
 
@@ -553,7 +587,7 @@ If the map helps explain reality, keep improving it. If the map fails, mark wher
 
 ---
 
-## 19. Important Words in Plain Language
+## 20. Important Words in Plain Language
 
 Here are the main words without the fog:
 
@@ -591,7 +625,7 @@ Here are the main words without the fog:
 
 ---
 
-## 20. The Simplest Summary
+## 21. The Simplest Summary
 
 Finite Possibility Mechanics can be summarized like this:
 
@@ -608,11 +642,12 @@ Finite Possibility Mechanics can be summarized like this:
 11. Light is low-cost moving information.
 12. Quantum wave behavior means multiple possibilities stayed open.
 13. Recorded outcomes appear when open possibility becomes too expensive to maintain.
-14. Gravity is motion through change-cost gradients.
-15. Time is the order in which the universe updates, and history changes what later updates cost.
-16. Entanglement is shared state, not faster-than-light messaging.
-17. Reality is one connected system forming many local patterns.
-18. Reality is what the universe can afford to keep rendering.
+14. A light hitting a wall is a cheap moving pattern interacting with a stable memory pattern.
+15. Gravity is motion through change-cost gradients.
+16. Time is the order in which the universe updates, and history changes what later updates cost.
+17. Entanglement is shared state, not faster-than-light messaging.
+18. Reality is one connected system forming many local patterns.
+19. Reality is what the universe can afford to keep rendering.
 
 This is only the beginning.
 
