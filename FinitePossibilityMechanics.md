@@ -4,6 +4,8 @@
 
 This document explains a model of the universe called **Finite Possibility Mechanics**.
 
+![Plain-Language Roadmap](assets/plain-intro-map.svg)
+
 The goal is not to sound complicated. The goal is to explain the idea clearly enough that a curious teenager could follow it, argue with it, and build on it.
 
 This model starts with one basic question:
@@ -142,6 +144,8 @@ You do not need the equation yet. The important point is simple:
 
 > Information has to be carried by something physical.
 
+![Information Is Not Free](assets/information-is-not-free.svg)
+
 On a computer, a saved photo is not magic. It is a real pattern in real hardware. Changing it, copying it, or deleting it means the hardware has to physically change.
 
 Those changes may be tiny, but they are not nothing.
@@ -174,6 +178,8 @@ In this plain version, we call that cost **change cost**.
 
 Change cost is the price of updating from one state to another.
 
+![One Rule Behind Many Effects](assets/one-rule-many-effects.svg)
+
 The same basic idea appears again and again:
 
 1. **Collapse:** Open possibility becomes too expensive, so the pattern narrows into one recorded result.
@@ -194,6 +200,8 @@ It is one accounting idea wearing different masks.
 ## 6. The Four Things Every Update Point Tracks
 
 To keep the model simple, imagine every update point tracks four basic things.
+
+![The Four Local Knobs](assets/four-update-knobs.svg)
 
 **Possibility:** How many outcomes are still open?
 
@@ -295,6 +303,8 @@ If matter is a stable pattern, an obvious question appears:
 
 In this model, matter feels solid because stable patterns resist being overwritten by other stable patterns.
 
+![Why Matter Feels Solid](assets/matter-solid-resistance.svg)
+
 Your hand is not one simple thing. It is a huge organized pattern. The table is also a huge organized pattern.
 
 For your hand to pass through the table, the update points in the same region would have to hold two incompatible stable patterns at once. That is not cheap. It would require the local system to rewrite both patterns without breaking their structure.
@@ -318,6 +328,8 @@ If matter is stable information, then another question appears:
 In this model, mass is not treated as a magical substance added on top of matter.
 
 Mass is the cost of holding a pattern together.
+
+![Mass as Pattern Cost](assets/mass-pattern-cost.svg)
 
 Some patterns are simple. They are easy to move, easy to pass along, and cheap to maintain.
 
@@ -352,6 +364,8 @@ A stable center can make nearby changes cheaper, so patterns gather around it.
 But they cannot all occupy the same exact local state. If too many patterns try to crowd into the same region, they interfere, mismatch, and raise the cost.
 
 So matter forms layers.
+
+![Why Matter Forms Layers](assets/matter-layers-shells.svg)
 
 The first layer fills because it is cheap.
 
@@ -404,6 +418,8 @@ This matters because stable reality is not only about energy. It is also about a
 There is an important detail here.
 
 Stable memory can be cheap to reuse, but that does not mean all stable patterns are light.
+
+![Cheap Does Not Always Mean Light](assets/cheap-not-light.svg)
 
 Matter is cheaper than open possibility because it is stable. A stable pattern does not need to recalculate every possible version of itself at every moment.
 
@@ -464,6 +480,8 @@ The double-slit experiment is a famous physics experiment where a particle seems
 
 Finite Possibility Mechanics explains it through cost.
 
+![Double-Slit Collapse](assets/double-slit-collapse.svg)
+
 If the universe can afford to keep both paths open, the particle behaves like a wave. It keeps more than one possible path active, and those possibilities can interfere with each other.
 
 But if an interaction records which path happened, the situation changes.
@@ -494,6 +512,8 @@ In everyday language, we say:
 
 In Finite Possibility Mechanics, the same event looks like this:
 
+![Light Hitting a Wall](assets/light-hits-wall.svg)
+
 1. A light-pattern is handed from one update point to the next.
 2. Because light is cheap motion, the pattern moves at the fastest allowed update speed.
 3. While traveling, the pattern may keep several possible paths open.
@@ -523,6 +543,8 @@ Gravity is usually described as the bending of spacetime.
 Finite Possibility Mechanics describes it in a different language:
 
 > Gravity is what happens when motion bends toward lower-cost changes.
+
+![Gravity as Uneven Change Cost](assets/gravity-gradient-detail.svg)
 
 A large object, like a planet or star, is a huge stable memory pattern. Because it is stable and persistent, it changes the update costs around it.
 
@@ -602,6 +624,8 @@ That means fewer local changes can be completed for the same outside interval.
 
 From far away, this looks like a clock running slower.
 
+![Heavy Regions Slow Local Clocks](assets/time-dilation-clocks.svg)
+
 The clock is not broken. It is updating inside a heavier workload.
 
 This gives a plain-language version of time slowing:
@@ -646,6 +670,8 @@ In one sense, yes.
 
 This model says everything is part of one connected update system.
 
+![One Connected System](assets/one-connected-system.svg)
+
 Stars, planets, people, light, and empty space are not made from totally different kinds of existence. They are different patterns in the same underlying system.
 
 But this does not mean everything is the same in an everyday sense.
@@ -683,6 +709,8 @@ So the plain rule is:
 
 > A living pattern survives when it takes in more usable energy than it spends maintaining itself.
 
+![Life as a Budget-Positive Pattern](assets/life-budget-positive.svg)
+
 If the pattern keeps earning enough budget, it can stay flexible, repair damage, and adapt.
 
 If it spends more than it can take in, it loses flexibility. It simplifies, breaks down, or dies.
@@ -700,6 +728,8 @@ If wrong expectations cost energy, then shared information can be useful.
 Two nearby patterns can sometimes lower their total cost by matching each other better.
 
 That is the plain version of cooperation.
+
+![Cooperation Saves Energy](assets/cooperation-saves-energy.svg)
 
 Cooperation does not have to mean kindness or intention. It can mean:
 
@@ -731,6 +761,8 @@ Other patterns are temporary because they are too expensive, too strained, or to
 
 In this model, decay happens when a pattern can no longer pay the cost of staying itself.
 
+![Decay and Instability](assets/decay-instability.svg)
+
 It may hold together for a while. It may look real and stable for a short time. But if the cost remains too high, eventually the pattern breaks into cheaper patterns.
 
 This gives a simple rule:
@@ -752,6 +784,8 @@ At first, that seems strange. If two things are bound together, why not just sep
 In Finite Possibility Mechanics, the answer is cost.
 
 Some bound patterns become more expensive as you try to separate them. Pulling them apart does not simply move two pieces away from each other. It stretches the whole relationship between them.
+
+![Confinement](assets/confinement-rising-cost.svg)
 
 The farther apart they are forced, the more change cost builds up.
 
@@ -811,6 +845,8 @@ It is not saying your body, the Earth, or other people are fake.
 
 It is not saying the universe has goals, intentions, emotions, or consciousness.
 
+![What This Model Is Not Saying](assets/model-not-saying.svg)
+
 It is saying physical things may be stable update-patterns at the deepest level.
 
 In everyday life, objects are real. Tables are real. Stars are real. Your hand is real.
@@ -826,6 +862,8 @@ This document is the plain-language version of the model. The equations, simulat
 Finite Possibility Mechanics is not only a metaphor about patterns.
 
 The model has a way to connect its hidden update picture to ordinary measurements like seconds, meters, joules, mass, and gravity.
+
+![Measurement Bridge](assets/math-measurement-bridge.svg)
 
 The bridge starts with one idea already introduced earlier:
 
@@ -896,6 +934,8 @@ Many spiral galaxies are more like huge flat disks.
 
 That matters because a disk spreads change cost differently than a sphere.
 
+![Galaxy Rotation Detail](assets/galaxy-rotation-detail.svg)
+
 Near a round object, gravity-like change cost can fall away in a familiar steep pattern. But inside a wide disk, the cost field spreads sideways through the disk.
 
 In plain language:
@@ -942,6 +982,8 @@ Finite Possibility Mechanics points toward a final kind of state where almost ev
 
 In that state:
 
+![Final Settled State Detail](assets/final-settled-state-detail.svg)
+
 1. Open possibility has mostly collapsed.
 2. Mismatch has mostly disappeared.
 3. Random disturbance has faded.
@@ -978,6 +1020,8 @@ The same idea appears at every scale:
 
 A good model must be able to fail.
 
+![Falsifiability Map](assets/falsifiability-map.svg)
+
 Finite Possibility Mechanics should not be protected from criticism. If it explains everything no matter what happens, then it explains nothing.
 
 Things that would challenge this model include:
@@ -1012,6 +1056,8 @@ If the map helps explain reality, keep improving it. If the map fails, mark wher
 ## 32. Important Words in Plain Language
 
 Here are the main words without the fog:
+
+![Glossary Map](assets/glossary-map.svg)
 
 **Update point:** One tiny location in the universe's hidden update grid.
 
@@ -1078,6 +1124,8 @@ Here are the main words without the fog:
 ## 33. The Simplest Summary
 
 Finite Possibility Mechanics can be summarized like this:
+
+![Simplest Summary](assets/simplest-summary.svg)
 
 1. The universe has finite energy and finite processing capacity.
 2. Reality updates through tiny local update points.

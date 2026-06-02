@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Why Matter Feels Solid</title><desc id="desc">Two stable patterns resist overwriting each other.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 19px Arial,sans-serif;fill:#475569}.block{fill:#ccfbf1;stroke:#0f766e;stroke-width:6;rx:18}.hand{fill:#dbeafe;stroke:#2563eb;stroke-width:5;rx:18}.force{stroke:#ef4444;stroke-width:7;fill:none;marker-end:url(#m)}.h{font:700 24px Arial,sans-serif;fill:#0f172a}</style>
+  <defs><marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2L10 6L2 10Z" fill="#ef4444"/></marker></defs>
+  <rect class="bg" width="1200" height="540"/><text x="600" y="58" text-anchor="middle" class="t">Matter Feels Solid Because Stable Patterns Resist Overwrite</text><text x="600" y="92" text-anchor="middle" class="s">A stable pattern has already paid to become organized, so replacing it is costly.</text>
+  <rect x="690" y="210" width="310" height="140" class="block"/><text x="845" y="288" text-anchor="middle" class="h">stable table pattern</text>
+  <rect x="195" y="225" width="250" height="110" class="hand"/><text x="320" y="288" text-anchor="middle" class="h">stable hand pattern</text>
+  <path d="M470 280H650" class="force"/><path d="M670 250C610 235 555 235 500 250" class="force"/><path d="M670 320C610 335 555 335 500 320" class="force"/>
+  <text x="600" y="425" text-anchor="middle" class="s">Passing through would require one stable pattern to overwrite another.</text>
+</svg>

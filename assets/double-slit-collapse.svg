@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Double-Slit Collapse</title><desc id="desc">Open paths interfere until a recorded interaction makes one outcome definite.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.wall{fill:#334155}.path{stroke:#2563eb;stroke-width:6;fill:none}.fade{stroke:#cbd5e1;stroke-width:5;fill:none;stroke-dasharray:10 10}.det{fill:#fee2e2;stroke:#ef4444;stroke-width:4;rx:14}.h{font:700 23px Arial,sans-serif;fill:#0f172a}</style>
+  <rect class="bg" width="1200" height="560"/><text x="600" y="58" text-anchor="middle" class="t">Double-Slit: Open Paths vs Recorded Outcome</text><text x="600" y="92" text-anchor="middle" class="s">Keeping both paths open costs less until an interaction records one path.</text>
+  <circle cx="160" cy="280" r="22" fill="#fef3c7" stroke="#f59e0b" stroke-width="5"/><rect x="440" y="160" width="24" height="115" class="wall"/><rect x="440" y="330" width="24" height="115" class="wall"/><rect x="970" y="150" width="24" height="300" class="wall"/>
+  <path d="M180 280C300 210 375 205 440 220" class="path"/><path d="M180 280C300 360 375 390 440 390" class="path"/><path d="M464 220C650 190 810 210 970 230" class="path"/><path d="M464 390C650 420 810 390 970 350" class="path"/>
+  <rect x="520" y="185" width="120" height="70" class="det"/><text x="580" y="228" text-anchor="middle" class="h">record?</text><path d="M464 390C650 420 810 390 970 350" class="fade"/>
+  <text x="600" y="505" text-anchor="middle" class="s">A detector does not need consciousness. It only needs to make one path physically definite.</text>
+</svg>

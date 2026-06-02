@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">What Would Prove It Wrong</title><desc id="desc">A model must face tests that could break it.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.map{fill:#fff;stroke:#cbd5e1;stroke-width:4;rx:18}.pin{fill:#fee2e2;stroke:#ef4444;stroke-width:5}.ok{fill:#ccfbf1;stroke:#0f766e;stroke-width:5}.h{font:700 23px Arial,sans-serif;fill:#0f172a}</style>
+  <rect class="bg" width="1200" height="560"/><text x="600" y="58" text-anchor="middle" class="t">A Good Model Can Fail</text><text x="600" y="92" text-anchor="middle" class="s">Failure points are not weakness. They are how the map stays honest.</text>
+  <rect x="180" y="150" width="860" height="300" class="map"/><circle cx="330" cy="240" r="34" class="pin"/><circle cx="520" cy="335" r="34" class="pin"/><circle cx="735" cy="230" r="34" class="pin"/><circle cx="900" cy="350" r="34" class="pin"/><circle cx="600" cy="260" r="48" class="ok"/><text x="600" y="267" text-anchor="middle" class="h">model</text>
+  <text x="600" y="505" text-anchor="middle" class="s">If the predictions fail, mark where the map breaks.</text>
+</svg>

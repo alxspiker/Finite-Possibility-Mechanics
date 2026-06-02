@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Cooperation Saves Energy</title><desc id="desc">Two patterns lower mismatch by sharing a common expectation.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.nodeA{fill:#dbeafe;stroke:#2563eb;stroke-width:5}.nodeB{fill:#fee2e2;stroke:#ef4444;stroke-width:5}.shared{fill:#ccfbf1;stroke:#0f766e;stroke-width:5;rx:18}.line{stroke:#0f766e;stroke-width:6}.bad{stroke:#ef4444;stroke-width:5;stroke-dasharray:10 10}.h{font:700 23px Arial,sans-serif;fill:#0f172a}</style>
+  <rect class="bg" width="1200" height="540"/><text x="600" y="58" text-anchor="middle" class="t">Cooperation Lowers Mismatch</text><text x="600" y="92" text-anchor="middle" class="s">Sharing information is useful when the shared version costs less to maintain.</text>
+  <circle cx="260" cy="260" r="70" class="nodeA"/><text x="260" y="268" text-anchor="middle" class="h">pattern A</text><circle cx="940" cy="260" r="70" class="nodeB"/><text x="940" y="268" text-anchor="middle" class="h">pattern B</text>
+  <line x1="330" y1="260" x2="470" y2="260" class="bad"/><line x1="730" y1="260" x2="870" y2="260" class="bad"/>
+  <rect x="470" y="210" width="260" height="100" class="shared"/><text x="600" y="255" text-anchor="middle" class="h">shared expectation</text><text x="600" y="285" text-anchor="middle" class="s">less correction</text>
+  <line x1="330" y1="330" x2="520" y2="400" class="line"/><line x1="870" y1="330" x2="680" y2="400" class="line"/><text x="600" y="430" text-anchor="middle" class="s">agreement saves more than communication costs</text>
+</svg>

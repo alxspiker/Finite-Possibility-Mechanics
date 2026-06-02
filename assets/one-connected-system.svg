@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">One Connected System, Many Local Patterns</title><desc id="desc">Stars, people, light, and empty space are local patterns in one connected system.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.line{stroke:#cbd5e1;stroke-width:4}.node{fill:#fff;stroke:#0f766e;stroke-width:5}.h{font:700 22px Arial,sans-serif;fill:#0f172a}</style>
+  <rect class="bg" width="1200" height="540"/><text x="600" y="58" text-anchor="middle" class="t">One System, Many Patterns</text><text x="600" y="92" text-anchor="middle" class="s">Different things can be different local patterns in the same underlying reality.</text>
+  <line x1="260" y1="180" x2="600" y2="270" class="line"/><line x1="600" y1="270" x2="940" y2="180" class="line"/><line x1="260" y1="410" x2="600" y2="270" class="line"/><line x1="600" y1="270" x2="940" y2="410" class="line"/>
+  <circle cx="600" cy="270" r="70" fill="#ccfbf1" stroke="#0f766e" stroke-width="6"/><text x="600" y="278" text-anchor="middle" class="h">connected field</text>
+  <circle cx="260" cy="180" r="55" class="node"/><text x="260" y="187" text-anchor="middle" class="h">stars</text><circle cx="940" cy="180" r="55" class="node"/><text x="940" y="187" text-anchor="middle" class="h">light</text><circle cx="260" cy="410" r="55" class="node"/><text x="260" y="417" text-anchor="middle" class="h">people</text><circle cx="940" cy="410" r="55" class="node"/><text x="940" y="417" text-anchor="middle" class="h">space</text>
+</svg>

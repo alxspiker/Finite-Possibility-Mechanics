@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Life as a Budget-Positive Pattern</title><desc id="desc">A living pattern survives when usable energy in exceeds maintenance cost out.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.cell{fill:#dcfce7;stroke:#16a34a;stroke-width:6}.arrIn{stroke:#16a34a;stroke-width:8;fill:none;marker-end:url(#g)}.arrOut{stroke:#ef4444;stroke-width:6;fill:none;marker-end:url(#r)}.h{font:700 24px Arial,sans-serif;fill:#0f172a}</style>
+  <defs><marker id="g" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2L10 6L2 10Z" fill="#16a34a"/></marker><marker id="r" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2L10 6L2 10Z" fill="#ef4444"/></marker></defs>
+  <rect class="bg" width="1200" height="540"/><text x="600" y="58" text-anchor="middle" class="t">Life Must Stay Budget-Positive</text><text x="600" y="92" text-anchor="middle" class="s">A living system survives when it gains more usable energy than it spends maintaining itself.</text>
+  <circle cx="600" cy="280" r="95" class="cell"/><text x="600" y="288" text-anchor="middle" class="h">living pattern</text>
+  <path d="M190 230C320 210 420 235 505 260" class="arrIn"/><text x="265" y="200" text-anchor="middle" class="h">energy in</text>
+  <path d="M695 300C820 350 910 370 1040 385" class="arrOut"/><text x="950" y="345" text-anchor="middle" class="h">maintenance cost</text>
+  <text x="600" y="470" text-anchor="middle" class="s">If cost out becomes larger than useful energy in, the pattern cannot keep being itself.</text>
+</svg>

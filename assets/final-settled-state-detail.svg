@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">The Final Settled State Detail</title><desc id="desc">Noise, mismatch, and open possibility shrink toward a low-drag stable pattern.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.noisy{fill:none;stroke:#ef4444;stroke-width:6;stroke-linecap:round}.smooth{fill:none;stroke:#0f766e;stroke-width:10;stroke-linecap:round}.arr{stroke:#334155;stroke-width:5;fill:none;marker-end:url(#m)}.h{font:700 23px Arial,sans-serif;fill:#0f172a}</style>
+  <defs><marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2L10 6L2 10Z" fill="#334155"/></marker></defs>
+  <rect class="bg" width="1200" height="560"/><text x="600" y="58" text-anchor="middle" class="t">Settling Removes Extra Drag</text><text x="600" y="92" text-anchor="middle" class="s">A condensate-like state is the cheapest stable form a pattern can reach.</text>
+  <path d="M160 320C210 190 290 410 350 250C420 120 470 420 535 260" class="noisy"/><text x="330" y="430" text-anchor="middle" class="h">mismatch and noise</text>
+  <path d="M570 285H700" class="arr"/><path d="M750 300C820 220 990 220 1060 300C990 380 820 380 750 300" class="smooth"/><text x="910" y="430" text-anchor="middle" class="h">smooth low-drag pattern</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">What This Model Is Not Saying</title><desc id="desc">The model separates physical update patterns from simulation, imagination, and consciousness claims.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.bad{fill:#fff;stroke:#ef4444;stroke-width:4;rx:18}.good{fill:#ccfbf1;stroke:#0f766e;stroke-width:5;rx:18}.x{stroke:#ef4444;stroke-width:7;stroke-linecap:round}.h{font:700 22px Arial,sans-serif;fill:#0f172a}</style>
+  <rect class="bg" width="1200" height="560"/><text x="600" y="58" text-anchor="middle" class="t">Boundaries of the Claim</text><text x="600" y="92" text-anchor="middle" class="s">The model is about physical structure underneath reality, not a claim that reality is fake.</text>
+  <rect x="85" y="165" width="250" height="150" class="bad"/><text x="210" y="235" text-anchor="middle" class="h">not a laptop</text><path d="M125 190L295 290M295 190L125 290" class="x"/>
+  <rect x="375" y="165" width="250" height="150" class="bad"/><text x="500" y="235" text-anchor="middle" class="h">not imaginary</text><path d="M415 190L585 290M585 190L415 290" class="x"/>
+  <rect x="665" y="165" width="250" height="150" class="bad"/><text x="790" y="235" text-anchor="middle" class="h">not conscious intent</text><path d="M705 190L875 290M875 190L705 290" class="x"/>
+  <rect x="360" y="375" width="480" height="90" class="good"/><text x="600" y="428" text-anchor="middle" class="h">physical things may be stable update-patterns</text>
+</svg>

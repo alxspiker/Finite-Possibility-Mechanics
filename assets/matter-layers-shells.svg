@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Why Matter Forms Layers</title><desc id="desc">Attraction, crowding, and cost balance into shell-like layers.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.core{fill:#f59e0b;stroke:#92400e;stroke-width:5}.ring{fill:none;stroke:#2563eb;stroke-width:5}.dot{fill:#14b8a6;stroke:#0f766e;stroke-width:4}.h{font:700 23px Arial,sans-serif;fill:#0f172a}.note{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:16}</style>
+  <rect class="bg" width="1200" height="560"/><text x="600" y="58" text-anchor="middle" class="t">Layers Form When Attraction Meets Crowding</text><text x="600" y="92" text-anchor="middle" class="s">Inner paths are attractive until crowding makes the next layer cheaper.</text>
+  <circle cx="430" cy="290" r="45" class="core"/><circle cx="430" cy="290" r="105" class="ring"/><circle cx="430" cy="290" r="175" class="ring"/>
+  <g><circle cx="430" cy="185" r="16" class="dot"/><circle cx="535" cy="290" r="16" class="dot"/><circle cx="430" cy="395" r="16" class="dot"/><circle cx="325" cy="290" r="16" class="dot"/><circle cx="570" cy="190" r="14" class="dot"/><circle cx="610" cy="350" r="14" class="dot"/><circle cx="265" cy="190" r="14" class="dot"/><circle cx="250" cy="360" r="14" class="dot"/></g>
+  <rect x="720" y="190" width="330" height="80" class="note"/><text x="885" y="240" text-anchor="middle" class="h">attraction pulls inward</text><rect x="720" y="310" width="330" height="80" class="note"/><text x="885" y="360" text-anchor="middle" class="h">crowding pushes outward</text>
+</svg>

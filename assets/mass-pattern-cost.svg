@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Mass as Pattern Cost</title><desc id="desc">Light, medium, and heavy stable patterns require different costs to redirect.</desc>
+  <style>.bg{fill:#f8fafc}.t{font:700 34px Arial,sans-serif;fill:#0f172a}.s{font:400 18px Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:18}.ball1{fill:#a7f3d0;stroke:#0f766e;stroke-width:5}.ball2{fill:#fde68a;stroke:#d97706;stroke-width:5}.ball3{fill:#fecaca;stroke:#ef4444;stroke-width:5}.h{font:700 24px Arial,sans-serif;fill:#0f172a}.arr{stroke:#334155;stroke-width:5;marker-end:url(#m)}</style>
+  <defs><marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2L10 6L2 10Z" fill="#334155"/></marker></defs>
+  <rect class="bg" width="1200" height="540"/><text x="600" y="58" text-anchor="middle" class="t">Mass Is the Cost of Holding or Redirecting a Pattern</text><text x="600" y="92" text-anchor="middle" class="s">Some stable patterns are easy to move. Others carry a larger structure cost.</text>
+  <rect x="110" y="165" width="280" height="250" class="card"/><circle cx="250" cy="255" r="38" class="ball1"/><line x1="210" y1="340" x2="300" y2="340" class="arr"/><text x="250" y="385" text-anchor="middle" class="h">low cost</text>
+  <rect x="460" y="165" width="280" height="250" class="card"/><circle cx="600" cy="255" r="58" class="ball2"/><line x1="560" y1="340" x2="635" y2="340" class="arr"/><text x="600" y="385" text-anchor="middle" class="h">medium cost</text>
+  <rect x="810" y="165" width="280" height="250" class="card"/><circle cx="950" cy="255" r="78" class="ball3"/><line x1="920" y1="340" x2="965" y2="340" class="arr"/><text x="950" y="385" text-anchor="middle" class="h">high cost</text>
+</svg>
