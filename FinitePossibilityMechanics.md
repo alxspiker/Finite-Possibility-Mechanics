@@ -180,7 +180,41 @@ There is no extra physical stuff underneath the pattern. In this model, the patt
 
 ---
 
-## 6. Why Matter Feels Solid
+## 6. The Collapse Loop
+
+The model needs one more piece before matter makes sense.
+
+It is not enough to say:
+
+> Possibility becomes memory.
+
+We need to explain how that happens.
+
+Here is the plain-language loop:
+
+1. A pattern has many possible futures open.
+2. Keeping those futures open costs energy.
+3. As the local budget drops, the pattern cannot afford as much openness.
+4. The pattern settles into a more familiar stable state.
+5. Once it settles, there is less uncertainty to maintain.
+6. With less uncertainty, the pattern becomes even harder to change.
+7. The stable state reinforces itself.
+
+This is the **collapse loop**.
+
+A simple analogy is a phone with a dying battery. When the battery is full, the phone can keep many apps running, refresh the screen constantly, and search for signals. When the battery gets low, it shuts things down, reduces activity, and falls back to simpler modes.
+
+The phone is not making a philosophical decision. It is obeying a budget.
+
+Finite Possibility Mechanics says physical reality may do something similar:
+
+> When open possibility becomes too expensive, the system narrows, records, and stabilizes.
+
+This is how a flexible possibility can become a definite event.
+
+---
+
+## 7. Why Matter Feels Solid
 
 If matter is a stable pattern, an obvious question appears:
 
@@ -202,7 +236,33 @@ This gives us another simple rule:
 
 ---
 
-## 7. Cheap Does Not Always Mean Light
+## 8. Why Wrong Expectations Cost Energy
+
+There is another important idea:
+
+> A pattern that expects the wrong thing has to keep correcting itself.
+
+Correction costs energy.
+
+Imagine walking through your house in the dark. If you know where the furniture is, you move smoothly. But if you expect a chair to be somewhere else, you bump into things, stop, adjust, and spend extra effort correcting your path.
+
+The same idea applies here.
+
+An update point does not have a mind, but it can still carry a local expectation. It can be more prepared for one kind of next state than another.
+
+If that expectation matches the nearby pattern, the next update is cheaper.
+
+If that expectation clashes with the nearby pattern, the system has to spend energy resolving the mismatch.
+
+So in this model:
+
+> Wrong expectations are physically expensive.
+
+This matters because stable reality is not only about energy. It is also about agreement. A pattern that agrees with its surroundings is easier to maintain. A pattern that constantly disagrees with its surroundings burns budget correcting itself.
+
+---
+
+## 9. Cheap Does Not Always Mean Light
 
 There is an important detail here.
 
@@ -226,7 +286,7 @@ Stable does not mean weightless. Stable means the pattern has become hard to cha
 
 ---
 
-## 8. Light Is the Cheapest Motion
+## 10. Light Is the Cheapest Motion
 
 > Light is the cheapest kind of moving information.
 
@@ -259,7 +319,7 @@ It is a cheap, fast, transferable pattern moving through the update network.
 
 ---
 
-## 9. The Double-Slit Experiment
+## 11. The Double-Slit Experiment
 
 The double-slit experiment is a famous physics experiment where a particle seems to act like a wave when no interaction records which slit it went through.
 
@@ -283,7 +343,7 @@ This does not require consciousness. A detector does not need to "know" anything
 
 ---
 
-## 10. Gravity Is a Change-Cost Gradient
+## 12. Gravity Is a Change-Cost Gradient
 
 Gravity is usually described as the bending of spacetime.
 
@@ -311,7 +371,7 @@ In this model:
 
 ---
 
-## 11. Time Is the Order of Updates
+## 13. Time Is the Order of Updates
 
 In this model, time is not just a background stage.
 
@@ -333,9 +393,29 @@ This gives us another rule:
 
 The future is open only where the universe can still afford openness.
 
+There is a deeper point too:
+
+> The order of events is not free to rearrange.
+
+If a system has no memory, reversing a process might seem simple. But a system with memory is different. Each step changes the budget, changes the stable patterns, and changes what the next step can afford.
+
+That means running the same events backward is not just "the same movie in reverse." It is a different physical workload.
+
+Imagine baking bread. Flour, water, yeast, and heat create a loaf. But the loaf does not naturally turn back into separate flour, water, yeast, and heat. The process wrote history into the structure.
+
+Finite Possibility Mechanics says time has a direction for a similar reason:
+
+> Once energy has been spent and memory has formed, the later state is not equivalent to the earlier state.
+
+The technical version of this model tested this idea by comparing normal event order against reversed and shuffled versions. In those tests, reversed order carried about **8.83%** extra overhead, and shuffled order carried about **17.67%** extra overhead.
+
+The plain-language meaning is simple:
+
+> History is not decorative. History changes the cost of what can happen next.
+
 ---
 
-## 12. Entanglement Means Shared State
+## 14. Entanglement Means Shared State
 
 Quantum entanglement sounds mysterious because it seems like two far-away things communicate instantly.
 
@@ -361,7 +441,7 @@ This does not mean distance is fake. It means distance belongs to moving pattern
 
 ---
 
-## 13. Are We All One Thing?
+## 15. Are We All One Thing?
 
 In one sense, yes.
 
@@ -388,7 +468,7 @@ Local things are still real.
 
 ---
 
-## 14. What This Model Is Not Saying
+## 16. What This Model Is Not Saying
 
 This model can easily be misunderstood, so this section matters.
 
@@ -414,7 +494,38 @@ This document is also not the full mathematical proof. It is the plain-language 
 
 ---
 
-## 15. What Would Prove It Wrong?
+## 17. Where the Math Comes Back In
+
+This introduction is only the doorway.
+
+The full technical version has to do more than tell a good story. It has to connect the story to numbers.
+
+That means the deeper version must show things like:
+
+1. How much extra cost appears when events are reversed or shuffled.
+2. Whether gravity-like motion follows the expected falloff.
+3. Whether stable particle-like patterns can connect to real mass scales.
+4. Whether the model can be calibrated to ordinary units like meters, seconds, and joules.
+5. Whether simulations produce results that could have failed.
+
+The technical archive already attempts some of this. For example, it reports:
+
+- about **8.83%** extra overhead for reversed event order
+- about **17.67%** extra overhead for shuffled event order
+- a gravity-like falloff within about **6.4%** of an inverse-square trend in one probe
+- a mass-scale calibration landing within about **1.97%** of the electron mass in one benchmark
+
+Those numbers should not be dumped into the beginner explanation too early.
+
+But they matter because they show the difference between a metaphor and a physical model.
+
+The plain-language paper explains the picture.
+
+The technical work has to prove the picture can touch measurement.
+
+---
+
+## 18. What Would Prove It Wrong?
 
 A good model must be able to fail.
 
@@ -430,6 +541,9 @@ Things that would challenge this model include:
 6. If the order of events turns out not to matter for how physical systems evolve.
 7. If the model cannot produce new predictions beyond familiar digital-physics ideas.
 8. If its predictions cannot be connected to measurements in ordinary physical units.
+9. If the reported time-order overhead disappears under better tests.
+10. If the gravity-like falloff cannot be reproduced outside a narrow artificial setup.
+11. If the mass-scale calibration fails when tested against a wider particle set.
 
 The model does not need to be treated as sacred.
 
@@ -439,7 +553,7 @@ If the map helps explain reality, keep improving it. If the map fails, mark wher
 
 ---
 
-## 16. Important Words in Plain Language
+## 19. Important Words in Plain Language
 
 Here are the main words without the fog:
 
@@ -459,6 +573,10 @@ Here are the main words without the fog:
 
 **Agreement:** How well nearby update points fit together.
 
+**Collapse loop:** The feedback cycle where low budget reduces open possibility, reduced possibility settles into memory, and memory makes the pattern harder to change.
+
+**Wrong expectation:** A local pattern prepared for the wrong next state. It costs energy because the system has to correct the mismatch.
+
 **Matter:** Stable memory-like information that resists change.
 
 **Light:** Cheap moving information.
@@ -473,7 +591,7 @@ Here are the main words without the fog:
 
 ---
 
-## 17. The Simplest Summary
+## 20. The Simplest Summary
 
 Finite Possibility Mechanics can be summarized like this:
 
@@ -483,16 +601,18 @@ Finite Possibility Mechanics can be summarized like this:
 4. Every possible next state has a change cost.
 5. Keeping many possibilities open costs energy.
 6. When energy is limited, possibility collapses into stable memory.
-7. Matter is compressed, stable information that resists being overwritten.
-8. Large matter-patterns change the cost of nearby motion.
-9. Light is low-cost moving information.
-10. Quantum wave behavior means multiple possibilities stayed open.
-11. Recorded outcomes appear when open possibility becomes too expensive to maintain.
-12. Gravity is motion through change-cost gradients.
-13. Time is the order in which the universe updates.
-14. Entanglement is shared state, not faster-than-light messaging.
-15. Reality is one connected system forming many local patterns.
-16. Reality is what the universe can afford to keep rendering.
+7. Collapse is a feedback loop: low budget reduces possibility, and reduced possibility settles into memory.
+8. Matter is compressed, stable information that resists being overwritten.
+9. Wrong expectations cost energy because mismatch must be corrected.
+10. Large matter-patterns change the cost of nearby motion.
+11. Light is low-cost moving information.
+12. Quantum wave behavior means multiple possibilities stayed open.
+13. Recorded outcomes appear when open possibility becomes too expensive to maintain.
+14. Gravity is motion through change-cost gradients.
+15. Time is the order in which the universe updates, and history changes what later updates cost.
+16. Entanglement is shared state, not faster-than-light messaging.
+17. Reality is one connected system forming many local patterns.
+18. Reality is what the universe can afford to keep rendering.
 
 This is only the beginning.
 
