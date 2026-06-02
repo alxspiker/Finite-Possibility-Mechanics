@@ -26,6 +26,6 @@
   </g>
   <rect x="145" y="535" width="290" height="54" class="badge"/><text x="290" y="570" text-anchor="middle" class="label">fixed update points</text>
   <rect x="465" y="535" width="330" height="54" class="badge"/><text x="630" y="570" text-anchor="middle" class="label">moving state pattern</text>
-  <rect x="825" y="535" width="245" height="54" class="badge"/><text x="947" y="570" text-anchor="middle" class="label">shared refresh</text>
+  <rect x="805" y="535" width="285" height="54" class="badge"/><text x="947" y="570" text-anchor="middle" class="label">shared bookkeeping</text>
   <text x="600" y="625" text-anchor="middle" class="small">Like pixels refreshing together, except each point stores local reality-state instead of color.</text>
 </svg>

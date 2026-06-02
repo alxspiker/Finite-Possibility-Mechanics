@@ -63,9 +63,13 @@ The update points are the pixels.
 Particles are moving patterns in those pixels.  
 Matter is a pattern that has become stable and expensive to change.
 
-In this picture, the update points should be imagined as updating together, not one at a time in a line. Each moment is like a full-frame refresh. Every point reads the previous frame, then the next frame appears.
+In this picture, the update points should not be imagined as taking turns in a long line. The whole system has a shared bookkeeping step: each point is compared against the previous state of its neighborhood, then the next state is worked out.
 
-That matters because it prevents a confusing problem. If one point updated early and its neighbor updated late, the result would depend on update order. This model needs each moment to be a shared update across the whole system.
+That does not mean every region completes the same amount of physical change.
+
+Some regions are cheap to update. Other regions are burdened by heavy, stable patterns and complete less local change inside the same outside interval.
+
+That matters because it prevents a confusing problem. If one point simply updated early and its neighbor updated late, the result would depend on arbitrary update order. This model needs shared bookkeeping across the system, while still allowing local update throughput to vary.
 
 ---
 
@@ -779,6 +783,14 @@ From far away, this looks like a clock running slower.
 
 The clock is not broken. It is updating inside a heavier workload.
 
+There is still a limit.
+
+Because the model is finite, local clocks do not slow by an infinite amount. A heavy region can create extreme update burden, but not endless update burden.
+
+So time slowing is bounded:
+
+> Local clocks can run much slower in heavy regions, but the model does not allow infinite slowdown.
+
 This gives a plain-language version of time slowing:
 
 > Heavy regions make local clocks run slower because local updates cost more.
@@ -977,6 +989,16 @@ That matters because infinities often signal that a model has reached the edge o
 Finite Possibility Mechanics is built around finite budgets, finite updates, and finite change costs.
 
 So even its most extreme objects should still be understood as bounded structures.
+
+The same is true for stability itself.
+
+A pattern can become extremely stable, but not infinitely stable.
+
+It can become extremely hard to change, but not impossible to change in principle.
+
+This gives another rule:
+
+> Maximum stability is still finite.
 
 ---
 
@@ -1229,6 +1251,8 @@ Things that would challenge this model include:
 21. If complex matter cannot be described as compact stability balanced against no-overlap constraints.
 22. If quantum possibility does not fade with interaction, recording, or environment cost.
 23. If the claimed checkpoints cannot be reproduced outside their original tests.
+24. If local clocks can slow without any finite ceiling.
+25. If stability can become literally infinite rather than only extremely high.
 
 The model does not need to be treated as sacred.
 
@@ -1296,6 +1320,10 @@ Here are the main words without the fog:
 
 **Time slowing:** The idea that heavy regions complete fewer local updates because nearby changes carry more burden.
 
+**Local update throughput:** How much physical change a region can complete during a shared bookkeeping step.
+
+**Bounded stability:** The idea that a pattern can become extremely stable, but not infinitely stable.
+
 **Entanglement:** Two visible patterns sharing one deeper state.
 
 **Life:** A self-maintaining pattern that survives by taking in more usable energy than it spends.
@@ -1310,7 +1338,7 @@ Here are the main words without the fog:
 
 **Condensate-like state:** A deeply settled pattern with almost no extra drag beyond its lowest unavoidable cost.
 
-**Synchronous update:** The idea that each new moment is produced from the previous moment as a whole, like a full-frame refresh.
+**Shared bookkeeping step:** The model's way of keeping update order consistent: the system compares each region against the previous state, while local regions may complete different amounts of physical change.
 
 **Checkpoint:** A place where the model claims its picture touches measurable behavior and can be tested.
 
@@ -1346,19 +1374,21 @@ Finite Possibility Mechanics can be summarized like this:
 22. A light hitting a wall is a cheap moving pattern interacting with a stable memory pattern.
 23. Gravity is motion through change-cost gradients.
 24. Time is the order in which the universe updates, and history changes what later updates cost.
-25. Heavy regions make local clocks run slower because local updates cost more.
-26. Entanglement is shared state, not faster-than-light messaging.
-27. Life is a pattern that must stay budget-positive.
-28. Cooperation is useful when shared information saves more energy than it costs.
-29. Unstable patterns decay when they cannot keep paying to remain themselves.
-30. Some patterns stay confined because separation raises change cost too sharply.
-31. Extreme traps should be finite wells, not true infinities.
-32. Reality is one connected system forming many local patterns.
-33. The model connects update cost to real measurements like joules, seconds, meters, mass, and gravity.
-34. Galaxy rotation can be shaped by broad disk-like change-cost fields.
-35. A final settled state would be a pattern with almost no extra drag beyond its lowest unavoidable cost.
-36. The model has checkpoints where its claims touch measurable behavior.
-37. Reality is what the universe can afford to keep physically maintaining.
+25. The system has shared bookkeeping, but local regions can complete different amounts of physical change.
+26. Heavy regions make local clocks run slower because local updates cost more.
+27. Time slowing and stability are bounded; neither becomes literally infinite.
+28. Entanglement is shared state, not faster-than-light messaging.
+29. Life is a pattern that must stay budget-positive.
+30. Cooperation is useful when shared information saves more energy than it costs.
+31. Unstable patterns decay when they cannot keep paying to remain themselves.
+32. Some patterns stay confined because separation raises change cost too sharply.
+33. Extreme traps should be finite wells, not true infinities.
+34. Reality is one connected system forming many local patterns.
+35. The model connects update cost to real measurements like joules, seconds, meters, mass, and gravity.
+36. Galaxy rotation can be shaped by broad disk-like change-cost fields.
+37. A final settled state would be a pattern with almost no extra drag beyond its lowest unavoidable cost.
+38. The model has checkpoints where its claims touch measurable behavior.
+39. Reality is what the universe can afford to keep physically maintaining.
 
 The deepest summary is:
 
