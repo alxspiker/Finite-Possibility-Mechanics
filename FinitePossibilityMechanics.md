@@ -38,6 +38,8 @@ It is made of one connected system that keeps updating itself.
 
 You can imagine this system like a giant invisible grid. Every point on the grid is a tiny **update point**.
 
+![The Update Grid](assets/update-grid-wave.svg)
+
 An update point is:
 
 > A tiny part of reality whose next state depends on its local situation, its available energy, and the cost of changing.
@@ -75,6 +77,8 @@ Nothing solid is being shipped through space like a package.
 
 What moves is **state**.
 
+![State Moves, Not Stuff](assets/state-moves-not-stuff.svg)
+
 State means the current answer to questions like:
 
 > What pattern is here?  
@@ -103,6 +107,8 @@ The first rule is:
 A possibility is not free. If the universe keeps multiple outcomes open, it has to spend energy tracking them.
 
 Imagine trying to play a video game where the computer must calculate every possible move every player could make, forever. Very quickly, the computer would run out of memory or processing power.
+
+![The Universe Has a Budget](assets/universe-budget.svg)
 
 So the system simplifies.
 
@@ -168,8 +174,6 @@ In this plain version, we call that cost **change cost**.
 
 Change cost is the price of updating from one state to another.
 
-![Change Cost Ledger](assets/change-cost-ledger.svg)
-
 The same basic idea appears again and again:
 
 1. **Collapse:** Open possibility becomes too expensive, so the pattern narrows into one recorded result.
@@ -231,7 +235,7 @@ This gives us a simple rule:
 
 > When possibility becomes too expensive, it hardens into memory.
 
-![Possibility Becomes Memory](assets/possibility-to-memory.svg)
+![Possibility Hardens Into Memory](assets/possibility-hardens-memory.svg)
 
 This may be the deeper meaning of physical matter.
 
@@ -270,6 +274,8 @@ Here is the plain-language loop:
 This is the **collapse loop**.
 
 A simple analogy is a phone with a dying battery. When the battery is full, the phone can keep many apps running, refresh the screen constantly, and search for signals. When the battery gets low, it shuts things down, reduces activity, and falls back to simpler modes.
+
+![The Collapse Loop](assets/collapse-loop-battery.svg)
 
 The phone is not making a philosophical decision. It is obeying a budget.
 
@@ -375,6 +381,8 @@ Correction costs energy.
 
 Imagine walking through your house in the dark. If you know where the furniture is, you move smoothly. But if you expect a chair to be somewhere else, you bump into things, stop, adjust, and spend extra effort correcting your path.
 
+![Wrong Expectations Cost Energy](assets/wrong-expectations-cost.svg)
+
 The same idea applies here.
 
 An update point does not have a mind, but it can still carry a local expectation. It can be more prepared for one kind of next state than another.
@@ -422,6 +430,8 @@ Stable does not mean weightless. Stable means the pattern has become hard to cha
 Light does not sit still as heavy memory. It moves. It is a clean, low-cost pattern that can be passed from one part of the universe to the next.
 
 In this model, empty space is not truly empty. It is more like a network of tiny update points passing information around.
+
+![Light and the Double-Slit](assets/light-double-slit.svg)
 
 Light moves through this network at the maximum possible speed because it follows the cheapest available change from one update point to the next.
 
@@ -514,8 +524,6 @@ Finite Possibility Mechanics describes it in a different language:
 
 > Gravity is what happens when motion bends toward lower-cost changes.
 
-![Gravity as a Change-Cost Gradient](assets/gravity-cost-gradient.svg)
-
 A large object, like a planet or star, is a huge stable memory pattern. Because it is stable and persistent, it changes the update costs around it.
 
 Why would moving toward a large stable pattern be lower-cost?
@@ -568,6 +576,8 @@ That means running the same events backward is not just "the same movie in rever
 
 Imagine baking bread. Flour, water, yeast, and heat create a loaf. But the loaf does not naturally turn back into separate flour, water, yeast, and heat. The process wrote history into the structure.
 
+![Time Writes Memory](assets/time-memory.svg)
+
 Finite Possibility Mechanics says time has a direction for a similar reason:
 
 > Once energy has been spent and memory has formed, the later state is not equivalent to the earlier state.
@@ -611,6 +621,8 @@ Finite Possibility Mechanics explains it differently:
 > Entangled particles are not sending messages faster than light. They are two visible ends of one shared underlying state.
 
 Imagine two screens showing the same live document. If the document changes, both screens show the change. The screens did not send a secret message to each other. They were both reading the same source.
+
+![Shared State and Entanglement](assets/shared-state-entanglement.svg)
 
 Entanglement may work like that.
 
@@ -763,6 +775,8 @@ Some regions may be extremely hard to escape.
 
 A black-hole-like region would be a place where change costs are so steep that nearly every local path bends inward or stays trapped.
 
+![Large-Scale Cost Fields](assets/large-scale-cost-fields.svg)
+
 But this model is cautious about infinities.
 
 It does not need a truly infinite pit.
@@ -882,8 +896,6 @@ Many spiral galaxies are more like huge flat disks.
 
 That matters because a disk spreads change cost differently than a sphere.
 
-![Galaxy Rotation and Disk Cost Fields](assets/galaxy-rotation-cost-field.svg)
-
 Near a round object, gravity-like change cost can fall away in a familiar steep pattern. But inside a wide disk, the cost field spreads sideways through the disk.
 
 In plain language:
@@ -923,8 +935,6 @@ If the universe has a finite budget, then it cannot keep wasting energy forever.
 Over time, expensive open possibility tends to collapse into cheaper stable memory.
 
 This raises a huge question:
-
-![The Final Settled State](assets/final-settled-state.svg)
 
 > What happens if this settling process keeps going for an extremely long time?
 

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Wrong Expectations Cost Energy</title>
+  <desc id="desc">An expected path misses the real layout, causing corrections and extra energy cost.</desc>
+  <defs><marker id="arrowG" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"/></marker><marker id="arrowR" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#ef4444"/></marker>
+  <style>.bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}.room{fill:#fff;stroke:#cbd5e1;stroke-width:4;rx:20}.furn{fill:#cbd5e1;stroke:#64748b;stroke-width:4;rx:10}.good{stroke:#0f766e;stroke-width:8;fill:none;marker-end:url(#arrowG)}.bad{stroke:#ef4444;stroke-width:6;fill:none;stroke-dasharray:12 10;marker-end:url(#arrowR)}.corr{stroke:#f59e0b;stroke-width:6;fill:none;marker-end:url(#arrowR)}.label{font:700 25px Arial,sans-serif;fill:#0f172a}.small{font:400 18px Arial,sans-serif;fill:#475569}.tag{fill:#fff7ed;stroke:#f59e0b;stroke-width:3;rx:14}</style></defs>
+  <rect class="bg" width="1200" height="660"/><text x="600" y="58" text-anchor="middle" class="title">Wrong Expectations Cost Energy</text><text x="600" y="91" text-anchor="middle" class="sub">A wrong prior makes the system spend extra effort correcting itself.</text>
+  <rect x="110" y="145" width="980" height="430" class="room"/>
+  <rect x="370" y="260" width="155" height="80" class="furn"/><text x="447" y="310" text-anchor="middle" class="small">chair</text>
+  <rect x="670" y="365" width="190" height="82" class="furn"/><text x="765" y="415" text-anchor="middle" class="small">table</text>
+  <circle cx="180" cy="500" r="20" fill="#14b8a6" stroke="#0f766e" stroke-width="4"/><text x="180" y="545" text-anchor="middle" class="small">start</text>
+  <circle cx="1010" cy="195" r="20" fill="#14b8a6" stroke="#0f766e" stroke-width="4"/><text x="1010" y="240" text-anchor="middle" class="small">goal</text>
+  <path d="M200 490C420 410 610 300 990 205" class="bad"/><text x="470" y="215" text-anchor="middle" class="small" fill="#ef4444">expected path</text>
+  <path d="M200 500C330 465 370 425 410 350C530 355 630 330 695 350C650 420 725 500 875 455C945 360 970 260 998 215" class="good"/>
+  <path d="M410 350C385 378 365 398 345 420" class="corr"/><path d="M695 350C660 375 635 400 620 425" class="corr"/>
+  <rect x="465" y="500" width="270" height="54" class="tag"/><text x="600" y="535" text-anchor="middle" class="label">correction = extra cost</text>
+</svg>

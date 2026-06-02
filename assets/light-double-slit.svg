@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Light and the Double-Slit</title>
+  <desc id="desc">A cheap light pattern moves through update points and keeps both paths open until a detector records one path.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#2563eb"/></marker>
+  <style>.bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:20}.dot{fill:#fff;stroke:#cbd5e1;stroke-width:3}.light{fill:#fef3c7;stroke:#f59e0b;stroke-width:4}.path{stroke:#2563eb;stroke-width:6;fill:none;marker-end:url(#arrow)}.wave{stroke:#2563eb;stroke-width:5;fill:none;stroke-linecap:round}.wall{fill:#334155}.det{fill:#fee2e2;stroke:#ef4444;stroke-width:4;rx:12}.label{font:700 24px Arial,sans-serif;fill:#0f172a}.small{font:400 18px Arial,sans-serif;fill:#475569}</style></defs>
+  <rect class="bg" width="1200" height="700"/><text x="600" y="58" text-anchor="middle" class="title">Light and the Double-Slit</text><text x="600" y="91" text-anchor="middle" class="sub">If both paths can stay open, the pattern behaves like a wave. Recording one path narrows it.</text>
+  <rect x="70" y="130" width="520" height="500" class="panel"/><text x="330" y="180" text-anchor="middle" class="label">Open Paths</text>
+  <g opacity=".8"><circle cx="145" cy="250" r="8" class="dot"/><circle cx="215" cy="250" r="8" class="dot"/><circle cx="285" cy="250" r="8" class="dot"/><circle cx="145" cy="330" r="8" class="dot"/><circle cx="215" cy="330" r="8" class="dot"/><circle cx="285" cy="330" r="8" class="dot"/><circle cx="145" cy="410" r="8" class="dot"/><circle cx="215" cy="410" r="8" class="dot"/><circle cx="285" cy="410" r="8" class="dot"/></g>
+  <circle cx="135" cy="330" r="18" class="light"/><rect x="330" y="220" width="20" height="110" class="wall"/><rect x="330" y="380" width="20" height="110" class="wall"/>
+  <path d="M155 330C230 280 285 255 330 275" class="path"/><path d="M155 330C230 380 285 435 330 435" class="path"/>
+  <path d="M350 275C410 225 500 235 545 300M350 435C410 500 500 490 545 420" class="wave"/><text x="330" y="575" text-anchor="middle" class="small">both possibilities remain active</text>
+  <rect x="650" y="130" width="480" height="500" class="panel"/><text x="890" y="180" text-anchor="middle" class="label">Recorded Path</text>
+  <rect x="830" y="220" width="20" height="110" class="wall"/><rect x="830" y="380" width="20" height="110" class="wall"/><rect x="755" y="245" width="95" height="58" class="det"/><text x="802" y="282" text-anchor="middle" class="small">detector</text>
+  <circle cx="720" cy="330" r="18" class="light"/><path d="M740 330C775 295 805 275 830 275" class="path"/><path d="M850 275C920 280 985 315 1040 355" class="path"/><path d="M740 330C775 390 805 430 830 435" stroke="#cbd5e1" stroke-width="5" fill="none" stroke-dasharray="10 10"/>
+  <text x="890" y="575" text-anchor="middle" class="small">recording one path collapses the open alternatives</text>
+</svg>

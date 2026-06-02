@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">State Moves, Not Stuff</title>
+  <desc id="desc">A crossed-out package contrasts with a pattern being passed from update point to update point.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"/></marker>
+    <style>.bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:20}.bad{stroke:#ef4444;stroke-width:10;stroke-linecap:round}.box{fill:#fee2e2;stroke:#991b1b;stroke-width:5;rx:16}.dot{fill:#fff;stroke:#64748b;stroke-width:4}.on{fill:#14b8a6;stroke:#0f766e;stroke-width:5}.path{stroke:#0f766e;stroke-width:7;fill:none;marker-end:url(#arrow)}.label{font:700 26px Arial,sans-serif;fill:#0f172a}.small{font:400 18px Arial,sans-serif;fill:#475569}</style>
+  </defs>
+  <rect class="bg" width="1200" height="640"/><text x="600" y="58" text-anchor="middle" class="title">State Moves, Not Stuff</text><text x="600" y="91" text-anchor="middle" class="sub">A particle is not a tiny package shipped through space. It is a pattern being handed forward.</text>
+  <rect x="70" y="145" width="470" height="410" class="panel"/><text x="305" y="200" text-anchor="middle" class="label">Not This</text>
+  <rect x="205" y="285" width="170" height="120" class="box"/><path d="M205 325H375M245 285L245 405M335 285L335 405" stroke="#991b1b" stroke-width="4"/><text x="290" y="355" text-anchor="middle" class="label">stuff</text>
+  <path d="M155 245L465 485M465 245L155 485" class="bad"/><text x="305" y="500" text-anchor="middle" class="small">nothing solid is shipped like a package</text>
+  <rect x="660" y="145" width="470" height="410" class="panel"/><text x="895" y="200" text-anchor="middle" class="label">This</text>
+  <path d="M735 355 C815 285 920 285 1035 355" class="path"/>
+  <circle cx="735" cy="355" r="24" class="on"/><circle cx="815" cy="315" r="18" class="on"/><circle cx="895" cy="305" r="24" class="on"/><circle cx="975" cy="320" r="18" class="on"/><circle cx="1035" cy="355" r="24" class="on"/>
+  <circle cx="735" cy="430" r="14" class="dot"/><circle cx="815" cy="430" r="14" class="dot"/><circle cx="895" cy="430" r="14" class="dot"/><circle cx="975" cy="430" r="14" class="dot"/><circle cx="1035" cy="430" r="14" class="dot"/>
+  <text x="895" y="500" text-anchor="middle" class="small">the fixed points pass a state-pattern onward</text>
+</svg>

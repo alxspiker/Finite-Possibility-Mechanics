@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">The Update Grid</title>
+  <desc id="desc">A fixed grid of update points refreshes together while a pattern moves through it like a wave.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}
+      .panel{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:20}.grid{stroke:#dbeafe;stroke-width:2}.dot{fill:#fff;stroke:#64748b;stroke-width:3}
+      .hot{fill:#14b8a6;stroke:#0f766e;stroke-width:4}.warm{fill:#a7f3d0;stroke:#0f766e;stroke-width:3}.label{font:700 24px Arial,sans-serif;fill:#0f172a}
+      .small{font:400 17px Arial,sans-serif;fill:#475569}.badge{fill:#ecfeff;stroke:#0891b2;stroke-width:3;rx:12}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <text x="600" y="58" text-anchor="middle" class="title">The Update Grid</text>
+  <text x="600" y="91" text-anchor="middle" class="sub">The points stay fixed. The state pattern moves.</text>
+  <rect x="70" y="135" width="1060" height="430" class="panel"/>
+  <g>
+    <path d="M140 190H1060M140 250H1060M140 310H1060M140 370H1060M140 430H1060M140 490H1060" class="grid"/>
+    <path d="M160 170V510M230 170V510M300 170V510M370 170V510M440 170V510M510 170V510M580 170V510M650 170V510M720 170V510M790 170V510M860 170V510M930 170V510M1000 170V510" class="grid"/>
+  </g>
+  <g>
+    <circle cx="160" cy="190" r="10" class="dot"/><circle cx="230" cy="190" r="10" class="dot"/><circle cx="300" cy="190" r="10" class="dot"/><circle cx="370" cy="190" r="10" class="warm"/><circle cx="440" cy="190" r="14" class="hot"/><circle cx="510" cy="190" r="10" class="warm"/><circle cx="580" cy="190" r="10" class="dot"/><circle cx="650" cy="190" r="10" class="dot"/><circle cx="720" cy="190" r="10" class="dot"/><circle cx="790" cy="190" r="10" class="dot"/><circle cx="860" cy="190" r="10" class="dot"/><circle cx="930" cy="190" r="10" class="dot"/><circle cx="1000" cy="190" r="10" class="dot"/>
+    <circle cx="160" cy="250" r="10" class="dot"/><circle cx="230" cy="250" r="10" class="dot"/><circle cx="300" cy="250" r="10" class="warm"/><circle cx="370" cy="250" r="14" class="hot"/><circle cx="440" cy="250" r="18" class="hot"/><circle cx="510" cy="250" r="14" class="hot"/><circle cx="580" cy="250" r="10" class="warm"/><circle cx="650" cy="250" r="10" class="dot"/><circle cx="720" cy="250" r="10" class="dot"/><circle cx="790" cy="250" r="10" class="dot"/><circle cx="860" cy="250" r="10" class="dot"/><circle cx="930" cy="250" r="10" class="dot"/><circle cx="1000" cy="250" r="10" class="dot"/>
+    <circle cx="160" cy="310" r="10" class="dot"/><circle cx="230" cy="310" r="10" class="warm"/><circle cx="300" cy="310" r="14" class="hot"/><circle cx="370" cy="310" r="18" class="hot"/><circle cx="440" cy="310" r="22" class="hot"/><circle cx="510" cy="310" r="18" class="hot"/><circle cx="580" cy="310" r="14" class="hot"/><circle cx="650" cy="310" r="10" class="warm"/><circle cx="720" cy="310" r="10" class="dot"/><circle cx="790" cy="310" r="10" class="dot"/><circle cx="860" cy="310" r="10" class="dot"/><circle cx="930" cy="310" r="10" class="dot"/><circle cx="1000" cy="310" r="10" class="dot"/>
+    <circle cx="160" cy="370" r="10" class="dot"/><circle cx="230" cy="370" r="10" class="dot"/><circle cx="300" cy="370" r="10" class="warm"/><circle cx="370" cy="370" r="14" class="hot"/><circle cx="440" cy="370" r="18" class="hot"/><circle cx="510" cy="370" r="14" class="hot"/><circle cx="580" cy="370" r="10" class="warm"/><circle cx="650" cy="370" r="10" class="dot"/><circle cx="720" cy="370" r="10" class="dot"/><circle cx="790" cy="370" r="10" class="dot"/><circle cx="860" cy="370" r="10" class="dot"/><circle cx="930" cy="370" r="10" class="dot"/><circle cx="1000" cy="370" r="10" class="dot"/>
+    <circle cx="160" cy="430" r="10" class="dot"/><circle cx="230" cy="430" r="10" class="dot"/><circle cx="300" cy="430" r="10" class="dot"/><circle cx="370" cy="430" r="10" class="warm"/><circle cx="440" cy="430" r="14" class="hot"/><circle cx="510" cy="430" r="10" class="warm"/><circle cx="580" cy="430" r="10" class="dot"/><circle cx="650" cy="430" r="10" class="dot"/><circle cx="720" cy="430" r="10" class="dot"/><circle cx="790" cy="430" r="10" class="dot"/><circle cx="860" cy="430" r="10" class="dot"/><circle cx="930" cy="430" r="10" class="dot"/><circle cx="1000" cy="430" r="10" class="dot"/>
+  </g>
+  <rect x="145" y="535" width="290" height="54" class="badge"/><text x="290" y="570" text-anchor="middle" class="label">fixed update points</text>
+  <rect x="465" y="535" width="330" height="54" class="badge"/><text x="630" y="570" text-anchor="middle" class="label">moving state pattern</text>
+  <rect x="825" y="535" width="245" height="54" class="badge"/><text x="947" y="570" text-anchor="middle" class="label">shared refresh</text>
+  <text x="600" y="625" text-anchor="middle" class="small">Like pixels refreshing together, except each point stores local reality-state instead of color.</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Shared State and Entanglement</title>
+  <desc id="desc">Two distant visible patterns read from one shared underlying state, without sending messages between them.</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}.screen{fill:#fff;stroke:#334155;stroke-width:5;rx:18}.source{fill:#ccfbf1;stroke:#0f766e;stroke-width:6;rx:20}.wire{stroke:#0f766e;stroke-width:6;fill:none}.no{stroke:#ef4444;stroke-width:7;stroke-linecap:round}.label{font:700 25px Arial,sans-serif;fill:#0f172a}.small{font:400 18px Arial,sans-serif;fill:#475569}.doc{fill:#dbeafe;stroke:#2563eb;stroke-width:4;rx:10}</style></defs>
+  <rect class="bg" width="1200" height="640"/><text x="600" y="58" text-anchor="middle" class="title">Shared State, Not Secret Messaging</text><text x="600" y="91" text-anchor="middle" class="sub">Two visible ends can change together because they share one deeper state.</text>
+  <rect x="120" y="185" width="280" height="180" class="screen"/><rect x="190" y="230" width="140" height="80" class="doc"/><text x="260" y="280" text-anchor="middle" class="label">A</text><text x="260" y="410" text-anchor="middle" class="small">visible pattern</text>
+  <rect x="800" y="185" width="280" height="180" class="screen"/><rect x="870" y="230" width="140" height="80" class="doc"/><text x="940" y="280" text-anchor="middle" class="label">B</text><text x="940" y="410" text-anchor="middle" class="small">visible pattern</text>
+  <rect x="445" y="420" width="310" height="110" class="source"/><text x="600" y="465" text-anchor="middle" class="label">shared underlying state</text><text x="600" y="495" text-anchor="middle" class="small">one source, two displays</text>
+  <path d="M300 365C360 430 410 455 445 465" class="wire"/><path d="M900 365C840 430 790 455 755 465" class="wire"/>
+  <path d="M430 275H770" stroke="#cbd5e1" stroke-width="5" stroke-dasharray="12 12"/><path d="M555 250L645 340M645 250L555 340" class="no"/><text x="600" y="235" text-anchor="middle" class="small">no faster-than-light message between screens</text>
+</svg>

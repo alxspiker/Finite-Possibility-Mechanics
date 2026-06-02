@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">The Universe Has a Budget</title>
+  <desc id="desc">A possibility tree grows until a finite budget meter forces simplification.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#334155"/></marker>
+  <style>.bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:20}.branch{stroke:#2563eb;stroke-width:5;fill:none}.thin{stroke:#93c5fd;stroke-width:3;fill:none}.node{fill:#dbeafe;stroke:#2563eb;stroke-width:3}.meter{fill:#e2e8f0;stroke:#64748b;stroke-width:4;rx:20}.bar{fill:#ef4444;rx:16}.label{font:700 25px Arial,sans-serif;fill:#0f172a}.small{font:400 18px Arial,sans-serif;fill:#475569}.arrow{stroke:#334155;stroke-width:5;fill:none;marker-end:url(#arrow)}</style></defs>
+  <rect class="bg" width="1200" height="660"/><text x="600" y="58" text-anchor="middle" class="title">The Universe Has a Budget</text><text x="600" y="91" text-anchor="middle" class="sub">Keeping every possible future open costs processing and energy.</text>
+  <rect x="70" y="135" width="700" height="475" class="panel"/><text x="420" y="185" text-anchor="middle" class="label">Too Many Open Futures</text>
+  <circle cx="170" cy="335" r="18" class="node"/>
+  <path d="M188 335C260 260 310 235 380 215M188 335C275 310 315 305 390 305M188 335C275 370 315 400 390 445" class="branch"/>
+  <path d="M380 215C455 170 510 165 610 150M380 215C465 215 520 230 630 230M390 305C480 280 540 285 665 285M390 305C480 335 540 350 665 360M390 445C480 430 540 435 665 430M390 445C480 500 540 515 665 525" class="thin"/>
+  <g fill="#dbeafe" stroke="#2563eb" stroke-width="3"><circle cx="610" cy="150" r="12"/><circle cx="630" cy="230" r="12"/><circle cx="665" cy="285" r="12"/><circle cx="665" cy="360" r="12"/><circle cx="665" cy="430" r="12"/><circle cx="665" cy="525" r="12"/></g>
+  <rect x="825" y="190" width="270" height="90" class="meter"/><rect x="842" y="207" width="90" height="56" class="bar"/><text x="960" y="335" text-anchor="middle" class="label">budget drops</text><text x="960" y="365" text-anchor="middle" class="small">memory and processing are finite</text>
+  <path d="M850 410H1090" class="arrow"/><text x="970" y="455" text-anchor="middle" class="label">simplify</text><text x="970" y="485" text-anchor="middle" class="small">fewer paths stay open</text>
+</svg>

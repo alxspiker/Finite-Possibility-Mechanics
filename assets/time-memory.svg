@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Time Writes Memory</title>
+  <desc id="desc">A process writes history into structure, while a heavy region completes fewer local updates.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#334155"/></marker>
+  <style>.bg{fill:#f8fafc}.title{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:400 20px Arial,sans-serif;fill:#475569}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:20}.label{font:700 24px Arial,sans-serif;fill:#0f172a}.small{font:400 18px Arial,sans-serif;fill:#475569}.arrow{stroke:#334155;stroke-width:5;fill:none;marker-end:url(#arrow)}.ing{fill:#fef3c7;stroke:#f59e0b;stroke-width:4}.loaf{fill:#d97706;stroke:#92400e;stroke-width:5}.clock{fill:#e0f2fe;stroke:#0284c7;stroke-width:5}.heavy{fill:#fde68a;stroke:#92400e;stroke-width:6}</style></defs>
+  <rect class="bg" width="1200" height="680"/><text x="600" y="58" text-anchor="middle" class="title">Time Writes Memory</text><text x="600" y="91" text-anchor="middle" class="sub">Later states are not just earlier states played backward.</text>
+  <rect x="70" y="145" width="500" height="430" class="panel"/><text x="320" y="195" text-anchor="middle" class="label">Arrow of Time</text>
+  <circle cx="160" cy="325" r="26" class="ing"/><circle cx="225" cy="300" r="26" class="ing"/><circle cx="225" cy="370" r="26" class="ing"/><text x="205" y="435" text-anchor="middle" class="small">ingredients</text><path d="M285 335H370" class="arrow"/><path d="M400 345C405 285 505 285 510 345C500 410 410 410 400 345Z" class="loaf"/><text x="455" y="435" text-anchor="middle" class="small">history written into structure</text>
+  <rect x="650" y="145" width="480" height="430" class="panel"/><text x="890" y="195" text-anchor="middle" class="label">Heavy Regions Slow Local Updates</text>
+  <circle cx="815" cy="355" r="78" class="heavy"/><text x="815" y="363" text-anchor="middle" class="label">heavy</text>
+  <circle cx="1000" cy="300" r="54" class="clock"/><path d="M1000 300V265M1000 300L1028 318" stroke="#0284c7" stroke-width="6" stroke-linecap="round"/><text x="1000" y="380" text-anchor="middle" class="small">far clock</text>
+  <circle cx="815" cy="490" r="42" class="clock"/><path d="M815 490V465M815 490L830 502" stroke="#0284c7" stroke-width="5" stroke-linecap="round"/><text x="815" y="555" text-anchor="middle" class="small">local clock: fewer ticks</text>
+  <text x="890" y="615" text-anchor="middle" class="small">more burden means fewer completed updates in the same outside interval</text>
+</svg>
