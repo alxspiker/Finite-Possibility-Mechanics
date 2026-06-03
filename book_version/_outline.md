@@ -67,6 +67,41 @@ Purpose:
 - Explain that the goal is not to remove math. It is to put the math in the right order.
 - Establish the book's scientific posture: clear enough to understand, formal enough to test, honest enough to fail.
 
+Reset sequence:
+
+- The preface should deliberately deconstruct the reader's inherited physics picture before booting up the book's framework.
+- Open with the idea that modern physics often teaches the reader to picture:
+  - empty space as a dark container
+  - particles as tiny solid things moving through that container
+  - spacetime as a continuous stretchy fabric
+  - infinities as acceptable endpoints
+  - invisible missing substances or dimensions as normal explanatory patches
+  - the universe as if it had unlimited capacity to process its own state
+- Then tell the reader that this book requires a hard reset:
+  - Do not begin with an empty room.
+  - Do not begin with billiard-ball particles.
+  - Do not begin with continuous geometry as the deepest layer.
+  - Do not begin with infinite divisibility, infinite wells, or infinite computational freedom.
+  - Begin with a blank ledger.
+- Rebuild the first mental image:
+  - Reality is a finite update network.
+  - The resting grid is not a material substance, a void, or a hidden fluid.
+  - An update point is empty capacity: a local zero-state waiting to hold a value.
+  - The points do not fly around; the pattern written into them changes.
+  - There is no object moving through an empty room at the deepest level.
+  - There is a network receiving, holding, rewriting, and paying for state.
+- Establish the first law of the book before any physics examples:
+  - Every possibility costs energy to maintain.
+  - Every state change has a localized transaction fee.
+  - That transaction fee is route cost.
+  - Open alternatives are not free abstractions; they are active burdens on a finite local budget.
+  - Collapse, matter, mass, gravity, and time slowing will later be built from this cost pressure.
+- Tone target:
+  - The reset should be forceful and memorable.
+  - It should feel like clearing RAM before loading a new operating system.
+  - It can criticize inherited assumptions, but it should not sound like a rant against physics as a whole.
+  - The book should challenge the reader's default images while still respecting testability, measurement, and mathematical accountability.
+
 Must include:
 
 - The model is not saying planets are files on a laptop.
