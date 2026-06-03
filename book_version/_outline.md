@@ -257,6 +257,11 @@ Plain-language content:
 - The double-slit experiment becomes a budget question:
   - If both paths remain affordable, wave behavior persists.
   - If which-path information is recorded, the open alternatives narrow.
+- The observation explanation must be exact:
+  - Observation does not require consciousness.
+  - The final screen does not destroy the interference pattern; it is where the particle is recorded anyway.
+  - What matters is whether which-path information is recorded before the particle reaches the screen.
+  - One particle does not show the full interference pattern by itself; the pattern appears statistically over many hits.
 - Quantum possibility fades when interaction drains the budget needed to coordinate alternatives.
 
 Content to include:
@@ -290,13 +295,33 @@ Formal content:
   $$D_{t+1} \le \kappa_t D_t + \xi_t.$$
 - Stationary fixed point:
   $$D^* = \frac{\xi^*}{1-\kappa^*}.$$
+- Theorem 1 numerical verification must include the fallback-sharpness threshold:
+  - $w=0.90$: $\Omega_{late}=0.6159$, $\kappa_{late}=0.6690$, $D^*=0.0302$, hybrid dispersive.
+  - $w=0.99$: $\Omega_{late}=0.8147$, $\kappa_{late}=0.1008$, $D^*=0.0111$, approaching classical.
+  - $w=0.999$: $\Omega_{late}=0.8393$, $\kappa_{late}=0.0307$, $D^*=0.0103$, classicalized.
+  - $w=0.9999$: same saturated classicalized values.
+  - Explain the sharp transition between $w=0.99$ and $w=0.999$ as a thermodynamic phase-transition-like threshold.
 - Lindblad dephasing correspondence:
   $$\rho_{t+1} = \kappa_t \rho_t + (1-\kappa_t)\operatorname{diag}(\rho_t).$$
 - Dephasing rate:
   $$\gamma_t = \frac{1-\kappa_t}{dt}.$$
+- Lindblad numerical verification must include:
+  - 10-path, 600-tick simulation with $dt=0.01$.
+  - RMSE off-diagonal elements: $1.808\times10^{-18}$.
+  - Max absolute difference: $2.776\times10^{-17}$.
+  - Pearson correlation: 1.0000.
+  - Mean $\kappa$: 0.3273.
+  - Final $\kappa$: 0.0.
+  - Final $\gamma$: 100.0.
 - Double-slit probe:
   - Budget-depleting run: final coherence 0.0.
   - No-depletion null: final coherence 1.0.
+- Proposition 3 benchmark table must include:
+  - derived prior: $\Omega_{late}=0.8393$, $\kappa_{late}=0.0307$, classical lock.
+  - fixed prior: $\Omega_{late}=0.8494$, $\kappa_{late}=0.0018$, near-perfect classicalized.
+  - wrong prior: $\Omega_{late}=0.5000$, $\kappa_{late}=1.0000$, dispersive failure.
+  - random prior: $\Omega_{late}=0.5305$, $\kappa_{late}=0.9128$, persistent dissonance.
+  - phase gap $\Delta\kappa=0.9693$.
 
 Important caveats:
 
@@ -370,6 +395,14 @@ Formal content:
   $$\Delta x = c \Delta t.$$
 - Path distance convention:
   $$d_{phys}(N) = (N-1)\Delta x.$$
+- Exact conversion matrix:
+  $$\begin{bmatrix}d_{phys}\\t_{phys}\end{bmatrix}
+  =
+  \begin{bmatrix}c\Delta t&0\\0&\Delta t\end{bmatrix}
+  \begin{bmatrix}N_e\\n_t\end{bmatrix}.$$
+- Node/edge convention:
+  - A path of $N$ nodes has $N-1$ traversed edges.
+  - Keep this convention explicit anywhere lattice distance is translated into SI distance.
 - Local lagged speed:
   $$v(r) = c\frac{\mathcal{L}_{rest}}{\mathcal{L}(r)}.$$
 
@@ -436,6 +469,11 @@ Formal content:
 - Gravity probe measured:
   $$a(r) \propto r^{-1.8726},$$
   within about 6.37 percent of inverse-square over the tested window.
+- Gravity surrogate controls must be preserved:
+  - inverse_r cost-proxy slope $-1.882$, trajectory slope $-1.849$.
+  - inverse_r2_pivot cost-proxy slope $-2.300$, trajectory slope $-1.883$.
+  - exp_pivot cost-proxy slope $-2.127$, trajectory slope $-1.872$.
+  - lorentz_pivot cost-proxy slope $-2.003$, trajectory slope $-1.865$.
 - Disk regularization:
   $$\mathcal{S}_{gal}[\Omega] =
   \int_{disk}
@@ -457,6 +495,20 @@ Formal content:
   +
   \frac{\Delta\Omega_d R_d}{(r+r_c)(r+r_c+R_d)}
   \right].$$
+- Executable galaxy branch setup:
+  - $R_c=2$ kpc.
+  - $r_c=0.3$ kpc.
+  - $R_d=120$ kpc.
+  - $V_\infty=220$ km/s.
+  - $\sqrt{\Gamma\Delta\Omega_c}=100$ km/s.
+  - Reference disk mass $M_{disk}=6\times10^{10}M_\odot$.
+  - Electron-parity anchor $N_{bit-eq}=1.453132512\times10^9$ bits.
+- Synthetic reference speeds:
+  - $v(3)=214.87$ km/s.
+  - $v(5)=213.97$ km/s.
+  - $v(12)=207.31$ km/s.
+  - $v(20)=201.96$ km/s.
+  - $v(30)=195.60$ km/s.
 - Mass-energy map:
   $$m^{MeV}_{topo} =
   \frac{(\mathcal{C}_{topo}/E_{\max})\mathcal{J}}
@@ -471,8 +523,15 @@ Important quantitative checkpoints:
   - $g_{far} \propto r^{-1.9215}$
   - flat-branch spread about 8.92 percent
   - eventual rollover explicit
+  - $v(240\text{ kpc})/v(30\text{ kpc})=0.6487$
+  - reduced aggregation bridge monotone over $10^9$ to $2\times10^{11}M_\odot$
+  - $\Delta\Omega_d$ respects clip ceiling $\le 0.35$
 - Electron-scale mass bridge:
   - Point-Pair branch lands within about 1.97 percent of electron mass at the chosen scale.
+  - Baseline Point-Pair mass $1.1523\times10^{-5}$ MeV at $N_{bit-eq}=32768$ bits.
+  - Electron target scale factor $44,346$.
+  - Forward high-dimension run at HDC dimension $45,410,391$ gives $m_{Point-Pair}=0.5009$ MeV.
+  - Up-quark extrapolation: $N_u=6.256\times10^9$ bits, $195.5$ million HDC dimensions, ratio $N_u/N_e=4.305$.
 
 Important caveats:
 
@@ -480,6 +539,10 @@ Important caveats:
 - The disk branch is a continuum extension, not the original 3D point-source theorem.
 - SPARC/RAR-wide observational fitting is still open unless separately supplied.
 - $\Gamma$ remains calibration-dependent until derived from $G$, $c$, and $h$ through the action shell integration.
+- The falsifiable galaxy discriminator is geometric:
+  - flat branch length should track effective daemon-sheet radius and thickness, not a spherical halo.
+  - thinner, colder disks should preserve flat branches farther out.
+  - puffier or strongly warped disks should decline sooner at similar baryonic mass.
 
 #### Part III: The Translation
 
@@ -545,12 +608,22 @@ Formal content:
   - Near core: 1366 ticks per 10,000 macro-ticks.
   - Deep space: 2938 ticks per 10,000 macro-ticks.
   - Near-core clock runs at about 46.5 percent of deep-space rate.
+  - Near core values: $\Omega=0.7333$, route cost $0.1817$, dilation factor $0.4649$.
+  - Deep-space values: $\Omega=0.5088$, route cost $0.1031$, dilation factor $1.0000$.
+- Consistency check:
+  - Measured cost ratio: $0.1817/0.1031=1.763$.
+  - Simple reciprocal tick prediction: $1/1.763=0.567$.
+  - Measured tick ratio: $1366/2938=0.465$.
+  - Explain the mismatch as full runtime feedback: faster depletion, more fallback, and repeated low-energy overhead near the core.
 - Action ceiling:
   $$\mathcal{L}_{max} = 3.285.$$
 - Lag ceiling:
   $$\gamma_{ax,max} = \frac{\mathcal{L}_{max}}{\mathcal{L}_{rest}} = 31.8739.$$
 - Tick floor:
   $$\dot{n}_{min}/\dot{n}_{rest} = 0.03137.$$
+- Velocity-equivalent comparison:
+  $$\beta_{equiv,max}=\sqrt{1-\frac{1}{\gamma_{ax,max}^2}}=0.999508.$$
+  - Mention CERN muon-storage-ring comparison point $\gamma\approx29.3$ as a comparison, not a completed equivalence proof.
 
 Important caveats:
 
@@ -630,6 +703,16 @@ Formal/probe content:
   - Steric exclusion forbids same-route pileup.
   - Communication overhead makes crowding expensive.
   - Shell closure happens when inner-shell marginal crowding cost exceeds next-shell radial penalty.
+- Angular-mode capacity extension to repair before drafting:
+  - Point-Pair twofold degeneracy from oriented CGA5 2-blade orientation $\pm B_{ab}$.
+  - Angular routing mode count intended as $G_n=n^2$.
+  - Proposed shell capacity intended as $C_n=2n^2$, yielding $2,8,18,32,\dots$.
+  - Treat as proposed/repair-needed until the proof is clean and the damaged notation is rebuilt.
+- Electronegativity bridge:
+  - An unfilled shell acts as a low-cost viscosity sink.
+  - Electron acceptance potential is the marginal cost $\mu_A^{Ax}=\partial \mathcal{L}^{(A)}_{val}/\partial N_v$.
+  - Map electronegativity as $\mathrm{EN}^{Ax}_A\propto-\mu_A^{Ax}$.
+  - Full shells become inert because marginal cost jumps to the next shell.
 
 Important caveats:
 
@@ -765,8 +848,14 @@ Formal content:
 - Landauer floor:
   $$Q_{\min}=k_BT\ln 2.$$
 - Erasure probe:
+  - $N_{bit-eq}=10^6$, $T=300$ K.
+  - $\mathcal{J}=2.8710\times10^{-15}$ J.
+  - Forced 50-tick erasure from $p=0.5$ to $p=0.999$.
   - Total normalized route cost: 2.2952.
+  - Total joules dissipated: $6.5896\times10^{-15}$ J.
+  - Landauer minimum floor: $2.8710\times10^{-15}$ J.
   - Thermodynamic overhead ratio: 2.2952x above Landauer floor.
+  - Engineering overhead above floor: $2.2952-1=1.2952$.
 
 Important caveats:
 
@@ -841,8 +930,27 @@ Formal content:
 - Safe cache ceiling:
   - Preserve the full algebraic formula in the drafted chapter.
   - Explain that cache growth is safe only when prior mismatch is already small.
+- Catastrophic consolidation:
+  - Define it as a low-energy event increasing $b_t$, pulling $p_t$ toward a bad prior, raising next-step mismatch cost, and trapping the daemon in repeated fallback.
+  - Avoidance conditions:
+    - trigger is infrequent: $\mathcal{L}_{i,t}\not\gg r_i$.
+    - recovery exits the low-energy band: $E^{-}_{i,t+1}+\rho E_{\max}>\varepsilon E_{\max}$.
+    - post-consolidation cost is homeostatic: $\mathcal{L}^{post}_{i,t+1}<r_i$.
 - Cooperation criterion:
   - Communication is valid only when joint mismatch savings exceed signaling overhead.
+- Required daemon tick order:
+  - Sense local environment; estimate $\tau_{i,t}$, replenishment $r_i(\mathbf{x}_{i,t})$, and confidence $q_{i,t}$.
+  - Communicate only with neighbors satisfying the cooperation criterion.
+  - Recompute $H_t$, $S_t$, $\Omega_t$, and $\kappa_t$ from current $p_{i,t}$.
+  - Update coherence.
+  - Select next local route by minimizing predicted $\mathcal{L}_{i,t}$ over the 3D neighborhood.
+  - Update energy.
+  - If low-energy, apply fallback: blend $p$, ratchet $b$, recover $E$.
+  - Enforce safe cache ceiling.
+- High-viscosity survival regime:
+  - Stable survival at $\Omega\to0.85$ is correctly aligned memory-heavy operation, not maximum exploration.
+  - Require high $\Omega$, low $\kappa$, bounded $D$, small $|\pi-\tau|$, and $\mathcal{L}<r$.
+  - Use $D_i^*=\xi_i^*/(1-\kappa_i^*)$ to keep dispersion cost below replenishment surplus.
 - Mean-field truth target proposal:
   $$\tau_{i,t} \to \bar{\tau}_{i,t}
   =
@@ -924,6 +1032,23 @@ Important caveats:
 - The reachability part requires assumptions A1-A9.
 - Spontaneous condensate formation without forced cooling is still open.
 - Material blueprint should remain generic unless validated material candidates are added later.
+- Preserve the material design targets:
+  - candidate-composition-agnostic composition prior.
+  - periodic, edge-stable framework topology.
+  - heptagonal ring insertions as negative-curvature defects.
+  - low-mismatch coordination motifs.
+  - no open edges and full periodic closure.
+  - minimized transport mismatch.
+  - tube diameter large enough to avoid curvature-driven band gap opening.
+  - low defect density consistent with long-range $\kappa_t\to0$ behavior.
+- Preserve the topology hierarchy:
+  - 2D local graphene sheet: edge states, in-plane anisotropy, finite boundary.
+  - 1D toroidal closed channel: loop closure along one axis, quasi-1D.
+  - 3D generic periodic framework: triply periodic, edge-stable, isotropic.
+- Preserve the materials smoothness constraint:
+  - abrupt crystallographic junctions are action-expensive.
+  - smooth compositional gradients and uniform defect distributions are preferred.
+  - defects should be distributed rather than concentrated at boundaries.
 
 #### Part III: The Translation
 
@@ -985,12 +1110,29 @@ Formal content:
   $$\Delta x=c\Delta t.$$
 - Point-Pair carrier:
   $$r_{SI}=\alpha_{PP}c\Delta t.$$
+- Hardware benchmark instantiation:
+  - Workload: one `AxCore_RouteCandidateGeometric` Point-Pair route step.
+  - HDC dimension: $45,410,391$.
+  - Actual bit-equivalent capacity: $1,453,132,512$.
+  - Measured wall-clock tick: $\Delta t_{impl}=2.5243706$ s.
+  - Point-Pair carrier coefficient: $\alpha_{PP}=702.628349$.
+  - $\mathcal{J}=4.171912759173406\times10^{-12}$ J.
+  - $\Delta x_{impl}=7.567872670769348\times10^8$ m.
+  - $\Delta Q_{t,impl}=8.025880772385361\times10^{-14}$ J.
+  - $P_{impl}=3.179359152885619\times10^{-14}$ W.
+  - $r_{carrier,impl}=5.317401880104887\times10^{11}$ m, about $3.5545$ AU.
+  - Explain the AU-scale carrier as a desktop-throughput artifact, not a universal particle radius.
 - Universal tick:
   $$\Delta t_{univ}=\frac{h}{m_ec^2\alpha_{PP}}\approx1.152\times10^{-23}\text{ s}.$$
 - Universal lattice constant:
   $$\Delta x_{univ}=c\Delta t_{univ}\approx3.453\times10^{-15}\text{ m}.$$
 - Electron Compton alignment:
   $$r_{univ}=\alpha_{PP}\Delta x_{univ}=\lambda_e.$$
+- Universal calibration values:
+  - Electron rest energy $E_{rest}=m_ec^2\approx8.187\times10^{-14}$ J.
+  - Engine frequency about $8.68\times10^{22}$ ticks/s, or $86.8$ ZHz.
+  - Electron Compton wavelength $\lambda_e\approx2.426\times10^{-12}$ m.
+  - Carrier radius $\lambda_e\approx2.43$ pm.
 - Gravitational closure:
   $$G=\frac{\hbar c}{m_P^2}.$$
 - Mass ladder:
@@ -1006,6 +1148,11 @@ Important caveats:
 - Deriving $c$ from intrinsic action/Landauer limits remains open.
 - Deriving $\Gamma(G,c,h)$ remains open.
 - Full Standard Model topology identification remains open.
+- Precision note:
+  - At $\Delta t_{univ}\sim10^{-23}$ s, float64 retains direct multiplicative precision for tick-scale values.
+  - Viscosity values $\Omega\in[0.50,0.85]$ are order-unity and do not lose precision from the small tick scale.
+  - Long-horizon sums over $N>10^{15}$ ticks should use Kahan compensated summation or quad-precision accumulators.
+  - CGA5 multivector operations must ensure $c$, $h$, and $G$ definitions do not inject precision drift.
 
 #### Part III: The Translation
 
@@ -1094,6 +1241,33 @@ Quantitative probes to list:
   - Life as metabolic routing loop.
   - VSL cavity / mode exclusion.
   - Boson sampling / thermodynamic fallback.
+
+Full falsifiability checklist to include:
+
+- Possibility can stay open forever without any cost.
+- Information processing has no physical energy cost.
+- Quantum collapse has nothing to do with energy, interaction, or recording cost.
+- Gravity cannot be described in any way as motion through a change-cost gradient.
+- Stable matter does not behave like information that resists being overwritten.
+- Event order does not matter for physical system evolution.
+- The model cannot produce predictions beyond familiar digital-physics ideas.
+- Predictions cannot be connected to ordinary units.
+- Time-order overhead disappears under better tests.
+- Gravity-like falloff cannot be reproduced outside a narrow artificial setup.
+- Mass-scale calibration fails against wider particle sets.
+- Living systems cannot be described as budget-positive self-maintaining patterns.
+- Unstable patterns do not decay toward cheaper arrangements under finite budget.
+- Bound patterns can always be separated without rising change cost.
+- Black-hole-like regions require true infinities rather than extreme finite wells.
+- Disk-shaped galaxy cost fields cannot reproduce broad rotation flattening.
+- Condensate-like final state cannot be reached even when mismatch, noise, and unnecessary possibility are driven toward zero.
+- Wrong memory cannot trap a system in false stability under low-budget conditions.
+- Sharp jumps are not more expensive than smooth neighboring changes.
+- Complex matter cannot be described as compact stability balanced against no-overlap constraints.
+- Quantum possibility does not fade with interaction, recording, or environment cost.
+- Claimed checkpoints cannot be reproduced outside their original tests.
+- Local clocks can slow without any finite ceiling.
+- Stability can become literally infinite rather than only extremely high.
 
 Open frontiers to preserve:
 
