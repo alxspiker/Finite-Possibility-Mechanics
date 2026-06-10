@@ -432,7 +432,7 @@ with $E_t$ as budget gate and $e(B) = (1+B)^{-3/4}$ as the conditional depletion
 
 The system evolves by minimizing a per-tick cost (Lagrangian) composed of three terms:
 
-$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t| + \eta|\nabla \tau_t|.$$
+$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
 
 **Semantic cost** — the cost of being incoherent and innovative:
 
@@ -776,7 +776,7 @@ $$\tau_{i,t} \to \bar{\tau}_{i,t} = \frac{\sum_{j \in \mathcal{N}(i)} w_j \pi_{j
 
 where $\mathcal{N}(i)$ is the local neighborhood and $w_j$ are viscosity-weighted coupling strengths. Under this redefinition, accuracy is not matching an objective external reality but achieving **resonance with the most massive local viscosity sink** (consensus cache). A daemon whose prior $\pi_t$ misaligns with the local network's $\bar{\tau}_t$ suffers geometric mismatch cost, keeping the ledger closed.
 
-**Domain Wall Leak and Consensus Gradients:** If $\tau_t$ is redefined locally as a mean-field consensus, spatial boundaries between differing consensus zones will induce catastrophic geometric cost spikes. To prevent infinite consolidation loops at these boundaries, the core Lagrangian explicitly incorporates a consensus gradient penalty $\eta|\nabla \tau_t|$. To preserve the sub-1MB engine performance budget, this gradient is evaluated purely via local nearest-neighbor queries, strictly forbidding non-local spatial memory access.
+**Domain Wall Leak and Consensus Gradients:** If $\tau_t$ is redefined locally as a mean-field consensus, spatial boundaries between differing consensus zones will induce catastrophic geometric cost spikes. To prevent infinite consolidation loops at these boundaries, the extended multi-daemon Lagrangian (Section 22) explicitly incorporates a consensus gradient penalty $\eta|\nabla \bar{\tau}_{i,t}|$. To preserve the sub-1MB engine performance budget, this gradient cannot be evaluated dynamically mid-tick; it must be pre-computed via a contiguous Structure of Arrays (SoA) gather pass to prevent L1 cache coherency destruction.
 
 **Current status:** Until $\tau_t$ is formally derived as a network aggregate, the present model assumes a **localized open-system boundary** in which the truth target represents coupling to environmental degrees of freedom outside the daemon's own state vector. This is standard thermodynamic practice (cf. Lindblad master equation with external bath), but full endogenous closure remains an open architectural goal.
 
@@ -965,7 +965,7 @@ This is opposite to naive intuition. A low-viscosity pocket is a cost hill, not 
 
 Sections 13.1–13.4 should be read as a **3D central-cache probe**. A spiral galaxy is not that geometry. A disk galaxy is much closer to a thin 2D daemon sheet embedded in 3D, with viscosity support spread laterally across the disk by the same smoothness pressure already present in the Finite Possibility Mechanics action:
 
-$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t| + \eta|\nabla \tau_t|.$$
+$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
 
 In a coarse-grained stationary disk surrogate, replace the absolute regularizer by its smooth quadratic envelope and minimize
 
@@ -1434,13 +1434,15 @@ $$B_i = \frac{g_{\text{bar},i}}{a_{\text{cap}}}.$$
 
 ## 19. The CMB Density Gate and Ledger Inertia
 
-**Ledger Inertia Theorem.** The universe must expend thermodynamic budget not only to render the spatial baryons, but to track the $4 \times 4$ covariance/pairwise interactions of a 4D causal update tensor. The ratio of the invisible causal routing overhead ($\rho_{\text{ledger}}$) to the visible spatial matter ($\rho_b$) is governed by the squared dimension of the causal tensor over the spatial dimensions.
+**Ledger Inertia Theorem.** The universe must expend thermodynamic budget not only to render the spatial baryons, but to track the $4 \times 4$ covariance/pairwise interactions of a 4D causal update tensor. The baseline theoretical ratio of the invisible causal routing overhead ($\rho_{\text{ledger}}$) to the visible spatial matter ($\rho_b$) is evaluated at the **equipartition limit**, governed by the squared dimension of the causal tensor over the spatial dimensions.
 
-**The density ratio:**
+**The equipartition density ratio:**
 
-$$\boxed{\frac{\rho_{\text{ledger}}}{\rho_b} = \frac{d_{\text{causal}}^2}{d_{\text{space}}} = \frac{4^2}{3} = \frac{16}{3} \approx 5.333.}$$
+$$\boxed{\frac{\rho_{\text{ledger}}}{\rho_b} \approx \frac{d_{\text{causal}}^2}{d_{\text{space}}} = \frac{4^2}{3} = \frac{16}{3} \approx 5.333.}$$
 
-This yields an error of $< 0.5\%$ against the Planck 2018 observed ratio of $\Omega_c/\Omega_b \approx 5.357$ (Planck Collaboration, 2020).
+This static dimensional ratio yields an error of $< 0.5\%$ against the Planck 2018 observed ratio of $\Omega_c/\Omega_b \approx 5.357$ (Planck Collaboration, 2020). However, the causal energy-depletion law ($e(B) = (1+B)^{-3/4}$) fundamentally breaks equipartition by shrinking off-diagonal temporal channels. Therefore, the true physical density ratio is a dynamic integral of the throughput tensor trace over the depletion regime:
+
+$$\rho_{\text{ledger}} \propto \int \operatorname{tr}(\mathcal{R}) e_t \, dt$$
 
 ---
 
@@ -1590,6 +1592,7 @@ $$
 \underbrace{c_0 + w_D D_{i,t+1} + w_I I_{i,t}}_{\mathcal{C}^{\text{sem}}}
 + \underbrace{w_T|p_{i,t+1} - \tau_{i,t}| + w_A b_{i,t}^{\gamma}|\pi_{i,t} - \tau_{i,t}|(1+4q_{i,t})}_{\mathcal{C}^{\text{geo}}}
 + \lambda|\Delta\Omega_{i,t}|
++ \eta|\nabla \bar{\tau}_{i,t}|
 + \chi^{\text{move}}_{i,t}
 + \chi^{\text{comm}}_{i,t},
 $$
@@ -1673,6 +1676,7 @@ Communication is not social in a loose sense. It is a cost-lowering synchronizat
 
 A full daemon tick proceeds in this exact order:
 
+0. **SoA Consensus Gather:** Compute $\nabla \bar{\tau}_{i,t}$ as an aligned array operation across the neighborhood, caching the result to prevent mid-tick cache misses.
 1. **Sense** local environment; estimate $\tau_{i,t}$, $r_i(\mathbf{x}_{i,t})$, and $q_{i,t}$.
 2. **Communicate** priors only with neighbors satisfying the pairwise cooperation criterion.
 3. **Recompute** $H_t, S_t, \Omega_t, \kappa_t$ from current $p_{i,t}$.
