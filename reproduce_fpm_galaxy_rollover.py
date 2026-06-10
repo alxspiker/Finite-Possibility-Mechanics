@@ -2,15 +2,30 @@ import argparse
 import numpy as np
 import os
 import csv
-import json
+import hashlib
+import subprocess
 
 # ==========================================
 # Finite Possibility Mechanics Harness
 # Executable Falsification Blade
+# Script Version: v1.1-Falsification
 # ==========================================
 
-# Core Constants
 G_CONST = 4.3009e-6  # kpc (km/s)^2 / M_sun
+
+def get_git_revision_hash():
+    try:
+        return subprocess.check_output(['git', 'rev-parse', 'HEAD'], stderr=subprocess.STDOUT).decode('ascii').strip()
+    except Exception:
+        return "UNKNOWN_COMMIT (Not a git repository or git not installed)"
+
+def hash_file(filepath):
+    """Generate SHA-256 hash of the input structural data file to guarantee lock."""
+    h = hashlib.sha256()
+    with open(filepath, 'rb') as file:
+        while chunk := file.read(8192):
+            h.update(chunk)
+    return h.hexdigest()
 
 def fpm_v(r, R_c, r_c, R_d, V_inf, V_core):
     """
@@ -25,17 +40,18 @@ def fpm_v(r, R_c, r_c, R_d, V_inf, V_core):
 
 # ==========================================
 # Baseline Evaluation Hooks
+# (To be invoked during the separate EVALUATION phase)
 # ==========================================
 def evaluate_baryon_newtonian(r, mass_profile):
-    """Placeholder hook for strictly Newtonian (baryon-only) predictions."""
+    """Reserved for future evaluation script. Must compute standard Newton gravity from baryon map."""
     pass
 
 def evaluate_mond(r, mass_profile, a0):
-    """Placeholder hook for Modified Newtonian Dynamics (MOND) interpolation predictions."""
+    """Reserved for future evaluation script. Must compute standard MOND interpolation."""
     pass
 
 def evaluate_nfw_halo(r, m200, c200):
-    """Placeholder hook for Navarro-Frenk-White (NFW) dark matter halo predictions."""
+    """Reserved for future evaluation script. Must compute standard NFW halo fit."""
     pass
 
 # ==========================================
@@ -43,8 +59,8 @@ def evaluate_nfw_halo(r, m200, c200):
 # ==========================================
 def generate_falsification_target(name, R_c, r_c, R_d, V_inf, V_core):
     """
-    Generates the strict, testable far-field rollover falsification target for a given galaxy.
-    Does NOT require or use observed far-field velocity data.
+    Generates the strict, testable far-field rollover falsification target.
+    GUARANTEE: Does NOT require, read, or use observed far-field velocity data.
     """
     v30 = fpm_v(30, R_c, r_c, R_d, V_inf, V_core)
     v240 = fpm_v(240, R_c, r_c, R_d, V_inf, V_core)
@@ -54,43 +70,54 @@ def generate_falsification_target(name, R_c, r_c, R_d, V_inf, V_core):
     far_field = np.linspace(240, 2400, 100)
     slope = np.polyfit(np.log(far_field), np.log(fpm_v(far_field, R_c, r_c, R_d, V_inf, V_core)), 1)[0]
     
-    # Establish prospective failure criteria
-    acceptable_slope_band = (-0.60, -0.40) # Must align with Keplerian decline -0.5
-    acceptable_ratio_band = (ratio - 0.1, ratio + 0.1) # Must exhibit the physical amplitude drop
+    acceptable_slope_band = (-0.60, -0.40) 
+    acceptable_ratio_band = (ratio - 0.1, ratio + 0.1) 
     
     return {
         "Galaxy": name,
         "Disk Scale (R_d)": R_d,
-        "Expected Rollover Radius": R_d * 2, # Begins significant decline past ~2 R_d
+        "Expected Rollover Radius": R_d * 2, 
         "Predicted v(240)/v(30) Ratio": ratio,
         "Predicted Far-Field Slope": slope,
         "Failure Criteria (Slope)": acceptable_slope_band,
-        "Failure Criteria (Ratio)": acceptable_ratio_band
+        "Failure Criteria (Ratio)": acceptable_ratio_band,
+        "Parameters": f"R_c={R_c}, r_c={r_c}, R_d={R_d}, V_inf={V_inf}, V_core={V_core}"
     }
 
+def print_metadata(input_hash=None):
+    print("\n==============================================")
+    print("FPM PROSPECTIVE PREDICTION INFRASTRUCTURE")
+    print("==============================================")
+    print(f"Script Version : v1.1-Falsification")
+    print(f"Git Commit Hash: {get_git_revision_hash()}")
+    if input_hash:
+        print(f"Input File Hash: {input_hash} (SHA-256)")
+    print("Constraint     : ZERO observed far-field velocity data used in this prediction pass.")
+    print("==============================================\n")
+
 def run_synthetic_demo():
-    print("=== FPM SYNTHETIC DEMO MODE ===")
-    print("Generating pure prospective prediction targets without far-field data fitting.\n")
+    print_metadata()
+    print("=== SYNTHETIC DEMONSTRATOR MODE ===")
     
-    # Synthetic Galaxy (e.g. NGC 3198 structural analog)
-    target = generate_falsification_target("SYNTH-3198", 2.0, 0.3, 120.0, 220.0, 100.0)
+    target = generate_falsification_target("SYNTHETIC-MW/NGC3198-ANALOG", 2.0, 0.3, 120.0, 220.0, 100.0)
     
+    print(f"[!] Parameter Freeze Metadata: {target['Galaxy']} [{target['Parameters']}]\n")
     print("| Galaxy | Baryonic Disk Scale | Predicted Rollover Radius | Predicted v(240)/v(30) | Predicted Far-Field Slope | Failure Condition (Slope) | Failure Condition (Ratio) |")
     print("|--------|--------------------:|--------------------------:|-----------------------:|--------------------------:|--------------------------:|--------------------------:|")
-    print(f"| {target['Galaxy']} | {target['Disk Scale (R_d)']:.1f} kpc | ~{target['Expected Rollover Radius']:.1f} kpc | {target['Predicted v(240)/v(30) Ratio']:.4f} | {target['Predicted Far-Field Slope']:.4f} | Not in {target['Failure Criteria (Slope)']} | Not in ({target['Failure Criteria (Ratio)'][0]:.4f}, {target['Failure Criteria (Ratio)'][1]:.4f}) |")
+    print(f"| {target['Galaxy']} | {target['Disk Scale (R_d)']:.1f} kpc | ~{target['Expected Rollover Radius']:.1f} kpc | {target['Predicted v(240)/v(30) Ratio']:.4f} | {target['Predicted Far-Field Slope']:.4f} | Not in ({target['Failure Criteria (Slope)'][0]:.2f}, {target['Failure Criteria (Slope)'][1]:.2f}) | Not in ({target['Failure Criteria (Ratio)'][0]:.4f}, {target['Failure Criteria (Ratio)'][1]:.4f}) |")
     
-    print("\n[!] Parameter Freeze Metadata: SYNTH-3198 [R_c=2.0, r_c=0.3, R_d=120.0, V_inf=220.0, V_core=100.0]")
-    print("[!] Action: FPM prediction is fully locked. Awaiting far-field observations or weak-lensing data for empirical execution.")
+    print("\n[!] Action: Prospective FPM prediction is fully locked. Awaiting independent empirical evaluation.")
 
 def run_real_predictions(input_file):
-    print("=== FPM REAL PREDICTION MODE ===")
-    print(f"Loading locked structural input data from: {input_file}")
-    
     if not os.path.exists(input_file):
         print(f"\n[ERROR] File not found: {input_file}")
-        print("To run the coronation test, you must provide a locked CSV of baryonic profiles.")
-        print("Required CSV columns: Galaxy_Name, R_c, r_c, R_d, V_inf, V_core")
         return
+
+    file_hash = hash_file(input_file)
+    print_metadata(input_hash=file_hash)
+    
+    print("=== REAL PREDICTION PIPELINE ===")
+    print(f"Loading locked structural input data from: {input_file}")
 
     targets = []
     with open(input_file, mode='r') as file:
@@ -106,13 +133,12 @@ def run_real_predictions(input_file):
             )
             targets.append(target)
             
-    print("\n| Galaxy | Baryonic Disk Scale | Predicted Rollover Radius | Predicted v(240)/v(30) | Predicted Far-Field Slope | Failure Condition (Slope) |")
-    print("|--------|--------------------:|--------------------------:|-----------------------:|--------------------------:|--------------------------:|")
+    print("\n| Galaxy | Baryonic Disk Scale | Predicted Rollover Radius | Predicted v(240)/v(30) | Predicted Far-Field Slope | Failure Condition (Slope) | Parameters |")
+    print("|--------|--------------------:|--------------------------:|-----------------------:|--------------------------:|--------------------------:|:-----------|")
     for t in targets:
-        print(f"| {t['Galaxy']} | {t['Disk Scale (R_d)']:.1f} kpc | ~{t['Expected Rollover Radius']:.1f} kpc | {t['Predicted v(240)/v(30) Ratio']:.4f} | {t['Predicted Far-Field Slope']:.4f} | Not in {t['Failure Criteria (Slope)']} |")
+        print(f"| {t['Galaxy']} | {t['Disk Scale (R_d)']:.1f} kpc | ~{t['Expected Rollover Radius']:.1f} kpc | {t['Predicted v(240)/v(30) Ratio']:.4f} | {t['Predicted Far-Field Slope']:.4f} | Not in ({t['Failure Criteria (Slope)'][0]:.2f}, {t['Failure Criteria (Slope)'][1]:.2f}) | {t['Parameters']} |")
         
-    print("\n[!] Predictions locked. Outputting execution artifacts...")
-    # Reserved for future logging of prediction JSON and Git commit hashes
+    print("\n[!] Structural prospective predictions generation complete. Evaluation pipeline must be run completely separately.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="FPM Galactic Rollover Falsification Harness")
