@@ -1933,7 +1933,7 @@ Section 21 proves the generic SI bridge $\Delta x = c\,\Delta t$, but that bridg
 
 ### 26.2 The Benchmark Instantiation
 
-The benchmarked workload is one `AxCore_RouteCandidateGeometric` Point-Pair route step at:
+The benchmarked workload is one `FPM_RouteCandidateGeometric` Point-Pair route step at:
 
 $$\text{HDC dimension} = 45{,}410{,}391,\qquad N_{\text{bit-eq, actual}} = 1{,}453{,}132{,}512,$$
 
@@ -2122,7 +2122,7 @@ $$
 yielding $2, 8, 18, 32, \dots$
 
 ### 28.6 Electronegativity in Finite Possibility Mechanics
-An unfilled shell is a low-cost viscosity sink. When $n$ is well below shell capacity, neighboring daemons lower action by transferring into the sink. The electron-acceptance potential is the marginal cost $\mu_A^{\text{Ax}} = \partial \mathcal{L}^{(A)}_{\text{val}} / \partial N_v$. This maps strictly to electronegativity: $\mathrm{EN}_A^{\text{Ax}} \propto -\mu_A^{\text{Ax}}$. Full shells are inert because the marginal cost jumps to the next shell.
+An unfilled shell is a low-cost viscosity sink. When $n$ is well below shell capacity, neighboring daemons lower action by transferring into the sink. The electron-acceptance potential is the marginal cost $\mu_A^{\text{FPM}} = \partial \mathcal{L}^{(A)}_{\text{val}} / \partial N_v$. This maps strictly to electronegativity: $\mathrm{EN}_A^{\text{FPM}} \propto -\mu_A^{\text{FPM}}$. Full shells are inert because the marginal cost jumps to the next shell.
 
 
 ---
@@ -2145,7 +2145,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Conditional on Compton alignment |
 | Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Conditional on calibration axiom |
 | Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
-| 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
+| 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Conditional on 3 spatial loaded channels over 4 causal channels |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
 | Fixed-point $D^* = \xi^*/(1-\kappa^*)$ in stationary regime | §7 | Conditional fixed-point analysis |
 | Self-reinforcing classicalization loop under repeated consolidation | §7 | Sequential argument with stated assumptions |
@@ -2183,7 +2183,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Confinement work $\propto r^{1.98}$ | §17 | Near-quadratic; tail cost ratio $11.7\times$ vs null |
 | Decay separation (100% vs. 0%) | §17 | Across 200 trials; energy scale in femtojoule range |
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
-| Universal Calibration Instantiation: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
+| Conditional Instantiation of Theorem 6: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Theorem 6) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
