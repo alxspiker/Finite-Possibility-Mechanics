@@ -432,7 +432,7 @@ with $E_t$ as budget gate and $e(B) = (1+B)^{-3/4}$ as the conditional depletion
 
 The system evolves by minimizing a per-tick cost (Lagrangian) composed of three terms:
 
-$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
+$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t| + \eta|\nabla \tau_t|.$$
 
 **Semantic cost** — the cost of being incoherent and innovative:
 
@@ -776,6 +776,8 @@ $$\tau_{i,t} \to \bar{\tau}_{i,t} = \frac{\sum_{j \in \mathcal{N}(i)} w_j \pi_{j
 
 where $\mathcal{N}(i)$ is the local neighborhood and $w_j$ are viscosity-weighted coupling strengths. Under this redefinition, accuracy is not matching an objective external reality but achieving **resonance with the most massive local viscosity sink** (consensus cache). A daemon whose prior $\pi_t$ misaligns with the local network's $\bar{\tau}_t$ suffers geometric mismatch cost, keeping the ledger closed.
 
+**Domain Wall Leak and Consensus Gradients:** If $\tau_t$ is redefined locally as a mean-field consensus, spatial boundaries between differing consensus zones will induce catastrophic geometric cost spikes. To prevent infinite consolidation loops at these boundaries, the core Lagrangian explicitly incorporates a consensus gradient penalty $\eta|\nabla \tau_t|$. To preserve the sub-1MB engine performance budget, this gradient is evaluated purely via local nearest-neighbor queries, strictly forbidding non-local spatial memory access.
+
 **Current status:** Until $\tau_t$ is formally derived as a network aggregate, the present model assumes a **localized open-system boundary** in which the truth target represents coupling to environmental degrees of freedom outside the daemon's own state vector. This is standard thermodynamic practice (cf. Lindblad master equation with external bath), but full endogenous closure remains an open architectural goal.
 
 > **Consequence for false classicalization:** Under the mean-field redefinition, false classicalization (Section 9.2) becomes classicalization to a locally coherent but globally suboptimal prior. The system locks to a local consensus rather than a "wrong" answer in any absolute sense — the concept of absolute wrongness requires an oracle that the closed architecture cannot supply.
@@ -963,7 +965,7 @@ This is opposite to naive intuition. A low-viscosity pocket is a cost hill, not 
 
 Sections 13.1–13.4 should be read as a **3D central-cache probe**. A spiral galaxy is not that geometry. A disk galaxy is much closer to a thin 2D daemon sheet embedded in 3D, with viscosity support spread laterally across the disk by the same smoothness pressure already present in the Finite Possibility Mechanics action:
 
-$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
+$$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t| + \eta|\nabla \tau_t|.$$
 
 In a coarse-grained stationary disk surrogate, replace the absolute regularizer by its smooth quadratic envelope and minimize
 
@@ -1572,7 +1574,7 @@ The speed of light, in this picture, is the **maximum rate at which coherent inf
 
 ### 22.1 Overview
 
-The **Universal Cognitive Daemon (UCD)** is a Finite Possibility Mechanics processing unit embedded in a 3D integer lattice $\mathbb{Z}^3$, equipped with a bounded internal ledger and a route-selection layer defined on its local 3D neighborhood. All core Finite Possibility Mechanics laws are inherited unchanged; this section adds the grid wrapper and derives exact conditions for life, growth, and cooperative communication.
+The **Universal Cognitive Daemon (UCD)** is a Finite Possibility Mechanics processing unit embedded in a 3D integer lattice $\mathbb{Z}^3$, equipped with a bounded internal ledger and a route-selection layer defined on its local 3D neighborhood. Because the discrete $\mathbb{Z}^3$ lattice exhibits severe angular anisotropy (governed by the sum-of-three-squares theorem), it cannot natively yield pristine $n^2$ continuous spherical harmonics. A formal Conformal Geometric Algebra (CGA5) spatial integration kernel is mathematically required to map the discrete lattice to isotropic continuous modes. To preserve computational feasibility, this CGA5 integration is explicitly designated as a macro-scale effective bridging operation rather than a per-tick runtime calculation. All core Finite Possibility Mechanics laws are inherited unchanged; this section adds the grid wrapper and derives exact conditions for life, growth, and cooperative communication.
 
 ### 22.2 The Extended State Vector
 
@@ -2030,7 +2032,7 @@ To complete the macroscopic closure, the gravitational constant ($G$) is re-expr
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}.}$$
 
-This matches the CODATA 2018 measured value to within $0.00003\%$. The derivation re-expresses $G$ as an algebraic inversion of the Planck mass definition within the informational architecture, showing internal consistency rather than deriving it as a new independent consequence.
+This matches the CODATA 2018 measured value to within $0.00003\%$. However, this formulation currently represents an algebraic identity rather than a first-principles derivation, because the standard definition of $m_P$ already incorporates $G$. To eliminate this circular dependency and achieve true Primary Hardware Independence, $m_P$ must be endogenously derived directly from the topological route-cost capacity limit $\mathcal{C}_{\text{Point}}$. Until that open frontier is crossed, this relation serves only as a demonstration of algebraic consistency.
 
 **Open frontier ($\Gamma$ calibration):** The route-cost-to-physical-acceleration calibration constant $\Gamma$ (Section 13) must eventually be expressed as a function of $G$, $c$, and $h$ to complete the macroscopic closure. This requires formally integrating the discrete action principle over the viscosity shell of a massive body. Until this integration is achieved from the per-tick Lagrangian $\mathcal{L}_t$, $\Gamma$ remains an empirical calibration constant to preserve the strict falsifiability of the framework.
 
@@ -2109,7 +2111,7 @@ B_{ab}=X_a\wedge X_b,\qquad g_{\text{PP}}=2
 $$
 
 **Probe Claim B — Geometric Angular Mode Count:**
-The number of distinct angular routing modes on a discrete shell of integer radius $n$ in the CGA5 topology is modeled as an $n^2$ angular-mode count, yielding $G_n = n^2$.
+The number of distinct angular routing modes on a discrete shell of integer radius $n$ is extracted via the macro-scale CGA5 integration kernel (averaging over the underlying $\mathbb{Z}^3$ anisotropy) to produce a pristine $n^2$ continuous angular-mode count, yielding $G_n = n^2$.
 
 Combining these two yields the candidate capacity of the $n$-th shell:
 $$
@@ -2165,7 +2167,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 |---|:---:|---|
 | 9:1 directed routing channel count | §3 | Structural argument from directed interaction table |
 | α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
-| 16/3 causal-ledger density ratio | §19 | Dimensional count; <0.5% of Planck 2018 |
+| 16/3 causal-ledger density ratio | §19 | Equipartition limit proxy; exact ratio requires dynamic trace |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
 | Native trace order beats reversal and shuffle | §8 | 8.83% and 17.67% overhead; tested trace family |
