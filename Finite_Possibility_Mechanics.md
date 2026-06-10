@@ -106,7 +106,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 
 ### 1.1 The Central Question
 
-Every physical, cognitive, or computational system that processes information operates under finite resources. Memory is finite. Energy budgets are finite. Processing time is finite. The question Finite Possibility Mechanics asks — and answers — is:
+Every physical, cognitive, or computational system that processes information operates under finite resources. Memory is finite. Energy budgets are finite. Processing time is finite. The question Finite Possibility Mechanics asks — and formally models — is:
 
 > *What does finiteness force the system to do?*
 
@@ -838,7 +838,7 @@ The overhead ratio exceeds 1.0, confirming Second Law compliance. The gap $2.295
 
 ### 10.5 Interpretation
 
-Information processing has a real physical price. The Finite Possibility Mechanics energy budget is not poetic symbolism — it is a proxy for thermodynamic dissipation. Thinking, choosing, collapsing, and erasing are not free. This is what connects Finite Possibility Mechanics's internal bookkeeping to physical joules and makes the framework empirically anchored.
+Information processing has a real physical price. The Finite Possibility Mechanics energy budget is not poetic symbolism — it is a proxy for thermodynamic dissipation. Thinking, choosing, collapsing, and erasing are not free. This is what connects the internal bookkeeping of Finite Possibility Mechanics to physical joules and makes the framework empirically anchored.
 
 
 ---
