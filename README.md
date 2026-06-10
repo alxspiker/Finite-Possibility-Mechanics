@@ -1,53 +1,23 @@
 # Finite Possibility Mechanics
 
-This folder contains two versions of the same larger idea.
+Finite Possibility Mechanics (FPM) explores a fascinating and simple idea: what if the universe is essentially a giant computer processing possibilities, and it has a strict energy budget?
 
-The older document is the technical version. It has the math, the formal structure, the proofs, the symbols, and the advanced physics language. The problem is that it became far too dense. It is written at a level where even very advanced scientists could miss the actual picture because the explanation is buried under the machinery.
-
-It may contain the working structure of the model, but it does not clearly explain what the model is trying to show about the universe.
-
-In other words: the math may work, but the explanation failed.
-
-The new document, `FinitePossibilityMechanics.md`, is the plain-language rebuild. Its purpose is to slowly explain the model in a way that a normal curious person can understand before they ever see the equations.
-
-The goal is not to remove the math.
-
-The goal is to build a bridge to it.
-
-## The Basic Idea
-
-Finite Possibility Mechanics explores the idea that the universe may be a finite system of updating possibilities.
+Instead of imagining the universe as empty space filled with solid objects, imagine it as a massive network of interconnected points, all sharing information and making decisions. 
 
 In this model:
+- **Possibility is expensive.** It costs "energy" for the universe to keep options open.
+- **Matter is memory.** When keeping options open becomes too expensive, the universe "freezes" into stable patterns to save energy. What we call solid matter is just the universe remembering a stable answer.
+- **Light is cheap information.** Light moves fast because it's the easiest, lowest-cost way for the universe to share information.
+- **Time is processing.** Time is simply the sequence of the universe updating itself, tick by tick.
+- **Gravity is a traffic jam.** When dense information (matter) exists, it slows down the processing around it, pulling things toward it just like heavy traffic pulls in surrounding cars.
 
-- possibility costs energy to keep open
-- stable patterns become memory
-- matter is stable information
-- light is low-cost moving information
-- time is the order of updates
-- gravity may come from change-cost gradients
-- reality is what the universe can afford to keep rendering
+Ultimately, reality is simply what the universe can afford to keep rendering. Everything we see—stars, planets, biology—emerges from the universe trying to balance its energy checkbook as efficiently as possible.
 
-The technical document tries to prove and formalize these ideas.
+## The Formal Framework
 
-The new document tries to make them understandable.
+If you are interested in exploring this idea in its full mathematical and scientific form, we have formalized the entire framework. It explains how this simple computational idea scales up to generate the laws of physics we observe today, including gravity, dark matter, and the early expansion of the universe.
 
-## Current Files
+The complete, formalized framework is located here:
+[`Finite_Possibility_Mechanics.md`](Finite_Possibility_Mechanics.md)
 
-`old_New_Full_Self_Contained_AxCore_Informational_Bridge_Model.md`
-
-The original advanced paper. This is the technical archive. It is not beginner-friendly and is not the current explanatory direction.
-
-`FinitePossibilityMechanics.md`
-
-The new plain-language paper. This is the active document and should become the main explanation of the model.
-
-## Project Goal
-
-The goal of this project is to make the model understandable without weakening it.
-
-The math can come later.
-
-First, the reader needs to understand the picture:
-
-> The universe may not be made of separate things first. It may be one finite update system, where open possibility becomes stable reality when keeping every option open becomes too expensive.
+*(Note: The formal document is highly technical and intended for a scientific audience.)*
