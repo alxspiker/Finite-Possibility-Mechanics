@@ -88,7 +88,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 27. [Theorem 6: The Universal Calibration Theorem](#27-theorem-6-the-universal-calibration-theorem)
 
 **Part V — Research Frontiers and Summary**
-28. [Theorem 7: The Angular-Mode Capacity Theorem](#28-theorem-7-the-angular-mode-capacity-theorem)
+28. [The Angular-Mode Capacity Probe](#28-the-angular-mode-capacity-probe)
 29. [Proven Results, Quantitative Probes, and Open Frontiers](#29-proven-results-quantitative-probes-and-open-frontiers)
 30. [Conclusion](#30-conclusion)
 31. [Appendix A: Symbol Reference](#31-appendix-a-symbol-reference)
@@ -2077,7 +2077,7 @@ At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic pro
 
 ---
 
-## 28. Theorem 7: The Angular-Mode Capacity Theorem
+## 28. The Angular-Mode Capacity Probe
 
 
 ### 28.1 Context
@@ -2086,9 +2086,9 @@ You can derive a capacity-limited shell structure and an Finite Possibility Mech
 ### 28.2 Bare Nucleus = Corrected Radial Well
 Section 25 already fixes the sign: route cost is proportional to -\Omega(r)$, so a high-viscosity core is a low-cost attractive center.
 The corrected radial profile is:
-)
+$$
 \Omega(r)=\Omega_{\text{out}}+A_c e^{-r^2/\sigma_c^2}-A_s e^{-(r-R)^2/\sigma_s^2}
-)
+$$
 On bare radial cost alone, all daemons would indeed try to fall inward.
 
 ### 28.3 Blocking the Collapse
@@ -2097,30 +2097,30 @@ That collapse is blocked by two Finite Possibility Mechanics ingredients:
 **2) Communication overhead**. Section 22 extends daemon action with explicit $\chi^{\text{comm}}$ load. Neighboring daemons raise action through signaling overhead.
 
 ### 28.4 The General Shell Law
-The shell $ is full when marginal insertion cost exceeds the bare savings of falling closer.
+The shell $n$ is full when marginal insertion cost exceeds the bare savings of falling closer.
 So in Finite Possibility Mechanics language:
 - the nucleus supplies the inward sink,
 - steric exclusion forbids same-route pileup,
 - communication overhead makes crowding thermodynamically expensive,
 - shell closure happens when inner-shell marginal crowding cost exceeds the next-shell radial penalty.
 
-### 28.5 The Angular-Mode Extension (^2$)
+### 28.5 The Angular-Mode Extension ($n^2$)
 To trace the specific discrete sequence (2,8,18,32...), we need a compatible Finite Possibility Mechanics/CGA5 extension.
 
 **Theorem A — Point-Pair Twofold Degeneracy:**
 The fundamental routing state, an oriented CGA5 2-blade {ab} = X_a \wedge X_b$, admits exactly two internal orientations $\pm B_{ab}$. Therefore {\text{PP}}=2$.
 
 **Theorem B — Geometric Angular Mode Count:**
-The number of distinct angular routing modes on a discrete shell of integer radius $ in the CGA5 topology is exactly expanding the dimensionality +1$ of order  \le n-1$, yielding  = n^2$.
+The number of distinct angular routing modes on a discrete shell of integer radius $n$ in the CGA5 topology is exactly expanding the dimensionality, yielding $G_n = n^2$.
 
-Combining these two yields the exact capacity of the $-th shell:
-)
+Combining these two yields the exact capacity of the $n$-th shell:
+$$
 C_n = g_{\text{PP}} G_n = 2 n^2
-)
-yielding , 8, 18, 32, \dots$
+$$
+yielding $2, 8, 18, 32, \dots$
 
 ### 28.6 Electronegativity in Finite Possibility Mechanics
-An unfilled shell is a low-cost viscosity sink. When $ is well below shell capacity, neighboring daemons lower action by transferring into the sink. The electron-acceptance potential is the marginal cost $\mu_A^{\text{Ax}} = \partial \mathcal{L}^{(A)}_{\text{val}} / \partial N_v$. This maps strictly to electronegativity: $\mathrm{EN}_A^{\text{Ax}} \propto -\mu_A^{\text{Ax}}$. Full shells are inert because the marginal cost jumps to the next shell.
+An unfilled shell is a low-cost viscosity sink. When $n$ is well below shell capacity, neighboring daemons lower action by transferring into the sink. The electron-acceptance potential is the marginal cost $\mu_A^{\text{Ax}} = \partial \mathcal{L}^{(A)}_{\text{val}} / \partial N_v$. This maps strictly to electronegativity: $\mathrm{EN}_A^{\text{Ax}} \propto -\mu_A^{\text{Ax}}$. Full shells are inert because the marginal cost jumps to the next shell.
 
 
 ---
@@ -2155,19 +2155,19 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Direct from Planck-Landauer bridge |
 | Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Direct from Calibration Axiom |
 | Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Algebraic inversion of Planck mass definition |
-| 9:1 directed routing channel count | §3 | Structural argument from directed interaction table |
-| α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
-| 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
 | Alignment lemma for consolidation | §7.2 | Explicit counterexample to unconditional claim |
 | Starvation theorem (finite-time collapse) | §7.6 | Direct from energy ledger; 0 bound violations |
 | Ω 2.2 contraction theorem | §7.7 | Direct from weighted ambiguity monotonicity |
 | Collapse-rate theorem with noise floor | §7.8 | Uniform bound on D-recurrence |
-| 16/3 causal-ledger density ratio | §19 | Dimensional count; <0.5% of Planck 2018 |
 
-### 29.2 Quantitative Probes (Executable, Calibration-Dependent)
+### 29.3 Quantitative Probes (Executable, Calibration-Dependent)
 
 | Result | Section | Accuracy / Notes |
 |---|:---:|---|
+| 9:1 directed routing channel count | §3 | Structural argument from directed interaction table |
+| α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
+| 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
+| 16/3 causal-ledger density ratio | §19 | Dimensional count; <0.5% of Planck 2018 |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
 | Native trace order beats reversal and shuffle | §8 | 8.83% and 17.67% overhead; tested trace family |
@@ -2190,9 +2190,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Ω 3.0 exponent stability | §6.5 | Stable across 3×3×5 parameter grid |
 | Constitutive bridge and polarity fix | §13.9 | Polarity violations eliminated |
 | Geometry-derived Γ improvement | §13.10 | Scatter 0.596 → 0.312 |
-| Non-circular interpolation chain | §13.12 | First-principles MOND replacement |
+| Non-circular interpolation chain | §13.9 | Candidate first-principles pipeline paralleling MOND |
 
-### 29.3 Open Research Frontiers
+### 29.4 Open Research Frontiers
 
 | Problem | Current Status |
 |---|---|
