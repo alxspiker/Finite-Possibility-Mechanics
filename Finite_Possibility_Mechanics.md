@@ -2,7 +2,7 @@
 ## A Candidate Framework of Bounded Informational Dynamics
 
 **Alx Spiker | AperioGenix | Edmonton, Alberta, Canada**
-*v4.3 — Unified Viscosity Framework with Cosmological Extension — June 2026*
+*v4.4 — Unified Viscosity Framework with Cosmological Extension — June 2026*
 
 ---
 
@@ -1274,7 +1274,7 @@ $$\alpha_{\text{PP}} = \frac{9 \cdot \pi^5}{H} \approx 2754.1772.$$
 
 This exact geometric constant replaces empirical parameter fitting. The mass scale $\Delta t_{\text{univ}}$ becomes a derived geometric eigenvalue of the routing tensor's phase space, forcing the algorithmic universe to natively generate physical geometry.
 
-### 15.5 The Topology Ordering
+### 15.4 The Topology Ordering
 
 The mass ordering is preserved across scales:
 
@@ -1933,7 +1933,7 @@ $$\Delta t_{\text{impl}} = 2.5243706\ \text{s}.$$
 
 ### 26.3 Statement
 
-Define the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 702.628349$. Let $u_{\max} = 1$ edge/tick and the Continuum Spatial Bridge hold. Then for any concrete implementation with hardware tick $\Delta t > 0$ and per-tick normalized dissipation $\mathcal{L}_t$:
+Define the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 2754.1772$. Let $u_{\max} = 1$ edge/tick and the Continuum Spatial Bridge hold. Then for any concrete implementation with hardware tick $\Delta t > 0$ and per-tick normalized dissipation $\mathcal{L}_t$:
 
 **(I) Dimensional consistency.**
 
@@ -1979,13 +1979,13 @@ $$P_{\text{impl}} = 3.179359152885619 \times 10^{-14}\ \text{W}.$$
 
 **Substrate scaling law:**
 
-$$r_{\text{carrier, impl}} = 702.628349 \times \Delta x_{\text{impl}} = 5.317401880104887 \times 10^{11}\ \text{m} \approx 3.5545\ \text{AU}.$$
+$$r_{\text{carrier, impl}} = 2754.1772 \times \Delta x_{\text{impl}} = 2.084326236233604 \times 10^{12}\ \text{m} \approx 13.9329\ \text{AU}.$$
 
 ### 26.6 Interpretation
 
 The solar-system-scale carrier radius is the correct consequence of plugging a desktop wall-clock tick into the bridge. It is a statement about substrate throughput density: ordinary silicon is enormously slower and sparser than any substrate capable of realizing microscopic carrier scales under the same algebra. As $\Delta t \to 0$, $r_{\text{carrier}} \to 0$. The theorem is not a claim about a universal electron radius — it is a proof that the SI bridge algebraically preserves the $c$ ceiling, the Landauer thermodynamic ledger, and the Point-Pair carrier scaling rule simultaneously, for any concrete implementation.
 
-> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Universal Calibration Theorem (Theorem 6, Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; Theorem 6 anchors that same algebra to fundamental physical constants, yielding sub-atomic carrier scales that are hardware-independent.
+> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Universal Calibration Theorem (Theorem 6, Section 27). The desktop benchmark's 13.93 AU carrier radius demonstrates the algebra at one concrete scale; Theorem 6 anchors that same algebra to fundamental physical constants, yielding sub-atomic carrier scales that are hardware-independent.
 
 
 ---
@@ -1996,7 +1996,7 @@ The solar-system-scale carrier radius is the correct consequence of plugging a d
 
 Theorem 5 proves that the SI bridge closes algebraically for any concrete $\Delta t_{\text{impl}} > 0$, but leaves a one-parameter family of absolute scales parameterized by the hardware timing. To achieve **Primary Hardware Independence (PHI)**, we invert Theorem 5: instead of accepting the hardware tick as given, we derive the **Universal Engine Tick** ($\Delta t_{\text{univ}}$) from fundamental physical constants through the **Planck-Landauer Bridge**.
 
-The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 702.628349$ and the electron Compton energy define a unique convergence point at which the Finite Possibility Mechanics carrier radius matches the electron's Compton wavelength. This fixes the engine tick without reference to any hardware substrate.
+The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 2754.1772$ and the electron Compton energy define a unique convergence point at which the Finite Possibility Mechanics carrier radius matches the electron's Compton wavelength. This fixes the engine tick without reference to any hardware substrate.
 
 ### 27.2 The Universal Engine Tick ($\Delta t_{\text{univ}}$)
 
@@ -2004,15 +2004,15 @@ The implementation-independent tick is defined by the point where the Point-Pair
 
 $$E_{\text{rest}} = m_e c^2 \approx 8.187 \times 10^{-14}\ \text{J}.$$
 
-$$\boxed{\Delta t_{\text{univ}} = \frac{h}{E_{\text{rest}} \cdot \alpha_{\text{PP}}} = \frac{h}{m_e c^2 \cdot \alpha_{\text{PP}}} \approx 1.152 \times 10^{-23}\ \text{s}.}$$
+$$\boxed{\Delta t_{\text{univ}} = \frac{h}{E_{\text{rest}} \cdot \alpha_{\text{PP}}} = \frac{h}{m_e c^2 \cdot \alpha_{\text{PP}}} \approx 2.939 \times 10^{-24}\ \text{s}.}$$
 
-This represents the discrete clock rate of the informational medium. Under this calibration, the Finite Possibility Mechanics runtime executes approximately $8.68 \times 10^{22}$ ticks per second ($\approx 86.8$ zettahertz).
+This represents the discrete clock rate of the informational medium. Under this calibration, the Finite Possibility Mechanics runtime executes approximately $3.40 \times 10^{23}$ ticks per second ($\approx 340.3$ zettahertz).
 
 ### 27.3 The Universal Spatial Bridge ($\Delta x_{\text{univ}}$)
 
 Applying the Calibration Axiom ($v_{\max} = c$, Section 21) to the universal tick:
 
-$$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}\ \text{m} \approx 3.45\ \text{fm}.}$$
+$$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 8.810 \times 10^{-16}\ \text{m} \approx 0.881\ \text{fm}.}$$
 
 **Physical alignment:** This distance corresponds nearly exactly to the Compton wavelength of the electron divided by the Point-Pair coefficient. More precisely, $r_{\text{univ}} = \alpha_{\text{PP}} \cdot \Delta x_{\text{univ}} = \lambda_e$ to machine precision, where $\lambda_e = h/(m_e c) \approx 2.426 \times 10^{-12}$ m is the electron Compton wavelength.
 
@@ -2032,8 +2032,8 @@ This matches the CODATA 2018 measured value to within $0.00003\%$. However, this
 
 | Metric | Universal Value | Finite Possibility Mechanics Relation |
 | :--- | :--- | :--- |
-| **Engine Tick** | $1.152 \times 10^{-23}$ s | $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ |
-| **Engine Frequency** | $86.8$ ZHz | $1 / \Delta t_{\text{univ}}$ |
+| **Engine Tick** | $2.939 \times 10^{-24}$ s | $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ |
+| **Engine Frequency** | $340.3$ ZHz | $1 / \Delta t_{\text{univ}}$ |
 | **Lattice Constant** | $3.45$ fm | $\Delta x = c \Delta t$ |
 | **Carrier Radius** | $\lambda_e \approx 2.43$ pm | $\alpha_{\text{PP}} \cdot \Delta x_{\text{univ}}$ |
 | **Action Floor** | $c_0 = 0.05$ | $\widetilde{\mathcal{L}}_t \to c_0$ (Condensate Lock) |
@@ -2173,7 +2173,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Confinement work $\propto r^{1.98}$ | §17 | Near-quadratic; tail cost ratio $11.7\times$ vs null |
 | Decay separation (100% vs. 0%) | §17 | Across 200 trials; energy scale in femtojoule range |
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
-| Conditional Instantiation of Theorem 6: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
+| Conditional Instantiation of Theorem 6: $\Delta t_{\text{univ}} \approx 2.939 \times 10^{-24}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Theorem 6) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
@@ -2286,9 +2286,9 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $m_e$ | Electron rest mass | $9.109 \times 10^{-31}$ kg |
 | $m_P$ | Planck mass | $2.176 \times 10^{-8}$ kg |
 | $c$ | Speed of light | $299{,}792{,}458$ m/s |
-| $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 1.152 \times 10^{-23}$ s |
+| $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 2.939 \times 10^{-24}$ s |
 | $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 3.453 \times 10^{-15}$ m |
-| $f_{\text{univ}}$ | Universal engine frequency | $\approx 86.8$ ZHz |
+| $f_{\text{univ}}$ | Universal engine frequency | $\approx 340.3$ ZHz |
 | $G$ | Gravitational constant (derived) | $\hbar c / m_P^2$ |
 
 | $\mathbf{p}_t$ | N-route probability vector | simplex |
@@ -2362,7 +2362,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $R_d$ | Effective daemon-sheet radius | length |
 | $g_{\text{ax}}(r)$ | Finite Possibility Mechanics inward acceleration profile in a disk galaxy | acceleration |
 | $v_{\text{ax}}(r)$ | Finite Possibility Mechanics circular-speed profile in a disk galaxy | speed |
-| $\alpha_{\text{PP}}$ | Point-Pair carrier coefficient | $702.628349$ |
+| $\alpha_{\text{PP}}$ | Point-Pair carrier coefficient | $2754.1772$ |
 | $r_{\text{SI}}$ | Implementation-specific SI carrier radius | meters |
 | $N_e$ | Number of traversed lattice edges | non-negative integer |
 | $n_t$ | Number of elapsed engine ticks | non-negative integer |
@@ -2402,9 +2402,9 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $\Omega_{\text{out}}$ | Background viscosity in radial well | $[0.50, 0.85]$ |
 | $\mathcal{L}_{\text{rest}}$ | Deep-space baseline action | $0.1030625$ |
 | $N_{\text{bit-eq, actual}}$ | Actual bit-equivalent capacity at benchmark | $1{,}453{,}132{,}512$ |
-| $\Delta t_{\text{univ}}$ | Universal engine tick (Theorem 6, PHI) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 1.152 \times 10^{-23}$ s |
+| $\Delta t_{\text{univ}}$ | Universal engine tick (Theorem 6, PHI) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 2.939 \times 10^{-24}$ s |
 | $\Delta x_{\text{univ}}$ | Universal lattice constant (Theorem 6, PHI) | $c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}$ m |
-| $f_{\text{univ}}$ | Universal engine frequency | $1 / \Delta t_{\text{univ}} \approx 86.8$ ZHz |
+| $f_{\text{univ}}$ | Universal engine frequency | $1 / \Delta t_{\text{univ}} \approx 340.3$ ZHz |
 | $E_{\text{rest}}$ | Electron rest energy | $m_e c^2 \approx 8.187 \times 10^{-14}$ J |
 | $\lambda_e$ | Electron Compton wavelength | $h / (m_e c) \approx 2.426 \times 10^{-12}$ m |
 | $G$ | Gravitational constant (derived from Planck mass) | $\hbar c / m_P^2 \approx 6.674 \times 10^{-11}$ m³kg⁻¹s⁻² |
@@ -2445,6 +2445,6 @@ Planck Collaboration (2020). Planck 2018 results. VI. Cosmological parameters. *
 
 ---
 
-*End of Finite Possibility Mechanics — v4.3 Unified Viscosity Framework with Cosmological Extension*
+*End of Finite Possibility Mechanics — v4.4 Unified Viscosity Framework with Cosmological Extension*
 
 *Alx Spiker · AperioGenix · Edmonton, Alberta, Canada*
