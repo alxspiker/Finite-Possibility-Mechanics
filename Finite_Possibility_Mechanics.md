@@ -57,7 +57,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 2. [The State Space](#2-the-state-space)
 3. [The Directed Routing Tensor](#3-the-directed-routing-tensor)
 4. [The SoA Directed Routing Ledger Architecture](#4-the-soa-directed-routing-ledger-architecture)
-5. [The Viscosity Law — Full Ω Framework](#5-the-viscosity-law)
+5. [The Viscosity Law](#5-the-viscosity-law)
 6. [The Discrete Action Principle](#6-the-discrete-action-principle)
 7. [Theorem 1: Thermodynamic Decoherence Bridge](#7-theorem-1-thermodynamic-decoherence-bridge)
 8. [Proposition 2: Trace-Conditional Order-Sensitivity](#8-proposition-2-trace-conditional-order-sensitivity)
@@ -76,7 +76,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 **Part III — Cosmological Extension (Macro-Scale: Pure Cosmology)**
 18. [The Holographic Horizon Capacity](#18-the-holographic-horizon-capacity)
 19. [The CMB Density Gate and Ledger Inertia](#19-the-cmb-density-gate-and-ledger-inertia)
-20. [Acoustic Perturbation Dynamics](#20-acoustic-perturbation-dynamics)
+20. [Acoustic Perturbation Dynamics and Stripped Boltzmann Oscillator](#20-acoustic-perturbation-dynamics-and-stripped-boltzmann-oscillator)
 
 **Part IV — Extension Layer**
 21. [The Continuum Spatial Bridge](#21-the-continuum-spatial-bridge)
@@ -235,11 +235,11 @@ $$S_N(\mathbf{p}) = \frac{N}{N-1}(1 - \max_i p_i) \in [0, 1].$$
 
 ---
 
-## 3. The Directed Routing Tensor (Ω 3.1–3.2)
+## 3. The Directed Routing Tensor
 
 This is the grid hardware. It must be established before any dynamics or macroscopic physics.
 
-### 3.1 The Hardware Stencil Correction (Ω 3.1)
+### 3.1 The Hardware Stencil Correction
 
 The naive derivation of the shear-to-curvature exponent ratio from a $\mathbb{Z}^3$ finite-difference stencil fails. The central 3D gradient uses 6 face neighbors; the 7-point Laplacian uses 6 neighbors plus the center = 7 memory reads. The raw memory-read ratio is $6:7$, not $9:1$.
 
@@ -251,7 +251,7 @@ Normalizing across the second-order update budget $\alpha + \beta = 2$:
 
 $$\beta = 2 \cdot \frac{9}{10} = \frac{9}{5} = 1.8, \qquad \alpha = 2 \cdot \frac{1}{10} = \frac{1}{5} = 0.2.$$
 
-### 3.2 The Directed Routing Ledger (Ω 3.2)
+### 3.2 The Directed Routing Ledger
 
 The Hessian of a scalar field is symmetric (6 independent components). The physical traceless shear tensor has 5. Neither produces the 9:1 ratio. The runtime object is a **directed routing ledger**: $\mathcal{R}_{ij}$, $i,j \in \{x,y,z\}$, with 9 directed slots where $\mathcal{R}_{ij} \ne \mathcal{R}_{ji}$ in general.
 
@@ -292,7 +292,7 @@ The 9:1 ratio is competitive and clean — the best minimal directed-routing int
 
 ---
 
-## 4. The SoA Directed Routing Ledger Architecture (Ω 3.3)
+## 4. The SoA Directed Routing Ledger Architecture
 
 The formal runtime environment of the state space. Cache-aligned Structure of Arrays with 64-byte alignment:
 
@@ -319,7 +319,7 @@ The runtime computes: $S_9$ (shear aggregate), $K_1$ (trace channel), $\Phi$ (mo
 
 ---
 
-## 5. The Viscosity Law — Full Ω Framework
+## 5. The Viscosity Law
 
 ### 5.1 Historical Note: The Original Ω 1.0 Formula
 
@@ -378,7 +378,7 @@ Depletion limit: $e_t \to 0 \implies \kappa_t \to 0$, $\Omega_t \to \Omega_{\max
 
 *Ambiguity alone is not enough; the system must also afford it.*
 
-### 5.3 The Causal Energy-Depletion Theorem: The 3/4 Law (Ω 3.9–4.0)
+### 5.3 The Causal Energy-Depletion Theorem: The 3/4 Law
 
 **Axiom:** Action costs add in logarithmic space. Independent channel survival probabilities multiply. The scalar effective energy is the geometric mean of all required causal update channels.
 
@@ -489,7 +489,7 @@ where $\pi_t$ is the fallback prior, $\alpha \in [0,1]$ is the consolidation ble
 **Interpretation:** When the system can no longer afford full operation, it retrieves from memory. This partially restores energy ($\rho$) but increases dependence on prior structure ($\beta$) and pulls the routing estimate toward the cached value ($\alpha$). This is the classicalization mechanism: open possibility is too expensive, so the system commits.
 
 
-### 6.5 The Nonlinear Shear Action (Ω 3.0)
+### 6.5 The Nonlinear Shear Action
 
 The $\lambda|\Delta\Omega_t|$ term in the per-tick Lagrangian is the seed of a more powerful nonlinear shear action, discovered through SPARC galactic bridge tests (§13).
 
@@ -621,7 +621,7 @@ This is the most important law in the framework:
 
 Old fuzziness gets squeezed down. Noise can add a little fuzziness back in. But if squeezing stays strong enough, blur shrinks overall. Classical reality appears because open possibility is too expensive to maintain forever.
 
-### 7.6 The Starvation Theorem (Finite-Time Collapse)
+### 7.6 The Starvation Theorem
 
 If $\mathcal{L}_t \ge \ell_{\min}$ and replenishment $r < \ell_{\min}$:
 
@@ -645,7 +645,7 @@ $$\kappa_{t+1} \le \kappa_t, \quad \Omega_{t+1} \ge \Omega_t.$$
 
 The weak form "not both $H_N$ and $S_N$ increase" is insufficient — counterexamples exist where one increases more than the other decreases.
 
-### 7.8 The Collapse-Rate Theorem (Ω 2.3)
+### 7.8 The Collapse-Rate Theorem
 
 Connect to the D-recurrence: $D_{t+1} \le \kappa_t D_t + \xi_t$.
 
@@ -843,7 +843,7 @@ Information processing has a real physical price. The Finite Possibility Mechani
 
 ---
 
-## 11. The Landauer Bottom-Up Injection (Ω 3.4)
+## 11. The Landauer Bottom-Up Injection
 
 The constitutive bridge $\Sigma \to p$ (§13.9) is an empirical patch. The Landauer bridge (§10) provides the path to a first-principles replacement.
 
@@ -1128,7 +1128,7 @@ where $S = |d\Omega/dr|$ (shear) and $K = |d^2\Omega/dr^2|$ (curvature).
 | Final Candidate Law | Euler-Lagrange Shear Law $\Phi_{\text{EL}}$ | Stable operative prediction |
 | Remaining Gap | — | The channel-count derivation fixes the rational exponent pair at the coarse-grained tensor level. The remaining gap is deriving the directed link-exchange process that forces the 9:1 tensor occupancy from the underlying runtime. |
 
-### 13.9 The Non-Circular Interpolation Chain (Ω 3.7–3.8)
+### 13.9 The Non-Circular Interpolation Chain
 
 The operational pipeline from baryonic load ($B$, using $a_{\text{cap}}$ from §18) to observed gravity, operating through the $\beta = 1.8$ shear resistance and the $3/4$ law from §5.3:
 
@@ -1411,7 +1411,7 @@ The following probes are part of the complete Finite Possibility Mechanics execu
 
 ---
 
-## 18. The Holographic Horizon Capacity (Ω 3.5–3.6)
+## 18. The Holographic Horizon Capacity
 
 The local, volume-based cell capacity catastrophically saturates at the Planck scale. This section replaces it with a horizon-coupled cosmological limit.
 
@@ -1434,7 +1434,7 @@ $$B_i = \frac{g_{\text{bar},i}}{a_{\text{cap}}}.$$
 
 ---
 
-## 19. The CMB Density Gate and Ledger Inertia (Ω 4.1–4.2)
+## 19. The CMB Density Gate and Ledger Inertia
 
 **Ledger Inertia Theorem.** The universe must expend thermodynamic budget not only to render the spatial baryons, but to track the $4 \times 4$ covariance/pairwise interactions of a 4D causal update tensor. The ratio of the invisible causal routing overhead ($\rho_{\text{ledger}}$) to the visible spatial matter ($\rho_b$) is governed by the squared dimension of the causal tensor over the spatial dimensions.
 
@@ -1446,7 +1446,7 @@ This yields an error of $< 0.5\%$ against the Planck 2018 observed ratio of $\Om
 
 ---
 
-## 20. Acoustic Perturbation Dynamics and Stripped Boltzmann Oscillator (Ω 4.3)
+## 20. Acoustic Perturbation Dynamics and Stripped Boltzmann Oscillator
 
 **Ledger properties (pseudo-CDM).** Because the ledger is a mathematical bookkeeping matrix and not a physical fluid, it inherently possesses zero sound speed and zero photon scattering:
 
@@ -2138,7 +2138,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 - **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The $16/3$ ledger inertia ratio, the stripped Boltzmann oscillator, biophysical steric folding).
 - **Empirical Fit:** Calibrated from data (e.g., The rational $(1/5, 9/5)$ coefficient pair in the Euler-Lagrange shear law if not using the $9:1$ structural split).
 
-### 29.2 Internal Mathematical Results (Exact and Conditional Corollaries)
+### 29.2 Internal Mathematical Results
 
 | Result | Section | Proof Type |
 |---|:---:|---|
