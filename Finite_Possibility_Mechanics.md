@@ -313,7 +313,11 @@ Two operational modes:
 | Symmetric fallback | $\mathcal{R}_{ij} = \mathcal{R}_{ji}$ | 6 (Newtonian) |
 | True directed ledger | $\mathcal{R}_{ij} \ne \mathcal{R}_{ji}$ | 9 (FPM gravity) |
 
-The runtime computes: $S_9$ (shear aggregate), $K_1$ (trace channel), $\Phi$ (mobility), and $g_{\text{ax}}$ (acceleration). The 1/5, 9/5 exponent split is derived from the channel count in §3. However, structurally, the exponent sum $\alpha + \beta = f(E_t, \mathcal{L}_{\max})$ is dynamically bounded by the available energy budget, settling to exactly $2$ only in the low-energy stationary survival branch.
+The runtime computes: $S_9$ (shear aggregate), $K_1$ (trace channel), $\Phi$ (mobility), and $g_{\text{ax}}$ (acceleration). The 1/5, 9/5 exponent split is derived from the channel count in §3. However, structurally, the exponent sum $\alpha + \beta$ acts as a thermodynamic governor. To prevent catastrophic viscosity collapse during high-energy exploration ($E_t \to E_{\max}$), the sum is tightly bound by the action ceiling $\mathcal{L}_{\max}$ and gated by the normalized energy reservoir $E_t / E_{\max}$:
+
+$$\alpha + \beta = 2 + \eta \left( \frac{E_t}{E_{\max}} \right), \quad \text{where} \quad \eta = \frac{\mathcal{L}_{\max} - c_0}{\mathcal{L}_{\max}}$$
+
+This ensures the grid natively thickens its own shear resistance when the daemon attempts to over-innovate, settling to exactly $2$ only in the low-energy stationary survival branch.
 
 **Open frontier:** Derive actual $\mathcal{R}_{ij}$ route-link costs from the lower-level engine rather than from top-down calibration.
 
@@ -2079,7 +2083,7 @@ This calibration aligns the abstract route cost runtime currency with empirical 
 At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic provides $\sim 15.9$ significant decimal digits. Since the exponent occupies $\sim 23$ orders of magnitude, direct multiplicative operations on $\Delta t_{\text{univ}}$ retain full float64 precision. However, for long-horizon macroscopic simulations in any concrete runtime (including the C++ Finite Possibility Mechanics engine), the following precautions apply:
 
 1. **Viscosity field $\Omega_t \in [0.50, 0.85]$:** These values are order-unity and suffer no precision loss from the tick scale.
-2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation or quad-precision accumulators are recommended.
+2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation using strict IEEE 754 `float64` (`double`) is **required**. The use of compiler-dependent types like `long double` or `__float128` is strictly forbidden, as it destroys the cross-platform determinism required for exact SHA-256 trace verification.
 3. **CGA5 multivector operations:** Verify that the definitions of $c$, $h$, and $G$ passed into 5D Conformal Geometric Algebra structures do not introduce precision drift at the universal tick scale.
 
 
