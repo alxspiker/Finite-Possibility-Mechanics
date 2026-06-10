@@ -12,9 +12,9 @@ Finite Possibility Mechanics is a candidate mathematical framework for the dynam
 
 $$\mathcal{R}_{ij} \to (S_9, K_1) \to \Phi_\Omega \to \mathbf{p}_t \to A_t \to C_t \to \kappa_t \to \Omega_t \to D_{t+1}$$
 
-with causal energy depletion $e(B) = (1+B)^{-3/4}$, the $16/3$ ledger inertia ratio, and the stripped Boltzmann oscillator for CMB dynamics.
+with causal energy depletion $e(B) = (1+B)^{-3/4}$, the $16/3$ ledger inertia ratio, and the stripped Boltzmann oscillator acting as a stripped density/acoustic oscillator gate.
 
-The central question is: *what does a bounded information-processing system do?* The answer is formal, rigorous, and far-reaching. A system operating under finite energy and finite compute cannot remain indefinitely exploratory. Energy scarcity yields an exact dispersion-contraction law. Sequential causality enters as a structural resource. Prior mismatch carries a thermodynamic cost. These are not postulates — they are derived from the mathematics of bounded sequential operation under a discrete action principle.
+The central question is: *what does a bounded information-processing system do?* The answer is formal, rigorous, and far-reaching. A system operating under finite energy and finite compute cannot remain indefinitely exploratory. Energy scarcity yields an exact dispersion-contraction law. Sequential causality enters as a structural resource. Prior mismatch carries a thermodynamic cost. Within the stated axioms, these are derived consequences of bounded sequential operation under a discrete action principle.
 
 The framework is organized around three scales:
 
@@ -148,7 +148,7 @@ This gives the framework a single bookkeeping system rather than separate effect
 
 ### 1.4 What Makes Finite Possibility Mechanics Falsifiable
 
-The shared theorem kernel is a genuine failure point. If the route-cost architecture could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity, or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms. Every executable probe runs on the same kernel. There is no isolated special-case escape hatch.
+The shared theorem kernel is a genuine failure point. If the route-cost architecture could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity (executable calibration probe, not independent experimental confirmation), or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms. Every executable probe runs on the same kernel. There is no isolated special-case escape hatch.
 
 
 The framework is organized across three scales of physical causality:
@@ -379,7 +379,7 @@ Depletion limit: $e_t \to 0 \implies \kappa_t \to 0$, $\Omega_t \to \Omega_{\max
 
 $$e_{\text{eff}} = (e_x \cdot e_y \cdot e_z \cdot e_t)^{1/4} = \left[(1+B)^{-1} \cdot (1+B)^{-1} \cdot (1+B)^{-1} \cdot 1\right]^{1/4}$$
 
-**The strict energy law:**
+**The conditional causal energy-depletion law:**
 
 $$\boxed{e(B) = (1+B)^{-3/4}}$$
 
@@ -1117,7 +1117,7 @@ where $S = |d\Omega/dr|$ (shear) and $K = |d^2\Omega/dr^2|$ (curvature).
 | Naive Bridge | Constant $\Gamma$ conversion | Failed (polarity violations, high scatter) |
 | Repaired Bridge | Constitutive $\Sigma \to \Omega$ chain | Fixed polarity, reduced scatter |
 | Final Candidate Law | Euler-Lagrange Shear Law $\Phi_{\text{EL}}$ | Stable operative prediction |
-| Remaining Gap | — | Derivation of exact 0.2/1.8 from lower-level link exchange |
+| Remaining Gap | — | The channel-count derivation fixes the rational exponent pair at the coarse-grained tensor level. The remaining gap is deriving the directed link-exchange process that forces the 9:1 tensor occupancy from the underlying runtime. |
 
 ### 13.9 The Non-Circular Interpolation Chain (Ω 3.7–3.8)
 
@@ -2232,7 +2232,7 @@ is the complete chain from grid tensor to cosmological horizon.
 
 **The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Theorem 6) anchors the entire framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
 
-**The framework is falsifiable.** Every executable probe is a real failure point. If the kernel could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity, or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms.
+**The framework is falsifiable.** Every executable probe is a real failure point. If the kernel could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity (executable calibration probe, not independent experimental confirmation), or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms.
 
 The deepest summary is also the simplest:
 
