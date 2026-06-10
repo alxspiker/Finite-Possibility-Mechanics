@@ -165,7 +165,7 @@ The shared theorem kernel is a genuine failure point. If the route-cost architec
 The framework is organized across three scales of physical causality:
 
 - **Micro-scale**: The directed routing tensor (§3), the causal cell geometry, the viscosity law with derived energy depletion exponent (§5), and the nonlinear shear action (§6.5).
-- **Meso-scale**: The Landauer bridge (§10), SPARC galactic rotation probes (§13), and the non-circular interpolation chain (§13.12).
+- **Meso-scale**: The Landauer bridge (§10), SPARC galactic rotation probes (§13), and the non-circular interpolation chain (§13.9).
 - **Macro-scale**: The holographic horizon capacity (§18), the CMB density gate (§19), and the stripped Boltzmann oscillator (§20).
 
 The document follows bottom-up physical causality: grid hardware is established before any macroscopic physics is discussed.
