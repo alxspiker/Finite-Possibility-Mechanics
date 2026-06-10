@@ -2,7 +2,7 @@
 ## A Candidate Framework of Bounded Informational Dynamics
 
 **Alx Spiker | AperioGenix | Edmonton, Alberta, Canada**
-*v4.4 — Unified Viscosity Framework with Cosmological Extension — June 2026*
+*v4.4: Unified Viscosity Framework with Cosmological Extension, June 2026*
 
 ---
 
@@ -22,7 +22,7 @@ The framework is organized around three scales:
 - **Meso-scale (Galactic Mass Injection).** The Landauer bridge, SPARC galactic rotation probes, and the non-circular interpolation chain connect the micro-scale viscosity dynamics to observed gravitational phenomena.
 - **Macro-scale (Cosmic Horizon & CMB).** The holographic horizon capacity $a_{\text{cap}} = c H_\Lambda/2\pi$, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3$, and the stripped Boltzmann oscillator provide stripped density and acoustic oscillator gates for cosmological observables.
 
-The architecture is unified by a single runtime currency — **route cost** — reused identically across decoherence, gravity, time-slowing, mass-equivalent energy, and cosmological perturbation dynamics.
+The architecture is unified by a single runtime currency, **route cost**: reused identically across decoherence, gravity, time-slowing, mass-equivalent energy, and cosmological perturbation dynamics.
 
 ---
 
@@ -52,7 +52,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 
 ## Table of Contents
 
-**Part I — Core Framework (Micro-Scale: The Causal Grid)**
+**Part I: Core Framework (Micro-Scale: The Causal Grid)**
 1. [Introduction and Architecture](#1-introduction-and-architecture)
 2. [The State Space](#2-the-state-space)
 3. [The Directed Routing Tensor](#3-the-directed-routing-tensor)
@@ -63,7 +63,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 8. [Proposition 2: Trace-Conditional Order-Sensitivity](#8-proposition-2-trace-conditional-order-sensitivity)
 9. [Proposition 3: Accuracy-Cost-Stability Tradeoff](#9-proposition-3-accuracy-cost-stability-tradeoff)
 
-**Part II — Physical Bridges (Meso-Scale: Galactic Mass Injection)**
+**Part II: Physical Bridges (Meso-Scale: Galactic Mass Injection)**
 10. [The Landauer Bridge](#10-the-landauer-bridge)
 11. [The Landauer Bottom-Up Injection](#11-the-landauer-bottom-up-injection)
 12. [Quantum Correspondence: The Lindblad Overlay](#12-quantum-correspondence-the-lindblad-overlay)
@@ -73,12 +73,12 @@ The architecture is unified by a single runtime currency — **route cost** — 
 16. [Steric Folding and Biophysics](#16-steric-folding-and-biophysics)
 17. [Additional Probes](#17-additional-probes)
 
-**Part III — Cosmological Extension (Macro-Scale: Pure Cosmology)**
+**Part III: Cosmological Extension (Macro-Scale: Pure Cosmology)**
 18. [The Holographic Horizon Capacity](#18-the-holographic-horizon-capacity)
 19. [The CMB Density Gate and Ledger Inertia](#19-the-cmb-density-gate-and-ledger-inertia)
 20. [Acoustic Perturbation Dynamics and Stripped Boltzmann Oscillator](#20-acoustic-perturbation-dynamics-and-stripped-boltzmann-oscillator)
 
-**Part IV — Extension Layer**
+**Part IV: Extension Layer**
 21. [The Empirical Spatial Bridge](#21-the-continuum-spatial-bridge)
 22. [The Universal Cognitive Daemon](#22-the-universal-cognitive-daemon)
 23. [Theorem 4: The Zero-Drag Isotropic Loop](#23-theorem-4-the-zero-drag-isotropic-loop)
@@ -87,7 +87,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 26. [Theorem 5: The Hardware Calibration Theorem](#26-theorem-5-the-hardware-calibration-theorem)
 27. [Conditional Physical Calibration Bridge](#27-conditional-physical-calibration-bridge)
 
-**Part V — Research Frontiers and Summary**
+**Part V: Research Frontiers and Summary**
 28. [The Angular-Mode Capacity Probe](#28-the-angular-mode-capacity-probe)
 29. [Proven Results, Quantitative Probes, and Open Frontiers](#29-proven-results-quantitative-probes-and-open-frontiers)
 31. [Conclusion](#30-conclusion)
@@ -97,7 +97,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 
 ---
 
-## Part I — Core Framework (Micro-Scale: The Causal Grid)
+## Part I: Core Framework (Micro-Scale: The Causal Grid)
 
 ---
 
@@ -106,7 +106,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 
 ### 1.1 The Central Question
 
-Every physical, cognitive, or computational system that processes information operates under finite resources. Memory is finite. Energy budgets are finite. Processing time is finite. The question Finite Possibility Mechanics asks — and formally models — is:
+Every physical, cognitive, or computational system that processes information operates under finite resources. Memory is finite. Energy budgets are finite. Processing time is finite. The question Finite Possibility Mechanics asks (and formally models) is:
 
 > *What does finiteness force the system to do?*
 
@@ -193,15 +193,15 @@ $$\mathcal{X}_t = \bigl(p_{L,t},\; p_{R,t},\; c_t,\; E_t,\; b_t\bigr).$$
 
 ### 2.2 Derived Observables
 
-**Dispersion** — the scalar measure of coherence amplitude:
+**Dispersion**: the scalar measure of coherence amplitude:
 $$D_t = 2|c_t| \ge 0.$$
 
-**Kinematic Entropy** — normalized Shannon entropy of the route distribution:
+**Kinematic Entropy**: normalized Shannon entropy of the route distribution:
 $$H_t = -\frac{p_t \ln p_t + (1-p_t)\ln(1-p_t)}{\ln 2} \in [0, 1].$$
 
 $H_t = 0$ at deterministic routing ($p_t \in \{0,1\}$) and $H_t = 1$ at maximum uncertainty ($p_t = 1/2$).
 
-**Routing Balance** — ambiguity term measuring how balanced the two routes are:
+**Routing Balance**: ambiguity term measuring how balanced the two routes are:
 $$S_t = 1 - |p_t - (1-p_t)| = 1 - |2p_t - 1| \in [0, 1].$$
 
 $S_t = 0$ at deterministic routing, $S_t = 1$ at $p_t = 1/2$. Both $H_t$ and $S_t$ peak at equal routing and vanish at deterministic routing. Their sum $H_t + S_t \in [0, 2]$ equals zero only at the deterministic extremes.
@@ -212,7 +212,7 @@ $S_t = 0$ at deterministic routing, $S_t = 1$ at $p_t = 1/2$. Both $H_t$ and $S_
 
 **$p_t$:** The system's current vote on which of two routes is correct. Near $0$ or $1$ means committed; near $1/2$ means maximally uncertain and still exploring.
 
-**$c_t$:** Whether the two routes are simultaneously alive — interfering rather than merely competing. High $|c_t|$ means the system is in a quantum-like superposition: both paths are still talking to each other, still affecting each other's costs. Low $|c_t|$ means the overlap has died and one path is taking over.
+**$c_t$:** Whether the two routes are simultaneously alive, interfering rather than merely competing. High $|c_t|$ means the system is in a quantum-like superposition: both paths are still talking to each other, still affecting each other's costs. Low $|c_t|$ means the overlap has died and one path is taking over.
 
 **$E_t$:** The operating budget. Every computation costs something. When $E_t$ runs low, the system stops exploring and falls back on cached structure.
 
@@ -277,16 +277,16 @@ $$\Phi_\Omega = A \frac{(1 + K_1)^{1/5}}{(1 + S_9)^{9/5}}.$$
 | **Directed routing** | **9:1** | **0.2** | **1.8** |
 | Strong shear | 18:1 | 0.105 | 1.895 |
 
-The 9:1 ratio is competitive and clean — the best minimal directed-routing interpretation.
+The 9:1 ratio is competitive and clean, representing the best minimal directed-routing interpretation.
 
 ### 3.4 Physical Interpretation: Asymmetric Routing and Gravity
 
-**Scalar fallback** ($\mathcal{R}_{ij} = \mathcal{R}_{ji}$): This is the Newtonian symmetric grid. Running a 9-channel array for symmetric data is redundant — the effective degree of freedom count drops to 6.
+**Scalar fallback** ($\mathcal{R}_{ij} = \mathcal{R}_{ji}$): This is the Newtonian symmetric grid. Running a 9-channel array for symmetric data is redundant, the effective degree of freedom count drops to 6.
 
 **True directed ledger** ($\mathcal{R}_{ij} \ne \mathcal{R}_{ji}$): Thermodynamic drag is inherently asymmetric.
 
-- Moving toward a massive cache aligns with the universe's pressure to consolidate — it costs less routing energy.
-- Moving away from a massive body requires breaking cache and reopening possibilities — a massive routing penalty.
+- Moving toward a massive cache aligns with the universe's pressure to consolidate, it costs less routing energy.
+- Moving away from a massive body requires breaking cache and reopening possibilities, a massive routing penalty.
 
 > **Gravity is modeled here not as bending of a symmetric grid, but as the non-commutative difference in route cost between $\mathcal{R}_{\text{inward}}$ and $\mathcal{R}_{\text{outward}}$.**
 
@@ -351,21 +351,21 @@ Numerical table at key operating points:
 
 | $H_t + S_t$ | $\Omega_t$ | $\kappa_t$ | Regime |
 |:-----------:|:----------:|:----------:|--------|
-| 0.0 | 0.85 | 0.00 | Memory-dominant — full viscosity |
+| 0.0 | 0.85 | 0.00 | Memory-dominant, full viscosity |
 | 0.25 | 0.7625 | 0.25 | Moderate viscosity |
 | 0.50 | 0.675 | 0.50 | Balanced |
 | 0.75 | 0.5875 | 0.75 | Exploratory |
-| 1.0 | 0.50 | 1.00 | Innovation-dominant — minimum viscosity |
+| 1.0 | 0.50 | 1.00 | Innovation-dominant, minimum viscosity |
 
 **Physical Reading**
 
-The viscosity law is the constitutive equation of the Finite Possibility Mechanics medium — analogous to how a fluid viscosity law relates shear stress to strain rate. The "medium" is the space of informational routes; the "strain" is the degree of routing uncertainty. The coefficient $0.35$ sets the sensitivity of the medium to routing uncertainty. The range $[0.50, 0.85]$ is the operating envelope: the medium never becomes a perfect coherence-killer nor a perfect coherence-preserver, but operates in a finite window between these extremes.
+The viscosity law is the constitutive equation of the Finite Possibility Mechanics medium, analogous to how a fluid viscosity law relates shear stress to strain rate. The "medium" is the space of informational routes; the "strain" is the degree of routing uncertainty. The coefficient $0.35$ sets the sensitivity of the medium to routing uncertainty. The range $[0.50, 0.85]$ is the operating envelope: the medium never becomes a perfect coherence-killer nor a perfect coherence-preserver, but operates in a finite window between these extremes.
 
 Viscosity is the unified language behind several familiar phenomena:
-- Low-viscosity regions are more exploratory — the quantum-like phase.
-- High-viscosity regions are memory-heavy and damped — the classical phase.
-- A central high-viscosity cache attracts agents by reducing local route cost — the gravity analog.
-- High-viscosity burden reduces internal tick throughput — the time-dilation analog.
+- Low-viscosity regions are more exploratory. This represents the quantum-like phase.
+- High-viscosity regions are memory-heavy and damped. This represents the classical phase.
+- A central high-viscosity cache attracts agents by reducing local route cost, serving as the gravity analog.
+- High-viscosity burden reduces internal tick throughput, acting as the time-dilation analog.
 
 ### 5.2 The Ω 2.0 Core: Energy-Aware Viscosity
 
@@ -438,13 +438,13 @@ The system evolves by minimizing a per-tick cost (Lagrangian) composed of three 
 
 $$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
 
-**Semantic cost** — the cost of being incoherent and innovative:
+**Semantic cost**: the cost of being incoherent and innovative:
 
 $$\mathcal{C}^{\text{sem}}_t = c_0 + w_D D_{t+1} + w_I I_t.$$
 
 This penalizes high dispersion (incoherence is expensive) and high innovation index (novelty-seeking depletes budget).
 
-**Geometric cost** — the cost of being far from truth and using a bad prior:
+**Geometric cost**: the cost of being far from truth and using a bad prior:
 
 $$\mathcal{C}^{\text{geo}}_t = w_T |p_{t+1} - \tau_t| + w_A\, b_t^\gamma\, |\pi_t - \tau_t|(1 + 4q_t).$$
 
@@ -454,7 +454,7 @@ Here:
 - $q_t \in [0,1]$ is the runtime **confidence** level
 - $\gamma \ge 1$ controls how cache-bias amplifies the prior mismatch cost
 
-The third term $\lambda|\Delta\Omega_t|$ penalizes rapid changes in viscosity — a smoothness regularizer that makes smooth evolution cheaper than chaotic lurching.
+The third term $\lambda|\Delta\Omega_t|$ penalizes rapid changes in viscosity, a smoothness regularizer that makes smooth evolution cheaper than chaotic lurching.
 
 **The total action** over a horizon of $T$ ticks:
 
@@ -499,7 +499,7 @@ The $\lambda|\Delta\Omega_t|$ term in the per-tick Lagrangian is the seed of a m
 
 The galaxy tests found $\Phi_{\text{EL}} \propto (1+K)^{0.2}/(1+S)^{1.8}$, revealing:
 
-**The α + β = 2 action closure** — the strongest structural result from the galactic bridge:
+**The α + β = 2 action closure**: the strongest structural result from the galactic bridge:
 
 $$\alpha + \beta = 2, \quad \beta \gg \alpha.$$
 
@@ -647,7 +647,7 @@ $$\kappa_{t+1} \le \kappa_t, \quad \Omega_{t+1} \ge \Omega_t.$$
 
 > *If weighted ambiguity does not increase and budget does not increase, possibility persistence cannot increase.*
 
-The weak form "not both $H_N$ and $S_N$ increase" is insufficient — counterexamples exist where one increases more than the other decreases.
+The weak form "not both $H_N$ and $S_N$ increase" is insufficient, counterexamples exist where one increases more than the other decreases.
 
 ### 7.8 The Collapse-Rate Theorem
 
@@ -692,7 +692,7 @@ This is because:
 
 3. **$\Omega_t$ depends on routing history through $p_t$:** The current probability is a product of all prior updates. Reversing the sequence means the system encounters high-entropy states at the wrong time in the budget cycle.
 
-In the native trace, the system reaches high-confidence commitments ($b_t \approx 1$) after accumulating evidence, so when $b_t$ is large, $|\pi_t - \tau_t|$ is small. In the reversed trace, the system arrives at high-evidence ticks before it has accumulated the early context needed to interpret them — inflating $\mathcal{C}^{\text{geo}}$ at exactly the ticks where $b_t^\gamma$ is large.
+In the native trace, the system reaches high-confidence commitments ($b_t \approx 1$) after accumulating evidence, so when $b_t$ is large, $|\pi_t - \tau_t|$ is small. In the reversed trace, the system arrives at high-evidence ticks before it has accumulated the early context needed to interpret them, inflating $\mathcal{C}^{\text{geo}}$ at exactly the ticks where $b_t^\gamma$ is large.
 
 ### 8.3 Numerical Verification
 
@@ -741,7 +741,7 @@ Recall the geometric cost:
 
 $$\mathcal{C}^{\text{geo}}_t = w_T|p_{t+1}-\tau_t| + w_A b_t^\gamma|\pi_t-\tau_t|(1+4q_t).$$
 
-When the prior is wrong ($\pi_t \approx 1 - \tau_t$), $|\pi_t - \tau_t| \approx 1$. As $b_t$ grows, the second term approaches $5w_A$ — a large constant overhead cost per tick. This produces the benchmark tradeoff:
+When the prior is wrong ($\pi_t \approx 1 - \tau_t$), $|\pi_t - \tau_t| \approx 1$. As $b_t$ grows, the second term approaches $5w_A$, a large constant overhead cost per tick. This produces the benchmark tradeoff:
 
 1. Misaligned prior → high $\mathcal{C}^{\text{geo}}$ → fast energy depletion
 2. Fast energy depletion → consolidation → $b_t \uparrow$, $p_{t+1} \to \pi_t$
@@ -751,7 +751,7 @@ When the prior is wrong ($\pi_t \approx 1 - \tau_t$), $|\pi_t - \tau_t| \approx 
 
 When $\pi_t \approx \tau_t$, consolidation moves $p_{t+1}$ *toward* $\tau_t$, reducing truth error, preserving energy, and reinforcing correct routing.
 
-**The false-classicalization case:** With $\tau_t \equiv 1$, $\pi_t \equiv 0$, $\alpha = 1$, $\xi_t = 0$, one consolidation event sends $p_{t+1} \leftarrow 0$, after which $H_{t+1} = S_{t+1} = 0$, $\kappa_{t+1} = 0$ — the system classicalizes immediately but to the *wrong* state. This is a valid output of the equations, and the correct interpretation is:
+**The false-classicalization case:** With $\tau_t \equiv 1$, $\pi_t \equiv 0$, $\alpha = 1$, $\xi_t = 0$, one consolidation event sends $p_{t+1} \leftarrow 0$, after which $H_{t+1} = S_{t+1} = 0$, $\kappa_{t+1} = 0$, the system classicalizes immediately but to the *wrong* state. This is a valid output of the equations, and the correct interpretation is:
 
 > Accuracy, energetic cost, and late-stage stability are coupled in Finite Possibility Mechanics. Aligned priors are energetically favored on tested workloads. But the current equations permit classicalization to a false sharp state under sufficiently strong forced consolidation.
 
@@ -772,7 +772,7 @@ This is essentially the maximum possible separation on the $[0,1]$ scale.
 
 ### 9.4 Thermodynamic Inconsistency Note: The Truth Target Boundary
 
-The geometric cost $\mathcal{C}^{\text{geo}}_t$ depends on the truth target $\tau_t$, which in the current formulation is treated as an exogenous environmental signal. In a strictly endogenous Finite Possibility Mechanics universe — where the universe is a closed, self-computing system — treating $\tau_t$ as an objective variable supplied by an external oracle is a **thermodynamic leak**. It implies information entering the ledger from outside the energy budget.
+The geometric cost $\mathcal{C}^{\text{geo}}_t$ depends on the truth target $\tau_t$, which in the current formulation is treated as an exogenous environmental signal. In a strictly endogenous Finite Possibility Mechanics universe (where the universe is a closed, self-computing system) treating $\tau_t$ as an objective variable supplied by an external oracle is a **thermodynamic leak**. It implies information entering the ledger from outside the energy budget.
 
 For full internal consistency, $\tau_t$ must be redefined dynamically as the **mean-field prior of the local daemon network**:
 
@@ -784,12 +784,12 @@ where $\mathcal{N}(i)$ is the local neighborhood and $w_j$ are viscosity-weighte
 
 **Current status:** Until $\tau_t$ is formally derived as a network aggregate, the present model assumes a **localized open-system boundary** in which the truth target represents coupling to environmental degrees of freedom outside the daemon's own state vector. This is standard thermodynamic practice (cf. Lindblad master equation with external bath), but full endogenous closure remains an open architectural goal.
 
-> **Consequence for false classicalization:** Under the mean-field redefinition, false classicalization (Section 9.2) becomes classicalization to a locally coherent but globally suboptimal prior. The system locks to a local consensus rather than a "wrong" answer in any absolute sense — the concept of absolute wrongness requires an oracle that the closed architecture cannot supply.
+> **Consequence for false classicalization:** Under the mean-field redefinition, false classicalization (Section 9.2) becomes classicalization to a locally coherent but globally suboptimal prior. The system locks to a local consensus rather than a "wrong" answer in any absolute sense, the concept of absolute wrongness requires an oracle that the closed architecture cannot supply.
 
 
 ---
 
-## Part II — Physical Bridges (Meso-Scale: Galactic Mass Injection)
+## Part II: Physical Bridges (Meso-Scale: Galactic Mass Injection)
 
 ---
 
@@ -813,7 +813,7 @@ $$Q_{\min} = 1.380649 \times 10^{-23} \times 300 \times \ln 2 = 2.8710 \times 10
 
 ### 10.3 The Calibration Map
 
-Define $N_{\text{bit-eq}}$ as the **bit-equivalent capacity** — the number of irreversible bit operations that a complete budget $E_{\max}$ corresponds to in the physical implementation. Then:
+Define $N_{\text{bit-eq}}$ as the **bit-equivalent capacity**: the number of irreversible bit operations that a complete budget $E_{\max}$ corresponds to in the physical implementation. Then:
 
 $$\boxed{E_{J,t} = \frac{E_t}{E_{\max}} \cdot \mathcal{J}, \qquad \text{where} \quad \mathcal{J} \equiv N_{\text{bit-eq}} \cdot k_B T \ln 2.}$$
 
@@ -844,7 +844,7 @@ The overhead ratio exceeds 1.0, confirming Second Law compliance. The gap $2.295
 
 ### 10.5 Interpretation
 
-Information processing has a real physical price. The Finite Possibility Mechanics energy budget is not poetic symbolism — it is a proxy for thermodynamic dissipation. Thinking, choosing, collapsing, and erasing are not free. This is what connects the internal bookkeeping of Finite Possibility Mechanics to physical joules and makes the framework empirically anchored.
+Information processing has a real physical price. The Finite Possibility Mechanics energy budget is not poetic symbolism, it is a proxy for thermodynamic dissipation. Thinking, choosing, collapsing, and erasing are not free. This is what connects the internal bookkeeping of Finite Possibility Mechanics to physical joules and makes the framework empirically anchored.
 
 
 ---
@@ -914,7 +914,7 @@ In standard open quantum systems theory, decoherence is imposed by coupling to a
 - High budget → $\kappa_t$ large → $\gamma_t$ small → slow decoherence (quantum behavior preserved)
 - Low budget → $\kappa_t$ small → $\gamma_t$ large → fast decoherence (classical behavior emerges)
 
-The environment is internalized as resource scarcity. The Lindblad operators are the operational signature of finite computational capacity. Wavefunction collapse is not a mystical observer effect — it is expensive interaction that drains the budget needed to preserve overlapping possibilities. Remove budget pressure and coherence can survive indefinitely. Let the budget drain and coherence contracts and disappears.
+The environment is internalized as resource scarcity. The Lindblad operators are the operational signature of finite computational capacity. Wavefunction collapse is not a mystical observer effect, it is expensive interaction that drains the budget needed to preserve overlapping possibilities. Remove budget pressure and coherence can survive indefinitely. Let the budget drain and coherence contracts and disappears.
 
 ---
 
@@ -975,7 +975,7 @@ This is opposite to naive intuition. A low-viscosity pocket is a cost hill, not 
 
 ### 13.6 The Thin-Disk Daemon-Sheet Extension
 
-Sections 13.1–13.5 should be read as a **3D central-cache probe**. A spiral galaxy is not that geometry. A disk galaxy is much closer to a thin 2D daemon sheet embedded in 3D, with viscosity support spread laterally across the disk by the same smoothness pressure already present in the Finite Possibility Mechanics action:
+Sections 13.113.5 should be read as a **3D central-cache probe**. A spiral galaxy is not that geometry. A disk galaxy is much closer to a thin 2D daemon sheet embedded in 3D, with viscosity support spread laterally across the disk by the same smoothness pressure already present in the Finite Possibility Mechanics action:
 
 $$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
 
@@ -1140,25 +1140,25 @@ where $S = |d\Omega/dr|$ (shear) and $K = |d^2\Omega/dr^2|$ (curvature).
 | Naive Bridge | Constant $\Gamma$ conversion | Failed (polarity violations, high scatter) |
 | Repaired Bridge | Constitutive $\Sigma \to \Omega$ chain | Fixed polarity, reduced scatter |
 | Final Candidate Law | Euler-Lagrange Shear Law $\Phi_{\text{EL}}$ | Stable operative prediction |
-| Remaining Gap | — | The channel-count derivation fixes the rational exponent pair at the coarse-grained tensor level. The remaining gap is deriving the directed link-exchange process that forces the 9:1 tensor occupancy from the underlying runtime. |
+| Remaining Gap | N/A | The channel-count derivation fixes the rational exponent pair at the coarse-grained tensor level. The remaining gap is deriving the directed link-exchange process that forces the 9:1 tensor occupancy from the underlying runtime. |
 
 ### 13.10 The Non-Circular Interpolation Chain
 
 The operational pipeline from baryonic load ($B$, using $a_{\text{cap}}$ from §18) to observed gravity, operating through the $\beta = 1.8$ shear resistance and the $3/4$ law from §5.3:
 
-**Step 1 — Route-probability saturation:**
+**Step 1, Route-probability saturation:**
 
 $$q(B) = \frac{\sqrt{B}}{1 + \sqrt{B}}, \qquad p(B) = \frac{1}{2} + \frac{1}{2}\,q(B).$$
 
-**Step 2 — Weighted capacity suppression:**
+**Step 2, Weighted capacity suppression:**
 
 $$C(B) = \min(0.7\,H(p(B)) + 0.3\,S(p(B)),\, 1).$$
 
-**Step 3 — Effective coherence persistence:**
+**Step 3, Effective coherence persistence:**
 
 $$\kappa(B) = C(B) \cdot e(B) = C(B) \cdot (1+B)^{-3/4}.$$
 
-**Step 4 — Macroscopic acceleration:**
+**Step 4, Macroscopic acceleration:**
 
 $$\nu(B) = 1 + \sqrt{\frac{\kappa(B)}{B}}, \qquad g_{\text{obs}} = g_{\text{bar}}\,\nu(B).$$
 
@@ -1200,7 +1200,7 @@ This endogenous field equation formally anchors macroscopic gravity to the $9:1$
 
 ### 14.1 The Physical Argument
 
-In Finite Possibility Mechanics, an "internal clock" is the number of successful computation cycles (internal ticks) a system can execute per fixed macro-time budget. Systems near the core complete fewer internal ticks because their total route burden is higher — including geometry, depletion, and consolidation overhead.
+In Finite Possibility Mechanics, an "internal clock" is the number of successful computation cycles (internal ticks) a system can execute per fixed macro-time budget. Systems near the core complete fewer internal ticks because their total route burden is higher, including geometry, depletion, and consolidation overhead.
 
 ### 14.2 Formal Definition
 
@@ -1219,7 +1219,7 @@ $$\delta(r) = \frac{\dot{n}(r)}{\dot{n}(\infty)} = \frac{\mathcal{C}(\infty)}{\m
 | Near core ($r = 1.5$) | 1366 | 0.7333 | 0.1817 | **0.4649** |
 | Deep space ($r = 40$) | 2938 | 0.5088 | 0.1031 | **1.0000** |
 
-The near-core system completes $1366/2938 = 46.5\%$ of the internal cycles that the deep-space system completes in the same macro-time budget. Its clock runs at 46.5% of the deep-space rate — time dilation of $\times 2.15$.
+The near-core system completes $1366/2938 = 46.5\%$ of the internal cycles that the deep-space system completes in the same macro-time budget. Its clock runs at 46.5% of the deep-space rate, time dilation of $\times 2.15$.
 
 ### 14.4 Consistency Check
 
@@ -1363,10 +1363,10 @@ Starting from an extended random-walk chain:
 | Observable | Initial | Final |
 |---|:---:|:---:|
 | Radius of gyration $R_g$ | 8.653 | 2.865 |
-| Compression ratio | — | 3.021× |
-| $\kappa$ (final) | — | 0.0 (classicalized) |
-| Packing efficiency | — | 69.8% |
-| Steric violations | — | 0 |
+| Compression ratio | N/A | 3.021× |
+| $\kappa$ (final) | N/A | 0.0 (classicalized) |
+| Packing efficiency | N/A | 69.8% |
+| Steric violations | N/A | 0 |
 
 The compression ratio of 3.021× means the chain compacts to approximately $1/27$ of its initial volume, consistent with $R_g \propto n^{1/3}$ scaling expected for a tightly packed globule.
 
@@ -1385,9 +1385,9 @@ Two path probability centers are locked together and the work required to separa
 |---|:---:|:---:|
 | Work growth exponent | 1.979 | 1.615 |
 | Cumulative work | 73.11 | 16.44 |
-| Tail-step cost ratio | 11.71 | — |
+| Tail-step cost ratio | 11.71 | N/A |
 
-The near-quadratic growth of confinement work ($r^{1.98}$) is consistent with a linear potential $V(r) \propto r$ integrated over the separation path — the form of the QCD string tension. Some paired informational structures become more expensive to separate the farther they are pulled apart.
+The near-quadratic growth of confinement work ($r^{1.98}$) is consistent with a linear potential $V(r) \propto r$ integrated over the separation path, the form of the QCD string tension. Some paired informational structures become more expensive to separate the farther they are pulled apart.
 
 ### 17.2 Weak Decay Transition
 
@@ -1398,7 +1398,7 @@ Metastable configurations (high-energy route locks) transition to stable configu
 | Decay fraction (200 trials) | 1.000 (100%) | 0.000 (0%) |
 | Mean decay tick | 6.365 | 1000 (no decay) |
 | Mean energy released | $1.928 \times 10^{-15}$ J | 0.0 |
-| Release ratio | $1928\times$ | — |
+| Release ratio | $1928\times$ | N/A |
 
 The perfectly clean separation (100% vs. 0% decay rate) across 200 trials establishes the core claim. A metastable state is a system sitting on a ledge. With noise and finite energy, it eventually falls into the cheaper stable state. Decay is what happens when a high-cost arrangement cannot be maintained forever under finite resources.
 
@@ -1435,7 +1435,7 @@ The following probes are part of the complete Finite Possibility Mechanics execu
 
 ---
 
-## Part III — Cosmological Extension (Macro-Scale: Pure Cosmology)
+## Part III: Cosmological Extension (Macro-Scale: Pure Cosmology)
 
 ---
 
@@ -1517,7 +1517,7 @@ The routing ledger:
 
 ---
 
-## Part IV — Extension Layer
+## Part IV: Extension Layer
 
 ---
 
@@ -1526,7 +1526,7 @@ The routing ledger:
 
 ### 21.1 Purpose
 
-The core framework establishes a Landauer bridge that converts normalized energy $E_t$ to physical joules, and a time-dilation probe that defines an internal tick rate $\dot{n}(r)$ and lag factor $\gamma_{\text{ax}}(r)$. What the core does not supply is an explicit spatial calibration — a map from lattice edge counts and tick counts to meters and seconds. This section closes that gap.
+The core framework establishes a Landauer bridge that converts normalized energy $E_t$ to physical joules, and a time-dilation probe that defines an internal tick rate $\dot{n}(r)$ and lag factor $\gamma_{\text{ax}}(r)$. What the core does not supply is an explicit spatial calibration, a map from lattice edge counts and tick counts to meters and seconds. This section closes that gap.
 
 ### 21.2 The Calibration Axiom
 
@@ -1603,11 +1603,11 @@ The Calibration Axiom (CA) asserts $v_{\max} = c$ as a postulate. A structurally
 2. The **Landauer Floor** ($k_B T \ln 2$) sets the minimum physical cost per irreversible bit operation.
 3. The ratio of throughput ceiling to thermodynamic floor defines a maximum information propagation rate.
 
-Under the Conditional Physical Calibration Bridge (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 3.45$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
+Under the Conditional Physical Calibration Bridge (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 3.45$ fm. This is the regime where the informational medium's discrete structure becomes physically significant, essentially the **Nyquist-Shannon limit** of the informational medium.
 
 The speed of light, in this picture, is the **maximum rate at which coherent informational state can propagate through the discretized medium** before aliasing and resolution breakdown occur. This is structurally analogous to how the speed of sound in a crystal lattice emerges from the lattice constant and the interatomic force constant, rather than being imposed externally.
 
-**Current status:** The Calibration Axiom is retained as the operational bridge. The structural derivation of $c$ from the Action Ceiling and Landauer Floor remains an open refinement, documented here as a directional pathway rather than a completed proof. The Conditional Physical Calibration Bridge (Section 27) does not require this derivation — it uses $c$ as an input — but the architecture is designed so that a future Nyquist-limit derivation would supersede the axiom without altering any downstream calibration.
+**Current status:** The Calibration Axiom is retained as the operational bridge. The structural derivation of $c$ from the Action Ceiling and Landauer Floor remains an open refinement, documented here as a directional pathway rather than a completed proof. The Conditional Physical Calibration Bridge (Section 27) does not require this derivation (it uses $c$ as an input) but the architecture is designed so that a future Nyquist-limit derivation would supersede the axiom without altering any downstream calibration.
 
 
 ---
@@ -1866,7 +1866,7 @@ $$\widetilde{\mathcal{L}}_t = c_0 \quad \text{exactly.}$$
 
 ### 23.7 Physical Interpretation
 
-The condensate state is a closed 5D $S^1$ carrier that has shed every positive action burden above the irreducible baseline $c_0$: dispersion has collapsed, innovation has fallen to zero, truth mismatch has vanished, prior mismatch has vanished, viscosity shear has frozen out, and the geometry channel has contracted onto the isotropic loop. In operational terms this is a macroscopic single-route occupancy with no incremental drag above baseline — the closest Finite Possibility Mechanics analog of a Bose-Einstein condensate or ideal superconducting phase.
+The condensate state is a closed 5D $S^1$ carrier that has shed every positive action burden above the irreducible baseline $c_0$: dispersion has collapsed, innovation has fallen to zero, truth mismatch has vanished, prior mismatch has vanished, viscosity shear has frozen out, and the geometry channel has contracted onto the isotropic loop. In operational terms this is a macroscopic single-route occupancy with no incremental drag above baseline, the closest Finite Possibility Mechanics analog of a Bose-Einstein condensate or ideal superconducting phase.
 
 
 ---
@@ -1880,7 +1880,7 @@ Given Theorem 4 and the topology-ordered mass ladder, the best 3D physical carri
 
 ### 24.2 Topology Class Hierarchy
 
-The mass ladder establishes $m_{\text{Circle}} < m_{\text{Motor}} < m_{\text{Sphere}} < m_{\text{Point-Pair}} < m_{\text{Point}}$, with the Circle class being the lightest topology — closest to the zero-incremental-drag ideal. The 3D carrier for the condensate state should therefore realize the Circle topology as a global, isotropic, edge-free network.
+The mass ladder establishes $m_{\text{Circle}} < m_{\text{Motor}} < m_{\text{Sphere}} < m_{\text{Point-Pair}} < m_{\text{Point}}$, with the Circle class being the lightest topology, closest to the zero-incremental-drag ideal. The 3D carrier for the condensate state should therefore realize the Circle topology as a global, isotropic, edge-free network.
 
 | Approximation level | Carrier | Limitation |
 |---|---|---|
@@ -1892,9 +1892,9 @@ The mass ladder establishes $m_{\text{Circle}} < m_{\text{Motor}} < m_{\text{Sph
 
 A generic periodic framework candidate satisfies the condensate requirements because:
 
-1. **Triply periodic closure.** The network is closed and periodic in all three spatial directions — the closest 3D realization of the Finite Possibility Mechanics Circle class.
+1. **Triply periodic closure.** The network is closed and periodic in all three spatial directions, the closest 3D realization of the Finite Possibility Mechanics Circle class.
 2. **Edge-free.** No open edges means no boundary mismatch that would inflate $|p_{t+1}-\tau_t|$ at the boundary nodes.
-3. **Uniform node coordination.** Every node sees the same loop count, path length class, and coordination — making $\tau_t$ spatially uniform.
+3. **Uniform node coordination.** Every node sees the same loop count, path length class, and coordination, making $\tau_t$ spatially uniform.
 4. **Low-mismatch local channels.** Local transport motifs should minimize innovation cost without assuming a named material family.
 
 ### 24.4 The Finite Possibility Mechanics Material Blueprint
@@ -1979,7 +1979,7 @@ For Finite Possibility Mechanics-internal simulation, a radial well is specified
 
 ### 25.5 The Bounded Well
 
-Finite Possibility Mechanics does not support singularities. The model's lag is bounded: the action ceiling $\mathcal{L}_{\max}$ is finite and yields a finite lag ceiling $\gamma_{\text{ax,max}} = 31.87$. Metastable locks decay under noise and finite budget. Finite Possibility Mechanics supports a bounded, metastable route-cost minimum with a nonzero escape probability — not an inescapable infinite well.
+Finite Possibility Mechanics does not support singularities. The model's lag is bounded: the action ceiling $\mathcal{L}_{\max}$ is finite and yields a finite lag ceiling $\gamma_{\text{ax,max}} = 31.87$. Metastable locks decay under noise and finite budget. Finite Possibility Mechanics supports a bounded, metastable route-cost minimum with a nonzero escape probability, not an inescapable infinite well.
 
 
 ---
@@ -1989,7 +1989,7 @@ Finite Possibility Mechanics does not support singularities. The model's lag is 
 
 ### 26.1 Context
 
-Section 21 proves the generic SI bridge $\Delta x = c\,\Delta t$, but that bridge alone leaves a one-parameter family of absolute scales. One additional empirical anchor — a concrete hardware timing measurement — closes the calibration completely. This theorem proves that once a concrete $\Delta t_{\text{impl}}$ is supplied, the SI calibration closes algebraically without violating the Finite Possibility Mechanics speed ceiling, the Landauer bridge, or the Point-Pair carrier scaling law.
+Section 21 proves the generic SI bridge $\Delta x = c\,\Delta t$, but that bridge alone leaves a one-parameter family of absolute scales. One additional empirical anchor (a concrete hardware timing measurement) closes the calibration completely. This theorem proves that once a concrete $\Delta t_{\text{impl}}$ is supplied, the SI calibration closes algebraically without violating the Finite Possibility Mechanics speed ceiling, the Landauer bridge, or the Point-Pair carrier scaling law.
 
 ### 26.2 The Benchmark Instantiation
 
@@ -2053,7 +2053,7 @@ $$r_{\text{carrier, impl}} = 702.628349 \times \Delta x_{\text{impl}} = 5.317401
 
 ### 26.6 Interpretation
 
-The solar-system-scale carrier radius is the correct consequence of plugging a desktop wall-clock tick into the bridge. It is a statement about substrate throughput density: ordinary silicon is enormously slower and sparser than any substrate capable of realizing microscopic carrier scales under the same algebra. As $\Delta t \to 0$, $r_{\text{carrier}} \to 0$. The theorem is not a claim about a universal electron radius — it is a proof that the SI bridge algebraically preserves the $c$ ceiling, the Landauer thermodynamic ledger, and the Point-Pair carrier scaling rule simultaneously, for any concrete implementation.
+The solar-system-scale carrier radius is the correct consequence of plugging a desktop wall-clock tick into the bridge. It is a statement about substrate throughput density: ordinary silicon is enormously slower and sparser than any substrate capable of realizing microscopic carrier scales under the same algebra. As $\Delta t \to 0$, $r_{\text{carrier}} \to 0$. The theorem is not a claim about a universal electron radius, it is a proof that the SI bridge algebraically preserves the $c$ ceiling, the Landauer thermodynamic ledger, and the Point-Pair carrier scaling rule simultaneously, for any concrete implementation.
 
 > **Note (Scale Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Conditional Physical Calibration Bridge (Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; The Conditional Physical Calibration Bridge maps that same algebra to fundamental physical constants, aligning the informational lattice with empirical sub-atomic scales.
 
@@ -2142,7 +2142,7 @@ At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic pro
 
 ---
 
-## Part V — Research Frontiers and Summary
+## Part V: Research Frontiers and Summary
 
 ---
 
@@ -2176,14 +2176,14 @@ So in Finite Possibility Mechanics language:
 ### 28.5 The Angular-Mode Extension ($n^2$)
 To trace the specific discrete sequence (2,8,18,32...), we need a compatible Finite Possibility Mechanics/CGA5 extension.
 
-**Probe Claim A — Point-Pair Twofold Degeneracy:**
+**Probe Claim A, Point-Pair Twofold Degeneracy:**
 The fundamental routing state, an oriented CGA5 2-blade, admits exactly two internal orientations:
 
 $$
 B_{ab}=X_a\wedge X_b,\qquad g_{\text{PP}}=2
 $$
 
-**Probe Claim B — Geometric Angular Mode Count:**
+**Probe Claim B, Geometric Angular Mode Count:**
 The number of distinct angular routing modes on a discrete shell of integer radius $n$ is extracted via the macro-scale CGA5 integration kernel (averaging over the underlying $\mathbb{Z}^3$ anisotropy) to produce a pristine $n^2$ continuous angular-mode count, yielding $G_n = n^2$.
 
 Combining these two yields the candidate capacity of the $n$-th shell:
@@ -2256,10 +2256,10 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
 | Conditional Instantiation of Calibration Bridge: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ verified as consistent algebraic identity |
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Calibration Bridge) |
-| Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
+| Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
 | SPARC structural probes | §13.9 | 175 galaxies, 3,391 rows |
-| Ω 2.7–2.9 held-out galaxy performance | §13.9 | Holdout log RMSE 0.338, correlation 0.943 |
+| Ω 2.72.9 held-out galaxy performance | §13.9 | Holdout log RMSE 0.338, correlation 0.943 |
 | Ω 3.0 exponent stability | §6.5 | Stable across 3×3×5 parameter grid |
 | Constitutive bridge and polarity fix | §13.10 | Polarity violations eliminated |
 | Geometry-derived Γ improvement | §13.11 | Scatter 0.596 → 0.312 |
@@ -2305,7 +2305,7 @@ Because these perturbations are fundamentally derived from the same discrete str
 ### 30.2 The Ultraviolet B-Mode Cutoff
 Standard continuous inflation assumes that quantum fluctuations generate a scale-invariant tensor power spectrum extending infinitely down to quantum scales.
 
-In FPM, primordial gravitational waves are literal "shear faults"—discrete topological mismatches propagating between adjacent daemons on the $\mathbb{Z}^3$ lattice. A daemon cannot register or propagate a geometric mismatch smaller than its own localized neighborhood.
+In FPM, primordial gravitational waves are literal "shear faults"discrete topological mismatches propagating between adjacent daemons on the $\mathbb{Z}^3$ lattice. A daemon cannot register or propagate a geometric mismatch smaller than its own localized neighborhood.
 
 Therefore, FPM formally predicts a sharp **ultraviolet (UV) cutoff** in the primordial B-mode power spectrum at the fundamental grid scale ($\Delta x_{\text{univ}}$). If next-generation CMB observatories (such as LiteBIRD or CMB-S4) detect this predicted power suppression at high $k$-modes (small scales), it will definitively invalidate continuous scale-invariant inflation in favor of discrete Finite Possibility Mechanics.
 
@@ -2338,7 +2338,7 @@ The deepest summary is also the simplest:
 
 > The framework proposes that the universe becomes solid, directional, heavy, time-slowed, structured, and stable for one basic reason: **keeping everything open is too expensive.**
 
-That single pressure — the cost of unbounded possibility — is proposed here as a candidate engine behind decoherence, the arrow of time, thermodynamic dissipation, gravitational attraction, relativistic time dilation, particle mass, molecular folding, nuclear confinement, and quantum decay. Finite Possibility Mechanics is a mathematical framework for understanding all of these as different faces of one underlying process: bounded informational dynamics.
+That single pressure (the cost of unbounded possibility) is proposed here as a candidate engine behind decoherence, the arrow of time, thermodynamic dissipation, gravitational attraction, relativistic time dilation, particle mass, molecular folding, nuclear confinement, and quantum decay. Finite Possibility Mechanics is a mathematical framework for understanding all of these as different faces of one underlying process: bounded informational dynamics.
 
 ---
 
@@ -2516,36 +2516,36 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 
 ## 34. References
 
-Bennett, C.H. (1982). The thermodynamics of computation. *International Journal of Theoretical Physics*, 21(12), 905–940.
+Bennett, C.H. (1982). The thermodynamics of computation. *International Journal of Theoretical Physics*, 21(12), 905940.
 
-Crooks, G.E. (1999). Entropy production fluctuation theorem. *Physical Review E*, 60(3), 2721–2726.
+Crooks, G.E. (1999). Entropy production fluctuation theorem. *Physical Review E*, 60(3), 27212726.
 
-Friston, K. (2010). The free-energy principle. *Nature Reviews Neuroscience*, 11(2), 127–138.
+Friston, K. (2010). The free-energy principle. *Nature Reviews Neuroscience*, 11(2), 127138.
 
-Jarzynski, C. (1997). Nonequilibrium equality for free energy differences. *Physical Review Letters*, 78(14), 2690–2693.
+Jarzynski, C. (1997). Nonequilibrium equality for free energy differences. *Physical Review Letters*, 78(14), 26902693.
 
-Jaynes, E.T. (1957). Information Theory and Statistical Mechanics. *Physical Review*, 106(4), 620–630.
+Jaynes, E.T. (1957). Information Theory and Statistical Mechanics. *Physical Review*, 106(4), 620630.
 
-Landauer, R. (1961). Irreversibility and Heat Generation in the Computing Process. *IBM Journal of Research and Development*, 5(3), 183–191.
+Landauer, R. (1961). Irreversibility and Heat Generation in the Computing Process. *IBM Journal of Research and Development*, 5(3), 183191.
 
 Pearl, J. (2000). *Causality: Models, Reasoning and Inference*. Cambridge University Press.
 
 Prigogine, I. (1977). Time, Structure and Fluctuations. Nobel Lecture, Stockholm.
 
-Shannon, C.E. (1948). A Mathematical Theory of Communication. *Bell System Technical Journal*, 27, 379–423.
+Shannon, C.E. (1948). A Mathematical Theory of Communication. *Bell System Technical Journal*, 27, 379423.
 
-Zurek, W.H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715–775.
+Zurek, W.H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715775.
 
 Lelli, F., McGaugh, S.S., Schombert, J.M. (2016). SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves. *The Astronomical Journal*, 152(6), 157.
 
 McGaugh, S.S., Lelli, F., Schombert, J.M. (2016). Radial Acceleration Relation in Rotationally Supported Galaxies. *Physical Review Letters*, 117(20), 201101.
 
-Milgrom, M. (1983). A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis. *The Astrophysical Journal*, 270, 365–370.
+Milgrom, M. (1983). A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis. *The Astrophysical Journal*, 270, 365370.
 
 Planck Collaboration (2020). Planck 2018 results. VI. Cosmological parameters. *Astronomy & Astrophysics*, 641, A6.
 
 ---
 
-*End of Finite Possibility Mechanics — v4.4 Unified Viscosity Framework with Cosmological Extension*
+*End of Finite Possibility Mechanics, v4.4 Unified Viscosity Framework with Cosmological Extension*
 
 *Alx Spiker · AperioGenix · Edmonton, Alberta, Canada*
