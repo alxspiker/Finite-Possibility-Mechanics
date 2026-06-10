@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Finite Possibility Mechanics is a candidate mathematical framework for the dynamics of any system that processes information under finite resources. The framework demonstrates that bounded route-cost dynamics can reproduce several dark-matter-like scaling relations in executable probes and MOND-like phenomenological fits, though full cosmological Boltzmann validation remains an open frontier. The framework establishes a formal pipeline from the directed routing tensor through viscosity dynamics to cosmological horizon coupling:
+Finite Possibility Mechanics is a candidate mathematical framework for the dynamics of any system that processes information under finite resources. The framework suggests that bounded route-cost dynamics can reproduce several dark-matter-like scaling relations in executable probes and MOND-like phenomenological fits, though full cosmological Boltzmann validation remains an open frontier. The framework establishes a formal pipeline from the directed routing tensor through viscosity dynamics to cosmological horizon coupling:
 
 $$\mathcal{R}_{ij} \to (S_9, K_1) \to \Phi_\Omega \to \mathbf{p}_t \to A_t \to C_t \to \kappa_t \to \Omega_t \to D_{t+1}$$
 
@@ -18,7 +18,7 @@ The central question is: *what does a bounded information-processing system do?*
 
 The framework is organized around three scales:
 
-- **Micro-scale (The Causal Grid).** A 9:1 directed routing tensor establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ are derived from local cell geometry.
+- **Micro-scale (The Causal Grid).** A 9:1 directed routing tensor establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ are conditionally derived from local cell geometry.
 - **Meso-scale (Galactic Mass Injection).** The Landauer bridge, SPARC galactic rotation probes, and the non-circular interpolation chain connect the micro-scale viscosity dynamics to observed gravitational phenomena.
 - **Macro-scale (Cosmic Horizon & CMB).** The holographic horizon capacity $a_{\text{cap}} = c H_\Lambda/2\pi$, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3$, and the stripped Boltzmann oscillator provide stripped density and acoustic oscillator gates for cosmological observables.
 
@@ -42,7 +42,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 
 | Dataset / Probe | Benchmark / Control | Result | Failure Condition | Current Status |
 |-----------------|---------------------|--------|-------------------|----------------|
-| SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Non-monotonic mass-viscosity relation | Operative prediction |
+| SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved $\Gamma$ scatter, rollover mismatch, or pipeline failure | Operative prediction |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
@@ -2223,9 +2223,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 The framework has evolved from a single clipped viscosity formula to a formal system spanning three physical scales.
 
-At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ (§6.5) and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ (§5.3) are derived from local cell geometry, not fitted to observations.
+At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ (§6.5) and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ (§5.3) are motivated by and conditionally derived from local cell geometry, rather than arbitrarily fitted.
 
-At the meso-scale, the viscosity gradient bridge reproduces galaxy rotation curves (§13) with held-out accuracy of 0.943 correlation, while the non-circular interpolation chain (§13.12) replaces the empirical MOND interpolation function with a first-principles pipeline.
+At the meso-scale, the viscosity gradient bridge reproduces galaxy rotation curves (§13) with a held-out accuracy of 0.943 correlation (though unresolved $\Gamma$ scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.9) offers a candidate pipeline that parallels the empirical MOND interpolation function.
 
 At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
 
