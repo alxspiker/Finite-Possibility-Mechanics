@@ -40,12 +40,12 @@ The architecture is unified by a single runtime currency — **route cost** — 
 ---
 ## Validation Matrix
 
-| Dataset / Probe | Null Model | Result | Failure Condition | Current Status |
-|-----------------|------------|--------|-------------------|----------------|
+| Dataset / Probe | Benchmark / Control | Result | Failure Condition | Current Status |
+|-----------------|---------------------|--------|-------------------|----------------|
 | SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Non-monotonic mass-viscosity relation | Operative prediction |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
-| Planck 2018 ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM | Ratio matches $16/3 \approx 5.333$ | Extreme divergence from $16/3$ | Empirical match |
-| Cosmic Microwave Background | Standard acoustic oscillations | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
+| Planck 2018 ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
+| Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
 
 ---
 
