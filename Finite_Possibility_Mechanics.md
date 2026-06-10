@@ -2034,7 +2034,7 @@ This matches the CODATA 2018 measured value to within $0.00003\%$. However, this
 | :--- | :--- | :--- |
 | **Engine Tick** | $2.939 \times 10^{-24}$ s | $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ |
 | **Engine Frequency** | $340.3$ ZHz | $1 / \Delta t_{\text{univ}}$ |
-| **Lattice Constant** | $3.45$ fm | $\Delta x = c \Delta t$ |
+| **Lattice Constant** | $0.881$ fm | $\Delta x = c \Delta t$ |
 | **Carrier Radius** | $\lambda_e \approx 2.43$ pm | $\alpha_{\text{PP}} \cdot \Delta x_{\text{univ}}$ |
 | **Action Floor** | $c_0 = 0.05$ | $\widetilde{\mathcal{L}}_t \to c_0$ (Condensate Lock) |
 | **Lag Ceiling** | $31.87$ | $\gamma_{\text{ax,max}} = \mathcal{L}_{\max} / \mathcal{L}_{\text{rest}}$ |
