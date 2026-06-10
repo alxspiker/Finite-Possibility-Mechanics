@@ -1,5 +1,5 @@
 # Finite Possibility Mechanics
-## A Complete Framework of Bounded Informational Dynamics
+## A Candidate Framework of Bounded Informational Dynamics
 
 **Alx Spiker | AperioGenix | Edmonton, Alberta, Canada**
 *v4.3 — Unified Viscosity Framework with Cosmological Extension — June 2026*
@@ -23,6 +23,19 @@ The framework is organized around three scales:
 - **Macro-scale (Cosmic Horizon & CMB).** The holographic horizon capacity $a_{\text{cap}} = c H_\Lambda/2\pi$, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3$, and the stripped Boltzmann oscillator extend the framework to cosmological observables.
 
 The architecture is unified by a single runtime currency — **route cost** — reused identically across decoherence, gravity, time-slowing, mass-equivalent energy, and cosmological perturbation dynamics.
+
+---
+
+## Claim Status Ledger
+
+| Claim | Status |
+|-------|--------|
+| $D_{t+1} \le \kappa_t D_t + \xi_t$ | Exact theorem |
+| $e(B) = (1+B)^{-3/4}$ | Conditional theorem |
+| $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
+| $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
+| Acoustic oscillator asymmetry | Stripped toy gate |
+| Full CMB replacement | Open frontier |
 
 ---
 
@@ -370,7 +383,7 @@ $$e_{\text{eff}} = (e_x \cdot e_y \cdot e_z \cdot e_t)^{1/4} = \left[(1+B)^{-1} 
 
 $$\boxed{e(B) = (1+B)^{-3/4}}$$
 
-The $3/4$ exponent is **derived**, not fitted: $d_{\text{space}} / d_{\text{causal}} = 3/4$.
+**Conditional Theorem**: The $3/4$ exponent is derived, not fitted, conditional on the mapping $d_{\text{space}} / d_{\text{causal}} = 3/4$.
 
 Combined with the Ω law:
 $$\kappa_t = C_N \cdot (1 + B)^{-3/4}$$
@@ -1097,6 +1110,15 @@ where $S = |d\Omega/dr|$ (shear) and $K = |d^2\Omega/dr^2|$ (curvature).
 
 > *Gravity-like acceleration is the slope of viscosity filtered through local shear resistance.*
 
+**SPARC Bridge Evolution Summary**
+
+| Stage | Mechanism | Status |
+|-------|-----------|--------|
+| Naive Bridge | Constant $\Gamma$ conversion | Failed (polarity violations, high scatter) |
+| Repaired Bridge | Constitutive $\Sigma \to \Omega$ chain | Fixed polarity, reduced scatter |
+| Final Candidate Law | Euler-Lagrange Shear Law $\Phi_{\text{EL}}$ | Stable operative prediction |
+| Remaining Gap | — | Derivation of exact 0.2/1.8 from lower-level link exchange |
+
 ### 13.9 The Non-Circular Interpolation Chain (Ω 3.7–3.8)
 
 The complete pipeline from baryonic load ($B$, using $a_{\text{cap}}$ from §18) to observed gravity, operating through the $\beta = 1.8$ shear resistance and the $3/4$ law from §5.3:
@@ -1441,7 +1463,7 @@ The routing ledger:
 - Does not scatter
 - Is pressureless and collisionless
 
-> *The routing ledger is what CDM looks like when described in informational language.*
+> *The routing ledger reproduces CDM-like density and oscillator behavior in stripped gates.*
 
 ---
 
@@ -2195,7 +2217,7 @@ At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid h
 
 At the meso-scale, the viscosity gradient bridge reproduces galaxy rotation curves (§13) with held-out accuracy of 0.943 correlation, while the non-circular interpolation chain (§13.12) replaces the empirical MOND interpolation function with a first-principles pipeline.
 
-At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio within $0.5\%$, and the stripped Boltzmann oscillator (§20) demonstrates that the routing ledger behaves exactly like a pressureless, collisionless CDM component in the perturbation equations.
+At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
 
 The formal pipeline:
 
