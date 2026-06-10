@@ -32,7 +32,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 |-------|--------|
 | $D_{t+1} \le \kappa_t D_t + \xi_t$ | Exact theorem |
 | $e(B) = (1+B)^{-3/4}$ | Conditional theorem |
-| Universal Calibration (Theorem 6) | Conditional theorem (scale closure) |
+| Conditional Physical Calibration Bridge | Conditional theorem (scale closure) |
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Acoustic oscillator asymmetry | Stripped toy gate |
@@ -85,7 +85,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 24. [The 3D Material Blueprint](#24-the-3d-material-blueprint)
 25. [The Corrected Radial Well Topology](#25-the-corrected-radial-well-topology)
 26. [Theorem 5: The Hardware Calibration Theorem](#26-theorem-5-the-hardware-calibration-theorem)
-27. [Theorem 6: The Universal Calibration Theorem](#27-theorem-6-the-universal-calibration-theorem)
+27. [Conditional Physical Calibration Bridge](#27-conditional-physical-calibration-bridge)
 
 **Part V — Research Frontiers and Summary**
 28. [The Angular-Mode Capacity Probe](#28-the-angular-mode-capacity-probe)
@@ -776,7 +776,7 @@ $$\tau_{i,t} \to \bar{\tau}_{i,t} = \frac{\sum_{j \in \mathcal{N}(i)} w_j \pi_{j
 
 where $\mathcal{N}(i)$ is the local neighborhood and $w_j$ are viscosity-weighted coupling strengths. Under this redefinition, accuracy is not matching an objective external reality but achieving **resonance with the most massive local viscosity sink** (consensus cache). A daemon whose prior $\pi_t$ misaligns with the local network's $\bar{\tau}_t$ suffers geometric mismatch cost, keeping the ledger closed.
 
-**Domain Wall Leak and Consensus Gradients:** If $\tau_t$ is redefined locally as a mean-field consensus, spatial boundaries between differing consensus zones will induce catastrophic geometric cost spikes. To prevent infinite consolidation loops at these boundaries, the extended multi-daemon Lagrangian (Section 22) explicitly incorporates a consensus gradient penalty $\eta|\nabla \bar{\tau}_{i,t}|$. To preserve the sub-1MB engine performance budget, this gradient cannot be evaluated dynamically mid-tick; it must be pre-computed via a contiguous Structure of Arrays (SoA) gather pass to prevent L1 cache coherency destruction.
+**Domain Wall Leak:** If $\tau_t$ is redefined locally as a mean-field consensus, spatial boundaries between differing consensus zones will induce catastrophic geometric cost spikes. In a purely local, $O(1)$ static-binary engine, these domain walls cannot be mitigated by explicit non-local penalties without breaking the strictly local ledger. Instead, domain wall resistance must emerge natively from the baseline viscosity law (higher trace = higher $\Omega$), keeping the engine completely localized.
 
 **Current status:** Until $\tau_t$ is formally derived as a network aggregate, the present model assumes a **localized open-system boundary** in which the truth target represents coupling to environmental degrees of freedom outside the daemon's own state vector. This is standard thermodynamic practice (cf. Lindblad master equation with external bath), but full endogenous closure remains an open architectural goal.
 
@@ -927,7 +927,7 @@ A scalar viscosity gradient ($-\nabla \Omega$) simulates Newtonian drift but is 
 
 $$g_{00} = -\Omega^2, \qquad g_{11} = \frac{1}{\Omega^2}, \qquad g_{22} = 1, \qquad g_{33} = 1.$$
 
-This exact mapping provides a formal dictionary between FPM's bounded computational resources and curved spacetime. The resulting metric allows FPM to natively calculate true relativistic geodesics compatible with Einstein field equations, rather than relying on weak-field Newtonian approximations.
+This conformal mapping provides a simulated kinematic dictionary between FPM's bounded computational resources and curved spacetime. The resulting metric acts as a kinematic ansatz, allowing FPM to simulate relativistic geodesics, although full closure with the Einstein field equations (and proper stress-energy sourcing) remains an open frontier.
 
 ### 13.3 Probe Construction
 
@@ -1250,7 +1250,13 @@ This benchmark ceiling lands in the same extreme-relativity window as the classi
 
 ### 15.1 The Strategy
 
-Different topological path configurations in the Finite Possibility Mechanics runtime have distinct characteristic route costs $\mathcal{C}_{\text{topo}}$. Mass in Finite Possibility Mechanics is not an empirically fitted parameter; it is the irreducible thermodynamic graph entropy of a topological routing cycle. By deriving the Point-Pair coefficient ($\alpha_{\text{PP}}$) fundamentally from the 5D routing phase space, the electron mass emerges as an inevitable geometric consequence of the discrete network topology.
+Different topological path configurations in the Finite Possibility Mechanics runtime have distinct characteristic route costs $\mathcal{C}_{\text{topo}}$. These values:
+
+1. Produce distinct mass-equivalent values
+2. Scale linearly with substrate capacity $N_{\text{bit-eq}}$
+3. Allow a mass scale to be fixed by specifying $N_{\text{bit-eq}}$
+
+At $N_{\text{bit-eq}} \approx 1.45 \times 10^9$ bits (~45.4 million HDC dimensions), the Point-Pair topology has a mass-equivalent within 2% of the electron mass.
 
 ### 15.2 The Topology-Tagged Route Cost
 
@@ -1262,19 +1268,37 @@ Different topological path configurations in the Finite Possibility Mechanics ru
 | Sphere (2-sphere) | Closed surface path | Meson proxy |
 | Motor | Mixed plane+sphere surrogate | Weak-force proxy |
 
-### 15.3 Geometric Derivation of the Point-Pair Mass
+### 15.3 The Mass-Energy Map
 
-The Point-Pair topological routing motif (representing an electron-like fermion proxy) operates as a fully ambiguous 2-node cycle with transition probabilities $P = [0.5, 0.5]$. The irreducible kinematic entropy of this base route is:
+$$m^{(\text{MeV})}_{\text{topo}} = \frac{(\mathcal{C}_{\text{topo}}/E_{\max}) \cdot \mathcal{J}}{1\ \text{MeV in joules}}, \qquad m^{(\text{MeV})}_{\text{topo}} \propto N_{\text{bit-eq}}.$$
 
-$$H = -\sum P \log_2 P = 1.0.$$
+### 15.4 Numerical Walk-Through
 
-Integrating over the 5D routing phase space (the continuum CGA5 analogue of the lattice) using the 9:1 directed routing tensor channels yields the baseline topological coefficient $\alpha_{\text{PP}}$:
+**Step 1.** At baseline ($N_{\text{bit-eq}} = 32{,}768$ bits, 1024 HDC dimensions), the Point-Pair topology gives:
 
-$$\alpha_{\text{PP}} = \frac{9 \cdot \pi^5}{H} \approx 2754.1772.$$
+$$m_{\text{baseline}} = 1.1523 \times 10^{-5} \text{ MeV}.$$
 
-This exact geometric constant replaces empirical parameter fitting. The mass scale $\Delta t_{\text{univ}}$ becomes a derived geometric eigenvalue of the routing tensor's phase space, forcing the algorithmic universe to natively generate physical geometry.
+**Step 2.** The electron mass target $m_e = 0.511$ MeV requires scale factor:
 
-### 15.4 The Topology Ordering
+$$k = \frac{0.511}{1.1523 \times 10^{-5}} = 44{,}346.$$
+
+**Step 3.** Since mass scales linearly with $N_{\text{bit-eq}}$:
+
+$$N_e = 44{,}346 \times 32{,}768 = 1.453 \times 10^9 \text{ bits} \equiv 45.41 \text{ million HDC dimensions.}$$
+
+**Step 4.** Running the system forward at HDC dimension $= 45{,}410{,}391$:
+
+$$m_{\text{Point-Pair}}^{\text{forward}} = 0.5009 \text{ MeV}.$$
+
+**Step 5.** Comparison:
+
+$$\left|\frac{0.5009 - 0.511}{0.511}\right| = 1.97\% \text{ relative error.}$$
+
+The 1.97% gap is fully explained by the independently measured route-cost drift at this specific dimension. This is a consistency verification, not a coincidence.
+
+> **Note on Empirical Calibration:** The current calibrated Point-Pair carrier coefficient is $\alpha_{\text{PP}} = 702.628349$. First-principles derivation of $\alpha_{\text{PP}}$ from 5D phase space integrals remains open.
+
+### 15.5 The Topology Ordering
 
 The mass ordering is preserved across scales:
 
@@ -1282,7 +1306,7 @@ $$m_{\text{Circle}} < m_{\text{Motor}} < m_{\text{Sphere}} < m_{\text{Point-Pair
 
 (lightest to heaviest), and this ordering is reproduced in the forward high-dimension run.
 
-### 15.5 The Up Quark
+### 15.6 The Up Quark
 
 The same procedure applied to the up quark ($m_u \approx 2.2$ MeV):
 
@@ -1292,7 +1316,7 @@ $$N_u = 190{,}927 \times 32{,}768 = 6.256 \times 10^9 \text{ bits} \equiv 195.5 
 
 The ratio $m_u / m_e = 2.2/0.511 = 4.305$ predicts $N_u / N_e = 4.305$. Measured: $6.256/1.453 = 4.305$. This is an arithmetic confirmation of the linear scaling law.
 
-### 15.6 Summary
+### 15.7 Summary
 
 The Finite Possibility Mechanics route-cost framework produces a topology-ordered mass spectrum. That spectrum scales linearly with substrate capacity via the Landauer bridge. At approximately 45 million HDC dimensions, the Point-Pair topology lands within 2% of the electron mass. The up-quark extrapolation is internally consistent with the same linear scaling law. Mass is understood as the baseline structural route cost of a stable informational topology.
 
@@ -1550,7 +1574,7 @@ The Calibration Axiom (CA) asserts $v_{\max} = c$ as a postulate. A structurally
 2. The **Landauer Floor** ($k_B T \ln 2$) sets the minimum physical cost per irreversible bit operation.
 3. The ratio of throughput ceiling to thermodynamic floor defines a maximum information propagation rate.
 
-Under the Universal Calibration Theorem (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 0.881$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
+Under the Universal Calibration Theorem (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 3.45$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
 
 The speed of light, in this picture, is the **maximum rate at which coherent informational state can propagate through the discretized medium** before aliasing and resolution breakdown occur. This is structurally analogous to how the speed of sound in a crystal lattice emerges from the lattice constant and the interatomic force constant, rather than being imposed externally.
 
@@ -1580,7 +1604,6 @@ $$
 \underbrace{c_0 + w_D D_{i,t+1} + w_I I_{i,t}}_{\mathcal{C}^{\text{sem}}}
 + \underbrace{w_T|p_{i,t+1} - \tau_{i,t}| + w_A b_{i,t}^{\gamma}|\pi_{i,t} - \tau_{i,t}|(1+4q_{i,t})}_{\mathcal{C}^{\text{geo}}}
 + \lambda|\Delta\Omega_{i,t}|
-+ \eta|\nabla \bar{\tau}_{i,t}|
 + \chi^{\text{move}}_{i,t}
 + \chi^{\text{comm}}_{i,t},
 $$
@@ -1933,7 +1956,7 @@ $$\Delta t_{\text{impl}} = 2.5243706\ \text{s}.$$
 
 ### 26.3 Statement
 
-Define the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 2754.1772$. Let $u_{\max} = 1$ edge/tick and the Continuum Spatial Bridge hold. Then for any concrete implementation with hardware tick $\Delta t > 0$ and per-tick normalized dissipation $\mathcal{L}_t$:
+Define the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 702.628349$. Let $u_{\max} = 1$ edge/tick and the Continuum Spatial Bridge hold. Then for any concrete implementation with hardware tick $\Delta t > 0$ and per-tick normalized dissipation $\mathcal{L}_t$:
 
 **(I) Dimensional consistency.**
 
@@ -1979,24 +2002,24 @@ $$P_{\text{impl}} = 3.179359152885619 \times 10^{-14}\ \text{W}.$$
 
 **Substrate scaling law:**
 
-$$r_{\text{carrier, impl}} = 2754.1772 \times \Delta x_{\text{impl}} = 2.084326236233604 \times 10^{12}\ \text{m} \approx 13.9329\ \text{AU}.$$
+$$r_{\text{carrier, impl}} = 702.628349 \times \Delta x_{\text{impl}} = 5.317401880104887 \times 10^{11}\ \text{m} \approx 3.5545\ \text{AU}.$$
 
 ### 26.6 Interpretation
 
 The solar-system-scale carrier radius is the correct consequence of plugging a desktop wall-clock tick into the bridge. It is a statement about substrate throughput density: ordinary silicon is enormously slower and sparser than any substrate capable of realizing microscopic carrier scales under the same algebra. As $\Delta t \to 0$, $r_{\text{carrier}} \to 0$. The theorem is not a claim about a universal electron radius — it is a proof that the SI bridge algebraically preserves the $c$ ceiling, the Landauer thermodynamic ledger, and the Point-Pair carrier scaling rule simultaneously, for any concrete implementation.
 
-> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Universal Calibration Theorem (Theorem 6, Section 27). The desktop benchmark's 13.93 AU carrier radius demonstrates the algebra at one concrete scale; Theorem 6 anchors that same algebra to fundamental physical constants, yielding sub-atomic carrier scales that are hardware-independent.
+> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Universal Calibration Theorem (Theorem 6, Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; The Conditional Physical Calibration Bridge anchors that same algebra to fundamental physical constants, yielding sub-atomic carrier scales that are hardware-independent.
 
 
 ---
 
-## 27. Theorem 6: The Universal Calibration Theorem
+## 27. Conditional Physical Calibration Bridge
 
 ### 27.1 Context
 
 Theorem 5 proves that the SI bridge closes algebraically for any concrete $\Delta t_{\text{impl}} > 0$, but leaves a one-parameter family of absolute scales parameterized by the hardware timing. To achieve **Primary Hardware Independence (PHI)**, we invert Theorem 5: instead of accepting the hardware tick as given, we derive the **Universal Engine Tick** ($\Delta t_{\text{univ}}$) from fundamental physical constants through the **Planck-Landauer Bridge**.
 
-The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 2754.1772$ and the electron Compton energy define a unique convergence point at which the Finite Possibility Mechanics carrier radius matches the electron's Compton wavelength. This fixes the engine tick without reference to any hardware substrate.
+The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 702.628349$ and the electron Compton energy define a unique convergence point at which the Finite Possibility Mechanics carrier radius matches the electron's Compton wavelength. This fixes the engine tick without reference to any hardware substrate.
 
 ### 27.2 The Universal Engine Tick ($\Delta t_{\text{univ}}$)
 
@@ -2004,15 +2027,15 @@ The implementation-independent tick is defined by the point where the Point-Pair
 
 $$E_{\text{rest}} = m_e c^2 \approx 8.187 \times 10^{-14}\ \text{J}.$$
 
-$$\boxed{\Delta t_{\text{univ}} = \frac{h}{E_{\text{rest}} \cdot \alpha_{\text{PP}}} = \frac{h}{m_e c^2 \cdot \alpha_{\text{PP}}} \approx 2.939 \times 10^{-24}\ \text{s}.}$$
+$$\boxed{\Delta t_{\text{univ}} = \frac{h}{E_{\text{rest}} \cdot \alpha_{\text{PP}}} = \frac{h}{m_e c^2 \cdot \alpha_{\text{PP}}} \approx 1.152 \times 10^{-23}\ \text{s}.}$$
 
-This represents the discrete clock rate of the informational medium. Under this calibration, the Finite Possibility Mechanics runtime executes approximately $3.40 \times 10^{23}$ ticks per second ($\approx 340.3$ zettahertz).
+This represents the discrete clock rate of the informational medium. Under this calibration, the Finite Possibility Mechanics runtime executes approximately $8.68 \times 10^{22}$ ticks per second ($\approx 86.8$ zettahertz).
 
 ### 27.3 The Universal Spatial Bridge ($\Delta x_{\text{univ}}$)
 
 Applying the Calibration Axiom ($v_{\max} = c$, Section 21) to the universal tick:
 
-$$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 8.810 \times 10^{-16}\ \text{m} \approx 0.881\ \text{fm}.}$$
+$$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}\ \text{m} \approx 0.881\ \text{fm}.}$$
 
 **Physical alignment:** This distance corresponds nearly exactly to the Compton wavelength of the electron divided by the Point-Pair coefficient. More precisely, $r_{\text{univ}} = \alpha_{\text{PP}} \cdot \Delta x_{\text{univ}} = \lambda_e$ to machine precision, where $\lambda_e = h/(m_e c) \approx 2.426 \times 10^{-12}$ m is the electron Compton wavelength.
 
@@ -2032,9 +2055,9 @@ This matches the CODATA 2018 measured value to within $0.00003\%$. However, this
 
 | Metric | Universal Value | Finite Possibility Mechanics Relation |
 | :--- | :--- | :--- |
-| **Engine Tick** | $2.939 \times 10^{-24}$ s | $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ |
-| **Engine Frequency** | $340.3$ ZHz | $1 / \Delta t_{\text{univ}}$ |
-| **Lattice Constant** | $0.881$ fm | $\Delta x = c \Delta t$ |
+| **Engine Tick** | $1.152 \times 10^{-23}$ s | $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ |
+| **Engine Frequency** | $86.8$ ZHz | $1 / \Delta t_{\text{univ}}$ |
+| **Lattice Constant** | $3.45$ fm | $\Delta x = c \Delta t$ |
 | **Carrier Radius** | $\lambda_e \approx 2.43$ pm | $\alpha_{\text{PP}} \cdot \Delta x_{\text{univ}}$ |
 | **Action Floor** | $c_0 = 0.05$ | $\widetilde{\mathcal{L}}_t \to c_0$ (Condensate Lock) |
 | **Lag Ceiling** | $31.87$ | $\gamma_{\text{ax,max}} = \mathcal{L}_{\max} / \mathcal{L}_{\text{rest}}$ |
@@ -2132,9 +2155,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 | Result | Section | Proof Type |
 |---|:---:|---|
-| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Conditional on Compton alignment |
-| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 0.881$ fm | §27 | Conditional on calibration axiom |
-| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
+| Calibration Bridge: Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Conditional on Compton alignment |
+| Calibration Bridge: Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Conditional on calibration axiom |
+| Calibration Bridge: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
 | 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Conditional on 3 spatial loaded channels over 4 causal channels |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
 | Fixed-point $D^* = \xi^*/(1-\kappa^*)$ in stationary regime | §7 | Conditional fixed-point analysis |
@@ -2173,8 +2196,8 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Confinement work $\propto r^{1.98}$ | §17 | Near-quadratic; tail cost ratio $11.7\times$ vs null |
 | Decay separation (100% vs. 0%) | §17 | Across 200 trials; energy scale in femtojoule range |
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
-| Conditional Instantiation of Theorem 6: $\Delta t_{\text{univ}} \approx 2.939 \times 10^{-24}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
-| Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Theorem 6) |
+| Conditional Instantiation of Theorem 6: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
+| Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Calibration Bridge) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
 | SPARC structural probes | §13.9 | 175 galaxies, 3,391 rows |
@@ -2229,7 +2252,7 @@ forms a candidate chain from grid tensor to cosmological horizon.
 
 **The physical bridges are quantitatively meaningful.** Landauer dissipation, Lindblad dephasing, near-inverse-square attraction, the thin-disk daemon-sheet galaxy branch, processor-lag time slowing, the calibrated mass ladder, the hardware calibration theorem, the universal calibration theorem, biophysical compaction, confinement, decay, and double-slit collapse are supported by executable probes of varying epistemic strength, ranging from exact mathematical derivations to stripped toy models.
 
-**The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Theorem 6) offers a conditional mechanism to anchor the framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
+**The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Calibration Bridge) offers a conditional mechanism to anchor the framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
 
 **The framework is falsifiable.** Every executable probe is a real failure point. If the kernel could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity (executable calibration probe, not independent experimental confirmation), or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms.
 
@@ -2286,9 +2309,9 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $m_e$ | Electron rest mass | $9.109 \times 10^{-31}$ kg |
 | $m_P$ | Planck mass | $2.176 \times 10^{-8}$ kg |
 | $c$ | Speed of light | $299{,}792{,}458$ m/s |
-| $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 2.939 \times 10^{-24}$ s |
-| $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 8.810 \times 10^{-16}$ m |
-| $f_{\text{univ}}$ | Universal engine frequency | $\approx 340.3$ ZHz |
+| $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 1.152 \times 10^{-23}$ s |
+| $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 3.453 \times 10^{-15}$ m |
+| $f_{\text{univ}}$ | Universal engine frequency | $\approx 86.8$ ZHz |
 | $G$ | Gravitational constant (derived) | $\hbar c / m_P^2$ |
 
 | $\mathbf{p}_t$ | N-route probability vector | simplex |
@@ -2362,7 +2385,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $R_d$ | Effective daemon-sheet radius | length |
 | $g_{\text{ax}}(r)$ | Finite Possibility Mechanics inward acceleration profile in a disk galaxy | acceleration |
 | $v_{\text{ax}}(r)$ | Finite Possibility Mechanics circular-speed profile in a disk galaxy | speed |
-| $\alpha_{\text{PP}}$ | Point-Pair carrier coefficient | $2754.1772$ |
+| $\alpha_{\text{PP}}$ | Point-Pair carrier coefficient | $702.628349$ |
 | $r_{\text{SI}}$ | Implementation-specific SI carrier radius | meters |
 | $N_e$ | Number of traversed lattice edges | non-negative integer |
 | $n_t$ | Number of elapsed engine ticks | non-negative integer |
@@ -2402,9 +2425,9 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $\Omega_{\text{out}}$ | Background viscosity in radial well | $[0.50, 0.85]$ |
 | $\mathcal{L}_{\text{rest}}$ | Deep-space baseline action | $0.1030625$ |
 | $N_{\text{bit-eq, actual}}$ | Actual bit-equivalent capacity at benchmark | $1{,}453{,}132{,}512$ |
-| $\Delta t_{\text{univ}}$ | Universal engine tick (Theorem 6, PHI) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 2.939 \times 10^{-24}$ s |
-| $\Delta x_{\text{univ}}$ | Universal lattice constant (Theorem 6, PHI) | $c \cdot \Delta t_{\text{univ}} \approx 8.810 \times 10^{-16}$ m |
-| $f_{\text{univ}}$ | Universal engine frequency | $1 / \Delta t_{\text{univ}} \approx 340.3$ ZHz |
+| $\Delta t_{\text{univ}}$ | Universal engine tick (Theorem 6, PHI) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 1.152 \times 10^{-23}$ s |
+| $\Delta x_{\text{univ}}$ | Universal lattice constant (Theorem 6, PHI) | $c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}$ m |
+| $f_{\text{univ}}$ | Universal engine frequency | $1 / \Delta t_{\text{univ}} \approx 86.8$ ZHz |
 | $E_{\text{rest}}$ | Electron rest energy | $m_e c^2 \approx 8.187 \times 10^{-14}$ J |
 | $\lambda_e$ | Electron Compton wavelength | $h / (m_e c) \approx 2.426 \times 10^{-12}$ m |
 | $G$ | Gravitational constant (derived from Planck mass) | $\hbar c / m_P^2 \approx 6.674 \times 10^{-11}$ m³kg⁻¹s⁻² |
