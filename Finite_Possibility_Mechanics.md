@@ -961,7 +961,7 @@ This is opposite to naive intuition. A low-viscosity pocket is a cost hill, not 
 
 ### 13.5 The Thin-Disk Daemon-Sheet Extension
 
-Sections 10.1-10.4 should be read as a **3D central-cache probe**. A spiral galaxy is not that geometry. A disk galaxy is much closer to a thin 2D daemon sheet embedded in 3D, with viscosity support spread laterally across the disk by the same smoothness pressure already present in the Finite Possibility Mechanics action:
+Sections 13.1–13.4 should be read as a **3D central-cache probe**. A spiral galaxy is not that geometry. A disk galaxy is much closer to a thin 2D daemon sheet embedded in 3D, with viscosity support spread laterally across the disk by the same smoothness pressure already present in the Finite Possibility Mechanics action:
 
 $$\mathcal{L}_t = \mathcal{C}^{\text{sem}}_t + \mathcal{C}^{\text{geo}}_t + \lambda|\Delta\Omega_t|.$$
 
@@ -1238,8 +1238,6 @@ This benchmark ceiling lands in the same extreme-relativity window as the classi
 
 ## 15. The Mass Ladder
 
-## 15. The Mass Ladder: From Route Costs to the Electron
-
 ### 15.1 The Strategy
 
 Different topological path configurations in the Finite Possibility Mechanics runtime have distinct characteristic route costs $\mathcal{C}_{\text{topo}}$. These values:
@@ -1346,8 +1344,6 @@ Steric exclusion is fully maintained throughout compaction, demonstrating that F
 ---
 
 ## 17. Additional Probes
-
-## 17. Additional Probes: Confinement, Decay, Double-Slit
 
 ### 17.1 Strong Confinement
 
@@ -2188,7 +2184,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
 | SPARC structural probes | §13.8 | 175 galaxies, 3,391 rows |
-| Ω 2.7–2.9 held-out galaxy performance | §13.11 | Holdout log RMSE 0.338, correlation 0.943 |
+| Ω 2.7–2.9 held-out galaxy performance | §13.8 | Holdout log RMSE 0.338, correlation 0.943 |
 | Ω 3.0 exponent stability | §6.5 | Stable across 3×3×5 parameter grid |
 | Constitutive bridge and polarity fix | §13.9 | Polarity violations eliminated |
 | Geometry-derived Γ improvement | §13.10 | Scatter 0.596 → 0.312 |
