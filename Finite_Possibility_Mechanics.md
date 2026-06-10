@@ -94,7 +94,8 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 31. [Conclusion](#31-conclusion)
 32. [Appendix A: Symbol Reference](#32-appendix-a-symbol-reference)
 33. [Appendix B: Extended Symbol Reference](#33-appendix-b-extended-symbol-reference)
-34. [References](#34-references)
+34. [Appendix C: Implementation Notes](#34-appendix-c-implementation-notes)
+35. [References](#35-references)
 
 ---
 
@@ -1192,8 +1193,6 @@ Here, $\zeta = \frac{9}{4\pi \mathcal{L}_{\max}}$ is the exact endogenous geomet
 
 This endogenous field equation formally anchors macroscopic gravity to the $9:1$ trace channel geometry. The spatial aggregation of the computational trace overhead ($\rho_{\mathcal{L}}$) natively drives the exact non-linear flat rotation curves of galaxies without relying on a Newtonian linear Poisson approximation.
 
-> **Implementation Note:** To maintain raw performance within the sub-1MB C++ environment, the non-linear integration of fractional exponents must be strictly paired with Kahan compensated `float64` arrays to absorb amplified rounding drift.
-
 ---
 
 ## 14. Time Dilation as Processor Lag
@@ -2089,9 +2088,9 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 
 **Scale closure:** Unlike the hardware-dependent $3.55$ AU radius from Theorem 5, this fixes the Point-Pair topology to the sub-atomic scale, aligning the informational "carrier" with observed particle physics.
 
-### 27.4 The Endogenous Derivation of $G$
+### 27.4 Algebraic Consistency Check for $G$
 
-The zero-dependency architecture prohibits the importation of exogenous physical constants. Because the Planck Mass ($m_P$) is physically defined using $G$, standard dimensional inversion is a tautology. To achieve true **Primary Hardware Independence**, $G$ must be endogenously derived from pure computational first principles.
+The zero-dependency architecture prohibits the importation of exogenous physical constants. Because the Planck Mass ($m_P$) is physically defined using $G$, standard dimensional inversion is an algebraic tautology, not a primary derivation. However, to ensure the framework's mathematical structure is physically consistent, we must verify that the endogenous geometric source projection mathematically aligns with the established gravitational constant.
 
 By mathematically projecting the discrete $9:1$ anisotropic grid routing channels onto the continuous $4\pi$ spatial integral, and strictly gating it by the grid's maximum action capacity ($\mathcal{L}_{\max}$), the framework yields the exact endogenous geometric source projection factor $\zeta$:
 
@@ -2101,13 +2100,13 @@ To physically close the bridge, the calibration constant $\Gamma$ must map the d
 
 $$\Gamma = \zeta \cdot c^2 = \left( \frac{9}{4\pi \mathcal{L}_{\max}} \right) c^2$$
 
-This proves that macroscopic gravity ($\Gamma$) is mathematically nothing more than the grid's maximum informational propagation speed ($c^2$) scaled by local thermodynamic route-cost resistance ($\zeta$). 
+This demonstrates that macroscopic gravity ($\Gamma$) maps consistently to the grid's maximum informational propagation speed ($c^2$) scaled by local thermodynamic route-cost resistance ($\zeta$). 
 
-Substituting this formally derived $\Gamma$ into the algebraic identity at the Planck scale yields the complete endogenous computational emergence of the gravitational constant:
+Substituting this formally derived $\Gamma$ into the algebraic identity at the Planck scale yields an exact algebraic consistency check for the gravitational constant:
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}}$$
 
-This matches the CODATA 2018 measured value to within $0.00003\%$. The framework now possesses full **Primary Hardware Independence**. The derivation of $G$ is mathematically closed, requiring strictly zero external astrophysical fits.
+This matches the CODATA 2018 measured value to within $0.00003\%$. The framework now possesses full **Primary Hardware Independence**. The algebraic consistency of $G$ is mathematically closed, requiring strictly zero external astrophysical fits.
 
 ### 27.5 Resulting Architecture Summary
 
@@ -2130,15 +2129,6 @@ This calibration aligns the abstract route cost runtime currency with empirical 
 **Proof of Dimensional Consistency.** By $\Delta x = c \Delta t_{\text{univ}}$ and $u_{\max} = 1$: $v_{\max} = \Delta x / \Delta t = c$. This is identical to Theorem 5 Part I. $\square$
 
 **Algebraic Consistency of Gravitational Constant.** The Planck mass is defined by $m_P = \sqrt{\hbar c / G}$. Inverting: $G = \hbar c / m_P^2$. Substituting CODATA values: $G \approx 6.6743 \times 10^{-11}$ m³kg⁻¹s⁻².
-
-### 27.7 Precision Note for Computational Implementations
-
-At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic provides $\sim 15.9$ significant decimal digits. Since the exponent occupies $\sim 23$ orders of magnitude, direct multiplicative operations on $\Delta t_{\text{univ}}$ retain full float64 precision. However, for long-horizon macroscopic simulations in any concrete runtime (including the C++ Finite Possibility Mechanics engine), the following precautions apply:
-
-1. **Viscosity field $\Omega_t \in [0.50, 0.85]$:** These values are order-unity and suffer no precision loss from the tick scale.
-2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation using strict IEEE 754 `float64` (`double`) is **required**. The use of compiler-dependent types like `long double` or `__float128` is strictly forbidden, as it destroys the cross-platform determinism required for exact SHA-256 trace verification.
-   * **Compiler Lockdown Directive:** To prevent standard C++ compiler optimization sweeps (e.g., `-O3`, `/fp:fast`) from silently annihilating the Kahan summation compensation variable via algebraic reassociation, the compilation phase must enforce strict IEEE 754 sequencing. Explicit compiler flags (such as `-fno-unsafe-math-optimizations` for GCC/Clang, or `/fp:precise` for MSVC), or enforcing `volatile` on the accumulator variables, are mandatory to guarantee deterministic execution without sacrificing the sub-1MB static binary footprint.
-3. **CGA5 multivector operations:** Verify that the definitions of $c$, $h$, and $G$ passed into 5D Conformal Geometric Algebra structures do not introduce precision drift at the universal tick scale.
 
 
 ---
@@ -2382,7 +2372,14 @@ $$
 \frac{v(240\ \mathrm{kpc})}{v(30\ \mathrm{kpc})}=0.6487.
 $$
 
-This is a forward falsification target. If isolated disk galaxies with sufficiently extended H I, satellite, or weak-lensing constraints remain flat far beyond the finite disk-ledger support radius with no FPM-scale rollover, the finite-ledger galaxy bridge is wrong. If the curves exhibit the predicted transition from $v(r)\approx \mathrm{constant}$ to $v(r)\propto r^{-1/2}$, with the turnover radius and amplitude tied to baryonic disk structure rather than an arbitrary halo extension, the result supports the FPM interpretation over simple persistent-flat-branch halo models.
+This is a quantitative, executable falsification target. The FPM rotation curve extrapolation is locked before exposing the model to far-field empirical limits, ensuring no *post hoc* fitting occurs.
+
+### Empirical Falsification Criteria
+The explicit failure criteria for this framework are:
+1. **Flatness Violation:** Fail if $v(r)$ remains statistically flat beyond $2\times$ the predicted FPM rollover radius.
+2. **Slope Violation:** Fail if the measured far-field slope is inconsistent with an $r^{-1/2}$ Keplerian decline within measurement uncertainty.
+
+These are **prospective predictions to be evaluated against far-field H I, satellite, or weak-lensing constraints where available.** Baseline comparisons against baryon-only Newtonian profiles, MOND interpolation functions, and best-fit NFW halos must be maintained to establish comparative statistical performance.
 
 This test should be evaluated galaxy-by-galaxy, not as a universal fixed radius. The current $R_d=120\ \mathrm{kpc}$ reference is a calibrated demonstrator, not a universal constant.
 
@@ -2591,7 +2588,31 @@ That single pressure (the cost of unbounded possibility) is proposed here as a c
 
 ---
 
-## 34. References
+## 34. Appendix C: Implementation Notes
+
+
+At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic provides $\sim 15.9$ significant decimal digits. Since the exponent occupies $\sim 23$ orders of magnitude, direct multiplicative operations on $\Delta t_{\text{univ}}$ retain full float64 precision. However, for long-horizon macroscopic simulations in any concrete runtime (including the C++ Finite Possibility Mechanics engine), the following precautions apply:
+
+1. **Viscosity field $\Omega_t \in [0.50, 0.85]$:** These values are order-unity and suffer no precision loss from the tick scale.
+2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation using strict IEEE 754 `float64` (`double`) is **required**. The use of compiler-dependent types like `long double` or `__float128` is strictly forbidden, as it destroys the cross-platform determinism required for exact SHA-256 trace verification.
+   * **Compiler Lockdown Directive:** To prevent standard C++ compiler optimization sweeps (e.g., `-O3`, `/fp:fast`) from silently annihilating the Kahan summation compensation variable via algebraic reassociation, the compilation phase must enforce strict IEEE 754 sequencing. Explicit compiler flags (such as `-fno-unsafe-math-optimizations` for GCC/Clang, or `/fp:precise` for MSVC), or enforcing `volatile` on the accumulator variables, are mandatory to guarantee deterministic execution without sacrificing the sub-1MB static binary footprint.
+3. **CGA5 multivector operations:** Verify that the definitions of $c$, $h$, and $G$ passed into 5D Conformal Geometric Algebra structures do not introduce precision drift at the universal tick scale.
+
+
+---
+
+## Part V: Research Frontiers and Summary
+
+---
+
+
+### C.4 Fractional Exponent Integration
+
+To maintain raw performance within the sub-1MB C++ environment, the non-linear integration of fractional exponents must be strictly paired with Kahan compensated `float64` arrays to absorb amplified rounding drift.
+
+
+## 35. References
+
 
 Bennett, C.H. (1982). The thermodynamics of computation. *International Journal of Theoretical Physics*, 21(12), 905940.
 
