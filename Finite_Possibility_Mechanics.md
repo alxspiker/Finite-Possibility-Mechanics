@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Finite Possibility Mechanics is a complete, self-contained mathematical framework for the dynamics of any system that processes information under finite resources. The framework establishes a formal pipeline from the directed routing tensor through viscosity dynamics to cosmological horizon coupling:
+Finite Possibility Mechanics is a candidate mathematical framework for the dynamics of any system that processes information under finite resources. The framework demonstrates that bounded route-cost dynamics can naturally reproduce dark-matter-like scaling laws and MOND-like phenomenological fits, though full cosmological Boltzmann validation remains an open frontier. The framework establishes a formal pipeline from the directed routing tensor through viscosity dynamics to cosmological horizon coupling:
 
 $$\mathcal{R}_{ij} \to (S_9, K_1) \to \Phi_\Omega \to \mathbf{p}_t \to A_t \to C_t \to \kappa_t \to \Omega_t \to D_{t+1}$$
 
@@ -1085,67 +1085,19 @@ The flat-branch spread across $5$-$30$ kpc is $8.92\%$, while the eventual rollo
 
 The falsifiable discriminator is geometric rather than halo-like: the flat branch length should track the **effective daemon-sheet radius and thickness**, not a spherical dark-matter halo. Thinner, colder disks should preserve the flat branch farther out, while puffier or more strongly warped disks should revert toward decline sooner at similar baryonic mass.
 
-### 13.8 SPARC Structural Probes: The Raw Test
+### 13.8 SPARC Structural Probes and the Euler-Lagrange Shear Law
 
-The Finite Possibility Mechanics viscosity bridge was tested against the SPARC database: 175 galaxies, 3,391 radial mass-model rows.
+Initial tests of the viscosity bridge against the SPARC database (175 galaxies) revealed that a naive constant-conversion fails: a universal $\Gamma$ does not exist, strict monotonic polarity fails in many galaxies, and Keplerian rollover is not universal. The missing piece was a constitutive bridge from baryonic structure to route probability state, filtered through local shear resistance.
 
-The Ω envelope is not directly falsified — the computed viscosity values can stay inside $[0.50, 0.85]$. However, three structural failures were identified:
-
-1. **Γ scatter.** A universal $\Gamma$ does not exist: $\log_{10}\Gamma$ standard deviation is 0.716.
-2. **Polarity violations.** Strict monotonic polarity fails. Significant negative $g_{\text{ax}}$ appears in 19–46% of galaxies.
-3. **Rollover not universal.** Keplerian last-3 rollover appears in only 17.71% of galaxies.
-
-**Missing piece:** A constitutive bridge from baryonic structure to route probability state.
-
-### 13.9 The Constitutive Bridge (Ω 2.4)
-
-**Surface density bridge:**
-
-$$\Sigma_{\text{eff}}(r) = \Upsilon_{\text{disk}} SB_{\text{disk}} + \Upsilon_{\text{bulge}} SB_{\text{bulge}} + w_{\text{gas}} \Sigma_{\text{gas,proxy}}.$$
-
-**Route probability:**
-
-$$q(r) = \frac{\Sigma_{\text{eff}}}{\Sigma_{\text{eff}} + \Sigma_0}, \qquad p(r) = 0.5 + 0.5\,q(r).$$
-
-**Full bridge chain:**
-
-$$\Sigma(r) \to p(r) \to C(r) \to e(r) \to \kappa(r) \to \Omega(r).$$
-
-Monotone radial well projection fixes the polarity crisis. Best-fit parameters: $\Sigma_0 = 100$, $\Sigma_E = 0.03$, $\eta = 0.2$, $w_{\text{gas}} = 0.2$, $\Gamma = 56995.3$.
-
-Polarity: fixed. Γ scatter: improved but still too large.
-
-### 13.10 Geometry-Derived Γ (Ω 2.5–2.6)
-
-Galaxy-level regression:
-
-$$\ln \Gamma_g = \beta_0 + \beta_1 \ln(V_{\text{flat}}^2) + \beta_2 \ln(R_{\text{disk}}) + \beta_3 \ln(SB_{\text{disk},0}) + \beta_4 \ln(1 + f_{\text{gas}}).$$
-
-Coefficients: intercept 2.355, $V_{\text{flat}}^2$ 0.737, $R_{\text{disk}}$ 0.373, $SB_0$ 0.059, gas fraction 1.560.
-
-Γ scatter progression: 0.596 → 0.431 → 0.312.
-
-### 13.11 The Euler–Lagrange Shear Law (Ω 2.7–2.9)
-
-Radial correction: $\Gamma(r) = \Gamma_g \Phi(r)$.
-
-The best theory-constrained form:
+The final operational bridging equation resolves these failures via the Euler-Lagrange shear law:
 
 $$\Phi_{\text{EL}}(r) = A \frac{(1 + K)^{0.2}}{(1 + S)^{1.8}},$$
 
-where $S = |d\Omega/dr|$ (shear), $K = |d^2\Omega/dr^2|$ (curvature).
-
-| Version | Log RMSE (all) | Log RMSE (holdout) | Correlation |
-|---------|:-:|:-:|:-:|
-| Ω 2.4 carrier | 0.393 | — | 0.893 |
-| Ω 2.5 geometry | 0.343 | — | 0.909 |
-| Ω 2.7 regression Φ | 0.304 | 0.349 | 0.941 |
-| Ω 2.8 theory Φ | 0.306 | 0.343 | 0.942 |
-| Ω 2.9 EL law | 0.303 | 0.338 | 0.943 |
+where $S = |d\Omega/dr|$ (shear) and $K = |d^2\Omega/dr^2|$ (curvature).
 
 > *Gravity-like acceleration is the slope of viscosity filtered through local shear resistance.*
 
-### 13.12 The Non-Circular Interpolation Chain (Ω 3.7–3.8)
+### 13.9 The Non-Circular Interpolation Chain (Ω 3.7–3.8)
 
 The complete pipeline from baryonic load ($B$, using $a_{\text{cap}}$ from §18) to observed gravity, operating through the $\beta = 1.8$ shear resistance and the $3/4$ law from §5.3:
 
@@ -1475,11 +1427,13 @@ $$\delta_L' = -\theta_L + 3\Phi',$$
 
 $$\theta_L' + \mathcal{H}\theta_L = k^2 \Psi.$$
 
-**The stripped Boltzmann oscillator.** The baryonic-photon plasma ($\delta_{\gamma b}$) oscillates against the gravity well ($\Phi_L$) sourced by the clumped ledger inertia ($\rho_L \delta_L$):
+**The stripped Boltzmann oscillator (Minimum-Gate Proxy).** The baryonic-photon plasma ($\delta_{\gamma b}$) oscillates against the gravity well ($\Phi_L$) sourced by the clumped ledger inertia ($\rho_L \delta_L$):
 
 $$\boxed{\delta_{\gamma b}'' + c_s^2 k^2 \delta_{\gamma b} = -k^2 \Phi_L,}$$
 
 where $c_s \approx c/\sqrt{3}$ is the radiation sound speed pushing against the asymmetric $16/3$ ledger route-cost well.
+
+*Disclaimer: This oscillator is a minimum-gate toy model. While the ledger acts as a collisionless, pressureless fluid (pseudo-CDM), extracting the exact $C_\ell$ power spectrum (peak heights, diffusion damping, polarization) requires embedding the $9:1$ directed routing tensor into a full multipole expansion code (like CAMB or CLASS), which has not yet been executed.*
 
 The routing ledger:
 - Carries gravitational potential
@@ -2142,7 +2096,16 @@ An unfilled shell is a low-cost viscosity sink. When $ is well below shell capac
 
 ## 29. Proven Results, Quantitative Probes, and Open Frontiers
 
-### 29.1 Exact Results (Mathematically Proven Within the Framework)
+### 29.1 Strict Claim Taxonomy
+
+To maintain epistemic hygiene, all claims in this framework are strictly tagged according to the following taxonomy:
+
+- **Exact Theorem:** True unconditionally under the axioms (e.g., The dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$).
+- **Conditional Derivation:** True *if* the mapping of causal-to-spatial dimensions aligns with physical spacetime (e.g., The $3/4$ energy law, the $16/3$ ledger inertia).
+- **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The stripped Boltzmann oscillator, biophysical steric folding).
+- **Empirical Fit:** Calibrated from data (e.g., The exact $0.2$ and $1.8$ coefficients in the Euler-Lagrange shear law if not using the $9:1$ structural split).
+
+### 29.2 Exact Results (Mathematically Proven Within the Framework)
 
 | Result | Section | Proof Type |
 |---|:---:|---|
