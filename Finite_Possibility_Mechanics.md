@@ -2007,7 +2007,7 @@ $$r_{\text{carrier, impl}} = 702.628349 \times \Delta x_{\text{impl}} = 5.317401
 
 The solar-system-scale carrier radius is the correct consequence of plugging a desktop wall-clock tick into the bridge. It is a statement about substrate throughput density: ordinary silicon is enormously slower and sparser than any substrate capable of realizing microscopic carrier scales under the same algebra. As $\Delta t \to 0$, $r_{\text{carrier}} \to 0$. The theorem is not a claim about a universal electron radius — it is a proof that the SI bridge algebraically preserves the $c$ ceiling, the Landauer thermodynamic ledger, and the Point-Pair carrier scaling rule simultaneously, for any concrete implementation.
 
-> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Conditional Physical Calibration Bridge (Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; The Conditional Physical Calibration Bridge maps that same algebra to fundamental physical constants, aligning the informational lattice with empirical sub-atomic scales.
+> **Note (Scale Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Conditional Physical Calibration Bridge (Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; The Conditional Physical Calibration Bridge maps that same algebra to fundamental physical constants, aligning the informational lattice with empirical sub-atomic scales.
 
 
 ---
@@ -2022,7 +2022,7 @@ The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} =
 
 ### 27.2 The Universal Engine Tick ($\Delta t_{\text{univ}}$)
 
-The implementation-independent tick is defined by the point where the Point-Pair route cost converges exactly with the Compton energy of the electron:
+The calibrated physical tick is defined by the point where the Point-Pair route cost converges exactly with the Compton energy of the electron:
 
 $$E_{\text{rest}} = m_e c^2 \approx 8.187 \times 10^{-14}\ \text{J}.$$
 
@@ -2195,7 +2195,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Confinement work $\propto r^{1.98}$ | §17 | Near-quadratic; tail cost ratio $11.7\times$ vs null |
 | Decay separation (100% vs. 0%) | §17 | Across 200 trials; energy scale in femtojoule range |
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
-| Conditional Instantiation of Calibration Bridge: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
+| Conditional Instantiation of Calibration Bridge: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ verified as consistent algebraic identity |
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Calibration Bridge) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
@@ -2308,8 +2308,8 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $m_e$ | Electron rest mass | $9.109 \times 10^{-31}$ kg |
 | $m_P$ | Planck mass | $2.176 \times 10^{-8}$ kg |
 | $c$ | Speed of light | $299{,}792{,}458$ m/s |
-| $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 1.152 \times 10^{-23}$ s |
-| $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 3.453 \times 10^{-15}$ m |
+| $\Delta t_{\text{univ}}$ | Calibrated physical engine tick (Calibration Bridge) | $\approx 1.152 \times 10^{-23}$ s |
+| $\Delta x_{\text{univ}}$ | Calibrated physical lattice constant (Calibration Bridge) | $\approx 3.453 \times 10^{-15}$ m |
 | $f_{\text{univ}}$ | Universal engine frequency | $\approx 86.8$ ZHz |
 | $G$ | Gravitational constant (algebraic consistency check) | $\hbar c / m_P^2$ |
 
