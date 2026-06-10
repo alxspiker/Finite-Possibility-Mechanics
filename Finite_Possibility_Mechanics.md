@@ -32,6 +32,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 |-------|--------|
 | $D_{t+1} \le \kappa_t D_t + \xi_t$ | Exact theorem |
 | $e(B) = (1+B)^{-3/4}$ | Conditional theorem |
+| Universal Calibration (Theorem 6) | Conditional theorem (scale closure) |
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Acoustic oscillator asymmetry | Stripped toy gate |
@@ -2238,16 +2239,13 @@ forms a candidate chain from grid tensor to cosmological horizon.
 
 **The physical bridges are quantitatively meaningful.** Landauer dissipation, Lindblad dephasing, near-inverse-square attraction, the thin-disk daemon-sheet galaxy branch, processor-lag time slowing, the calibrated mass ladder, the hardware calibration theorem, the universal calibration theorem, biophysical compaction, confinement, decay, and double-slit collapse are supported by executable probes of varying epistemic strength, ranging from exact mathematical derivations to stripped toy models.
 
-**The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Theorem 6) anchors the entire framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
+**The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Theorem 6) offers a conditional mechanism to anchor the framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
 
 **The framework is falsifiable.** Every executable probe is a real failure point. If the kernel could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity (executable calibration probe, not independent experimental confirmation), or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms.
 
 The deepest summary is also the simplest:
 
-
-The deepest summary is also the simplest:
-
-> The universe becomes solid, directional, heavy, time-slowed, structured, and stable for one basic reason: **keeping everything open is too expensive.**
+> The framework proposes that the universe becomes solid, directional, heavy, time-slowed, structured, and stable for one basic reason: **keeping everything open is too expensive.**
 
 That single pressure — the cost of unbounded possibility — is proposed here as a candidate engine behind decoherence, the arrow of time, thermodynamic dissipation, gravitational attraction, relativistic time dilation, particle mass, molecular folding, nuclear confinement, and quantum decay. Finite Possibility Mechanics is a mathematical framework for understanding all of these as different faces of one underlying process: bounded informational dynamics.
 
@@ -2343,8 +2341,6 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 
 ## 32. Appendix B: Extended Symbol Reference
 
-## 26. Appendix B: Extended Symbol Reference
-
 | Symbol | Meaning | Range / Units |
 |--------|---------|---------------|
 | $\Delta x$ | Lattice edge length in SI units | meters |
@@ -2428,8 +2424,6 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 ---
 
 ## 33. References
-
-## 27. References
 
 Bennett, C.H. (1982). The thermodynamics of computation. *International Journal of Theoretical Physics*, 21(12), 905–940.
 
