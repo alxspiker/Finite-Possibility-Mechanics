@@ -1576,7 +1576,7 @@ The speed of light, in this picture, is the **maximum rate at which coherent inf
 
 ### 22.1 Overview
 
-The **Universal Cognitive Daemon (UCD)** is an Finite Possibility Mechanics processing unit embedded in a 3D integer lattice $\mathbb{Z}^3$, equipped with a bounded internal ledger and a route-selection layer defined on its local 3D neighborhood. All core Finite Possibility Mechanics laws are inherited unchanged; this section adds the grid wrapper and derives exact conditions for life, growth, and cooperative communication.
+The **Universal Cognitive Daemon (UCD)** is a Finite Possibility Mechanics processing unit embedded in a 3D integer lattice $\mathbb{Z}^3$, equipped with a bounded internal ledger and a route-selection layer defined on its local 3D neighborhood. All core Finite Possibility Mechanics laws are inherited unchanged; this section adds the grid wrapper and derives exact conditions for life, growth, and cooperative communication.
 
 ### 22.2 The Extended State Vector
 
@@ -2002,8 +2002,6 @@ The solar-system-scale carrier radius is the correct consequence of plugging a d
 
 ## 27. Theorem 6: The Universal Calibration Theorem
 
-### 27.1 Primary Hardware Independence
-
 ### 27.1 Context
 
 Theorem 5 proves that the SI bridge closes algebraically for any concrete $\Delta t_{\text{impl}} > 0$, but leaves a one-parameter family of absolute scales parameterized by the hardware timing. To achieve **Primary Hardware Independence (PHI)**, we invert Theorem 5: instead of accepting the hardware tick as given, we derive the **Universal Engine Tick** ($\Delta t_{\text{univ}}$) from fundamental physical constants through the **Planck-Landauer Bridge**.
@@ -2036,7 +2034,7 @@ To fulfill the deterministic System 2 requirement, the gravitational constant ($
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}.}$$
 
-This matches the CODATA 2018 measured value to within $0.00003\%$. The derivation establishes $G$ as a consequence of the informational architecture rather than an independent free parameter.
+This matches the CODATA 2018 measured value to within $0.00003\%$. The derivation re-expresses $G$ as an algebraic inversion of the Planck mass definition within the informational architecture, showing internal consistency rather than deriving it as a new independent consequence.
 
 **Open frontier ($\Gamma$ calibration):** The route-cost-to-physical-acceleration calibration constant $\Gamma$ (Section 13) must eventually be expressed as a function of $G$, $c$, and $h$ to complete the macroscopic closure. This requires formally integrating the discrete action principle over the viscosity shell of a massive body. Until this integration is achieved from the per-tick Lagrangian $\mathcal{L}_t$, $\Gamma$ remains an empirical calibration constant to preserve the strict falsifiability of the framework.
 
@@ -2081,10 +2079,10 @@ At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic pro
 
 
 ### 28.1 Context
-You can derive a capacity-limited shell structure and an Finite Possibility Mechanics meaning of electronegativity directly from Sections 13, 16, and 19, but you cannot yet claim a first-principles proof of the exact standard capacities (2,8,18,32) from the published Lagrangian alone. The current repository explicitly treats steric folding as a probe-level bridge and says full particle/topology identification is still open.
+You can derive a capacity-limited shell structure and a Finite Possibility Mechanics meaning of electronegativity directly from Sections 13, 16, and 19, but you cannot yet claim a first-principles proof of the exact standard capacities (2,8,18,32) from the published Lagrangian alone. The current repository explicitly treats steric folding as a probe-level bridge and says full particle/topology identification is still open.
 
 ### 28.2 Bare Nucleus = Corrected Radial Well
-Section 25 already fixes the sign: route cost is proportional to -\Omega(r)$, so a high-viscosity core is a low-cost attractive center.
+Section 25 already fixes the sign: route cost is proportional to $-\Omega(r)$, so a high-viscosity core is a low-cost attractive center.
 The corrected radial profile is:
 $$
 \Omega(r)=\Omega_{\text{out}}+A_c e^{-r^2/\sigma_c^2}-A_s e^{-(r-R)^2/\sigma_s^2}
@@ -2140,7 +2138,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 - **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The $16/3$ ledger inertia ratio, the stripped Boltzmann oscillator, biophysical steric folding).
 - **Empirical Fit:** Calibrated from data (e.g., The exact $0.2$ and $1.8$ coefficients in the Euler-Lagrange shear law if not using the $9:1$ structural split).
 
-### 29.2 Exact Results (Mathematically Proven Within the Framework)
+### 29.2 Internal Mathematical Results (Exact and Conditional Corollaries)
 
 | Result | Section | Proof Type |
 |---|:---:|---|
