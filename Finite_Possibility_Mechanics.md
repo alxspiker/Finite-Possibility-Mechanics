@@ -1550,7 +1550,7 @@ The Calibration Axiom (CA) asserts $v_{\max} = c$ as a postulate. A structurally
 2. The **Landauer Floor** ($k_B T \ln 2$) sets the minimum physical cost per irreversible bit operation.
 3. The ratio of throughput ceiling to thermodynamic floor defines a maximum information propagation rate.
 
-Under the Universal Calibration Theorem (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 3.45$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
+Under the Universal Calibration Theorem (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 0.881$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
 
 The speed of light, in this picture, is the **maximum rate at which coherent informational state can propagate through the discretized medium** before aliasing and resolution breakdown occur. This is structurally analogous to how the speed of sound in a crystal lattice emerges from the lattice constant and the interatomic force constant, rather than being imposed externally.
 
@@ -2133,7 +2133,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Result | Section | Proof Type |
 |---|:---:|---|
 | Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Conditional on Compton alignment |
-| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Conditional on calibration axiom |
+| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 0.881$ fm | §27 | Conditional on calibration axiom |
 | Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
 | 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Conditional on 3 spatial loaded channels over 4 causal channels |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
