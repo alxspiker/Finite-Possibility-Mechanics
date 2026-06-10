@@ -2113,9 +2113,9 @@ B_{ab}=X_a\wedge X_b,\qquad g_{\text{PP}}=2
 $$
 
 **Probe Claim B — Geometric Angular Mode Count:**
-The number of distinct angular routing modes on a discrete shell of integer radius $n$ in the CGA5 topology is exactly expanding the dimensionality, yielding $G_n = n^2$.
+The number of distinct angular routing modes on a discrete shell of integer radius $n$ in the CGA5 topology is modeled as an $n^2$ angular-mode count, yielding $G_n = n^2$.
 
-Combining these two yields the exact capacity of the $n$-th shell:
+Combining these two yields the candidate capacity of the $n$-th shell:
 $$
 C_n = g_{\text{PP}} G_n = 2 n^2
 $$
@@ -2142,6 +2142,10 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 | Result | Section | Proof Type |
 |---|:---:|---|
+| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Direct from Planck-Landauer bridge |
+| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Direct from Calibration Axiom |
+| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Algebraic inversion of Planck mass definition |
+| 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
 | Fixed-point $D^* = \xi^*/(1-\kappa^*)$ in stationary regime | §7 | Conditional fixed-point analysis |
 | Self-reinforcing classicalization loop under repeated consolidation | §7 | Sequential argument with stated assumptions |
@@ -2163,12 +2167,8 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 | Result | Section | Accuracy / Notes |
 |---|:---:|---|
-| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Direct from Planck-Landauer bridge |
-| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Direct from Calibration Axiom |
-| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Algebraic inversion of Planck mass definition |
 | 9:1 directed routing channel count | §3 | Structural argument from directed interaction table |
 | α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
-| 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
 | 16/3 causal-ledger density ratio | §19 | Dimensional count; <0.5% of Planck 2018 |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
@@ -2209,9 +2209,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Cross-daemon cooperation in adversarial environments | Pairwise criterion derived; multi-agent equilibria not analyzed |
 | Full synthesis of a validated 3D periodic carrier | Generic target identified; family left open |
 | Constitutive relation $P(\mathbf{x},t) \to \Omega_t$ for acoustic/EM fields | Not yet supplied in present model |
-
 | Endogenous truth-target closure ($\tau_t$ as network aggregate) | Mean-field redefinition pathway documented (Section 9.4); formal derivation from daemon network dynamics open |
-
 | Γ calibration | Partially resolved via geometry + radial shear law |
 | 9:1 channel split microscopic derivation | Structural argument present, microscopic proof open |
 | Full Landauer bottom-up injection | Prototype exists, not yet competitive with top-down calibration |
