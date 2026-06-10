@@ -79,7 +79,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 20. [Acoustic Perturbation Dynamics and Stripped Boltzmann Oscillator](#20-acoustic-perturbation-dynamics-and-stripped-boltzmann-oscillator)
 
 **Part IV — Extension Layer**
-21. [The Continuum Spatial Bridge](#21-the-continuum-spatial-bridge)
+21. [The Empirical Spatial Bridge](#21-the-continuum-spatial-bridge)
 22. [The Universal Cognitive Daemon](#22-the-universal-cognitive-daemon)
 23. [Theorem 4: The Zero-Drag Isotropic Loop](#23-theorem-4-the-zero-drag-isotropic-loop)
 24. [The 3D Material Blueprint](#24-the-3d-material-blueprint)
@@ -313,7 +313,7 @@ Two operational modes:
 | Symmetric fallback | $\mathcal{R}_{ij} = \mathcal{R}_{ji}$ | 6 (Newtonian) |
 | True directed ledger | $\mathcal{R}_{ij} \ne \mathcal{R}_{ji}$ | 9 (FPM gravity) |
 
-The runtime computes: $S_9$ (shear aggregate), $K_1$ (trace channel), $\Phi$ (mobility), and $g_{\text{ax}}$ (acceleration). The 1/5, 9/5 exponent split is hard-coded from the channel count derivation in §3.
+The runtime computes: $S_9$ (shear aggregate), $K_1$ (trace channel), $\Phi$ (mobility), and $g_{\text{ax}}$ (acceleration). The 1/5, 9/5 exponent split is derived from the channel count in §3. However, structurally, the exponent sum $\alpha + \beta = f(E_t, \mathcal{L}_{\max})$ is dynamically bounded by the available energy budget, settling to exactly $2$ only in the low-energy stationary survival branch.
 
 **Open frontier:** Derive actual $\mathcal{R}_{ij}$ route-link costs from the lower-level engine rather than from top-down calibration.
 
@@ -1421,7 +1421,7 @@ The following probes are part of the complete Finite Possibility Mechanics execu
 
 ## 18. The Holographic Horizon Capacity
 
-The local, volume-based cell capacity catastrophically saturates at the Planck scale. This section replaces it with a horizon-coupled cosmological limit.
+> **Epistemic Boundary Warning:** The local, volume-based cell capacity catastrophically saturates at the Planck scale. This section replaces it with a horizon-coupled cosmological limit $a_{\text{cap}}$. However, deriving a macroscopic boundary directly from the Hubble parameter violates the strictly local $O(1)$ framework (creating a 41-order-of-magnitude resolution gap). Therefore, $a_{\text{cap}}$ must currently be treated strictly as an **Empirical Cosmological Boundary Fit** and a phenomenological placeholder until formal renormalization group (RG) flow integrates the local grid dynamics.
 
 ### 18.1 The Cosmic Baseline Limit
 
@@ -1492,7 +1492,7 @@ The routing ledger:
 
 ---
 
-## 21. The Continuum Spatial Bridge
+## 21. The Empirical Spatial Bridge
 
 
 ### 21.1 Purpose
@@ -2041,6 +2041,8 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 **Scale closure:** Unlike the hardware-dependent $3.55$ AU radius from Theorem 5, this fixes the Point-Pair topology to the sub-atomic scale, aligning the informational "carrier" with observed particle physics.
 
 ### 27.4 Algebraic Consistency of $G$
+
+> **Epistemic Boundary Warning:** A zero-dependency framework cannot derive physical constants by circularly feeding them into equations. Because the Planck Mass is defined using $G$, this inversion is a tautology that verifies dimensional consistency but not physical closure. Endogenous derivation of $G$ remains an open frontier dependent on deriving $\Gamma$.
 
 To approximate macroscopic scales, the gravitational constant ($G$) is mapped via the standard algebraic identity at the Planck Mass ($m_P$):
 
