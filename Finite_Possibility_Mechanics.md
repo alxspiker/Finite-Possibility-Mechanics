@@ -1574,11 +1574,11 @@ The Calibration Axiom (CA) asserts $v_{\max} = c$ as a postulate. A structurally
 2. The **Landauer Floor** ($k_B T \ln 2$) sets the minimum physical cost per irreversible bit operation.
 3. The ratio of throughput ceiling to thermodynamic floor defines a maximum information propagation rate.
 
-Under the Universal Calibration Theorem (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 3.45$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
+Under the Conditional Physical Calibration Bridge (Section 27), the **Universal Engine Tick** $\Delta t_{\text{univ}} = h / (m_e c^2 \alpha_{\text{PP}})$ and the **Universal Lattice Constant** $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}}$ together define a fundamental lattice spacing of $\approx 3.45$ fm. This is the regime where the informational medium's discrete structure becomes physically significant — essentially the **Nyquist-Shannon limit** of the informational medium.
 
 The speed of light, in this picture, is the **maximum rate at which coherent informational state can propagate through the discretized medium** before aliasing and resolution breakdown occur. This is structurally analogous to how the speed of sound in a crystal lattice emerges from the lattice constant and the interatomic force constant, rather than being imposed externally.
 
-**Current status:** The Calibration Axiom is retained as the operational bridge. The structural derivation of $c$ from the Action Ceiling and Landauer Floor remains an open refinement, documented here as a directional pathway rather than a completed proof. The Universal Calibration Theorem (Section 27) does not require this derivation — it uses $c$ as an input — but the architecture is designed so that a future Nyquist-limit derivation would supersede the axiom without altering any downstream calibration.
+**Current status:** The Calibration Axiom is retained as the operational bridge. The structural derivation of $c$ from the Action Ceiling and Landauer Floor remains an open refinement, documented here as a directional pathway rather than a completed proof. The Conditional Physical Calibration Bridge (Section 27) does not require this derivation — it uses $c$ as an input — but the architecture is designed so that a future Nyquist-limit derivation would supersede the axiom without altering any downstream calibration.
 
 
 ---
@@ -2195,7 +2195,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Confinement work $\propto r^{1.98}$ | §17 | Near-quadratic; tail cost ratio $11.7\times$ vs null |
 | Decay separation (100% vs. 0%) | §17 | Across 200 trials; energy scale in femtojoule range |
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
-| Conditional Instantiation of Theorem 6: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
+| Conditional Instantiation of Calibration Bridge: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Calibration Bridge) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
@@ -2212,7 +2212,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 |---|---|
 | SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
 | First-principles values of $\eta_d$, $\Lambda_d$, and $\Gamma$ | Reduced aggregation bridge currently packages unresolved disk-class closure constants; $\Gamma(G,c,h)$ derivation requires formal integration of discrete action over viscosity shell |
-| Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Theorem 6; independent physical validation remains open. |
+| Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Calibration Bridge; independent physical validation remains open. |
 | Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; tensor field derivation in progress |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
@@ -2249,9 +2249,9 @@ forms a candidate chain from grid tensor to cosmological horizon.
 
 **The conditional propositions are supported by executable benchmarks.** Native causal ordering is measurably cheaper on the tested temporally correlated traces. Aligned priors are energetically favored on the tested workloads. Both statements are genuine empirical facts about the framework's behavior, with explicit null controls and measured separation metrics.
 
-**The physical bridges are quantitatively meaningful.** Landauer dissipation, Lindblad dephasing, near-inverse-square attraction, the thin-disk daemon-sheet galaxy branch, processor-lag time slowing, the calibrated mass ladder, the hardware calibration theorem, the universal calibration theorem, biophysical compaction, confinement, decay, and double-slit collapse are supported by executable probes of varying epistemic strength, ranging from exact mathematical derivations to stripped toy models.
+**The physical bridges are quantitatively meaningful.** Landauer dissipation, Lindblad dephasing, near-inverse-square attraction, the thin-disk daemon-sheet galaxy branch, processor-lag time slowing, the calibrated mass ladder, the hardware calibration theorem, the conditional physical calibration bridge, biophysical compaction, confinement, decay, and double-slit collapse are supported by executable probes of varying epistemic strength, ranging from exact mathematical derivations to stripped toy models.
 
-**The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Calibration Bridge) offers a conditional mechanism to anchor the framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
+**The internal algorithmic architecture is unified.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Conditional Physical Calibration Bridge offers a mechanism to anchor the framework to fundamental physical constants, allowing the scale closure to be aligned to empirical physics rather than arbitrary hardware. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
 
 **The framework is falsifiable.** Every executable probe is a real failure point. If the kernel could not reconstruct the topology-ordered particle catalog, if the forward 45.4M-dimension Point-Pair run had not landed near electron parity (executable calibration probe, not independent experimental confirmation), or if the hardware calibration theorem had produced incoherent scale closure, the framework would have failed on its own benchmark terms.
 
@@ -2311,7 +2311,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 1.152 \times 10^{-23}$ s |
 | $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 3.453 \times 10^{-15}$ m |
 | $f_{\text{univ}}$ | Universal engine frequency | $\approx 86.8$ ZHz |
-| $G$ | Gravitational constant (derived) | $\hbar c / m_P^2$ |
+| $G$ | Gravitational constant (algebraic consistency check) | $\hbar c / m_P^2$ |
 
 | $\mathbf{p}_t$ | N-route probability vector | simplex |
 | $H_N$ | Normalized N-route entropy | $[0,1]$ |
@@ -2424,12 +2424,12 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $\Omega_{\text{out}}$ | Background viscosity in radial well | $[0.50, 0.85]$ |
 | $\mathcal{L}_{\text{rest}}$ | Deep-space baseline action | $0.1030625$ |
 | $N_{\text{bit-eq, actual}}$ | Actual bit-equivalent capacity at benchmark | $1{,}453{,}132{,}512$ |
-| $\Delta t_{\text{univ}}$ | Universal engine tick (Theorem 6, PHI) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 1.152 \times 10^{-23}$ s |
-| $\Delta x_{\text{univ}}$ | Universal lattice constant (Theorem 6, PHI) | $c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}$ m |
+| $\Delta t_{\text{univ}}$ | Universal engine tick (Calibration Bridge) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 1.152 \times 10^{-23}$ s |
+| $\Delta x_{\text{univ}}$ | Universal lattice constant (Calibration Bridge) | $c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}$ m |
 | $f_{\text{univ}}$ | Universal engine frequency | $1 / \Delta t_{\text{univ}} \approx 86.8$ ZHz |
 | $E_{\text{rest}}$ | Electron rest energy | $m_e c^2 \approx 8.187 \times 10^{-14}$ J |
 | $\lambda_e$ | Electron Compton wavelength | $h / (m_e c) \approx 2.426 \times 10^{-12}$ m |
-| $G$ | Gravitational constant (derived from Planck mass) | $\hbar c / m_P^2 \approx 6.674 \times 10^{-11}$ m³kg⁻¹s⁻² |
+| $G$ | Gravitational constant (algebraic consistency check) | $\hbar c / m_P^2 \approx 6.674 \times 10^{-11}$ m³kg⁻¹s⁻² |
 | $\bar{\tau}_{i,t}$ | Mean-field truth target (network aggregate) | $[0,1]$ |
 
 
