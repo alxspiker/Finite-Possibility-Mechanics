@@ -2292,7 +2292,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 ## 30. Forward Predictions and Cosmological Falsifiability
 
-Finite Possibility Mechanics transitions from a post-dictive mathematical fit to a hard-science physical theory by offering specific falsifiable forward predictions. While standard inflationary cosmology (Lambda-CDM) requires adjustable free parameters to match empirical data, the discrete structural hardware of the Universal Discovery Engine inherently locks macroscopic physical observables. 
+Finite Possibility Mechanics transitions from a post-dictive mathematical fit toward a testable candidate physical framework by offering specific falsifiable forward predictions. While standard inflationary cosmology (Lambda-CDM) requires adjustable free parameters to match empirical data, the discrete structural hardware of the Universal Discovery Engine inherently locks macroscopic physical observables. 
 
 The primary falsification test for the v4.4 framework lies in the Cosmic Microwave Background (CMB) B-mode polarization signatures.
 
