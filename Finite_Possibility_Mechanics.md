@@ -2002,7 +2002,7 @@ The solar-system-scale carrier radius is the correct consequence of plugging a d
 
 ## 27. Theorem 6: The Universal Calibration Theorem
 
-## 27. Theorem 6: The Universal Calibration Theorem (Primary Hardware Independence)
+### 27.1 Primary Hardware Independence
 
 ### 27.1 Context
 
@@ -2107,10 +2107,14 @@ So in Finite Possibility Mechanics language:
 ### 28.5 The Angular-Mode Extension ($n^2$)
 To trace the specific discrete sequence (2,8,18,32...), we need a compatible Finite Possibility Mechanics/CGA5 extension.
 
-**Theorem A — Point-Pair Twofold Degeneracy:**
-The fundamental routing state, an oriented CGA5 2-blade {ab} = X_a \wedge X_b$, admits exactly two internal orientations $\pm B_{ab}$. Therefore {\text{PP}}=2$.
+**Probe Claim A — Point-Pair Twofold Degeneracy:**
+The fundamental routing state, an oriented CGA5 2-blade, admits exactly two internal orientations:
 
-**Theorem B — Geometric Angular Mode Count:**
+$$
+B_{ab}=X_a\wedge X_b,\qquad g_{\text{PP}}=2
+$$
+
+**Probe Claim B — Geometric Angular Mode Count:**
 The number of distinct angular routing modes on a discrete shell of integer radius $n$ in the CGA5 topology is exactly expanding the dimensionality, yielding $G_n = n^2$.
 
 Combining these two yields the exact capacity of the $n$-th shell:
@@ -2132,8 +2136,8 @@ An unfilled shell is a low-cost viscosity sink. When $n$ is well below shell cap
 To maintain epistemic hygiene, all claims in this framework are strictly tagged according to the following taxonomy:
 
 - **Exact Theorem:** True unconditionally under the axioms (e.g., The dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$).
-- **Conditional Derivation:** True *if* the mapping of causal-to-spatial dimensions aligns with physical spacetime (e.g., The $3/4$ energy law, the $16/3$ ledger inertia).
-- **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The stripped Boltzmann oscillator, biophysical steric folding).
+- **Conditional Derivation:** True *if* the mapping of causal-to-spatial dimensions aligns with physical spacetime (e.g., The $3/4$ energy law).
+- **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The $16/3$ ledger inertia ratio, the stripped Boltzmann oscillator, biophysical steric folding).
 - **Empirical Fit:** Calibrated from data (e.g., The exact $0.2$ and $1.8$ coefficients in the Euler-Lagrange shear law if not using the $9:1$ structural split).
 
 ### 29.2 Exact Results (Mathematically Proven Within the Framework)
@@ -2152,9 +2156,6 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Theorem 5 Part I: $v_{\max} = c$ | §26 | Direct substitution of $\Delta x = c\,\Delta t$ |
 | Theorem 5 Part II: $\Delta Q_t$ and $P$ forms | §26 | Direct Landauer bridge + dimensional analysis |
 | Theorem 5 Part III: $r_{\text{SI}} = \alpha_{\text{PP}} c\,\Delta t$ and $\lim r_{\text{SI}} = 0$ | §26 | Direct scaling law |
-| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Direct from Planck-Landauer bridge |
-| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Direct from Calibration Axiom |
-| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Algebraic inversion of Planck mass definition |
 | Alignment lemma for consolidation | §7.2 | Explicit counterexample to unconditional claim |
 | Starvation theorem (finite-time collapse) | §7.6 | Direct from energy ledger; 0 bound violations |
 | Ω 2.2 contraction theorem | §7.7 | Direct from weighted ambiguity monotonicity |
@@ -2164,6 +2165,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 | Result | Section | Accuracy / Notes |
 |---|:---:|---|
+| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Direct from Planck-Landauer bridge |
+| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Direct from Calibration Axiom |
+| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Algebraic inversion of Planck mass definition |
 | 9:1 directed routing channel count | §3 | Structural argument from directed interaction table |
 | α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
 | 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
@@ -2198,7 +2202,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 |---|---|
 | SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
 | First-principles values of $\eta_d$, $\Lambda_d$, and $\Gamma$ | Reduced aggregation bridge currently packages unresolved disk-class closure constants; $\Gamma(G,c,h)$ derivation requires formal integration of discrete action over viscosity shell |
-| Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | **Resolved by Theorem 6 (PHI)**: Universal engine tick $\Delta t_{\text{univ}}$ anchored to fundamental constants |
+| Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Theorem 6; independent physical validation remains open. |
 | Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; tensor field derivation in progress |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
