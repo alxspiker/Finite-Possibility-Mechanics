@@ -2034,7 +2034,7 @@ This represents the discrete clock rate of the informational medium. Under this 
 
 Applying the Calibration Axiom ($v_{\max} = c$, Section 21) to the universal tick:
 
-$$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}\ \text{m} \approx 0.881\ \text{fm}.}$$
+$$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}\ \text{m} \approx 3.453\ \text{fm}.}$$
 
 **Physical alignment:** This distance corresponds nearly exactly to the Compton wavelength of the electron divided by the Point-Pair coefficient. More precisely, $r_{\text{univ}} = \alpha_{\text{PP}} \cdot \Delta x_{\text{univ}} = \lambda_e$ to machine precision, where $\lambda_e = h/(m_e c) \approx 2.426 \times 10^{-12}$ m is the electron Compton wavelength.
 
@@ -2042,7 +2042,7 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 
 ### 27.4 Gravitational Closure via Viscosity Gradients
 
-To complete the macroscopic closure, the gravitational constant ($G$) is re-expressed as an internal identity of the Viscosity Law acting on a single Point topology at the Planck Mass ($m_P$):
+To approximate macroscopic scales, the gravitational constant ($G$) is mapped via the standard algebraic identity at the Planck Mass ($m_P$):
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}.}$$
 
@@ -2070,7 +2070,7 @@ This calibration ensures that the route cost runtime currency is identical regar
 
 **Proof of Dimensional Consistency.** By $\Delta x = c \Delta t_{\text{univ}}$ and $u_{\max} = 1$: $v_{\max} = \Delta x / \Delta t = c$. This is identical to Theorem 5 Part I. $\square$
 
-**Proof of Gravitational Closure.** The Planck mass is defined by $m_P = \sqrt{\hbar c / G}$. Inverting: $G = \hbar c / m_P^2$. Substituting CODATA values: $G \approx 6.6743 \times 10^{-11}$ m³kg⁻¹s⁻². $\square$
+**Algebraic Consistency of Gravitational Constant.** The Planck mass is defined by $m_P = \sqrt{\hbar c / G}$. Inverting: $G = \hbar c / m_P^2$. Substituting CODATA values: $G \approx 6.6743 \times 10^{-11}$ m³kg⁻¹s⁻².
 
 ### 27.7 Precision Note for Computational Implementations
 
