@@ -90,10 +90,10 @@ The architecture is unified by a single runtime currency — **route cost** — 
 **Part V — Research Frontiers and Summary**
 28. [The Angular-Mode Capacity Probe](#28-the-angular-mode-capacity-probe)
 29. [Proven Results, Quantitative Probes, and Open Frontiers](#29-proven-results-quantitative-probes-and-open-frontiers)
-30. [Conclusion](#30-conclusion)
-31. [Appendix A: Symbol Reference](#31-appendix-a-symbol-reference)
-32. [Appendix B: Extended Symbol Reference](#32-appendix-b-extended-symbol-reference)
-33. [References](#33-references)
+31. [Conclusion](#30-conclusion)
+32. [Appendix A: Symbol Reference](#31-appendix-a-symbol-reference)
+33. [Appendix B: Extended Symbol Reference](#32-appendix-b-extended-symbol-reference)
+34. [References](#33-references)
 
 ---
 
@@ -2289,7 +2289,27 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 ---
 
-## 30. Conclusion
+## 30. Forward Predictions and Cosmological Falsifiability
+
+Finite Possibility Mechanics transitions from a post-dictive mathematical fit to a hard-science physical theory by offering unprecedented, falsifiable forward predictions. While standard inflationary cosmology (Lambda-CDM) requires adjustable free parameters to match empirical data, the discrete structural hardware of the Universal Discovery Engine inherently locks macroscopic physical observables. 
+
+The primary falsification test for the v4.4 framework lies in the Cosmic Microwave Background (CMB) B-mode polarization signatures.
+
+### 30.1 The Quantized Tensor-to-Scalar Ratio ($r$)
+In continuous inflation models, the tensor-to-scalar ratio $r$ (the amplitude of primordial gravitational waves) is a free parameter determined by the unknown energy scale of the hypothetical inflaton field. 
+
+In Finite Possibility Mechanics, there is no continuous inflaton field. Both tensor perturbations (gravitational shear waves) and scalar perturbations (density traces) emerge from the exact same discrete $\mathbb{Z}^3$ routing ledger. The hardware capacity is permanently fixed to a $3 \times 3$ topological matrix consisting of 9 shear channels and 1 trace channel. Furthermore, the emergent field equation rigorously applies geometric scaling exponents ($9/5$ for shear, $1/5$ for trace).
+
+Because these perturbations are fundamentally derived from the same discrete structural ledger, their power ratio cannot be arbitrary. FPM mathematically predicts that the primordial tensor-to-scalar ratio $r$ is a **quantized topological constant**, fully locked by the 9:1 hardware split and the non-linear execution exponents. It is not an adjustable free parameter.
+
+### 30.2 The Ultraviolet B-Mode Cutoff
+Standard continuous inflation assumes that quantum fluctuations generate a scale-invariant tensor power spectrum extending infinitely down to quantum scales.
+
+In FPM, primordial gravitational waves are literal "shear faults"—discrete topological mismatches propagating between adjacent daemons on the $\mathbb{Z}^3$ lattice. A daemon cannot register or propagate a geometric mismatch smaller than its own localized neighborhood.
+
+Therefore, FPM formally predicts a sharp **ultraviolet (UV) cutoff** in the primordial B-mode power spectrum at the fundamental grid scale ($\Delta x_{\text{univ}}$). If next-generation CMB observatories (such as LiteBIRD or CMB-S4) detect this predicted power suppression at high $k$-modes (small scales), it will definitively invalidate continuous scale-invariant inflation in favor of discrete Finite Possibility Mechanics.
+
+## 31. Conclusion
 
 The framework has evolved from a single clipped viscosity formula to a formal system spanning three physical scales.
 
@@ -2322,7 +2342,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 
 ---
 
-## 31. Appendix A: Symbol Reference
+## 32. Appendix A: Symbol Reference
 
 | Symbol | Meaning | Range |
 |--------|---------|-------|
@@ -2410,7 +2430,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 
 ---
 
-## 32. Appendix B: Extended Symbol Reference
+## 33. Appendix B: Extended Symbol Reference
 
 | Symbol | Meaning | Range / Units |
 |--------|---------|---------------|
@@ -2494,7 +2514,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 
 ---
 
-## 33. References
+## 34. References
 
 Bennett, C.H. (1982). The thermodynamics of computation. *International Journal of Theoretical Physics*, 21(12), 905–940.
 
