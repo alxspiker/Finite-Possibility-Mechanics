@@ -44,7 +44,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 |-----------------|---------------------|--------|-------------------|----------------|
 | SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved $\Gamma$ scatter, rollover mismatch, or pipeline failure | Operative prediction |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
-| Planck 2018 ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
+| Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
 
 ---
@@ -788,8 +788,6 @@ where $\mathcal{N}(i)$ is the local neighborhood and $w_j$ are viscosity-weighte
 
 ## 10. The Landauer Bridge
 
-## 10. The Landauer Bridge: Normalized Energy to Physical Joules
-
 ### 10.1 The Problem
 
 The energy variable $E_t \in [0, E_{\max}]$ in Finite Possibility Mechanics is a normalized computational budget proxy. To connect the framework to physics, an explicit map from normalized units to physical joules is required.
@@ -1443,7 +1441,7 @@ $$B_i = \frac{g_{\text{bar},i}}{a_{\text{cap}}}.$$
 
 $$\boxed{\frac{\rho_{\text{ledger}}}{\rho_b} = \frac{d_{\text{causal}}^2}{d_{\text{space}}} = \frac{4^2}{3} = \frac{16}{3} \approx 5.333.}$$
 
-This yields an error of $< 0.5\%$ against the Planck 2018 observed ratio of $\Omega_c/\Omega_b \approx 5.357$.
+This yields an error of $< 0.5\%$ against the Planck 2018 observed ratio of $\Omega_c/\Omega_b \approx 5.357$ (Planck Collaboration, 2020).
 
 ---
 
@@ -2227,18 +2225,18 @@ At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid h
 
 At the meso-scale, the viscosity gradient bridge reproduces galaxy rotation curves (§13) with a held-out accuracy of 0.943 correlation (though unresolved $\Gamma$ scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.9) offers a candidate pipeline that parallels the empirical MOND interpolation function.
 
-At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
+At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio (Planck Collaboration, 2020) within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
 
 The formal pipeline:
 
 $$\mathcal{R}_{ij} \to (S_9, K_1) \to \Phi_\Omega \to \mathbf{p}_t \to A_t \to C_t \to \kappa_t \to \Omega_t \to D_{t+1}$$
 
-is the complete chain from grid tensor to cosmological horizon.
+forms a candidate chain from grid tensor to cosmological horizon.
 
 
 **The conditional propositions are supported by executable benchmarks.** Native causal ordering is measurably cheaper on the tested temporally correlated traces. Aligned priors are energetically favored on the tested workloads. Both statements are genuine empirical facts about the framework's behavior, with explicit null controls and measured separation metrics.
 
-**The physical bridges are quantitatively meaningful.** Landauer dissipation, Lindblad dephasing, near-inverse-square attraction, the thin-disk daemon-sheet galaxy branch, processor-lag time slowing, the calibrated mass ladder, the hardware calibration theorem, the universal calibration theorem, biophysical compaction, confinement, decay, and double-slit collapse are all supported by runnable artifacts with explicit controls.
+**The physical bridges are quantitatively meaningful.** Landauer dissipation, Lindblad dephasing, near-inverse-square attraction, the thin-disk daemon-sheet galaxy branch, processor-lag time slowing, the calibrated mass ladder, the hardware calibration theorem, the universal calibration theorem, biophysical compaction, confinement, decay, and double-slit collapse are supported by executable probes of varying epistemic strength, ranging from exact mathematical derivations to stripped toy models.
 
 **The architecture is unified and hardware-independent.** Route cost is reused identically across decoherence, gravity, galaxy rotation, time-slowing, and mass-equivalent energy. The Universal Calibration Theorem (Theorem 6) anchors the entire framework to fundamental physical constants, making the scale closure independent of any implementation substrate. This is not a collection of disconnected analogies - it is a single bookkeeping system applied consistently across domains.
 
@@ -2251,13 +2249,11 @@ The deepest summary is also the simplest:
 
 > The universe becomes solid, directional, heavy, time-slowed, structured, and stable for one basic reason: **keeping everything open is too expensive.**
 
-That single pressure — the cost of unbounded possibility — is the engine behind decoherence, the arrow of time, thermodynamic dissipation, gravitational attraction, relativistic time dilation, particle mass, molecular folding, nuclear confinement, and quantum decay. Finite Possibility Mechanics is a mathematical framework for understanding all of these as different faces of one underlying process: bounded informational dynamics.
+That single pressure — the cost of unbounded possibility — is proposed here as a candidate engine behind decoherence, the arrow of time, thermodynamic dissipation, gravitational attraction, relativistic time dilation, particle mass, molecular folding, nuclear confinement, and quantum decay. Finite Possibility Mechanics is a mathematical framework for understanding all of these as different faces of one underlying process: bounded informational dynamics.
 
 ---
 
 ## 31. Appendix A: Symbol Reference
-
-## 25. Appendix A: Symbol Reference
 
 | Symbol | Meaning | Range |
 |--------|---------|-------|
