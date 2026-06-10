@@ -32,7 +32,7 @@ The architecture is unified by a single runtime currency — **route cost** — 
 |-------|--------|
 | $D_{t+1} \le \kappa_t D_t + \xi_t$ | Exact theorem |
 | $e(B) = (1+B)^{-3/4}$ | Conditional theorem |
-| Conditional Physical Calibration Bridge | Conditional theorem (scale closure) |
+| Conditional Physical Calibration Bridge | Conditional calibration ansatz |
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Acoustic oscillator asymmetry | Stripped toy gate |
@@ -1687,7 +1687,6 @@ Communication is not social in a loose sense. It is a cost-lowering synchronizat
 
 A full daemon tick proceeds in this exact order:
 
-0. **SoA Consensus Gather:** Compute $\nabla \bar{\tau}_{i,t}$ as an aligned array operation across the neighborhood, caching the result to prevent mid-tick cache misses.
 1. **Sense** local environment; estimate $\tau_{i,t}$, $r_i(\mathbf{x}_{i,t})$, and $q_{i,t}$.
 2. **Communicate** priors only with neighbors satisfying the pairwise cooperation criterion.
 3. **Recompute** $H_t, S_t, \Omega_t, \kappa_t$ from current $p_{i,t}$.
@@ -2008,7 +2007,7 @@ $$r_{\text{carrier, impl}} = 702.628349 \times \Delta x_{\text{impl}} = 5.317401
 
 The solar-system-scale carrier radius is the correct consequence of plugging a desktop wall-clock tick into the bridge. It is a statement about substrate throughput density: ordinary silicon is enormously slower and sparser than any substrate capable of realizing microscopic carrier scales under the same algebra. As $\Delta t \to 0$, $r_{\text{carrier}} \to 0$. The theorem is not a claim about a universal electron radius — it is a proof that the SI bridge algebraically preserves the $c$ ceiling, the Landauer thermodynamic ledger, and the Point-Pair carrier scaling rule simultaneously, for any concrete implementation.
 
-> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Universal Calibration Theorem (Theorem 6, Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; The Conditional Physical Calibration Bridge anchors that same algebra to fundamental physical constants, yielding sub-atomic carrier scales that are hardware-independent.
+> **Note (PHI Reframing):** Theorem 5 is an **implementation-specific instantiation** of the Conditional Physical Calibration Bridge (Section 27). The desktop benchmark's 3.55 AU carrier radius demonstrates the algebra at one concrete scale; The Conditional Physical Calibration Bridge maps that same algebra to fundamental physical constants, aligning the informational lattice with empirical sub-atomic scales.
 
 
 ---
@@ -2017,9 +2016,9 @@ The solar-system-scale carrier radius is the correct consequence of plugging a d
 
 ### 27.1 Context
 
-Theorem 5 proves that the SI bridge closes algebraically for any concrete $\Delta t_{\text{impl}} > 0$, but leaves a one-parameter family of absolute scales parameterized by the hardware timing. To achieve **Primary Hardware Independence (PHI)**, we invert Theorem 5: instead of accepting the hardware tick as given, we derive the **Universal Engine Tick** ($\Delta t_{\text{univ}}$) from fundamental physical constants through the **Planck-Landauer Bridge**.
+Theorem 5 proves that the SI bridge closes algebraically for any concrete $\Delta t_{\text{impl}} > 0$, but leaves a one-parameter family of absolute scales parameterized by the hardware timing. To anchor the framework to physical scales, we invert Theorem 5: instead of accepting the hardware tick as given, we approximate the **Universal Engine Tick** ($\Delta t_{\text{univ}}$) from fundamental physical constants.
 
-The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 702.628349$ and the electron Compton energy define a unique convergence point at which the Finite Possibility Mechanics carrier radius matches the electron's Compton wavelength. This fixes the engine tick without reference to any hardware substrate.
+The key insight is that the Point-Pair carrier coefficient $\alpha_{\text{PP}} = 702.628349$ and the electron Compton energy define a unique convergence point at which the Finite Possibility Mechanics carrier radius matches the electron's Compton wavelength. This anchors the engine tick to the empirical sub-atomic substrate.
 
 ### 27.2 The Universal Engine Tick ($\Delta t_{\text{univ}}$)
 
@@ -2151,7 +2150,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 - **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The $16/3$ ledger inertia ratio, the stripped Boltzmann oscillator, biophysical steric folding).
 - **Empirical Fit:** Calibrated from data (e.g., The rational $(1/5, 9/5)$ coefficient pair in the Euler-Lagrange shear law if not using the $9:1$ structural split).
 
-### 29.2 Internal Mathematical Results
+### 29.2 Internal Mathematical Results & Empirical Calibrations
 
 | Result | Section | Proof Type |
 |---|:---:|---|
