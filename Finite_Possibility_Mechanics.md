@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Finite Possibility Mechanics is a candidate mathematical framework for the dynamics of any system that processes information under finite resources. The framework demonstrates that bounded route-cost dynamics can naturally reproduce dark-matter-like scaling laws and MOND-like phenomenological fits, though full cosmological Boltzmann validation remains an open frontier. The framework establishes a formal pipeline from the directed routing tensor through viscosity dynamics to cosmological horizon coupling:
+Finite Possibility Mechanics is a candidate mathematical framework for the dynamics of any system that processes information under finite resources. The framework demonstrates that bounded route-cost dynamics can reproduce several dark-matter-like scaling relations in executable probes and MOND-like phenomenological fits, though full cosmological Boltzmann validation remains an open frontier. The framework establishes a formal pipeline from the directed routing tensor through viscosity dynamics to cosmological horizon coupling:
 
 $$\mathcal{R}_{ij} \to (S_9, K_1) \to \Phi_\Omega \to \mathbf{p}_t \to A_t \to C_t \to \kappa_t \to \Omega_t \to D_{t+1}$$
 
@@ -20,7 +20,7 @@ The framework is organized around three scales:
 
 - **Micro-scale (The Causal Grid).** A 9:1 directed routing tensor establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ are derived from local cell geometry.
 - **Meso-scale (Galactic Mass Injection).** The Landauer bridge, SPARC galactic rotation probes, and the non-circular interpolation chain connect the micro-scale viscosity dynamics to observed gravitational phenomena.
-- **Macro-scale (Cosmic Horizon & CMB).** The holographic horizon capacity $a_{\text{cap}} = c H_\Lambda/2\pi$, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3$, and the stripped Boltzmann oscillator extend the framework to cosmological observables.
+- **Macro-scale (Cosmic Horizon & CMB).** The holographic horizon capacity $a_{\text{cap}} = c H_\Lambda/2\pi$, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3$, and the stripped Boltzmann oscillator provide stripped density and acoustic oscillator gates for cosmological observables.
 
 The architecture is unified by a single runtime currency — **route cost** — reused identically across decoherence, gravity, time-slowing, mass-equivalent energy, and cosmological perturbation dynamics.
 
@@ -36,6 +36,16 @@ The architecture is unified by a single runtime currency — **route cost** — 
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Acoustic oscillator asymmetry | Stripped toy gate |
 | Full CMB replacement | Open frontier |
+
+---
+## Validation Matrix
+
+| Dataset / Probe | Null Model | Result | Failure Condition | Current Status |
+|-----------------|------------|--------|-------------------|----------------|
+| SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Non-monotonic mass-viscosity relation | Operative prediction |
+| 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
+| Planck 2018 ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM | Ratio matches $16/3 \approx 5.333$ | Extreme divergence from $16/3$ | Empirical match |
+| Cosmic Microwave Background | Standard acoustic oscillations | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
 
 ---
 
@@ -277,7 +287,7 @@ The 9:1 ratio is competitive and clean — the best minimal directed-routing int
 - Moving toward a massive cache aligns with the universe's pressure to consolidate — it costs less routing energy.
 - Moving away from a massive body requires breaking cache and reopening possibilities — a massive routing penalty.
 
-> **Gravity is not the bending of a symmetric grid; it is the non-commutative difference in route cost between $\mathcal{R}_{\text{inward}}$ and $\mathcal{R}_{\text{outward}}$.**
+> **Gravity is modeled here not as bending of a symmetric grid, but as the non-commutative difference in route cost between $\mathcal{R}_{\text{inward}}$ and $\mathcal{R}_{\text{outward}}$.**
 
 ---
 
@@ -408,7 +418,7 @@ Creates lag, memory, and hysteresis.
 
 $$\mathbf{p}_t \to (H_N, S_N) \to A_N \to C_N \to \kappa_t \to \Omega_t$$
 
-with $E_t$ as budget gate and $e(B) = (1+B)^{-3/4}$ as the derived depletion law.
+with $E_t$ as budget gate and $e(B) = (1+B)^{-3/4}$ as the conditional depletion law.
 
 > **Possibility persists only where ambiguity exists and budget permits it.**
 
@@ -502,7 +512,7 @@ Penalty for rational pair vs best empirical: $\Delta\text{RMSE} \approx 0.0037$.
 
 $$\mathcal{S}_\Omega = \int \left[\lambda_s \frac{(1+|\nabla\Omega|)^{14/5}-1}{14/5} + \lambda_k \frac{(1+|\nabla^2\Omega|)^{6/5}-1}{6/5}\right] dV.$$
 
-The 9:1 channel split in the directed routing tensor (§3) produces exactly the $1/5$, $9/5$ exponent pair.
+The 9:1 channel split in the directed routing tensor (§3) motivates the rational $1/5$, $9/5$ exponent pair at the coarse-grained tensor level.
 
 ---
 
