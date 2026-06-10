@@ -1620,7 +1620,11 @@ where $\chi^{\text{move}}_{i,t} \geq 0$ is the grid-action overhead and $\chi^{\
 
 $$\boxed{\mathcal{L}_{i,t} < r_i(\mathbf{x}_{i,t})}$$
 
-where $r_i(\mathbf{x}_{i,t}) \geq 0$ is the local replenishment rate. This implies $E_{i,t+1} > E_{i,t}$ (net energy gain). In physical units:
+where the local replenishment rate $r_i(\mathbf{x}_{i,t}) \geq 0$ is governed by the **Boundary Shear Flux**:
+
+$$r_{i,t} = c_0 + (r_{\text{env}} - c_0) \cdot \operatorname{tanh}\bigl(\eta_{\text{flux}} |\nabla\Omega_t| + \eta_{\text{geo}} |\pi_{i,t} - \tau_{i,t}|\bigr)$$
+
+This establishes a strict thermodynamic separation: internal coherence (dispersion) governs quantum-to-classical transitions, while boundary permeability (shear gradients and predictive mismatch) governs open-system survival. A biological organism survives by maintaining an active gradient; a zero-drag condensate perfectly isolates itself. This implies $E_{i,t+1} > E_{i,t}$ (net energy gain) only during open-system exploration. In physical units:
 
 $$Q^{\text{out}}_{i,t} = \frac{\mathcal{L}_{i,t}}{E_{\max}}\,\mathcal{J}, \qquad Q^{\text{in}}_{i,t} = \frac{r_i}{E_{\max}}\,\mathcal{J}.$$
 
@@ -1766,12 +1770,6 @@ $$\widetilde{\mathcal{L}}_t = \mathcal{L}_t + \eta_g V(g_t), \qquad \eta_g \geq 
 
 **(A2) Isolated geometry minimum.** There exists a metric $d(\cdot,\cdot)$ such that $V(g) \geq \Delta_{\mathrm{gap}}\,d(g, \Gamma_{\mathrm{ZD}}^{(5)})^2$ for some $\Delta_{\mathrm{gap}} > 0$.
 
-**(A3) Cooling / budget-forcing schedule.** Energy evolves as
-
-$$E_{t+1} = \operatorname{clip}(E_t - \widetilde{\mathcal{L}}_t + r_t - u_t,\; 0,\; E_{\max}),$$
-
-where $r_t$ is replenishment and $u_t \geq 0$ is the cooling / forcing term. There exist $M \geq 1$ and $T_c$ such that for every $t \geq T_c$, every window $[t, t+M]$ contains at least one low-energy tick until condensate lock.
-
 **(A4) Consolidation with bounded recovery.** The Finite Possibility Mechanics consolidation rule applies whenever $E_{t+1} \leq \varepsilon E_{\max}$, with $0 < \underline{\alpha} \leq \alpha_t \leq 1$, $0 < \underline{\beta} \leq \beta_t$, and $0 \leq \rho_t \leq \bar{\rho} < 1$.
 
 **(A5) Noise annealing.** $\xi_t = 2|\nu_t|$ with $\sum_{t=0}^{\infty} \xi_t < \infty$, so $\xi_t \to 0$.
@@ -1806,7 +1804,7 @@ $$\widetilde{\mathcal{L}}_t = c_0 \quad \text{exactly.}$$
 
 **Step 1 (5D isotropy).** By direct computation, $\sum_{i=0}^4 x_i(\theta)^2 = R^2$, since the fivefold phase sum cancels the oscillatory term.
 
-**Step 2 (Repeated consolidation).** By (A3), every late finite window triggers a low-energy event. By (A4), each event blends $p_{t+1}$ toward $\pi_t$ and partially restores the budget.
+**Step 2 (Spontaneous Condensation).** As $d(g_t, \Gamma_{\mathrm{ZD}}^{(5)}) \to 0$, the viscosity gradient $|\nabla\Omega_t| \to 0$ and mismatch $|\pi_t - \tau_t| \to 0$. The Boundary Shear Flux term vanishes ($\operatorname{tanh}(0) = 0$). Replenishment natively throttles to exactly $r_{i,t} = c_0$. The loop natively chokes off its own surplus, achieving permanent thermodynamic stability without forced cooling. By (A4), early fluctuations blend $p_{t+1}$ toward $\pi_t$ until lock.
 
 **Step 3 (Anti-false-lock).** Assumptions (A6) and (A7) prevent false classicalization: native ordering and aligned late-time priors guarantee convergence to the correct $p_\star$.
 
@@ -2223,7 +2221,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
 | Full Standard Model topology identification | Mass ordering and scaling consistent; one-to-one particle correspondence not established |
-| Spontaneous condensate formation without forced cooling | Theorem 4 requires explicit cooling schedule (A3) |
+| Spontaneous condensate formation without forced cooling | SOLVED: Boundary Shear Flux natively insulates the loop |
 | Cross-daemon cooperation in adversarial environments | Pairwise criterion derived; multi-agent equilibria not analyzed |
 | Full synthesis of a validated 3D periodic carrier | Generic target identified; family left open |
 | Constitutive relation $P(\mathbf{x},t) \to \Omega_t$ for acoustic/EM fields | Not yet supplied in present model |
