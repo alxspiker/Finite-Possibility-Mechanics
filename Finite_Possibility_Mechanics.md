@@ -1148,9 +1148,9 @@ $$\kappa(B) = C(B) \cdot e(B) = C(B) \cdot (1+B)^{-3/4}.$$
 
 $$\nu(B) = 1 + \sqrt{\frac{\kappa(B)}{B}}, \qquad g_{\text{obs}} = g_{\text{bar}}\,\nu(B).$$
 
-### 13.13 The Strongest Current Galactic Bridge
+### 13.10 The Strongest Current Galactic Bridge
 
-Complete formula:
+Current synthetic formula:
 
 $$g_{\text{ax}}(r) = -\Gamma_g \Phi_{\text{EL}}(r)\,\frac{d\Omega}{dr}.$$
 
@@ -2030,7 +2030,7 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 
 ### 27.4 Gravitational Closure via Viscosity Gradients
 
-To complete the macroscopic closure, the gravitational constant ($G$) is derived as an emergent property of the Viscosity Law acting on a single Point topology at the Planck Mass ($m_P$):
+To complete the macroscopic closure, the gravitational constant ($G$) is re-expressed as an internal identity of the Viscosity Law acting on a single Point topology at the Planck Mass ($m_P$):
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}.}$$
 
