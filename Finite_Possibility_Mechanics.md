@@ -2040,7 +2040,7 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 
 **Scale closure:** Unlike the hardware-dependent $3.55$ AU radius from Theorem 5, this fixes the Point-Pair topology to the sub-atomic scale, aligning the informational "carrier" with observed particle physics.
 
-### 27.4 Gravitational Closure via Viscosity Gradients
+### 27.4 Algebraic Consistency of $G$
 
 To approximate macroscopic scales, the gravitational constant ($G$) is mapped via the standard algebraic identity at the Planck Mass ($m_P$):
 
@@ -2062,7 +2062,7 @@ This matches the CODATA 2018 measured value to within $0.00003\%$. However, this
 | **Lag Ceiling** | $31.87$ | $\gamma_{\text{ax,max}} = \mathcal{L}_{\max} / \mathcal{L}_{\text{rest}}$ |
 | **Gravity** | $G \approx 6.674 \times 10^{-11}$ | $\hbar c / m_P^2$ |
 
-This calibration ensures that the route cost runtime currency is identical regardless of the hardware substrate, satisfying the requirement that **the architecture is the law**.
+This calibration aligns the abstract route cost runtime currency with empirical physical scales, acting as a functional bridge to test whether the internal architecture natively reproduces physical law.
 
 ### 27.6 Proof
 
@@ -2156,7 +2156,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 |---|:---:|---|
 | Calibration Bridge: Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Conditional on Compton alignment |
 | Calibration Bridge: Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Conditional on calibration axiom |
-| Calibration Bridge: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
+| Calibration Bridge: $G$ algebraic consistency $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
 | 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Conditional on 3 spatial loaded channels over 4 causal channels |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
 | Fixed-point $D^* = \xi^*/(1-\kappa^*)$ in stationary regime | §7 | Conditional fixed-point analysis |
