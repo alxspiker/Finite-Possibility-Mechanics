@@ -1763,6 +1763,27 @@ $$
 }
 $$
 
+### 22.10 Macroscopic Edge Case Resolutions
+
+To rigorously protect the discrete $\mathbb{Z}^3$ integer lattice from continuous fractionality, the following macroscopic boundary limits are resolved strictly via local deterministic engine constraints:
+
+**1. The Biological Starvation Threshold (Discrete Optimization)**
+In FPM, an organism operates on discrete route commitments ($p_t \in \{0, \frac{1}{N}, \dots, 1\}$). The biological starvation threshold is not a smooth calculus minimum, but a strict integer inequality. Biological starvation occurs precisely when the absolute cheapest available discrete state on the grid becomes unaffordable relative to the boundary shear flux $r_{\text{env}}$:
+
+$$\min_{p_t \in \{0, \frac{1}{N}, \dots, 1\}} \left( \mathcal{C}^{\text{sem}}_t(p_t) + \mathcal{C}^{\text{geo}}_t(p_t) + \lambda|\Delta\Omega_t| \right) > r_{\text{env}}$$
+
+If the required discrete execution step costs more than the harvestable surplus, the daemon's energy drains to zero, triggering immediate decoherence into a lower topological order.
+
+**2. The Domain Wall Resolution (Discrete Viscosity Scars)**
+When two massive, contradictory mean-field consensus zones collide (e.g., Daemon A holds $\tau_A = 1$, Daemon B holds $\tau_B = 0$), the spatial boundary is a strict discontinuity of exactly one cell width. The universe does not smoothly blend the contradiction using fractional truth states.
+
+Instead, the resolution emerges natively from the existing viscosity laws:
+1. **Geometric Spiking:** At the 1-edge boundary, the geometric mismatch $\mathcal{C}^{\text{geo}}$ instantly spikes to its maximum discrete value.
+2. **Budget Drain:** This massive route-cost ($\mathcal{L}_t$) instantly drains the local energy budgets ($E_t \to 0$) of the daemons along the fault line.
+3. **The Viscosity Scar:** Repeated low-energy events drop the phase coefficient $\kappa_t \to 0$ and force the boundary viscosity to its absolute maximum: $\Omega_t \to \Omega_{\max} = 0.85$.
+
+The domain wall instantly freezes the boundary cells into an impenetrable, maximum-viscosity physical barrier. The geometric mismatch mathematically manifests as dense "scar tissue" on the lattice, perfectly defining macroscopic physical surface tension without breaking the discrete integer currency.
+
 
 ---
 
