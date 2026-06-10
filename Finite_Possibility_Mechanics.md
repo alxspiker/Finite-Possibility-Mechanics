@@ -1130,7 +1130,7 @@ where $S = |d\Omega/dr|$ (shear) and $K = |d^2\Omega/dr^2|$ (curvature).
 
 ### 13.9 The Non-Circular Interpolation Chain (Ω 3.7–3.8)
 
-The complete pipeline from baryonic load ($B$, using $a_{\text{cap}}$ from §18) to observed gravity, operating through the $\beta = 1.8$ shear resistance and the $3/4$ law from §5.3:
+The operational pipeline from baryonic load ($B$, using $a_{\text{cap}}$ from §18) to observed gravity, operating through the $\beta = 1.8$ shear resistance and the $3/4$ law from §5.3:
 
 **Step 1 — Route-probability saturation:**
 
@@ -2136,7 +2136,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 - **Exact Theorem:** True unconditionally under the axioms (e.g., The dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$).
 - **Conditional Derivation:** True *if* the mapping of causal-to-spatial dimensions aligns with physical spacetime (e.g., The $3/4$ energy law).
 - **Executable Proxy:** Demonstrates correct qualitative mechanics but requires higher-resolution simulation (e.g., The $16/3$ ledger inertia ratio, the stripped Boltzmann oscillator, biophysical steric folding).
-- **Empirical Fit:** Calibrated from data (e.g., The exact $0.2$ and $1.8$ coefficients in the Euler-Lagrange shear law if not using the $9:1$ structural split).
+- **Empirical Fit:** Calibrated from data (e.g., The rational $(1/5, 9/5)$ coefficient pair in the Euler-Lagrange shear law if not using the $9:1$ structural split).
 
 ### 29.2 Internal Mathematical Results (Exact and Conditional Corollaries)
 
@@ -2224,7 +2224,7 @@ The framework has evolved from a single clipped viscosity formula to a formal sy
 
 At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ (§6.5) and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ (§5.3) are motivated by and conditionally derived from local cell geometry, rather than arbitrarily fitted.
 
-At the meso-scale, the viscosity gradient bridge reproduces galaxy rotation curves (§13) with a held-out accuracy of 0.943 correlation (though unresolved $\Gamma$ scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.9) offers a candidate pipeline that parallels the empirical MOND interpolation function.
+At the meso-scale, the viscosity gradient bridge reproduces SPARC rotation-curve structure in executable probes (§13) with a held-out accuracy of 0.943 correlation (though unresolved $\Gamma$ scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.9) offers a candidate pipeline that parallels the empirical MOND interpolation function.
 
 At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio (Planck Collaboration, 2020) within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
 
