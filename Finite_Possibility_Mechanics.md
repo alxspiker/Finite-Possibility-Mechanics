@@ -950,7 +950,7 @@ Multiple adversarial monotone surrogates confirm this result is not a lattice ar
 | exp_pivot | −2.127 | −1.872 |
 | lorentz_pivot | −2.003 | −1.865 |
 
-Cost gradients in the informational medium create inward drift toward cheaper regions. This is gravity understood as a route-cost gradient, not a separate magical law.
+Cost gradients in the informational medium create inward drift toward cheaper regions. This is gravity understood as a route-cost gradient, not an independent postulate.
 
 ### 13.4 Polarity Convention
 
@@ -1087,7 +1087,7 @@ Because $\Omega$ is clipped to $[0.50, 0.85]$ and the daemon sheet is finite, Fi
 
 ### 13.7 Executable Galaxy Branch and Falsifiable Prediction
 
-The executable proof [proofs/axcore_galaxy_rotation_curve_proof.py](/c:/Users/alxth/OneDrive/Desktop/AxCoreUnifiedTheory/proofs/axcore_galaxy_rotation_curve_proof.py:1) instantiates the continuum extension with
+The executable proof [proofs/fpm_galaxy_rotation_curve_proof.py](proofs/fpm_galaxy_rotation_curve_proof.py) instantiates the continuum extension with
 
 $$R_c = 2\ \text{kpc},\qquad r_c = 0.3\ \text{kpc},\qquad R_d = 120\ \text{kpc},$$
 
@@ -2030,7 +2030,7 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 
 ### 27.4 Gravitational Closure via Viscosity Gradients
 
-To fulfill the deterministic System 2 requirement, the gravitational constant ($G$) is derived as an emergent property of the Viscosity Law acting on a single Point topology at the Planck Mass ($m_P$):
+To complete the macroscopic closure, the gravitational constant ($G$) is derived as an emergent property of the Viscosity Law acting on a single Point topology at the Planck Mass ($m_P$):
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}.}$$
 
@@ -2142,9 +2142,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 | Result | Section | Proof Type |
 |---|:---:|---|
-| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Direct from Planck-Landauer bridge |
-| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Direct from Calibration Axiom |
-| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Algebraic inversion of Planck mass definition |
+| Theorem 6: Universal Engine Tick $\Delta t_{\text{univ}} = h/(m_e c^2 \alpha_{\text{PP}})$ | §27 | Conditional on Compton alignment |
+| Theorem 6: Universal Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Conditional on calibration axiom |
+| Theorem 6: Gravitational closure $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
 | 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Geometric mean of 4D causal channels |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
 | Fixed-point $D^* = \xi^*/(1-\kappa^*)$ in stationary regime | §7 | Conditional fixed-point analysis |
@@ -2183,7 +2183,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Confinement work $\propto r^{1.98}$ | §17 | Near-quadratic; tail cost ratio $11.7\times$ vs null |
 | Decay separation (100% vs. 0%) | §17 | Across 200 trials; energy scale in femtojoule range |
 | Interference collapse from budget depletion | §17 | Exactly controlled comparison |
-| Universal Calibration Theorem: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
+| Universal Calibration Instantiation: $\Delta t_{\text{univ}} \approx 1.152 \times 10^{-23}$ s | §27 | Compton alignment to machine precision; $G$ within $0.00003\%$ of CODATA |
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Theorem 6) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)–(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
@@ -2192,7 +2192,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Ω 3.0 exponent stability | §6.5 | Stable across 3×3×5 parameter grid |
 | Constitutive bridge and polarity fix | §13.9 | Polarity violations eliminated |
 | Geometry-derived Γ improvement | §13.10 | Scatter 0.596 → 0.312 |
-| Non-circular interpolation chain | §13.9 | Candidate first-principles pipeline paralleling MOND |
+| Non-circular interpolation chain | §13.9 | Candidate non-circular pipeline paralleling MOND |
 
 ### 29.4 Open Research Frontiers
 
