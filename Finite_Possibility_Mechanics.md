@@ -2106,6 +2106,7 @@ At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic pro
 
 1. **Viscosity field $\Omega_t \in [0.50, 0.85]$:** These values are order-unity and suffer no precision loss from the tick scale.
 2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation using strict IEEE 754 `float64` (`double`) is **required**. The use of compiler-dependent types like `long double` or `__float128` is strictly forbidden, as it destroys the cross-platform determinism required for exact SHA-256 trace verification.
+   * **Compiler Lockdown Directive:** To prevent standard C++ compiler optimization sweeps (e.g., `-O3`, `/fp:fast`) from silently annihilating the Kahan summation compensation variable via algebraic reassociation, the compilation phase must enforce strict IEEE 754 sequencing. Explicit compiler flags (such as `-fno-unsafe-math-optimizations` for GCC/Clang, or `/fp:precise` for MSVC), or enforcing `volatile` on the accumulator variables, are mandatory to guarantee deterministic execution without sacrificing the sub-1MB static binary footprint.
 3. **CGA5 multivector operations:** Verify that the definitions of $c$, $h$, and $G$ passed into 5D Conformal Geometric Algebra structures do not introduce precision drift at the universal tick scale.
 
 
