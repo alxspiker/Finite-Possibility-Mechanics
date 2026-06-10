@@ -99,7 +99,7 @@ def run_synthetic_demo():
     print_metadata()
     print("=== SYNTHETIC DEMONSTRATOR MODE ===")
     
-    target = generate_falsification_target("SYNTHETIC-MW/NGC3198-ANALOG", 2.0, 0.3, 120.0, 220.0, 100.0)
+    target = generate_falsification_target("SYNTHETIC_LARGE_SPIRAL", 2.0, 0.3, 120.0, 220.0, 100.0)
     
     print(f"[!] Parameter Freeze Metadata: {target['Galaxy']} [{target['Parameters']}]\n")
     print("| Galaxy | Baryonic Disk Scale | Predicted Rollover Radius | Predicted v(240)/v(30) | Predicted Far-Field Slope | Failure Condition (Slope) | Failure Condition (Ratio) |")

@@ -1,5 +1,12 @@
 # Finite Possibility Mechanics
 
+## Current Status
+- **Exact theorem kernel:** implemented
+- **Synthetic galaxy rollover demonstrator:** implemented
+- **Real locked-input prediction generator:** scaffolded
+- **Empirical evaluation:** pending
+
+*See [`CLAIM_STATUS.md`](CLAIM_STATUS.md) for explicit epistemic boundaries regarding these predictions.*
 Finite Possibility Mechanics (FPM) explores a fascinating and simple idea: what if the universe is essentially a giant computer processing possibilities, and it has a strict energy budget?
 
 Instead of imagining the universe as empty space filled with solid objects, imagine it as a massive network of interconnected points, all sharing information and making decisions. 
