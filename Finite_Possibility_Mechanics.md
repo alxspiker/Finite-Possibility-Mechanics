@@ -2301,14 +2301,14 @@ In continuous inflation models, the tensor-to-scalar ratio $r$ (the amplitude of
 
 In Finite Possibility Mechanics, there is no continuous inflaton field. Both tensor perturbations (gravitational shear waves) and scalar perturbations (density traces) emerge from the exact same discrete $\mathbb{Z}^3$ routing ledger. The hardware capacity is permanently fixed to a $3 \times 3$ topological matrix consisting of 9 shear channels and 1 trace channel. Furthermore, the emergent field equation rigorously applies geometric scaling exponents ($9/5$ for shear, $1/5$ for trace).
 
-Because these perturbations are fundamentally derived from the same discrete structural ledger, their power ratio cannot be arbitrary. The FPM architecture structurally implies that the primordial tensor-to-scalar ratio $r$ is a **quantized topological constant**, fully locked by the 9:1 hardware split and the non-linear execution exponents. It is not an adjustable free parameter.
+Because these perturbations are fundamentally derived from the same discrete structural ledger, their power ratio is not expected to be arbitrary. The FPM architecture structurally constrains the primordial tensor-to-scalar ratio $r$ through the 9:1 hardware split and the nonlinear execution exponents. A complete falsification target requires the derived numerical value $r_{\rm FPM}$, which remains part of the CMB bridge completion.
 
 ### 30.2 The Ultraviolet B-Mode Cutoff
 Standard continuous inflation assumes that quantum fluctuations generate a scale-invariant tensor power spectrum extending infinitely down to quantum scales.
 
-In FPM, primordial gravitational waves are literal "shear faults"discrete topological mismatches propagating between adjacent daemons on the $\mathbb{Z}^3$ lattice. A daemon cannot register or propagate a geometric mismatch smaller than its own localized neighborhood.
+In FPM, primordial gravitational waves are literal "shear faults": discrete topological mismatches propagating between adjacent daemons on the $\mathbb{Z}^3$ lattice. A daemon cannot register or propagate a geometric mismatch smaller than its own localized neighborhood.
 
-Therefore, FPM formally predicts a sharp **ultraviolet (UV) cutoff** in the primordial B-mode power spectrum at the fundamental grid scale ($\Delta x_{\text{univ}}$). If next-generation CMB observatories detect a sharp high-k B-mode suppression consistent with the FPM grid-scale cutoff, this would support the discrete FPM interpretation over continuous scale-invariant inflationary models. If no such cutoff appears within the predicted accessible window, the FPM B-mode cutoff bridge is falsified.
+Therefore, FPM formally predicts a sharp **ultraviolet (UV) cutoff** in the primordial B-mode power spectrum at the fundamental grid scale ($\Delta x_{\text{univ}}$). If next-generation CMB observatories detect a sharp high-k B-mode suppression consistent with the FPM grid-scale cutoff, this would support the discrete FPM interpretation over continuous scale-invariant inflationary models. If no such cutoff appears within the predicted accessible window, the FPM B-mode cutoff bridge is falsified. Explicit numeric derivation of the angular scale $\ell_{\rm cutoff}$ and wavenumber $k_{\rm cutoff}$ from the grid scale $\Delta x_{\text{univ}}$ remains a required step to fully formalize this window.
 
 ### 30.3 The Galactic Rotation Rollover
 
