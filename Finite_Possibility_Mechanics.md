@@ -1282,7 +1282,7 @@ $$m_{\text{Circle}} < m_{\text{Motor}} < m_{\text{Sphere}} < m_{\text{Point-Pair
 
 (lightest to heaviest), and this ordering is reproduced in the forward high-dimension run.
 
-### 15.6 The Up Quark
+### 15.5 The Up Quark
 
 The same procedure applied to the up quark ($m_u \approx 2.2$ MeV):
 
@@ -1292,7 +1292,7 @@ $$N_u = 190{,}927 \times 32{,}768 = 6.256 \times 10^9 \text{ bits} \equiv 195.5 
 
 The ratio $m_u / m_e = 2.2/0.511 = 4.305$ predicts $N_u / N_e = 4.305$. Measured: $6.256/1.453 = 4.305$. This is an arithmetic confirmation of the linear scaling law.
 
-### 15.7 Summary
+### 15.6 Summary
 
 The Finite Possibility Mechanics route-cost framework produces a topology-ordered mass spectrum. That spectrum scales linearly with substrate capacity via the Landauer bridge. At approximately 45 million HDC dimensions, the Point-Pair topology lands within 2% of the electron mass. The up-quark extrapolation is internally consistent with the same linear scaling law. Mass is understood as the baseline structural route cost of a stable informational topology.
 
@@ -2287,7 +2287,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $m_P$ | Planck mass | $2.176 \times 10^{-8}$ kg |
 | $c$ | Speed of light | $299{,}792{,}458$ m/s |
 | $\Delta t_{\text{univ}}$ | Universal engine tick (PHI) | $\approx 2.939 \times 10^{-24}$ s |
-| $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 3.453 \times 10^{-15}$ m |
+| $\Delta x_{\text{univ}}$ | Universal lattice constant (PHI) | $\approx 8.810 \times 10^{-16}$ m |
 | $f_{\text{univ}}$ | Universal engine frequency | $\approx 340.3$ ZHz |
 | $G$ | Gravitational constant (derived) | $\hbar c / m_P^2$ |
 
@@ -2403,7 +2403,7 @@ That single pressure — the cost of unbounded possibility — is proposed here 
 | $\mathcal{L}_{\text{rest}}$ | Deep-space baseline action | $0.1030625$ |
 | $N_{\text{bit-eq, actual}}$ | Actual bit-equivalent capacity at benchmark | $1{,}453{,}132{,}512$ |
 | $\Delta t_{\text{univ}}$ | Universal engine tick (Theorem 6, PHI) | $h / (m_e c^2 \alpha_{\text{PP}}) \approx 2.939 \times 10^{-24}$ s |
-| $\Delta x_{\text{univ}}$ | Universal lattice constant (Theorem 6, PHI) | $c \cdot \Delta t_{\text{univ}} \approx 3.453 \times 10^{-15}$ m |
+| $\Delta x_{\text{univ}}$ | Universal lattice constant (Theorem 6, PHI) | $c \cdot \Delta t_{\text{univ}} \approx 8.810 \times 10^{-16}$ m |
 | $f_{\text{univ}}$ | Universal engine frequency | $1 / \Delta t_{\text{univ}} \approx 340.3$ ZHz |
 | $E_{\text{rest}}$ | Electron rest energy | $m_e c^2 \approx 8.187 \times 10^{-14}$ J |
 | $\lambda_e$ | Electron Compton wavelength | $h / (m_e c) \approx 2.426 \times 10^{-12}$ m |
