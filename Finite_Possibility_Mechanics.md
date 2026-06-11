@@ -38,6 +38,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Route-link anisotropy cancellation $\sim O(R^{-2})$ | Conditional theorem + executable diagnostic |
 | $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $0.044\%$ high |
 | Disk Green functional $\mathscr{K}_g$ | Conditional derivation from finite-sheet shear action |
+| Morphology-locked SPARC audit | First locked audit; not full baseline validation |
 | Acoustic oscillator asymmetry | Stripped toy gate |
 | Full CMB replacement | Open frontier |
 
@@ -50,6 +51,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Lattice Anisotropy Probe | Persistent cubic lattice bias | Full-shell anisotropy decays near $R^{-1.96}$ under route-link rule | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support |
 | Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$ from Landauer injection factors | Failure to derive $\mu_M$ or large deviation from measured $G$ | Conditional sub-percent bridge |
 | Disk Green Functional | Phenomenological finite-disk curve | Matched finite-sheet kernel recovers flat branch and rollover with $v(240)/v(30)=0.6487$ | Failure to recover $1/r$ middle branch and $1/r^2$ far branch | Conditional disk-source closure |
+| SPARC Morphology-Locked Audit | Per-galaxy coupling fits | $Q=1$ sample: median RMSE $23.94$ km/s, median shape correlation $0.933$, median diagnostic scale $1.021$ | Collapse of correlation or large amplitude bias under locked inputs | Preliminary empirical audit |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
@@ -1945,6 +1947,117 @@ $$
 
 The middle-branch velocity slope over $5$-$30$ kpc is approximately $-0.0508$, while the far-field branch tends toward the Keplerian $-1/2$ velocity slope as $r/R_d\to\infty$.
 
+### 13.15 Morphology-Locked Galaxy Prediction Protocol
+
+The disk Green functional becomes empirically meaningful only if every galaxy-level structural input is determined from baryonic morphology before seeing the target rotation curve. This section defines the locked protocol.
+
+#### 13.15.1 Required Observational Inputs
+
+For each galaxy, the protocol uses only baryonic and structural fields:
+
+| Quantity | Source |
+|---|---|
+| $r_i$ | observed radial sampling grid |
+| $\Sigma_M(r)$ or baryonic mass-model components | gas + stellar disk + bulge source structure |
+| $R_{\mathrm{disk}}$ | infrared disk scale length |
+| $R_{\mathrm{HI}}$ | observed H I radius |
+| quality flag | observational reliability cut |
+
+For SPARC-format mass-model data, the baryonic Newtonian mass components are available as $(V_{\mathrm{gas}},V_{\mathrm{disk}},V_{\mathrm{bul}})$ and the infrared morphology supplies $R_{\mathrm{disk}}$ and $R_{\mathrm{HI}}$.
+
+#### 13.15.2 Locked Structural Rules
+
+The stellar mass-to-light ratios are fixed to standard SPARC audit values:
+
+$$
+\Upsilon_{\mathrm{disk}}=0.5,\qquad
+\Upsilon_{\mathrm{bul}}=0.7.
+$$
+
+The baryonic velocity-squared source proxy is
+
+$$
+V_{\mathrm{bar}}^2(r)
+=
+V_{\mathrm{gas}}|V_{\mathrm{gas}}|
++\Upsilon_{\mathrm{disk}}V_{\mathrm{disk}}|V_{\mathrm{disk}}|
++\Upsilon_{\mathrm{bul}}V_{\mathrm{bul}}|V_{\mathrm{bul}}|.
+$$
+
+The finite daemon-sheet support scale is fixed by the observed H I extent:
+
+$$
+\boxed{
+R_d=R_{\mathrm{HI}}.
+}
+$$
+
+If $R_{\mathrm{HI}}$ is unavailable, the fallback is the last measured baryonic radius, explicitly flagged as lower confidence. The core softening is fixed by the inner sampling and the disk thickness proxy:
+
+$$
+\boxed{
+r_c=\max(r_{\min},\,0.196\,R_{\mathrm{disk}}).
+}
+$$
+
+The factor $0.196R_{\mathrm{disk}}$ is the standard thin-disk vertical scale proxy used only to regularize the finite-sheet Green kernel; it is not adjusted per galaxy.
+
+The active enclosed route charge is computed from the baryonic source and the already-derived ledger inertia factor:
+
+$$
+\boxed{
+Q_{\mathcal{L}}(<r_i)
+=
+\frac{16}{3}\max_{j\leq i}V_{\mathrm{bar}}^2(r_j).
+}
+$$
+
+The monotone envelope enforces the finite-source Green theorem: enclosed active source cannot decrease with radius in the monopole branch, even if individual gas/disk mass-model components oscillate due to ring decomposition.
+
+#### 13.15.3 Locked Prediction
+
+With no galaxy-by-galaxy velocity coupling, the predicted disk speed is
+
+$$
+\boxed{
+V_{\mathrm{FPM}}(r_i)
+=
+\left[
+r_i\,
+Q_{\mathcal{L}}(<r_i)
+\frac{R_d}{(r_i+r_c)(r_i+r_c+R_d)}
+\right]^{1/2}.
+}
+$$
+
+All dimensional factors are already contained in the SPARC mass-model velocities. In a direct surface-density implementation, the equivalent expression is obtained from Section 13.14 using $\sigma_{\mathcal{L}}(r)$ and the $c^2$ SI-gradient conversion.
+
+#### 13.15.4 First SPARC Morphology-Locked Audit
+
+A local audit was run on the official SPARC rotation-curve mass-model archive and master morphology table. The audit used the locked rules above, not galaxy-by-galaxy coupling fits.
+
+For high-quality SPARC galaxies ($Q=1$) with at least five valid radial points:
+
+| Metric | Result |
+|---|---:|
+| Number of galaxies | $99$ |
+| Median velocity RMSE | $23.94\ \mathrm{km/s}$ |
+| Median shape correlation | $0.933$ |
+| Median diagnostic best-fit scale | $1.021$ |
+
+The diagnostic best-fit scale is not used in the prediction; it is reported only to test whether the absolute amplitude is systematically high or low. A median value near $1$ means the $16/3$ ledger factor and morphology-locked Green kernel land near the observed velocity scale without per-galaxy coupling adjustment.
+
+For the broader $Q\leq2$ sample:
+
+| Metric | Result |
+|---|---:|
+| Number of galaxies | $159$ |
+| Median velocity RMSE | $22.51\ \mathrm{km/s}$ |
+| Median shape correlation | $0.929$ |
+| Median diagnostic best-fit scale | $0.995$ |
+
+This is not yet a completed SPARC validation. The remaining empirical work is to compare the locked FPM predictions against baryon-only, MOND/RAR, and NFW baselines under the same quality cuts and uncertainty model. The important closure result is narrower: the derived disk Green operator, the $R_d=R_{\mathrm{HI}}$ morphology lock, and the $16/3$ ledger inertia factor produce the correct velocity scale and high shape correlation without fitting a galaxy-level acceleration conversion.
+
 ---
 
 ## 14. Time Dilation as Processor Lag
@@ -3422,6 +3535,8 @@ Shannon, C.E. (1948). A Mathematical Theory of Communication. *Bell System Techn
 Zurek, W.H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715775.
 
 Lelli, F., McGaugh, S.S., Schombert, J.M. (2016). SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves. *The Astronomical Journal*, 152(6), 157.
+
+Lelli, F., McGaugh, S.S., Schombert, J.M. (2016). SPARC database public data products: galaxy sample, Newtonian mass models, and radial acceleration relation tables. Case Western Reserve University SPARC data archive.
 
 McGaugh, S.S., Lelli, F., Schombert, J.M. (2016). Radial Acceleration Relation in Rotationally Supported Galaxies. *Physical Review Letters*, 117(20), 201101.
 

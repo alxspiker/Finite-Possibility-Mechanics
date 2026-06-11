@@ -25,3 +25,6 @@ To maintain strict epistemic hygiene, the following boundaries apply to the curr
 
 8. **Disk Green Functional $\neq$ Observational Fit:**
    The matched finite-sheet Green functional in Section 13.14 conditionally derives the finite flat branch and rollover kernel from the shear action and finite daemon-sheet support. It recovers the existing benchmark branch, including $v(240)/v(30)=0.6487$, but it is not yet a morphology-resolved SPARC/RAR validation.
+
+9. **Morphology-Locked Audit $\neq$ Baseline Victory:**
+   Section 13.15 defines a no-free-coupling SPARC prediction protocol using fixed stellar mass-to-light ratios, $R_d=R_{\mathrm{HI}}$, $r_c=\max(r_{\min},0.196R_{\mathrm{disk}})$, and the $16/3$ ledger factor. The first audit gives high-quality-sample median shape correlation $0.933$ and median diagnostic scale $1.021$, but full validation still requires matched baryon-only, MOND/RAR, and NFW comparisons under the same quality cuts.
