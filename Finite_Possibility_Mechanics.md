@@ -37,6 +37,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Route-link anisotropy cancellation $\sim O(R^{-2})$ | Conditional theorem + executable diagnostic |
 | $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $0.044\%$ high |
+| Disk Green functional $\mathscr{K}_g$ | Conditional derivation from finite-sheet shear action |
 | Acoustic oscillator asymmetry | Stripped toy gate |
 | Full CMB replacement | Open frontier |
 
@@ -48,6 +49,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved source-coupling scatter, rollover mismatch, or pipeline failure | Operative prediction |
 | Lattice Anisotropy Probe | Persistent cubic lattice bias | Full-shell anisotropy decays near $R^{-1.96}$ under route-link rule | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support |
 | Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$ from Landauer injection factors | Failure to derive $\mu_M$ or large deviation from measured $G$ | Conditional sub-percent bridge |
+| Disk Green Functional | Phenomenological finite-disk curve | Matched finite-sheet kernel recovers flat branch and rollover with $v(240)/v(30)=0.6487$ | Failure to recover $1/r$ middle branch and $1/r^2$ far branch | Conditional disk-source closure |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
@@ -1687,6 +1689,262 @@ $$
 
 Here $\mathcal{A}_{\mathrm{disk}}$ is not a new fundamental constant. It is the dimensionless output of the disk source functional, including finite thickness, finite support, baryonic surface-density structure, and the smoothness threshold. This separates fundamental unit conversion from galaxy-specific source geometry. Residual galaxy scatter should therefore be tested against disk morphology and baryonic structure, not absorbed into an arbitrary universal $\Gamma$.
 
+### 13.14 The Disk Green Functional and Source Closure
+
+Section 13.13 separates fundamental acceleration conversion from disk-specific source geometry. This section closes the disk operator used by the finite-branch galaxy curve.
+
+#### 13.14.1 Linearized Disk Operator from the Shear Action
+
+The nonlinear shear action is
+
+$$
+\mathcal{S}_\Omega
+=
+\int
+\left[
+\lambda_s\frac{(1+|\nabla\Omega|)^{14/5}-1}{14/5}
++
+\lambda_k\frac{(1+|\nabla^2\Omega|)^{6/5}-1}{6/5}
+\right]dV.
+$$
+
+For a thin disk, integrate over the vertical thickness $h_d$ and write the in-plane field as $\Omega(r)$. In the weak-gradient branch, the first variation produces a disk operator of the form
+
+$$
+\mathcal{L}_d\Delta\Omega
+=
+-\lambda_s\nabla_\perp^2\Delta\Omega
++\lambda_k\nabla_\perp^4\Delta\Omega
++K_\Omega\Delta\Omega,
+$$
+
+where $K_\Omega$ is the local stiffness of the coarse-grained viscosity stack. The source is the Landauer-injected route-source surface density
+
+$$
+\sigma_{\mathcal{L}}(r)
+=
+\mu_M^{\mathrm{FPM}}\frac{\Sigma_M(r)c^2}{\mathcal{J}}.
+$$
+
+Thus the disk equation is
+
+$$
+\boxed{
+\mathcal{L}_d\Delta\Omega(r)
+=
+\zeta\,\sigma_{\mathcal{L}}(r)
+}
+$$
+
+inside the daemon-sheet support.
+
+#### 13.14.2 Smoothness Threshold $\Lambda_d$
+
+The nonlinear action contains linear absolute-value terms in $|\nabla\Omega|$ and $|\nabla^2\Omega|$ at small amplitude:
+
+$$
+\frac{(1+x)^p-1}{p}
+=
+x+\frac{p-1}{2}x^2+O(x^3).
+$$
+
+A source fluctuation of amplitude $\Delta\Omega$ over a smoothing length $\ell_s$ must overcome the smoothness cost
+
+$$
+\delta S_{\mathrm{smooth}}
+\sim
+\left(
+\frac{\lambda_s}{\ell_s}
++
+\frac{\lambda_k}{\ell_s^2}
+\right)|\Delta\Omega|.
+$$
+
+The local stiffness term converts this into the dimensionless activation threshold
+
+$$
+\boxed{
+\Lambda_d
+=
+\frac{1}{K_\Omega}
+\left(
+\frac{\lambda_s}{\ell_s}
++
+\frac{\lambda_k}{\ell_s^2}
+\right).
+}
+$$
+
+This replaces the earlier free smoothness threshold with a quantity fixed by the shear-action coefficients and the coarse-graining scale. Disk regions with $\zeta\sigma_{\mathcal{L}}\leq\Lambda_d$ do not source a persistent daemon-sheet viscosity enhancement.
+
+#### 13.14.3 Matched Finite-Sheet Green Functional
+
+Inside a thin disk, the source-free branch of the Euler-Lagrange equation reduces to
+
+$$
+\nabla_\perp^2\Omega\simeq0,
+\qquad
+\Omega(r)=A-B\ln r,
+$$
+
+which gives $g(r)\propto1/r$ and therefore an approximately flat rotation branch. A real disk is not infinite: at the daemon-sheet support radius $R_d$, the in-plane two-dimensional flux leaks into the surrounding three-dimensional exterior. The minimal matched Green function is therefore a two-dimensional logarithmic Green function with an image sink displaced by the finite support scale:
+
+$$
+\boxed{
+\mathscr{G}_d(r,r';R_d,r_c)
+=
+\ln
+\left(
+\frac{r_>+r_c+R_d}{r_>+r_c}
+\right),
+\qquad
+r_>=\max(r,r').
+}
+$$
+
+The softening radius $r_c$ regularizes the origin and encodes finite disk thickness/core width. The corresponding inward acceleration kernel is
+
+$$
+\boxed{
+\mathscr{K}_g(r,r';R_d,r_c)
+=
+-\partial_r\mathscr{G}_d
+=
+\Theta(r-r')\,
+\frac{R_d}{(r+r_c)(r+r_c+R_d)}.
+}
+$$
+
+The Heaviside factor is the disk analogue of shell cancellation: exterior annuli do not contribute to the local radial derivative in the monopole branch. The finite-disk route acceleration is therefore
+
+$$
+\boxed{
+g_{\mathrm{disk}}(r)
+=
+c^2\,\zeta
+\int_0^{R_d}
+\mathscr{K}_g(r,r';R_d,r_c)\,
+\left[\sigma_{\mathcal{L}}(r')-\Lambda_d\right]_+
+\,2\pi r'\,dr'.
+}
+$$
+
+Define the enclosed active route charge
+
+$$
+Q_{\mathcal{L}}(<r)
+=
+2\pi
+\int_0^{\min(r,R_d)}
+\left[\sigma_{\mathcal{L}}(r')-\Lambda_d\right]_+
+r'\,dr'.
+$$
+
+Then
+
+$$
+\boxed{
+g_{\mathrm{disk}}(r)
+=
+c^2\,\zeta\,
+Q_{\mathcal{L}}(<r)
+\frac{R_d}{(r+r_c)(r+r_c+R_d)}.
+}
+$$
+
+This is the closed disk-source operator:
+
+$$
+\Sigma_M(r)
+\to
+\sigma_{\mathcal{L}}(r)
+\to
+Q_{\mathcal{L}}(<r)
+\to
+g_{\mathrm{disk}}(r).
+$$
+
+#### 13.14.4 Recovery of the Finite-Disk Curve
+
+For radii outside the bright baryonic source but inside the daemon-sheet support, the enclosed active route charge is approximately constant:
+
+$$
+Q_{\mathcal{L}}(<r)\to Q_{\mathcal{L},d}.
+$$
+
+Define
+
+$$
+\Delta\Omega_d
+=
+\zeta Q_{\mathcal{L},d}.
+$$
+
+Then the disk operator reduces to
+
+$$
+\boxed{
+g_{\mathrm{disk}}(r)
+=
+c^2
+\frac{\Delta\Omega_d R_d}{(r+r_c)(r+r_c+R_d)}.
+}
+$$
+
+Adding the compact core branch gives
+
+$$
+\boxed{
+g_{\mathrm{ax}}(r)
+=
+c^2
+\left[
+\frac{\Delta\Omega_c}{R_c}e^{-r/R_c}
++
+\frac{\Delta\Omega_d R_d}{(r+r_c)(r+r_c+R_d)}
+\right].
+}
+$$
+
+This is the earlier finite-disk curve with $\Gamma$ replaced by the fundamental SI-gradient conversion $c^2$ and the source strength moved into $\Delta\Omega_c$ and $\Delta\Omega_d$. The three regimes now follow from the Green kernel:
+
+1. **Inner/core:** the compact source gives the exponential rise.
+2. **Finite flat branch:** for $r_c\ll r\ll R_d$,
+
+$$
+g_{\mathrm{disk}}(r)\approx c^2\frac{\Delta\Omega_d}{r},
+\qquad
+v^2(r)=r g(r)\approx c^2\Delta\Omega_d.
+$$
+
+3. **Far-field rollover:** for $r\gg R_d$,
+
+$$
+g_{\mathrm{disk}}(r)\approx c^2\frac{\Delta\Omega_d R_d}{r^2},
+\qquad
+v(r)\propto r^{-1/2}.
+$$
+
+Using the benchmark finite-disk parameters from Section 13.8, the matched Green kernel reproduces the existing demonstrator values:
+
+$$
+v(3)=214.87,\quad
+v(5)=213.97,\quad
+v(12)=207.31,\quad
+v(20)=201.96,\quad
+v(30)=195.60\ \mathrm{km/s},
+$$
+
+with $v(240)/v(30)=0.6487$. In the $c^2$-normalized convention, the benchmark amplitudes are
+
+$$
+\Delta\Omega_d=\left(\frac{220\ \mathrm{km/s}}{c}\right)^2\approx5.385\times10^{-7},
+\qquad
+\Delta\Omega_c=\left(\frac{100\ \mathrm{km/s}}{c}\right)^2\approx1.113\times10^{-7}.
+$$
+
+The middle-branch velocity slope over $5$-$30$ kpc is approximately $-0.0508$, while the far-field branch tends toward the Keplerian $-1/2$ velocity slope as $r/R_d\to\infty$.
+
 ---
 
 ## 14. Time Dilation as Processor Lag
@@ -2794,9 +3052,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Problem | Current Status |
 |---|---|
 | SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
-| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | Reduced aggregation bridge currently packages unresolved disk-class closure constants; dimensional $\Gamma$ is fixed once the route-gradient convention is fixed; $\mu_M$ has a finite-carrier Landauer channel derivation with $0.044\%$ residual |
+| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | $\Lambda_d$ now follows from shear-action smoothness cost and $\mu_M$ has a finite-carrier Landauer channel derivation with $0.044\%$ residual; remaining disk-class work is validating $\mathscr{K}_d$ against morphology-resolved baryonic profiles |
 | Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Calibration Bridge; independent physical validation remains open. |
-| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-cancellation proof, and conditional $\mu_M$ derivation now supplied; rigorous microscopic proof remains open |
+| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-cancellation proof, conditional $\mu_M$ derivation, and matched disk Green functional now supplied; rigorous microscopic proof and morphology-resolved validation remain open |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
 | Full Standard Model topology identification | Mass ordering and scaling consistent; one-to-one particle correspondence not established |

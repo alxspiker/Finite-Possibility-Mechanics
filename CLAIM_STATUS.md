@@ -22,3 +22,6 @@ To maintain strict epistemic hygiene, the following boundaries apply to the curr
 
 7. **Continuum-Limit Diagnostic and Conditional $G$ Boundary:**
    The local continuum-limit diagnostic provides executable support for the local-to-continuum bridge: under the Section 13.13 route-link ledger, full-shell FPM acceleration anisotropy decays near $R^{-1.96}$ and the leading cubic harmonic decays near $R^{-1.97}$. The manuscript now derives the dimensional acceleration conversion $\Gamma$ once the route-gradient convention is fixed. A finite-carrier Landauer channel derivation gives $\mu_M^{\mathrm{FPM}}\approx4.58\times10^{-41}$ and $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$, about $0.044\%$ high relative to CODATA. This is not exact closure; the microscopic derivation of the finite-carrier channel factors remains the next proof target.
+
+8. **Disk Green Functional $\neq$ Observational Fit:**
+   The matched finite-sheet Green functional in Section 13.14 conditionally derives the finite flat branch and rollover kernel from the shear action and finite daemon-sheet support. It recovers the existing benchmark branch, including $v(240)/v(30)=0.6487$, but it is not yet a morphology-resolved SPARC/RAR validation.
