@@ -35,6 +35,8 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Conditional Physical Calibration Bridge | Conditional calibration ansatz |
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
+| Route-link anisotropy cancellation $\sim O(R^{-2})$ | Conditional theorem + executable diagnostic |
+| $G_{\mathrm{FPM}}$ from far-field limit | Symbolic reduction; requires $\mu_M$ derivation |
 | Acoustic oscillator asymmetry | Stripped toy gate |
 | Full CMB replacement | Open frontier |
 
@@ -43,7 +45,8 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 
 | Dataset / Probe | Benchmark / Control | Result | Failure Condition | Current Status |
 |-----------------|---------------------|--------|-------------------|----------------|
-| SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved $\Gamma$ scatter, rollover mismatch, or pipeline failure | Operative prediction |
+| SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved source-coupling scatter, rollover mismatch, or pipeline failure | Operative prediction |
+| Lattice Anisotropy Probe | Persistent cubic lattice bias | Full-shell anisotropy decays near $R^{-1.96}$ under route-link rule | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
@@ -784,6 +787,8 @@ where $\mathcal{N}(i)$ is the local neighborhood and $w_j$ are viscosity-weighte
 
 **Domain Wall Leak:** If $\tau_t$ is redefined locally as a mean-field consensus, spatial boundaries between differing consensus zones will induce catastrophic geometric cost spikes. In a purely local, $O(1)$ static-binary engine, these domain walls cannot be mitigated by explicit non-local penalties without breaking the strictly local ledger. Instead, domain wall resistance must emerge natively from the baseline viscosity law (higher trace = higher $\Omega$), keeping the engine completely localized.
 
+**Checkerboard Thrashing Hazard:** A second boundary failure mode appears if neighboring daemons are allowed to update priors from each other symmetrically in the same tick. Two contradictory domains can form an alternating checkerboard: daemon $i$ pulls toward daemon $j$, daemon $j$ pulls toward daemon $i$, and the pair burns $\chi^{\text{comm}}$ indefinitely without reducing the joint action. This is not a physical scar; it is a numerical synchronization artifact. The endogenous mean-field closure therefore requires the local communication governor defined in Section 22.7: only accepted, strictly action-lowering prior transfers may alter $\pi_t$, and failed exchanges enter a finite cooldown. Without this governor, the mean-field $\tau_t$ closure remains an open architectural hazard rather than a solved closed-universe replacement.
+
 **Current status:** Until $\tau_t$ is formally derived as a network aggregate, the present model assumes a **localized open-system boundary** in which the truth target represents coupling to environmental degrees of freedom outside the daemon's own state vector. This is standard thermodynamic practice (cf. Lindblad master equation with external bath), but full endogenous closure remains an open architectural goal.
 
 > **Consequence for false classicalization:** Under the mean-field redefinition, false classicalization (Section 9.2) becomes classicalization to a locally coherent but globally suboptimal prior. The system locks to a local consensus rather than a "wrong" answer in any absolute sense, the concept of absolute wrongness requires an oracle that the closed architecture cannot supply.
@@ -1103,7 +1108,7 @@ Because $\Omega$ is clipped to $[0.50, 0.85]$ and the daemon sheet is finite, Fi
 
 ### 13.8 Executable Galaxy Branch and Falsifiable Prediction
 
-The executable proof [proofs/fpm_galaxy_rotation_curve_proof.py](proofs/fpm_galaxy_rotation_curve_proof.py) instantiates the continuum extension with
+The executable galaxy-rotation demonstrator instantiates the continuum extension with
 
 $$R_c = 2\ \text{kpc},\qquad r_c = 0.3\ \text{kpc},\qquad R_d = 120\ \text{kpc},$$
 
@@ -1174,14 +1179,14 @@ $$g_{\text{ax}}(r) = -\Gamma_g \Phi_{\text{EL}}(r)\,\frac{d\Omega}{dr}.$$
 |---------|--------|
 | Ω envelope | Fixed |
 | Polarity / anti-gravity | Fixed |
-| Γ scatter | Much improved |
+| Source-coupling scatter | Much improved |
 | RAR reconstruction | Improved |
 | Rollover universality | Still not universal |
 | First-principles derivation | Non-Linear continuum bridge established (§13.12) |
 
 ### 13.12 The Macroscopic Continuum Limit (Non-Linear Field Equation)
 
-To bridge the discrete computational action to the macroscopic continuum without reverting to Newtonian mechanics, gravity operates strictly as a continuous field governed by the non-linear Shear Action from Section 6.5. 
+To bridge the discrete computational action to the macroscopic continuum without reverting to Newtonian mechanics, gravity is represented at the diagnostic scale as a continuous field governed by the non-linear Shear Action from Section 6.5. This is a **macro-scale effective equation**, not a per-tick instruction executed by the local $\mathbb{Z}^3$ engine.
 
 By defining the macroscopic computational trace density as $\rho_{\mathcal{L}} = \frac{\mathcal{L}_{i,t}}{(\Delta x_{\text{univ}})^3}$ and setting the functional variation $\delta \mathcal{S}_{\text{macro}} = 0$, we extract the **FPM Non-Linear Field Equation**:
 
@@ -1189,9 +1194,339 @@ $$-\nabla \cdot \left[ \lambda_s (1+|\nabla\Omega|)^{9/5} \hat{n} \right] + \nab
 
 *(where $\hat{n} = \frac{\nabla\Omega}{|\nabla\Omega|}$)*
 
-Here, $\zeta = \frac{9}{4\pi \mathcal{L}_{\max}}$ is the exact endogenous geometric source projection factor. It mathematically projects the discrete 9 off-diagonal hardware tensor shear channels onto the continuous $4\pi$ $SO(3)$ solid angle, strictly gated by the grid's maximum action capacity.
+Here, $\zeta = \frac{9}{4\pi \mathcal{L}_{\max}}$ is the continuum geometric source projection used by the macroscopic diagnostic. It projects the 9 directed shear channels onto the continuous $4\pi$ $SO(3)$ solid angle and gates the result by the grid's maximum action capacity. This is not yet a native proof that the anisotropic $\mathbb{Z}^3$ lattice cancels exactly into an isotropic continuum. That cancellation requires either a demonstrated coarse-graining theorem or an explicitly external CGA5/multipole diagnostic layer.
 
-This endogenous field equation formally anchors macroscopic gravity to the $9:1$ trace channel geometry. The spatial aggregation of the computational trace overhead ($\rho_{\mathcal{L}}$) natively drives the exact non-linear flat rotation curves of galaxies without relying on a Newtonian linear Poisson approximation.
+This effective field equation anchors the candidate macroscopic gravity bridge to the $9:1$ trace channel geometry. The spatial aggregation of the computational trace overhead ($\rho_{\mathcal{L}}$) supplies a non-linear route-cost source for flat-branch galaxy behavior without requiring a Newtonian linear Poisson approximation at the diagnostic level. The remaining open requirement is to prove that lattice anisotropy does not leak into observables such as the tensor-to-scalar ratio $r_{\text{FPM}}$ or the angular-mode shell counts.
+
+**Executable anisotropy diagnostic.** A local continuum-limit diagnostic tests the local-to-continuum bridge by instantiating the microscopic route-link closure:
+
+$$
+\Omega(\mathbf{x}) \to C(\mathbf{x}) = 1-\Omega(\mathbf{x}) \to L_i(\mathbf{x}) \to
+\mathcal{R}_{ij}(\mathbf{x}) = \partial_j L_i(\mathbf{x})
+\to (S_9,K_1,\Phi_\Omega),
+$$
+
+and measures the resulting acceleration proxy
+
+$$
+g_{\text{FPM}}(R,\hat n) \sim \Phi_\Omega\,|\partial_R \Omega|
+$$
+
+over deterministic spherical shells. A 256-direction full-shell scan finds that the cubic anisotropy decays close to second order:
+
+| Diagnostic | Measured decay |
+|---|---:|
+| FPM acceleration spread | $R^{-1.960545}$ |
+| FPM acceleration coefficient of variation | $R^{-1.967908}$ |
+| Leading cubic harmonic coefficient $A_4$ | $R^{-1.969554}$ |
+
+where
+
+$$
+A_4(\hat n)=n_x^4+n_y^4+n_z^4-\frac{3}{5}.
+$$
+
+A directed-link asymmetry sweep from symmetric links to strongly directed links remains stable:
+
+| Directed-link asymmetry | FPM acceleration spread decay |
+|---:|---:|
+| $0.00$ | $R^{-1.970516}$ |
+| $0.10$ | $R^{-1.963994}$ |
+| $0.25$ | $R^{-1.960545}$ |
+| $0.50$ | $R^{-1.956214}$ |
+| $1.00$ | $R^{-1.954649}$ |
+
+This supports the working conjecture
+
+$$
+g_{\mathrm{FPM}}(R,\hat n)
+=
+g_0(R)\left[1+\epsilon_4(R)A_4(\hat n)+O(R^{-3})\right],
+\qquad
+\epsilon_4(R)=O(R^{-2}).
+$$
+
+Because $\langle A_4\rangle_{S^2}=0$, such a theorem would justify the $4\pi$ continuum projection at leading order while preserving finite-radius lattice corrections as falsifiable residuals. Current status: executable diagnostic support; Section 13.13 supplies the route-link convention and conditional proof sketch. A fully rigorous peer-review-grade proof remains open.
+
+### 13.13 Toward a Native Continuum Theorem
+
+This subsection fixes the microscopic route-link convention used by the continuum diagnostic and derives the conditional bridge needed before any noncircular attempt at $G$.
+
+#### 13.13.1 Microscopic Route-Link Rule
+
+Let the lattice spacing be $\Delta x$ and let $\mathbf{e}_i$ be the three positive coordinate directions on $\mathbb{Z}^3$. Define the local route cost
+
+$$
+C(\mathbf{x}) = 1-\Omega(\mathbf{x}).
+$$
+
+For a directed positive link from $\mathbf{x}$ to $\mathbf{x}+\Delta x\,\mathbf{e}_i$, define the midpoint
+
+$$
+\mathbf{m}_i^+(\mathbf{x})=\mathbf{x}+\frac{\Delta x}{2}\mathbf{e}_i,
+\qquad
+\hat{\mathbf{n}}(\mathbf{m})=\frac{\mathbf{m}}{|\mathbf{m}|},
+$$
+
+and the directed link cost
+
+$$
+\boxed{
+L_i^+(\mathbf{x})
+=
+C(\mathbf{m}_i^+)
+\left[1+\chi_{\rightarrow}\,\hat n_i(\mathbf{m}_i^+)\right],
+\qquad
+0\leq \chi_{\rightarrow}<1.
+}
+$$
+
+The parameter $\chi_{\rightarrow}$ is the inward/outward directed-routing asymmetry. A positive radial component $\hat n_i$ makes the outward $+i$ link more expensive, while a negative radial component makes the same directed link cheaper because it points inward relative to the source. The bound $\chi_{\rightarrow}<1$ keeps all link costs positive.
+
+The directed routing tensor is the local finite-difference derivative of directed link costs:
+
+$$
+\boxed{
+\mathcal{R}_{ij}(\mathbf{x})
+=
+\frac{
+L_i^+(\mathbf{x}+\Delta x\,\mathbf{e}_j)
+-
+L_i^+(\mathbf{x}-\Delta x\,\mathbf{e}_j)
+}{2\Delta x}.
+}
+$$
+
+This is a genuinely directed object: $i$ indexes the link whose cost is being measured, while $j$ indexes the direction in which that link cost is probed. In general $\mathcal{R}_{ij}\neq\mathcal{R}_{ji}$.
+
+The continuum diagnostic then uses the same ledger invariants as the rest of the framework:
+
+$$
+S_9=\sqrt{\frac{1}{9}\sum_{i,j}\mathcal{R}_{ij}^2},
+\qquad
+K_1=|\operatorname{tr}\mathcal{R}|,
+$$
+
+$$
+\Phi_\Omega
+=
+\frac{(1+K_1)^{1/5}}{(1+S_9)^{9/5}},
+\qquad
+g_{\mathrm{route}}(R,\hat n)
+=
+\zeta\,\Phi_\Omega\,|\partial_R\Omega|.
+$$
+
+This is now the official microscopic route-link convention for the continuum-limit probe. Future lower-level engines may replace it only by deriving $L_i^\pm$ from a still deeper action-minimizing update rule.
+
+#### 13.13.2 Conditional Anisotropy-Cancellation Theorem
+
+**Theorem 6 (Conditional lattice anisotropy cancellation).** Let $\Omega(\mathbf{x})=\Omega(R)$ be a smooth radial viscosity field on scales $R\gg\Delta x$, with derivatives satisfying $|\Omega^{(k)}(R)|=O(R^{-k-1})$ in the far field. Under the route-link rule above, the FPM acceleration proxy has the asymptotic form
+
+$$
+\boxed{
+g_{\mathrm{route}}(R,\hat n)
+=
+g_0(R)
+\left[
+1+\epsilon_4(R)A_4(\hat n)+O\!\left((\Delta x/R)^3\right)
+\right],
+}
+$$
+
+where
+
+$$
+A_4(\hat n)=n_x^4+n_y^4+n_z^4-\frac{3}{5},
+\qquad
+\epsilon_4(R)=O\!\left((\Delta x/R)^2\right).
+$$
+
+**Proof sketch.** The finite-difference operator obeys the Taylor expansion
+
+$$
+\frac{f(x+\Delta x)-f(x-\Delta x)}{2\Delta x}
+=
+f'(x)+\frac{\Delta x^2}{6}f^{(3)}(x)+O(\Delta x^4 f^{(5)}).
+$$
+
+Applying this componentwise to $L_i^+(\mathbf{x})$ gives
+
+$$
+\mathcal{R}_{ij}
+=
+\partial_j L_i^+
++\frac{\Delta x^2}{6}\partial_j^3L_i^+
++O(\Delta x^4 R^{-5}).
+$$
+
+For a smooth radial field, the leading continuum term $\partial_jL_i^+$ decomposes into isotropic tensors built from $\delta_{ij}$ and $\hat n_i\hat n_j$. The first non-isotropic cubic-lattice correction appears at fourth angular order, generated by the $\Delta x^2\partial_j^3L_i^+$ truncation term. The unique lowest-order cubic invariant on the sphere is
+
+$$
+A_4(\hat n)=n_x^4+n_y^4+n_z^4-\frac{3}{5},
+$$
+
+so the leading directional artifact must be proportional to $A_4$ with amplitude $O((\Delta x/R)^2)$. The executable full-shell diagnostic finds the expected decay numerically: $R^{-1.960545}$ for the FPM acceleration spread and $R^{-1.969554}$ for the fitted $A_4$ coefficient. $\square$
+
+Since
+
+$$
+\langle A_4\rangle_{S^2}=0,
+$$
+
+the leading cubic artifact vanishes under spherical averaging:
+
+$$
+\langle g_{\mathrm{route}}(R,\hat n)\rangle_{S^2}
+=
+g_0(R)\left[1+O((\Delta x/R)^3)\right].
+$$
+
+This conditionally justifies the $4\pi$ projection at macroscopic radii while predicting finite-radius cubic residuals as a possible falsification channel.
+
+#### 13.13.3 Continuum Source Coefficient
+
+The $9:1$ directed ledger contains nine directed shear channels. Normalize the maximum cell action by $\mathcal{L}_{\max}$ and define the dimensionless route-source charge in a cell:
+
+$$
+q_{\mathcal{L}}(\mathbf{x})
+=
+\frac{\mathcal{L}(\mathbf{x})}{\mathcal{L}_{\max}}.
+$$
+
+The total available directed shear flux per cell is therefore
+
+$$
+\Phi_{\text{cell}} = 9\,q_{\mathcal{L}}.
+$$
+
+By Theorem 6, the leading anisotropic term has zero spherical mean at large radius. The remaining isotropic flux is distributed over the continuum solid angle $4\pi$, giving the source-per-solid-angle normalization
+
+$$
+\boxed{
+\zeta
+=
+\frac{9}{4\pi\mathcal{L}_{\max}}.
+}
+$$
+
+Thus the coefficient used in Section 13.12 is not an arbitrary insertion: it is the continuum flux density of the nine directed shear channels after action normalization, conditional on the anisotropy-cancellation theorem.
+
+#### 13.13.4 Acceleration Conversion $\Gamma$
+
+The route equation produces a dimensionless acceleration in lattice units: edges per tick squared. The SI conversion is fixed by the spatial bridge:
+
+$$
+1\ \text{edge}=\Delta x_{\text{univ}},
+\qquad
+1\ \text{tick}=\Delta t_{\text{univ}}.
+$$
+
+Therefore
+
+$$
+\boxed{
+g_{\text{phys}}
+=
+\Gamma_{\text{grid}}\,g_{\mathrm{route}},
+\qquad
+\Gamma_{\text{grid}}
+=
+\frac{\Delta x_{\text{univ}}}{\Delta t_{\text{univ}}^2}
+=
+\frac{c^2}{\Delta x_{\text{univ}}}
+=
+\frac{c}{\Delta t_{\text{univ}}}.
+}
+$$
+
+If the gradient is already written per SI length rather than per lattice edge, the equivalent velocity-squared convention is
+
+$$
+\boxed{
+\Gamma_{\text{SI-gradient}}=c^2.
+}
+$$
+
+This resolves the dimensional ambiguity in the galaxy bridge: $\Gamma$ is not a free acceleration scale once the route gradient convention is fixed. Remaining galaxy-level scatter must enter through source mapping, disk geometry, and the mass-to-route injection coefficient, not through arbitrary dimensional conversion.
+
+#### 13.13.5 Attempted Extraction of $G$
+
+For a pointlike mass $M$, the Landauer bridge gives a dimensionless mass route charge
+
+$$
+Q_M
+=
+\mu_M\,\frac{Mc^2}{\mathcal{J}},
+\qquad
+\mathcal{J}=N_{\text{bit-eq}}k_BT\ln2,
+$$
+
+where $\mu_M$ is the dimensionless fraction of rest-energy bit-equivalent burden that actually sources long-range route curvature. In the far-field isotropic limit,
+
+$$
+g_{\mathrm{route}}(r)
+\sim
+\zeta\,\frac{Q_M}{(r/\Delta x_{\text{univ}})^2}.
+$$
+
+Converting to SI acceleration:
+
+$$
+g_{\text{phys}}(r)
+=
+\frac{\Delta x_{\text{univ}}}{\Delta t_{\text{univ}}^2}
+\zeta
+\frac{\mu_M Mc^2/\mathcal{J}}{(r/\Delta x_{\text{univ}})^2}.
+$$
+
+Collecting the coefficient of $M/r^2$ gives the FPM gravitational constant candidate:
+
+$$
+\boxed{
+G_{\mathrm{FPM}}
+=
+\mu_M\,
+\zeta\,
+\frac{c^2\,\Delta x_{\text{univ}}^3}{\mathcal{J}\,\Delta t_{\text{univ}}^2}
+=
+\mu_M\,
+\zeta\,
+\frac{c^4\,\Delta x_{\text{univ}}}{\mathcal{J}}.
+}
+$$
+
+This is the first non-Planck-inversion path to $G$ in the framework. It also exposes the remaining obstruction cleanly: $G$ is derived only if $\mu_M$ is derived independently from the microscopic mass-injection rule.
+
+Equivalently,
+
+$$
+\boxed{
+\mu_M
+=
+\frac{G\,\mathcal{J}}{\zeta\,c^4\,\Delta x_{\text{univ}}}
+}
+$$
+
+is the value required for empirical closure. Using this equation to fit $\mu_M$ would be calibration, not derivation. The next unsolved mathematical task is therefore not dimensional conversion, nor the $4\pi$ projection, but the microscopic derivation of $\mu_M$ from the Landauer bottom-up injection in Section 11.
+
+Using the current electron-parity Landauer scale
+
+$$
+\mathcal{J}=N_{\text{bit-eq}}k_BT\ln2
+\approx 4.1719\times10^{-12}\ \mathrm{J},
+$$
+
+with $\mathcal{L}_{\max}=3.285$, $\zeta\approx0.2180$, and $\Delta x_{\text{univ}}\approx3.453\times10^{-15}\ \mathrm{m}$, the empirically required value is
+
+$$
+\boxed{
+\mu_M^{(\mathrm{required})}
+\approx 4.58\times10^{-41}.
+}
+$$
+
+This tiny number is not a failure by itself; it is the expected severity of coupling a huge rest-energy bit-equivalent reservoir to a very weak long-range curvature channel. But it cannot be inserted by hand. A completed derivation of $G$ requires deriving this suppression factor from the fraction of local Landauer burden that survives coarse-graining into the far-field route-curvature mode.
 
 ---
 
@@ -1508,7 +1843,7 @@ The real-space equation above is strictly a **Macro-Scale Effective Diagnostic**
 * **The Inward Pull ($\nabla^2 \Phi_L$):** The $16/3$ causal-to-spatial ledger inertia overhead creates localized geometric lag. The non-linear field equation (Section 13.12) converts this into a spatial viscosity well, natively pulling surrounding daemons inward (emergent gravity).
 * **The Outward Pressure ($c_s^2 \nabla^2 \delta_{\gamma b}$):** In the primordial high-energy state ($E_t \to E_{\max}$), the dynamic shear governor is fully released. Daemons are heavily funded to run at maximum dispersion ($D_t \to 1$), physically pushing outward to explore new routes (emergent radiation pressure).
 
-The real-space discrete wave equation mathematically proves that this underlying daemon tug-of-war exactly mimics a propagating sound wave at the continuum limit. The ultimate extraction of the $C_\ell$ power spectrum requires passing the static, frozen output of the C++ engine into an external Python diagnostic pipeline to evaluate the spatial 2-point correlation and the continuous $Y_{\ell m}$ multipole expansion.
+The real-space discrete wave equation mathematically proves that this underlying daemon tug-of-war exactly mimics a propagating sound wave at the continuum limit. The ultimate extraction of the $C_\ell$ power spectrum requires passing the static, frozen output of the C++ engine into an external diagnostic pipeline to evaluate the spatial 2-point correlation and the continuous $Y_{\ell m}$ multipole expansion.
 
 The routing ledger:
 - Carries the geometric lag potential ($\Phi_L$) strictly via the $16/3$ tracking overhead
@@ -1716,20 +2051,58 @@ $$
 
 Communication is not social in a loose sense. It is a cost-lowering synchronization of priors. The only daemons worth querying are those that reduce $\mathcal{C}^{\text{geo}}$ by more than their query cost.
 
+**Local anti-thrashing governor.** The pairwise inequality above is necessary but not sufficient in an asynchronous local daemon field. To prevent checkerboard exchange loops, a communication proposal must pass four additional $O(1)$ gates before it can modify either fallback prior:
+
+1. **Predicted action decrease:** daemon $i$ computes the local one-tick action delta
+
+$$\Delta\mathcal{S}_{ij,t}^{\text{pred}} =
+\mathcal{L}^{\text{post}}_{i,t+1}
++ \mathcal{L}^{\text{post}}_{j,t+1}
++ \chi^{\text{comm}}_{ij,t}
+- \mathcal{L}^{\text{pre}}_{i,t+1}
+- \mathcal{L}^{\text{pre}}_{j,t+1}.$$
+
+The exchange is admissible only if
+
+$$\boxed{\Delta\mathcal{S}_{ij,t}^{\text{pred}} < -\theta_{\text{comm}}}$$
+
+for a fixed hysteresis margin $\theta_{\text{comm}} > 0$. Marginal or exactly neutral exchanges are rejected.
+
+2. **One-way accepted delta:** communication does not overwrite both priors symmetrically. The accepted update is a damped move by the higher-cost endpoint toward the lower-cost endpoint:
+
+$$\pi_{h,t+1} \leftarrow (1-\eta_{ij,t})\pi_{h,t} + \eta_{ij,t}\bar{\pi}_{ij,t}, \qquad 0 < \eta_{ij,t} \le \eta_{\max} < 1,$$
+
+while the lower-cost endpoint keeps its prior fixed for that tick. This converts pair exchange into a monotone local descent step rather than mutual chasing.
+
+3. **Deterministic parity phase:** on tick parity $\sigma_t = t \bmod 2$, only edges whose lattice color satisfies $(x_i+y_i+z_i)\bmod 2 = \sigma_t$ may initiate communication. Neighbors may respond but may not initiate a contradictory update in the same tick. This is a two-color Gauss-Seidel update on $\mathbb{Z}^3$, implemented with $O(1)$ local state and no global synchronization beyond the existing tick index.
+
+4. **Cooldown after rejection:** if an edge proposal fails the hysteresis test, that edge is communication-locked for $M_{\text{cool}}$ ticks:
+
+$$\chi^{\text{comm}}_{ij,t:t+M_{\text{cool}}} = \infty \quad \text{for proposal purposes only.}$$
+
+The edge remains physically present; only repeated prior queries are suppressed.
+
+The governor gives a strict local Lyapunov condition:
+
+$$\Delta\mathcal{S}_{ij,t}^{\text{accepted}} \le -\theta_{\text{comm}}.$$
+
+Since each accepted exchange lowers the two-daemon predicted action by a positive margin and each rejected edge sleeps for a finite cooldown, a finite local neighborhood cannot generate an infinite zero-gain synchronization loop. Domain walls may still become high-viscosity scars when contradictory priors are genuinely action-expensive, but ordinary vacuum cannot be converted into maximum-viscosity scar tissue solely by symmetric communication thrashing.
+
 ### 22.8 Required State Update Order
 
 A full daemon tick proceeds in this exact order:
 
 1. **Sense** local environment; estimate $\tau_{i,t}$, $r_i(\mathbf{x}_{i,t})$, and $q_{i,t}$.
-2. **Communicate** priors only with neighbors satisfying the pairwise cooperation criterion.
-3. **Recompute** $H_t, S_t, \Omega_t, \kappa_t$ from current $p_{i,t}$.
-4. **Update coherence:** $c_{i,t+1} = \kappa_{i,t}c_{i,t} + \nu_{i,t}$.
-5. **Select** next local route by minimizing predicted $\mathcal{L}_{i,t}$ over the 3D neighborhood.
-6. **Update energy:** $E_{i,t+1} = \operatorname{clip}(E_{i,t} - \mathcal{L}_{i,t} + r_i, 0, E_{\max})$.
-7. **If low-energy**, apply the Finite Possibility Mechanics fallback rule: blend $p$, ratchet $b$, recover $E$.
-8. **Enforce safe ceiling:** Accept new $b_{i,t+1}$ only if $b_{i,t+1} < b^{\max}_{i,t+1}$.
+2. **Propose communication** only on the active parity color and only with neighbors satisfying the pairwise cooperation criterion.
+3. **Apply the anti-thrashing governor:** accept only strictly action-lowering, hysteresis-cleared, one-way damped prior deltas; place rejected edges on cooldown.
+4. **Recompute** $H_t, S_t, \Omega_t, \kappa_t$ from current $p_{i,t}$.
+5. **Update coherence:** $c_{i,t+1} = \kappa_{i,t}c_{i,t} + \nu_{i,t}$.
+6. **Select** next local route by minimizing predicted $\mathcal{L}_{i,t}$ over the 3D neighborhood.
+7. **Update energy:** $E_{i,t+1} = \operatorname{clip}(E_{i,t} - \mathcal{L}_{i,t} + r_i, 0, E_{\max})$.
+8. **If low-energy**, apply the Finite Possibility Mechanics fallback rule: blend $p$, ratchet $b$, recover $E$.
+9. **Enforce safe ceiling:** Accept new $b_{i,t+1}$ only if $b_{i,t+1} < b^{\max}_{i,t+1}$.
 
-Step 8 converts plain consolidation into safe adaptive memory growth.
+Step 9 converts plain consolidation into safe adaptive memory growth.
 
 ### 22.9 Survival Regime in High-Viscosity Regions
 
@@ -2090,23 +2463,23 @@ $$\boxed{\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.453 \
 
 ### 27.4 Algebraic Consistency Check for $G$
 
-The zero-dependency architecture prohibits the importation of exogenous physical constants. Because the Planck Mass ($m_P$) is physically defined using $G$, standard dimensional inversion is an algebraic tautology, not a primary derivation. However, to ensure the framework's mathematical structure is physically consistent, we must verify that the endogenous geometric source projection mathematically aligns with the established gravitational constant.
+The zero-dependency architecture prohibits treating exogenous physical constants as hidden fit knobs. Because the Planck mass ($m_P$) is conventionally defined using $G$, standard dimensional inversion is an algebraic identity, not a primary derivation. This section therefore provides only a **calibration consistency check**: it verifies that the proposed SI bridge can be made dimensionally compatible with established gravitational units. It does not independently derive $G$ from the local runtime.
 
-By mathematically projecting the discrete $9:1$ anisotropic grid routing channels onto the continuous $4\pi$ spatial integral, and strictly gating it by the grid's maximum action capacity ($\mathcal{L}_{\max}$), the framework yields the exact endogenous geometric source projection factor $\zeta$:
+At the macroscopic diagnostic level, projecting the discrete $9:1$ routing channels onto a continuous $4\pi$ spatial integral and gating by the grid's maximum action capacity ($\mathcal{L}_{\max}$) gives the continuum source projection factor $\zeta$:
 
 $$\zeta = \frac{9}{4\pi \mathcal{L}_{\max}}$$
 
-To physically close the bridge, the calibration constant $\Gamma$ must map the dimensionless geometric field to physical acceleration ($L T^{-2}$). By explicitly deploying the grid's innate kinematic limit ($c = \Delta x_{\text{univ}} / \Delta t_{\text{univ}}$), we recover the exact dimensional calibration:
+To physically close the bridge, the continuum source projection must be paired with the dimensional acceleration conversion. By using the calibrated kinematic limit ($c = \Delta x_{\text{univ}} / \Delta t_{\text{univ}}$), the combined source-projection prefactor for an SI-gradient convention is:
 
-$$\Gamma = \zeta \cdot c^2 = \left( \frac{9}{4\pi \mathcal{L}_{\max}} \right) c^2$$
+$$\Gamma_{\zeta} = \zeta \cdot c^2 = \left( \frac{9}{4\pi \mathcal{L}_{\max}} \right) c^2$$
 
-This demonstrates that macroscopic gravity ($\Gamma$) maps consistently to the grid's maximum informational propagation speed ($c^2$) scaled by local thermodynamic route-cost resistance ($\zeta$). 
+This demonstrates that the macroscopic gravity bridge can be scaled consistently with the grid's maximum informational propagation speed ($c^2$) and the route-cost projection factor ($\zeta$). Section 13.13 separates the purely dimensional conversion from the source-projection factor and identifies the remaining mass-injection coefficient $\mu_M$.
 
-Substituting this formally derived $\Gamma$ into the algebraic identity at the Planck scale yields an exact algebraic consistency check for the gravitational constant:
+Separately, substituting the Planck mass into its defining relation yields the standard algebraic consistency check for the gravitational constant:
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}}$$
 
-This matches the CODATA 2018 measured value to within $0.00003\%$. The framework now possesses full **Primary Hardware Independence**. The algebraic consistency of $G$ is mathematically closed, requiring strictly zero external astrophysical fits.
+This matches the CODATA 2018 measured value to within $0.00003\%$ because it is the inverted Planck-mass definition. The useful claim is narrower: the FPM calibration bridge is dimensionally compatible with gravitational units without an additional galaxy-fit constant at this stage. Section 13.13 gives the non-Planck-inversion symbolic route to $G_{\mathrm{FPM}}$ and shows that the remaining missing quantity is the microscopic mass-to-route injection coefficient $\mu_M$.
 
 ### 27.5 Resulting Architecture Summary
 
@@ -2118,9 +2491,9 @@ This matches the CODATA 2018 measured value to within $0.00003\%$. The framework
 | **Carrier Radius** | $\lambda_e \approx 2.43$ pm | $\alpha_{\text{PP}} \cdot \Delta x_{\text{univ}}$ |
 | **Action Floor** | $c_0 = 0.05$ | $\widetilde{\mathcal{L}}_t \to c_0$ (Condensate Lock) |
 | **Lag Ceiling** | $31.87$ | $\gamma_{\text{ax,max}} = \mathcal{L}_{\max} / \mathcal{L}_{\text{rest}}$ |
-| **Gravity** | $G \approx 6.674 \times 10^{-11}$ | $\hbar c / m_P^2$ |
+| **Gravity consistency** | $G \approx 6.674 \times 10^{-11}$ | $\hbar c / m_P^2$ algebraic check |
 
-This calibration aligns the abstract route cost runtime currency with empirical physical scales, acting as a functional bridge to test whether the internal architecture natively reproduces physical law.
+This calibration aligns the abstract route cost runtime currency with empirical physical scales, acting as a functional bridge to test whether the internal architecture can reproduce physical law without treating the bridge constants as unconstrained fit parameters.
 
 ### 27.6 Proof
 
@@ -2175,7 +2548,7 @@ B_{ab}=X_a\wedge X_b,\qquad g_{\text{PP}}=2
 $$
 
 **Probe Claim B, Geometric Angular Mode Count:**
-The number of distinct angular routing modes on a discrete shell of integer radius $n$ is extracted via the macro-scale CGA5 integration kernel (averaging over the underlying $\mathbb{Z}^3$ anisotropy) to produce a pristine $n^2$ continuous angular-mode count, yielding $G_n = n^2$.
+The number of distinct angular routing modes on a discrete shell of integer radius $n$ is extracted via the macro-scale CGA5 integration kernel (averaging over the underlying $\mathbb{Z}^3$ anisotropy) as a candidate route to the continuous $n^2$ angular-mode count, yielding $G_n = n^2$ only at the effective diagnostic level. A native per-tick $\mathbb{Z}^3$ derivation of this isotropic count remains open.
 
 Combining these two yields the candidate capacity of the $n$-th shell:
 $$
@@ -2234,6 +2607,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | 16/3 causal-ledger density ratio | §19 | Equipartition limit proxy; exact ratio requires dynamic trace |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
+| Local lattice anisotropy diagnostic and conditional theorem | §§13.12-13.13 | Official route-link convention gives full-shell FPM acceleration anisotropy decay $\sim R^{-1.96}$ and leading cubic harmonic decay $\sim R^{-1.97}$; Section 13.13 supplies a Taylor-expansion proof sketch for $O(R^{-2})$ cancellation |
 | Native trace order beats reversal and shuffle | §8 | 8.83% and 17.67% overhead; tested trace family |
 | Aligned priors outperform wrong/random priors | §9 | Phase gap $\Delta\kappa = 0.9693$; false classicalization possible in forced regimes |
 | Emergent gravity slope $\approx r^{-2}$ | §13 | Within 6.4%; 55 sampled radii |
@@ -2261,13 +2635,13 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Problem | Current Status |
 |---|---|
 | SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
-| First-principles values of $\eta_d$, $\Lambda_d$, and $\Gamma$ | Reduced aggregation bridge currently packages unresolved disk-class closure constants; $\Gamma(G,c,h)$ derivation requires formal integration of discrete action over viscosity shell |
+| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | Reduced aggregation bridge currently packages unresolved disk-class closure constants; dimensional $\Gamma$ is fixed once the route-gradient convention is fixed, but the source coupling $\mu_M$ remains unresolved |
 | Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Calibration Bridge; independent physical validation remains open. |
-| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; tensor field derivation in progress |
+| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention and conditional anisotropy-cancellation proof sketch now supplied; rigorous proof and $\mu_M$ derivation remain open |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
 | Full Standard Model topology identification | Mass ordering and scaling consistent; one-to-one particle correspondence not established |
-| Spontaneous condensate formation without forced cooling | SOLVED: Boundary Shear Flux natively insulates the loop |
+| Spontaneous condensate formation without forced cooling | Conditionally resolved under Theorem 4 assumptions; unconstrained formation from generic initial conditions remains open |
 | Cross-daemon cooperation in adversarial environments | Pairwise criterion derived; multi-agent equilibria not analyzed |
 | Full synthesis of a validated 3D periodic carrier | Generic target identified; family left open |
 | Constitutive relation $P(\mathbf{x},t) \to \Omega_t$ for acoustic/EM fields | Not yet supplied in present model |
@@ -2389,7 +2763,7 @@ The framework has evolved from a single clipped viscosity formula to a formal sy
 
 At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ (§6.5) and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ (§5.3) are motivated by and conditionally derived from local cell geometry, rather than arbitrarily fitted.
 
-At the meso-scale, the viscosity gradient bridge reproduces SPARC rotation-curve structure in executable probes (§13) with a held-out accuracy of 0.943 correlation (though unresolved $\Gamma$ scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.10) offers a candidate pipeline that parallels the empirical MOND interpolation function.
+At the meso-scale, the viscosity gradient bridge reproduces SPARC rotation-curve structure in executable probes (§13) with a held-out accuracy of 0.943 correlation (though unresolved source-coupling scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.10) offers a candidate pipeline that parallels the empirical MOND interpolation function.
 
 At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio (Planck Collaboration, 2020) within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
 
@@ -2488,7 +2862,7 @@ That single pressure (the cost of unbounded possibility) is proposed here as a c
 | $\Sigma_{\text{eff}}$ | Effective surface density | mass/area |
 | $\Sigma_0$ | Saturation scale for route probability | mass/area |
 | $\Sigma_E$ | Energy depletion scale | mass/area |
-| $\Gamma_g$ | Galaxy-level coupling constant | velocity² |
+| $\Gamma_g$ | Galaxy-level effective source-coupling prefactor | velocity² |
 | $a_{\text{cap}}$ | Holographic horizon capacity | acceleration |
 | $H_\Lambda$ | de Sitter Hubble parameter ($H_0\sqrt{\Omega_\Lambda}$) | $\text{s}^{-1}$ |
 | $B$ | Baryonic load ratio | $g_{\text{bar}}/a_{\text{cap}}$ |
@@ -2531,7 +2905,10 @@ That single pressure (the cost of unbounded possibility) is proposed here as a c
 | $\Delta\Omega_d$ | Disk viscosity enhancement in the galaxy branch | $[0, 0.35]$ |
 | $\eta_d$ | Reduced disk-class aggregation coupling | $\geq 0$ |
 | $\Lambda_d$ | Reduced disk-class smoothness threshold | $\geq 0$ |
-| $\Gamma$ | Route-cost-to-physical-acceleration calibration constant | velocity squared |
+| $\Gamma$ | Legacy galaxy-level effective prefactor; dimensional conversion is fixed separately by $\Gamma_{\text{grid}}$ or $\Gamma_{\text{SI-gradient}}$ | velocity squared |
+| $\Gamma_{\text{grid}}$ | Conversion from route acceleration in edges/tick² to SI acceleration | $\Delta x_{\text{univ}}/\Delta t_{\text{univ}}^2$ |
+| $\Gamma_{\text{SI-gradient}}$ | SI-gradient convention conversion | $c^2$ |
+| $\mu_M$ | Mass-to-route injection efficiency required for noncircular $G_{\mathrm{FPM}}$ derivation | dimensionless |
 | $R_c$ | Inner core scale of the finite-disk galaxy curve | length |
 | $r_c$ | Core softening radius of the finite-disk galaxy curve | length |
 | $R_d$ | Effective daemon-sheet radius | length |
@@ -2594,21 +2971,14 @@ That single pressure (the cost of unbounded possibility) is proposed here as a c
 At the universal tick scale ($\sim 10^{-23}$ s), IEEE 754 float64 arithmetic provides $\sim 15.9$ significant decimal digits. Since the exponent occupies $\sim 23$ orders of magnitude, direct multiplicative operations on $\Delta t_{\text{univ}}$ retain full float64 precision. However, for long-horizon macroscopic simulations in any concrete runtime (including the C++ Finite Possibility Mechanics engine), the following precautions apply:
 
 1. **Viscosity field $\Omega_t \in [0.50, 0.85]$:** These values are order-unity and suffer no precision loss from the tick scale.
-2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation using strict IEEE 754 `float64` (`double`) is **required**. The use of compiler-dependent types like `long double` or `__float128` is strictly forbidden, as it destroys the cross-platform determinism required for exact SHA-256 trace verification.
-   * **Compiler Lockdown Directive:** To prevent standard C++ compiler optimization sweeps (e.g., `-O3`, `/fp:fast`) from silently annihilating the Kahan summation compensation variable via algebraic reassociation, the compilation phase must enforce strict IEEE 754 sequencing. Explicit compiler flags (such as `-fno-unsafe-math-optimizations` for GCC/Clang, or `/fp:precise` for MSVC), or enforcing `volatile` on the accumulator variables, are mandatory to guarantee deterministic execution without sacrificing the sub-1MB static binary footprint.
-3. **CGA5 multivector operations:** Verify that the definitions of $c$, $h$, and $G$ passed into 5D Conformal Geometric Algebra structures do not introduce precision drift at the universal tick scale.
-
-
----
-
-## Part V: Research Frontiers and Summary
-
----
-
+2. **Cumulative route cost $\mathcal{S}_T = \sum \mathcal{L}_t$:** Over $N > 10^{15}$ ticks, naive summation may accumulate rounding drift. Kahan compensated summation using IEEE 754 `float64` (`double`) is the default numerical requirement for scientific reproducibility. The use of compiler-dependent types like `long double` or `__float128` is forbidden in locked traces, because x87 extended precision, SSE2 rounding, ARM floating-point modes, and compiler updates can produce platform-dependent least-significant-bit drift.
+   * **Compiler Lockdown Directive:** To preserve Kahan semantics, the compilation phase must disable algebraic reassociation and fast-math transformations. Required flags include `-fno-fast-math -fno-associative-math -fexcess-precision=standard` for GCC/Clang where available, `/fp:strict` or `/fp:precise` for MSVC depending on target, and explicit avoidance of fused multiply-add contraction unless it is identically available across the locked target set. These flags provide bounded reproducibility, not a universal guarantee of bit-for-bit SHA-256 identity across all compilers and CPUs.
+   * **Determinism tiering:** The manuscript distinguishes two verification tiers. **Tier 1** requires numeric equivalence under declared tolerances and is sufficient for physical probes. **Tier 2** requires bit-identical trace hashes and is valid only for a pinned compiler, target architecture, floating-point environment, flags, and standard-library version. If Tier 2 must span Windows, Linux, Darwin, and heterogeneous CPUs, the engine must use a fixed-point ledger or a small custom deterministic arithmetic kernel for accumulated route cost. That stronger guarantee is an implementation frontier and may trade binary size or speed against trace identity.
+3. **CGA5 multivector operations:** Verify that the definitions of $c$, $h$, and $G$ passed into 5D Conformal Geometric Algebra structures do not introduce precision drift at the universal tick scale. CGA5 and multipole routines remain macro-scale diagnostic kernels unless separately compiled into a declared non-runtime analysis binary.
 
 ### C.4 Fractional Exponent Integration
 
-To maintain raw performance within the sub-1MB C++ environment, the non-linear integration of fractional exponents must be strictly paired with Kahan compensated `float64` arrays to absorb amplified rounding drift.
+To maintain raw performance within the sub-1MB C++ environment, the non-linear integration of fractional exponents should be paired with compensated `float64` arrays for Tier 1 physical reproducibility. Tier 2 bit-identical traces require the deterministic arithmetic policy above; Kahan summation alone is not sufficient as a cross-platform SHA guarantee.
 
 
 ## 35. References
