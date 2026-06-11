@@ -28,3 +28,6 @@ To maintain strict epistemic hygiene, the following boundaries apply to the curr
 
 9. **Morphology-Locked Audit $\neq$ Baseline Victory:**
    Section 13.15 defines a no-free-coupling SPARC prediction protocol using fixed stellar mass-to-light ratios, $R_d=R_{\mathrm{HI}}$, $r_c=\max(r_{\min},0.196R_{\mathrm{disk}})$, and the $16/3$ ledger factor. The first audit gives high-quality-sample median shape correlation $0.933$ and median diagnostic scale $1.021$, but full validation still requires matched baryon-only, MOND/RAR, and NFW comparisons under the same quality cuts.
+
+10. **Error Budget Defined $\neq$ Baseline Execution:**
+   Section 13.16 derives the first-order FPM velocity uncertainty, distance/inclination covariance handling, outlier taxonomy, and fair comparison protocol for baryon-only, MOND/RAR, and NFW baselines. The protocol is now specified, but the full baseline table has not yet been executed.

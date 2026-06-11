@@ -39,6 +39,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $0.044\%$ high |
 | Disk Green functional $\mathscr{K}_g$ | Conditional derivation from finite-sheet shear action |
 | Morphology-locked SPARC audit | First locked audit; not full baseline validation |
+| Error/baseline validation protocol | Defined; baseline execution pending |
 | Acoustic oscillator asymmetry | Stripped toy gate |
 | Full CMB replacement | Open frontier |
 
@@ -52,6 +53,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$ from Landauer injection factors | Failure to derive $\mu_M$ or large deviation from measured $G$ | Conditional sub-percent bridge |
 | Disk Green Functional | Phenomenological finite-disk curve | Matched finite-sheet kernel recovers flat branch and rollover with $v(240)/v(30)=0.6487$ | Failure to recover $1/r$ middle branch and $1/r^2$ far branch | Conditional disk-source closure |
 | SPARC Morphology-Locked Audit | Per-galaxy coupling fits | $Q=1$ sample: median RMSE $23.94$ km/s, median shape correlation $0.933$, median diagnostic scale $1.021$ | Collapse of correlation or large amplitude bias under locked inputs | Preliminary empirical audit |
+| Error Budget / Baselines | Unweighted residual comparison | Analytic uncertainty propagation and fair baseline protocol defined | Inability to compare under matched uncertainty cuts | Validation protocol ready |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
@@ -2057,6 +2059,223 @@ For the broader $Q\leq2$ sample:
 | Median diagnostic best-fit scale | $0.995$ |
 
 This is not yet a completed SPARC validation. The remaining empirical work is to compare the locked FPM predictions against baryon-only, MOND/RAR, and NFW baselines under the same quality cuts and uncertainty model. The important closure result is narrower: the derived disk Green operator, the $R_d=R_{\mathrm{HI}}$ morphology lock, and the $16/3$ ledger inertia factor produce the correct velocity scale and high shape correlation without fitting a galaxy-level acceleration conversion.
+
+### 13.16 Error Budget and Baseline Validation Protocol
+
+The morphology-locked prediction is reviewable only if its uncertainty budget and comparison baselines are fixed before evaluation. This section defines that protocol.
+
+#### 13.16.1 Differential Error Propagation
+
+Write the locked prediction as
+
+$$
+V_{\mathrm{FPM}}^2(r)
+=
+r\,Q(r)\,A(r;R_d,r_c),
+\qquad
+A(r;R_d,r_c)
+=
+\frac{R_d}{(r+r_c)(r+r_c+R_d)}.
+$$
+
+Let
+
+$$
+B=r+r_c.
+$$
+
+Then
+
+$$
+A=\frac{R_d}{B(B+R_d)}.
+$$
+
+The exact partial derivatives of $Y\equiv V_{\mathrm{FPM}}^2$ are
+
+$$
+\boxed{
+\frac{\partial Y}{\partial Q}
+=
+rA,
+}
+$$
+
+$$
+\boxed{
+\frac{\partial Y}{\partial R_d}
+=
+\frac{rQ}{(B+R_d)^2},
+}
+$$
+
+$$
+\boxed{
+\frac{\partial Y}{\partial r_c}
+=
+-Y\left(\frac{1}{B}+\frac{1}{B+R_d}\right).
+}
+$$
+
+The first-order variance is therefore
+
+$$
+\boxed{
+\sigma_Y^2
+=
+(rA)^2\sigma_Q^2
++
+\left[\frac{rQ}{(B+R_d)^2}\right]^2\sigma_{R_d}^2
++
+\left[
+Y\left(\frac{1}{B}+\frac{1}{B+R_d}\right)
+\right]^2\sigma_{r_c}^2
++2\sum_{a<b}
+\frac{\partial Y}{\partial\theta_a}
+\frac{\partial Y}{\partial\theta_b}
+\operatorname{Cov}(\theta_a,\theta_b),
+}
+$$
+
+where $\theta_a\in\{Q,R_d,r_c\}$. The velocity uncertainty is
+
+$$
+\boxed{
+\sigma_{V,\mathrm{FPM}}
+=
+\frac{\sigma_Y}{2V_{\mathrm{FPM}}}.
+}
+$$
+
+The observational residual used in validation is
+
+$$
+\boxed{
+\chi^2_{\mathrm{FPM}}
+=
+\sum_i
+\frac{\left[V_{\mathrm{obs}}(r_i)-V_{\mathrm{FPM}}(r_i)\right]^2}
+{\sigma_{V,\mathrm{obs},i}^2+\sigma_{V,\mathrm{FPM},i}^2+\sigma_{\mathrm{sys},i}^2}.
+}
+$$
+
+#### 13.16.2 Baryonic-Source Uncertainty
+
+The route charge is
+
+$$
+Q(r_i)=\frac{16}{3}\max_{j\leq i}V_{\mathrm{bar}}^2(r_j).
+$$
+
+Away from envelope-switch points, the active source index $j_\star$ is fixed and
+
+$$
+\sigma_Q
+=
+\frac{16}{3}\sigma_{V_{\mathrm{bar}}^2,j_\star}.
+$$
+
+With
+
+$$
+V_{\mathrm{bar}}^2
+=
+V_g|V_g|
++\Upsilon_d V_d|V_d|
++\Upsilon_b V_b|V_b|,
+$$
+
+the variance is
+
+$$
+\boxed{
+\sigma_{V_{\mathrm{bar}}^2}^2
+=
+(2|V_g|\sigma_{V_g})^2
++
+(|V_d|V_d\,\sigma_{\Upsilon_d})^2
++
+(2\Upsilon_d|V_d|\sigma_{V_d})^2
++
+(|V_b|V_b\,\sigma_{\Upsilon_b})^2
++
+(2\Upsilon_b|V_b|\sigma_{V_b})^2.
+}
+$$
+
+At envelope-switch points, the derivative is non-smooth. The validation protocol handles this by Monte Carlo resampling the baryonic components and recomputing the monotone envelope, rather than differentiating through the max operator.
+
+#### 13.16.3 Distance and Inclination Covariance
+
+The locked protocol uses published SPARC distances and inclinations as the default deterministic inputs. For uncertainty propagation, distance and inclination are treated as shared galaxy-level nuisance variables.
+
+Observed circular velocity depends on inclination:
+
+$$
+V_{\mathrm{obs}}=\frac{V_{\mathrm{los}}}{\sin i},
+\qquad
+\frac{\sigma_{V,i}}{V_{\mathrm{obs}}}=|\cot i|\,\sigma_i
+$$
+
+with $\sigma_i$ in radians. This term becomes large at low inclination, which is why low-inclination galaxies are an outlier class rather than a clean falsification channel.
+
+Radii and morphology lengths scale with distance:
+
+$$
+r,\ R_d,\ r_c \propto D.
+$$
+
+Because the Green factor appears as
+
+$$
+r\,\frac{R_d}{(r+r_c)(r+r_c+R_d)},
+$$
+
+uniform distance rescaling cancels to first order in the morphology kernel. Distance still affects baryonic mass-model amplitudes and gas/stellar luminosity normalization. In a full validation run, $D$ and $i$ must therefore be sampled once per galaxy and applied coherently to all radial points, preserving covariance across the rotation curve.
+
+#### 13.16.4 Baseline Comparison Protocol
+
+All baselines must use the same galaxies, same radial points, same published distances/inclinations, same velocity uncertainties, and same quality cuts as FPM.
+
+| Model | Allowed inputs | Free parameters |
+|---|---|---|
+| Baryon-only Newtonian | $V_g,V_d,V_b$ with fixed $\Upsilon_d,\Upsilon_b$ | none |
+| RAR/MOND fixed law | $g_{\mathrm{bar}}$ and fixed $a_0$ | none if $a_0$ is literature-fixed |
+| RAR/MOND one-parameter audit | $g_{\mathrm{bar}}$ | one global $a_0$, not per galaxy |
+| NFW minimal halo | baryons plus halo | two halo parameters per galaxy, reported separately because parameter freedom is larger |
+| FPM morphology-locked | $V_g,V_d,V_b,R_{\mathrm{disk}},R_{\mathrm{HI}}$ | none per galaxy |
+
+The required reported metrics are:
+
+$$
+\mathrm{RMSE}_V,\qquad
+\chi^2_\nu,\qquad
+\mathrm{corr}(V_{\mathrm{model}},V_{\mathrm{obs}}),
+\qquad
+\Delta\mathrm{AIC},\qquad
+\Delta\mathrm{BIC}.
+$$
+
+For models with different parameter counts, AIC/BIC must be computed using the actual number of fitted parameters. FPM's morphology-locked audit has no per-galaxy velocity-coupling parameter.
+
+#### 13.16.5 Outlier Taxonomy
+
+The following systems are predicted to degrade or require separate flags:
+
+| Outlier class | Reason |
+|---|---|
+| Strong bars | non-circular streaming violates circular-balance assumption |
+| Warped disks | a single $R_d=R_{\mathrm{HI}}$ sheet is geometrically insufficient |
+| Disturbed H I or mergers | no stationary daemon-sheet Green solution |
+| Low inclination | inclination uncertainty dominates velocity correction |
+| Missing or unreliable $R_{\mathrm{HI}}$ | support radius is not morphology-locked |
+| Non-equilibrium dwarfs | pressure support and burst feedback perturb the disk source |
+| Bulge-dominated inner regions | thin-disk Green kernel underrepresents 3D central structure |
+
+These are not automatic exclusions. They are pre-registered diagnostic labels. A failure in a clean, high-inclination, equilibrium disk is much more damaging to FPM than a failure in a strongly barred or disturbed system.
+
+#### 13.16.6 Validation Status
+
+The current morphology-locked audit establishes that the derived disk kernel has the correct scale and high median shape correlation on SPARC-format data. It does not yet establish superiority over MOND/RAR or NFW baselines. The next empirical validation must compute the baseline table above under the same uncertainty propagation and quality cuts.
 
 ---
 
