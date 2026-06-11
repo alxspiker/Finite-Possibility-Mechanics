@@ -36,7 +36,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Route-link anisotropy cancellation $\sim O(R^{-2})$ | Conditional theorem + executable diagnostic |
-| $G_{\mathrm{FPM}}$ from far-field limit | Symbolic reduction; requires $\mu_M$ derivation |
+| $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $1.3\%$ high |
 | Acoustic oscillator asymmetry | Stripped toy gate |
 | Full CMB replacement | Open frontier |
 
@@ -47,6 +47,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 |-----------------|---------------------|--------|-------------------|----------------|
 | SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved source-coupling scatter, rollover mismatch, or pipeline failure | Operative prediction |
 | Lattice Anisotropy Probe | Persistent cubic lattice bias | Full-shell anisotropy decays near $R^{-1.96}$ under route-link rule | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support |
+| Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.76\times10^{-11}$ from Landauer injection factors | Failure to derive $\mu_M$ or large deviation from measured $G$ | Conditional percent-scale bridge |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
 | Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
@@ -1450,7 +1451,7 @@ $$
 
 This resolves the dimensional ambiguity in the galaxy bridge: $\Gamma$ is not a free acceleration scale once the route gradient convention is fixed. Remaining galaxy-level scatter must enter through source mapping, disk geometry, and the mass-to-route injection coefficient, not through arbitrary dimensional conversion.
 
-#### 13.13.5 Attempted Extraction of $G$
+#### 13.13.5 Conditional Derivation of $\mu_M$ and Extraction of $G$
 
 For a pointlike mass $M$, the Landauer bridge gives a dimensionless mass route charge
 
@@ -1510,6 +1511,51 @@ $$
 
 is the value required for empirical closure. Using this equation to fit $\mu_M$ would be calibration, not derivation. The next unsolved mathematical task is therefore not dimensional conversion, nor the $4\pi$ projection, but the microscopic derivation of $\mu_M$ from the Landauer bottom-up injection in Section 11.
 
+The Landauer bottom-up rule gives a natural four-factor suppression for the fraction of rest-energy bit burden that survives into the long-range route-curvature mode:
+
+$$
+\boxed{
+\mu_M^{\mathrm{FPM}}
+=
+\underbrace{N_{\text{bit-eq}}^{-4}}_{\text{four causal ledger channels}}
+\underbrace{\alpha_{\text{PP}}^{-1}}_{\text{Point-Pair carrier dilution}}
+\underbrace{\frac{2}{3}}_{\text{transverse shear leakage}}
+\underbrace{\zeta}_{\text{source-side shear-flux gate}}.
+}
+$$
+
+The factors have the following meaning.
+
+1. **Four-channel causal survival:** mass-equivalent route burden must survive projection through the four causal ledger channels $(x,y,z,t)$ before it becomes a persistent far-field source. If $N_{\text{bit-eq}}$ is the available bit-equivalent substrate capacity, the coherent far-field fraction scales as $N_{\text{bit-eq}}^{-4}$.
+
+2. **Carrier dilution:** the Point-Pair carrier spans $\alpha_{\text{PP}}=\lambda_e/\Delta x_{\text{univ}}$ lattice intervals. A localized rest-energy burden is therefore diluted over the carrier before it contributes to a continuum radial source, giving $\alpha_{\text{PP}}^{-1}$.
+
+3. **Transverse shear leakage:** of the three spatial directions, the radial compression channel is locally cached into the source while the two transverse shear channels propagate curvature information outward. The far-field leakage fraction is therefore $2/3$.
+
+4. **Source-side flux gate:** before propagation through the continuum field equation, the surviving burden must pass through the normalized nine-channel shear projection $\zeta=9/(4\pi\mathcal{L}_{\max})$.
+
+Thus
+
+$$
+\boxed{
+\mu_M^{\mathrm{FPM}}
+=
+\frac{2}{3}\frac{\zeta}{\alpha_{\text{PP}}N_{\text{bit-eq}}^4}.
+}
+$$
+
+Substituting this into the far-field expression gives
+
+$$
+\boxed{
+G_{\mathrm{FPM}}
+=
+\left(\frac{2}{3}\frac{\zeta}{\alpha_{\text{PP}}N_{\text{bit-eq}}^4}\right)
+\zeta
+\frac{c^4\Delta x_{\text{univ}}}{\mathcal{J}}.
+}
+$$
+
 Using the current electron-parity Landauer scale
 
 $$
@@ -1526,7 +1572,27 @@ $$
 }
 $$
 
-This tiny number is not a failure by itself; it is the expected severity of coupling a huge rest-energy bit-equivalent reservoir to a very weak long-range curvature channel. But it cannot be inserted by hand. A completed derivation of $G$ requires deriving this suppression factor from the fraction of local Landauer burden that survives coarse-graining into the far-field route-curvature mode.
+The conditional Landauer injection derivation predicts
+
+$$
+\boxed{
+\mu_M^{\mathrm{FPM}}
+\approx 4.64\times10^{-41},
+}
+$$
+
+and therefore
+
+$$
+\boxed{
+G_{\mathrm{FPM}}
+\approx 6.76\times10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}},
+}
+$$
+
+which is high by approximately $1.3\%$ relative to CODATA $G\approx6.6743\times10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}}$.
+
+This is not exact closure, but it is a non-Planck-inversion derivation to the correct order and within percent scale. The remaining residual may come from the benchmark values of $\alpha_{\text{PP}}$, $\mathcal{L}_{\max}$, the simplified four-channel survival assumption, or the use of a single electron-parity substrate capacity as a universal source scale. The next mathematical target is to derive the $2/3$ transverse leakage and $N_{\text{bit-eq}}^{-4}$ survival factors directly from the microscopic Landauer injection operator rather than assigning them as physically motivated channel factors.
 
 ---
 
@@ -2479,7 +2545,7 @@ Separately, substituting the Planck mass into its defining relation yields the s
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}}$$
 
-This matches the CODATA 2018 measured value to within $0.00003\%$ because it is the inverted Planck-mass definition. The useful claim is narrower: the FPM calibration bridge is dimensionally compatible with gravitational units without an additional galaxy-fit constant at this stage. Section 13.13 gives the non-Planck-inversion symbolic route to $G_{\mathrm{FPM}}$ and shows that the remaining missing quantity is the microscopic mass-to-route injection coefficient $\mu_M$.
+This matches the CODATA 2018 measured value to within $0.00003\%$ because it is the inverted Planck-mass definition. The useful claim is narrower: the FPM calibration bridge is dimensionally compatible with gravitational units without an additional galaxy-fit constant at this stage. Section 13.13 gives the non-Planck-inversion route to $G_{\mathrm{FPM}}$ and supplies a conditional Landauer channel derivation of $\mu_M$ that lands within approximately $1.3\%$ of CODATA $G$. The remaining task is a fully microscopic proof of the channel factors used in that derivation.
 
 ### 27.5 Resulting Architecture Summary
 
@@ -2635,9 +2701,9 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Problem | Current Status |
 |---|---|
 | SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
-| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | Reduced aggregation bridge currently packages unresolved disk-class closure constants; dimensional $\Gamma$ is fixed once the route-gradient convention is fixed, but the source coupling $\mu_M$ remains unresolved |
+| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | Reduced aggregation bridge currently packages unresolved disk-class closure constants; dimensional $\Gamma$ is fixed once the route-gradient convention is fixed; $\mu_M$ has a conditional Landauer channel derivation with $1.3\%$ residual |
 | Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Calibration Bridge; independent physical validation remains open. |
-| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention and conditional anisotropy-cancellation proof sketch now supplied; rigorous proof and $\mu_M$ derivation remain open |
+| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-cancellation proof sketch, and conditional $\mu_M$ derivation now supplied; rigorous microscopic proof remains open |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
 | Full Standard Model topology identification | Mass ordering and scaling consistent; one-to-one particle correspondence not established |
