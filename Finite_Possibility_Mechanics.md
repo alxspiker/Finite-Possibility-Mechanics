@@ -33,6 +33,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | $D_{t+1} \le \kappa_t D_t + \xi_t$ | Exact theorem |
 | $e(B) = (1+B)^{-3/4}$ | Conditional theorem |
 | Conditional Physical Calibration Bridge | Conditional calibration ansatz |
+| Boot Condensate / Minimal Initialization | Structural axiom |
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Route-link anisotropy decay $\sim O(R^{-2})$ | Conditional theorem + local threshold caveat |
@@ -56,7 +57,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Error Budget / Baselines | Unweighted residual comparison | Analytic uncertainty propagation and fair baseline protocol defined | Inability to compare under matched uncertainty cuts | Validation protocol ready |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
-| Cosmic Microwave Background | Stripped baryon-photon oscillator without pressureless ledger | Stripped Boltzmann dynamics defined | Rejection by full multipole expansion | Open frontier |
+| Cosmic Microwave Background | Stripped baryon-photon oscillator and domain-scale cutoff diagnostic | Fundamental-grid cutoff maps to $\ell\sim10^{38}$-$10^{41}$, far beyond observable CMB scales; observable signatures require a derived primordial domain correlation length | Failure of stripped oscillator phase behavior or no freeze-out domain-size derivation | Open frontier |
 
 ---
 
@@ -443,6 +444,40 @@ with $E_t$ as budget gate and $e(B) = (1+B)^{-3/4}$ as the conditional depletion
 
 ## 6. The Discrete Action Principle
 
+
+### 6.0 Axiom of Minimal Initialization
+
+**Axiom of Minimal Initialization (Boot Condensate).** At absolute initialization ($t=0$), before any tick is executed and before the normalized energy budget is injected into the runtime ledger, the closed $\mathbb{Z}^3$ grid has no spendable execution budget. The state at this boundary is not produced by a runtime transition, because any transition would already require action. It is a pre-execution structural condition.
+
+The only admissible zero-budget initialization is the minimum-description, minimum-action uniform state: the Theorem 4 Zero-Drag Isotropic Condensate. In that state all positive action burdens above baseline vanish,
+
+$$
+D_0=0,\qquad I_0=0,\qquad |\pi_0-\tau_0|=0,\qquad |\Delta\Omega_0|=0,
+$$
+
+and the first executable action, if a tick is later funded, is the floor value
+
+$$
+\widetilde{\mathcal{L}}_0=c_0.
+$$
+
+This axiom is not a runtime cooling theorem. The energy ledger update
+
+$$
+E_{t+1}=\operatorname{clip}(E_t-\mathcal{L}_t+r,0,E_{\max})
+$$
+
+cannot dynamically compute a lower-action state from $E_0=0$ without an already-funded tick. Random or dispersive priors therefore require an entropy source or prior energy injection; they are not admissible as the unpowered boot condition of a closed finite ledger.
+
+For scale, at $z_{\mathrm{boot}}=10^{32}$ the transverse $\ell=2$ comoving scale spans approximately $1.936997\times10^9$ fundamental lattice intervals. A random binary alignment over only that one-dimensional count has probability
+
+$$
+2^{-1.936997\times10^9}
+\approx
+10^{-5.830941\times10^8},
+$$
+
+before any three-dimensional volume penalty is included. Large-scale homogeneity is therefore not attributed to random agreement or post-boot communication; it is inherited from the minimum-initialization condensate unless a later theorem derives an alternative closed-universe boot rule.
 
 ### 6.1 The Per-Tick Lagrangian
 
@@ -2616,12 +2651,211 @@ The real-space equation above is strictly a **Macro-Scale Effective Diagnostic**
 * **The Inward Pull ($\nabla^2 \Phi_L$):** The $16/3$ causal-to-spatial ledger inertia overhead creates localized geometric lag. The non-linear field equation (Section 13.12) converts this into a spatial viscosity well, natively pulling surrounding daemons inward (emergent gravity).
 * **The Outward Pressure ($c_s^2 \nabla^2 \delta_{\gamma b}$):** In the primordial high-energy state ($E_t \to E_{\max}$), the dynamic shear governor is fully released. Daemons are heavily funded to run at maximum dispersion ($D_t \to 1$), physically pushing outward to explore new routes (emergent radiation pressure).
 
-The real-space discrete wave equation mathematically proves that this underlying daemon tug-of-war exactly mimics a propagating sound wave at the continuum limit. The ultimate extraction of the $C_\ell$ power spectrum requires passing the static, frozen output of the C++ engine into an external diagnostic pipeline to evaluate the spatial 2-point correlation and the continuous $Y_{\ell m}$ multipole expansion.
+The real-space discrete wave equation shows that this underlying daemon tug-of-war has the same stripped form as a propagating sound wave at the continuum limit. The ultimate extraction of the $C_\ell$ power spectrum requires passing the static, frozen output of the C++ engine into an external diagnostic pipeline to evaluate the spatial 2-point correlation and the continuous $Y_{\ell m}$ multipole expansion.
 
 The routing ledger:
 - Carries the geometric lag potential ($\Phi_L$) strictly via the $16/3$ tracking overhead
 - Emerges natively as a pressureless and collisionless pseudo-CDM
-- Mimics the exact Boltzmann acoustic behavior at the macroscopic limit without violating $O(1)$ scaling
+- Matches the stripped acoustic phase structure at the macroscopic diagnostic level without violating $O(1)$ runtime scaling
+
+### 20.2 CMB UV Cutoff Diagnostic
+
+The calibrated universal lattice spacing from Section 27 is
+
+$$
+\Delta x_{\mathrm{univ}}
+=
+c\Delta t_{\mathrm{univ}}
+\approx
+3.453191\times10^{-15}\ \mathrm{m}.
+$$
+
+If the primordial B-mode ultraviolet cutoff is identified directly with the fundamental grid Nyquist scale,
+
+$$
+k_{\mathrm{cut}}
+\sim
+\frac{\pi}{\Delta x_{\mathrm{univ}}},
+$$
+
+then the corresponding CMB multipole is
+
+$$
+\ell_{\mathrm{cut}}
+\sim
+k_{\mathrm{cut}}\chi_*,
+$$
+
+where $\chi_*$ is the comoving distance to last scattering. Using the diagnostic reference values $\chi_*=13{,}800\ \mathrm{Mpc}$ and $z_*=1089$ gives:
+
+| Mapping | Effective interval | $k_{\mathrm{cut}}$ | $\ell_{\mathrm{cut}}$ |
+|---|---:|---:|---:|
+| Direct fundamental-grid mapping | $\Delta x_{\mathrm{univ}}=3.453191\times10^{-15}\ \mathrm{m}$ | $9.097650\times10^{14}\ \mathrm{m}^{-1}$ | $3.873993\times10^{41}$ |
+| Proper-at-recombination to comoving mapping | $(1+z_*)\Delta x_{\mathrm{univ}}=3.763979\times10^{-12}\ \mathrm{m}$ | $8.346468\times10^{11}\ \mathrm{m}^{-1}$ | $3.554122\times10^{38}$ |
+
+Both values are far beyond observable CMB multipoles. Therefore the femtometer-scale $\Delta x_{\mathrm{univ}}$ does **not** by itself yield an observationally accessible B-mode cutoff. The required observable scale must not be interpreted as a resized lattice spacing, because doing so would break the Section 27 particle-scale calibration. It is instead a target **primordial consensus-domain correlation length**. To place a domain-scale cutoff at a representative high-CMB scale such as $\ell_{\mathrm{cut}}=5000$, the required comoving domain length would be
+
+$$
+\xi_{\mathrm{freeze,comoving}}
+\sim
+\frac{\pi\chi_*}{5000}
+\approx
+2.675528\times10^{23}\ \mathrm{m}
+\approx
+8.670796\ \mathrm{Mpc},
+$$
+
+or, expressed as a proper domain length at recombination,
+
+$$
+\xi_{\mathrm{freeze},z_*}
+\approx
+2.454613\times10^{20}\ \mathrm{m}
+\approx
+7.954858\times10^{-3}\ \mathrm{Mpc}.
+$$
+
+This is approximately $7.75\times10^{37}$ times larger than the calibrated fundamental lattice spacing. Consequently, an observable CMB cutoff requires a derived freeze-out correlation length for primordial consensus domains, not an ad hoc enlargement of $\Delta x_{\mathrm{univ}}$.
+
+For reference, the domain length associated with a target multipole is
+
+$$
+\xi_{\mathrm{freeze,comoving}}(\ell)
+\sim
+\frac{\pi\chi_*}{\ell}.
+$$
+
+| Target multipole | Required comoving domain length | Proper domain length at recombination |
+|---:|---:|---:|
+| $\ell=80$ | $541.925\ \mathrm{Mpc}$ | $0.497179\ \mathrm{Mpc}$ |
+| $\ell=100$ | $433.540\ \mathrm{Mpc}$ | $0.397743\ \mathrm{Mpc}$ |
+| $\ell=500$ | $86.708\ \mathrm{Mpc}$ | $0.079549\ \mathrm{Mpc}$ |
+| $\ell=1000$ | $43.354\ \mathrm{Mpc}$ | $0.039774\ \mathrm{Mpc}$ |
+| $\ell=5000$ | $8.6708\ \mathrm{Mpc}$ | $0.007955\ \mathrm{Mpc}$ |
+
+The native FPM target is therefore to derive $\xi_{\mathrm{freeze}}$ from the local thermodynamic cooling law, finite communication horizon, action budget depletion, and the domain-wall/viscosity-scar mechanism in Section 22.10. Until that derivation exists, the UV cutoff remains a formal microscopic boundary and the observable B-mode cutoff remains an open phase-transition/domain-wall prediction.
+
+### 20.3 Domain Freeze-Out Scaling Target
+
+The domain-size problem is the FPM analogue of a Kibble-Zurek freeze-out calculation, but the competing rates are ledger-economic rather than field-theoretic:
+
+1. the speed at which a prior-alignment wave can propagate through the local daemon network, and
+2. the time until communication becomes unaffordable under action-budget depletion.
+
+Section 22.7 bounds accepted communication by a one-way damped update,
+
+$$
+\pi_{h,t+1}
+\leftarrow
+(1-\eta_{ij,t})\pi_{h,t}
++\eta_{ij,t}\bar{\pi}_{ij,t},
+\qquad
+0<\eta_{ij,t}\leq\eta_{\max}<1,
+$$
+
+with a two-color parity governor and a strict communication-cost inequality. Therefore the fastest possible consensus front is bounded by
+
+$$
+v_{\mathrm{consensus}}
+\leq
+\eta_{\max}\frac{\Delta x_{\mathrm{univ}}}{\Delta t_{\mathrm{univ}}}
+=
+\eta_{\max}c,
+$$
+
+up to additional slowdowns from failed hysteresis gates, cooldowns, local viscosity, or partial alignment thresholds. Under a constant net-drain approximation, a high-dispersion primordial daemon with initial reservoir $E_0$ freezes communication when
+
+$$
+N_{\mathrm{freeze}}
+\approx
+\frac{E_0-\varepsilon E_{\max}}
+{\mathcal{L}_{\mathrm{high}}-r_{\mathrm{env}}},
+\qquad
+\mathcal{L}_{\mathrm{high}}>r_{\mathrm{env}},
+$$
+
+where $N_{\mathrm{freeze}}$ is measured in ticks. The proper domain size at freeze-out is then bounded by
+
+$$
+\boxed{
+\xi_{\mathrm{freeze,proper}}
+\lesssim
+\eta_{\max}N_{\mathrm{freeze}}\Delta x_{\mathrm{univ}}.
+}
+$$
+
+Mapping that proper length to a present comoving length gives
+
+$$
+\xi_{\mathrm{freeze,comoving}}
+=
+(1+z_{\mathrm{freeze}})\xi_{\mathrm{freeze,proper}},
+$$
+
+and the observable multipole target becomes
+
+$$
+\boxed{
+N_{\mathrm{freeze}}
+\gtrsim
+\frac{\pi\chi_*}
+{\ell(1+z_{\mathrm{freeze}})\eta_{\max}\Delta x_{\mathrm{univ}}}.
+}
+$$
+
+For $z_{\mathrm{freeze}}=z_*=1089$, the target tick budgets are:
+
+| Target multipole | Proper domain length at recombination | Required ticks $N_{\mathrm{freeze}}/\eta_{\max}$ | Proper propagation time $N_{\mathrm{freeze}}\Delta t_{\mathrm{univ}}/\eta_{\max}$ |
+|---:|---:|---:|---:|
+| $\ell=80$ | $0.497179\ \mathrm{Mpc}$ | $4.442653\times10^{36}$ | $1.621580\times10^6\ \mathrm{yr}$ |
+| $\ell=100$ | $0.397743\ \mathrm{Mpc}$ | $3.554122\times10^{36}$ | $1.297264\times10^6\ \mathrm{yr}$ |
+| $\ell=500$ | $0.079549\ \mathrm{Mpc}$ | $7.108244\times10^{35}$ | $2.594528\times10^5\ \mathrm{yr}$ |
+| $\ell=1000$ | $0.039774\ \mathrm{Mpc}$ | $3.554122\times10^{35}$ | $1.297264\times10^5\ \mathrm{yr}$ |
+| $\ell=5000$ | $0.007955\ \mathrm{Mpc}$ | $7.108244\times10^{34}$ | $2.594528\times10^4\ \mathrm{yr}$ |
+
+The larger count $7.747986\times10^{37}/\eta_{\max}$ for $\ell=5000$ is the present-comoving interval expressed directly in fundamental lattice edges. The physical communication race before last scattering must use the proper domain length at the freeze-out epoch, reducing the recombination-era tick target by the factor $(1+z_*)$. Deriving $N_{\mathrm{freeze}}$ from the Section 22 action ledger is now the required mathematical closure.
+
+This correction does not, by itself, solve the full cosmological horizon problem. Using the reference recombination age $t_*\approx380{,}000\ \mathrm{yr}$ and a maximum consensus speed $\eta_{\max}c$, a domain can be causally aligned before recombination only if
+
+$$
+\frac{\pi\chi_*}
+{\ell(1+z_*)\eta_{\max}c}
+\leq
+t_*.
+$$
+
+For $\eta_{\max}=1$, this gives a recombination-era causal threshold
+
+$$
+\ell
+\gtrsim
+341.385.
+$$
+
+For photon-baryon acoustic propagation at $c/\sqrt{3}$, the corresponding threshold is $\ell\gtrsim591.297$. Thus the $\ell=5000$ domain-scale target is comfortably causal, but low-multipole horizon-problem scales are not solved by finite-speed daemon communication alone.
+
+| Target multipole | Proper light-crossing time at recombination | Minimum $\eta_{\max}$ needed before $t_*$ |
+|---:|---:|---:|
+| $\ell=80$ | $1.621580\times10^6\ \mathrm{yr}$ | $4.26732$ |
+| $\ell=100$ | $1.297264\times10^6\ \mathrm{yr}$ | $3.41385$ |
+| $\ell=200$ | $6.48632\times10^5\ \mathrm{yr}$ | $1.70693$ |
+| $\ell=342$ | $3.79317\times10^5\ \mathrm{yr}$ | $0.998202$ |
+| $\ell=500$ | $2.59453\times10^5\ \mathrm{yr}$ | $0.682770$ |
+| $\ell=5000$ | $2.59453\times10^4\ \mathrm{yr}$ | $0.068277$ |
+
+The result is therefore a partial structural win for the post-injection runtime, not a standalone replacement for inflation. FPM can make high-$\ell$ domain-wall cutoff scales causally plausible with subluminal local communication. Low-$\ell$ homogeneity is instead assigned to the Axiom of Minimal Initialization: it is inherited from the pre-execution Boot Condensate rather than communicated across the grid after random initialization. The remaining cosmological task is to derive the injection/fracture map that converts the uniform condensate into a hot, locally dispersive daemon field without destroying the inherited super-horizon smoothness.
+
+The same diagnostic gives the stripped acoustic spacing
+
+$$
+\ell_A
+=
+\frac{\pi\chi_*}{r_s}
+\approx
+299.820
+$$
+
+for $r_s=144.6\ \mathrm{Mpc}$. This is an acoustic phase-scale check only. It is not a $C_\ell$ prediction because it omits recombination visibility, diffusion damping, baryon loading, lensing, reionization, and the full hierarchy of photon, baryon, neutrino, and metric perturbations.
 
 ---
 
@@ -3354,6 +3588,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Calibration Bridge: Lattice Constant $\Delta x_{\text{univ}} = c \cdot \Delta t_{\text{univ}} \approx 3.45$ fm | §27 | Conditional on calibration axiom |
 | Calibration Bridge: $G$ algebraic consistency $G = \hbar c / m_P^2$ | §27 | Conditional algebraic inversion |
 | 3/4 causal depletion law $e(B) = (1+B)^{-3/4}$ | §5.3 | Conditional on 3 spatial loaded channels over 4 causal channels |
+| Axiom of Minimal Initialization / Boot Condensate | §6.0 | Structural zero-budget initialization axiom; not a runtime cooling theorem |
 | Dispersion contraction $D_{t+1} \le \kappa_t D_t + \xi_t$ | §7 | Direct from triangle inequality; unconditional |
 | Fixed-point $D^* = \xi^*/(1-\kappa^*)$ in stationary regime | §7 | Conditional fixed-point analysis |
 | Self-reinforcing classicalization loop under repeated consolidation | §7 | Sequential argument with stated assumptions |
@@ -3378,6 +3613,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | 9:1 directed routing channel count | §3 | Structural argument from directed interaction table |
 | α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
 | 16/3 causal-ledger density ratio | §19 | Equipartition limit proxy; exact ratio requires dynamic trace |
+| CMB UV/domain cutoff diagnostic | §20.2 | Fundamental $\Delta x_{\mathrm{univ}}$ maps to $\ell_{\mathrm{cut}}\sim3.55\times10^{38}$-$3.87\times10^{41}$; observable cutoff requires a derived primordial consensus-domain correlation length |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
 | Local lattice anisotropy diagnostic and conditional theorem | §§13.12-13.13 | Official route-link convention gives algebraic far-field finite-difference error decay $\sim R^{-2}$; Section 13.13 replaces global spherical averaging with a local smoothness-threshold activation condition |
@@ -3422,7 +3658,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Γ calibration | Partially resolved via geometry + radial shear law |
 | 9:1 channel split microscopic derivation | Structural argument present, microscopic proof open |
 | Full Landauer bottom-up injection | Prototype exists, not yet competitive with top-down calibration |
-| CMB spectrum prediction | Ledger oscillator defined, full comparison to Planck data open |
+| CMB spectrum prediction | Stripped ledger oscillator and UV/domain cutoff diagnostic now executable; full $C_\ell$ comparison, visibility physics, damping, lensing, and freeze-out domain-size derivation remain open |
 | Large-scale structure | Routing ledger as CDM proxy identified, N-body simulation not run |
 
 ---
@@ -3445,7 +3681,11 @@ Standard continuous inflation assumes that quantum fluctuations generate a scale
 
 In FPM, primordial gravitational waves are literal "shear faults": discrete topological mismatches propagating between adjacent daemons on the $\mathbb{Z}^3$ lattice. A daemon cannot register or propagate a geometric mismatch smaller than its own localized neighborhood.
 
-Therefore, FPM formally predicts a sharp **ultraviolet (UV) cutoff** in the primordial B-mode power spectrum at the fundamental grid scale ($\Delta x_{\text{univ}}$). If next-generation CMB observatories detect a sharp high-k B-mode suppression consistent with the FPM grid-scale cutoff, this would support the discrete FPM interpretation over continuous scale-invariant inflationary models. If no such cutoff appears within the predicted accessible window, the FPM B-mode cutoff bridge is falsified. Explicit numeric derivation of the angular scale $\ell_{\rm cutoff}$ and wavenumber $k_{\rm cutoff}$ from the grid scale $\Delta x_{\text{univ}}$ remains a required step to fully formalize this window.
+Therefore, FPM formally predicts a microscopic **ultraviolet (UV) cutoff** in the primordial B-mode power spectrum at the fundamental grid scale ($\Delta x_{\text{univ}}$). Section 20.2 now evaluates this mapping explicitly. The direct fundamental-grid projection gives $\ell_{\rm cutoff}\sim3.87\times10^{41}$, and the proper-at-recombination to comoving mapping gives $\ell_{\rm cutoff}\sim3.55\times10^{38}$. Both are far beyond observable CMB multipoles.
+
+The observable prediction is therefore not "next-generation experiments should see the femtometer grid cutoff." The low-$\ell$ smoothness target and the high-$\ell$ structure target are different mechanisms. Super-horizon homogeneity for $\ell\lesssim342$ is inherited from the Axiom of Minimal Initialization: the closed grid starts as the uniform Theorem 4 condensate before the first funded tick. The post-injection runtime then fractures this condensate into local daemon domains.
+
+The high-$\ell$ falsification target is sharper: FPM must derive a primordial consensus-domain correlation length large enough to project a domain-wall cutoff into an observable multipole range. For example, placing the cutoff at $\ell\sim5000$ requires a comoving freeze-out domain length of approximately $8.67\ \mathrm{Mpc}$, or approximately $7.95\times10^{-3}\ \mathrm{Mpc}$ proper at recombination. This is not a new lattice spacing. It is the characteristic size of thermodynamically frozen consensus domains. Section 20.3 shows that this corresponds to $7.108244\times10^{34}/\eta_{\max}$ recombination-era communication ticks, or $2.594528\times10^4/\eta_{\max}$ years of proper consensus propagation. Without a native derivation of that freeze-out tick budget from local cooling, communication, and viscosity-scar dynamics, the B-mode cutoff remains a formal microscopic boundary plus an open domain-wall phase-transition prediction.
 
 ### 30.3 The Galactic Rotation Rollover
 
