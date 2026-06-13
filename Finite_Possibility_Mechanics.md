@@ -41,8 +41,8 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Disk Green functional $\mathscr{K}_g$ | Conditional derivation from finite-sheet shear action |
 | Morphology-locked SPARC audit | First locked audit; not full baseline validation |
 | Error/baseline validation protocol | Defined; baseline execution pending |
-| Acoustic oscillator asymmetry | Stripped toy gate |
-| Full CMB replacement | Open frontier |
+| Acoustic oscillator asymmetry | Native probe within ~1.2% under locked mobility projection |
+| Full CMB replacement | Open frontier: first-peak phase probe is within $\approx1.2\%$, but the communication-cost divisor, fracture map, peak heights, damping tail, polarization, and full $C_\ell$ likelihood remain open |
 
 ---
 ## Validation Matrix
@@ -57,7 +57,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Error Budget / Baselines | Unweighted residual comparison | Analytic uncertainty propagation and fair baseline protocol defined | Inability to compare under matched uncertainty cuts | Validation protocol ready |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
-| Cosmic Microwave Background | Stripped baryon-photon oscillator and domain-scale cutoff diagnostic | Fundamental-grid cutoff maps to $\ell\sim10^{38}$-$10^{41}$, far beyond observable CMB scales; observable signatures require a derived primordial domain correlation length | Failure of stripped oscillator phase behavior or no freeze-out domain-size derivation | Open frontier |
+| Cosmic Microwave Background | Stripped baryon-photon oscillator and domain-scale cutoff diagnostic | Planck TT confirms $10^{-5}$-$10^{-4}$ temperature uniformity; fundamental-grid cutoff maps to $\ell\sim10^{38}$-$10^{41}$ | Failure of stripped oscillator phase behavior or no freeze-out domain-size derivation | Open frontier |
 
 ---
 
@@ -2845,6 +2845,176 @@ For photon-baryon acoustic propagation at $c/\sqrt{3}$, the corresponding thresh
 
 The result is therefore a partial structural win for the post-injection runtime, not a standalone replacement for inflation. FPM can make high-$\ell$ domain-wall cutoff scales causally plausible with subluminal local communication. Low-$\ell$ homogeneity is instead assigned to the Axiom of Minimal Initialization: it is inherited from the pre-execution Boot Condensate rather than communicated across the grid after random initialization. The remaining cosmological task is to derive the injection/fracture map that converts the uniform condensate into a hot, locally dispersive daemon field without destroying the inherited super-horizon smoothness.
 
+### 20.4 Planck 2018 TT Homogeneity Check
+
+The Planck 2018 PR3 temperature power spectrum provides a direct empirical check of the amplitude scale that the Boot Condensate mechanism is meant to explain. Using the public `COM_PowerSpect_CMB-TT-full_R3.01` table and $T_{\mathrm{CMB}}=2.7255\times10^6\ \mu\mathrm{K}$, with
+
+$$
+D_\ell=\frac{\ell(\ell+1)}{2\pi}C_\ell,
+\qquad
+\sigma^2_{\ell_1:\ell_2}
+=
+\sum_{\ell=\ell_1}^{\ell_2}
+\frac{2\ell+1}{4\pi}C_\ell,
+$$
+
+the band-limited temperature anisotropy is:
+
+| Multipole band | RMS anisotropy | Fractional RMS $\sigma/T_{\mathrm{CMB}}$ | Mean $D_\ell$ |
+|---:|---:|---:|---:|
+| $\ell=2$-$29$ | $45.5469\ \mu\mathrm{K}$ | $1.671140\times10^{-5}$ | $813.136\ \mu\mathrm{K}^2$ |
+| $\ell=2$-$80$ | $59.4002\ \mu\mathrm{K}$ | $2.179423\times10^{-5}$ | $1283.18\ \mu\mathrm{K}^2$ |
+| $\ell=2$-$342$ | $97.4725\ \mu\mathrm{K}$ | $3.576316\times10^{-5}$ | $3662.75\ \mu\mathrm{K}^2$ |
+| $\ell=343$-$2508$ | $52.6371\ \mu\mathrm{K}$ | $1.931282\times10^{-5}$ | $962.585\ \mu\mathrm{K}^2$ |
+| $\ell=2$-$2508$ | $110.777\ \mu\mathrm{K}$ | $4.064466\times10^{-5}$ | $1329.86\ \mu\mathrm{K}^2$ |
+
+The binned TT spectrum has its first acoustic peak near
+
+$$
+\ell\simeq225.165,\qquad
+D_\ell\simeq5793.44\ \mu\mathrm{K}^2.
+$$
+
+This supports only the empirical target: the CMB temperature field is uniform to roughly the $10^{-5}$-$10^{-4}$ fractional level with acoustic structure superposed. It does not distinguish the Boot Condensate explanation from inflation or any other early-universe homogenization mechanism. The falsifiable FPM task remains to derive the post-injection fracture spectrum and compare its predicted $C_\ell$ shape, peak phases, damping, and polarization signatures against the Planck likelihood, not merely to match the existence of large-scale smoothness.
+
+### 20.5 Decaying Ledger Drive and the First Acoustic Peak Target
+
+The stripped constant-drive oscillator is insufficient to reproduce the first Planck TT peak. With
+
+$$
+\delta_{\gamma b}''+\omega^2\delta_{\gamma b}=F_0,
+$$
+
+and Boot Condensate rest initial data $\delta'_{\gamma b}(0)=0$, the solution has no sine component and the first extremum remains at the stripped acoustic scale $\ell_A\approx299.820$, not at the observed $\ell\simeq225.165$.
+
+The FPM-native correction is that the ledger potential is not static after fracture. The route ledger spends action and cools, so the forcing term should be treated as a decaying drive,
+
+$$
+\Phi_L(\eta)=\Phi_{L,0}e^{-\Gamma\eta},
+\qquad
+\delta_{\gamma b}''+\omega^2\delta_{\gamma b}
+=
+F_0e^{-\Gamma\eta}.
+$$
+
+Let $x=\omega\eta$ and $s=\Gamma/\omega$. Then
+
+$$
+\frac{d^2\delta}{dx^2}+\delta=f_0e^{-sx},
+$$
+
+with solution
+
+$$
+\delta(x)=A\cos x+B\sin x+Ce^{-sx},
+\qquad
+C=\frac{f_0}{1+s^2}.
+$$
+
+Applying the rest condition $\delta_x(0)=0$ gives
+
+$$
+A=\delta_0-C,\qquad B=sC.
+$$
+
+Thus a decaying ledger drive generates a nonzero sine component even when the Boot Condensate starts from rest. The phase is not free, however; it depends on both the cooling ratio $s=\Gamma/\omega$ and the fracture displacement ratio $\delta_0/C$:
+
+$$
+\frac{B}{A}
+=
+\frac{sC}{\delta_0-C}.
+$$
+
+The observed first TT peak has
+
+$$
+\frac{\ell_{\mathrm{peak}}}{\ell_A}
+=
+\frac{225.164945}{299.820046}
+=
+0.751000,
+\qquad
+\phi_1
+=
+1-\frac{\ell_{\mathrm{peak}}}{\ell_A}
+=
+0.2489997.
+$$
+
+In the late-homogeneous approximation, this corresponds to
+
+$$
+\frac{B}{A}
+=
+\tan(\pi\,0.751000)
+\approx
+-0.9937346.
+$$
+
+For the special fracture-from-zero-displacement case $\delta_0=0$, the homogeneous coefficient ratio becomes $B/A=-s$, giving the approximate target
+
+$$
+\left(\frac{\Gamma}{\omega_1}\right)_{\mathrm{hom}}
+\approx
+0.9937346.
+$$
+
+If the full residual exponential term is retained and the first extremum of
+
+$$
+\delta(x)=-C\cos x+sC\sin x+Ce^{-sx}
+$$
+
+is forced to occur at $\ell=225.164945$, the required cooling ratio is instead
+
+$$
+\boxed{
+\frac{\Gamma}{\omega_1}
+\approx
+0.8282997.
+}
+$$
+
+At this value the residual drive at the first peak is still non-negligible:
+
+$$
+e^{-sx_{\mathrm{peak}}}
+\approx
+0.141672.
+$$
+
+This is now the sharp first-peak target for the Cosmological Extension. A native C++ daemon probe was then run against the post-injection local ledger rather than an imposed exponential cooling curve. The probe fits the decay of the geometric ledger potential $\mathcal{C}^{\mathrm{geo}}_t$, not the total action, because the total action includes semantic overhead terms that need not decay exponentially.
+
+The native mobility used in the locked probe is
+
+$$
+\boxed{
+\eta_{\max}
+=
+\frac{3}{16\pi}
+\approx
+0.0596831.
+}
+$$
+
+Here $3/16$ is the inverse of the Section 19 ledger inertia ratio $\rho_L/\rho_b=16/3$, interpreted as the fractional mobility of a prior update against the ledger, and the divisor $\pi$ is the spherical phase-projection factor required to compare a Cartesian local update to the radial acoustic phase variable. This locks the prior-assimilation weight to the established inertia gate rather than leaving it as a free runtime fit.
+
+With a closed-universe probe ($r_i=0$), no low-energy recovery injection, $E_{\max}=100$, $\chi^{\mathrm{comm}}=c_0/50=0.001$, and the active geometric-decay window $t=1$ to $100$, the executable result is:
+
+| Quantity | Value |
+|---|---:|
+| Target $\Gamma/\omega_1$ from full residual drive | $0.828299678455$ |
+| Native probe $\Gamma/\omega_1$ from $\mathcal{C}^{\mathrm{geo}}_t$ | $0.818474996361$ |
+| Absolute miss | $-0.009824682094$ |
+| Relative miss | $\approx 1.19\%$ |
+| Geometric-potential fit $R^2$ | $0.884816495726$ |
+| $\eta_{\max}$ | $3/(16\pi)=0.0596831036595$ |
+| $\chi^{\mathrm{comm}}$ | $c_0/50=0.001$ |
+
+This is the first native first-peak execution result: the local thermodynamic ledger, booted from the Minimal Initialization condensate and run without external replenishment, produces the required acoustic phase-shift cooling ratio to within approximately $1.2\%$ of the Planck-derived target. The result is substantially stronger than the earlier analytic target because the cooling ratio is measured from the daemon update loop.
+
+The boundary remains explicit. The mobility $\eta_{\max}=3/(16\pi)$ is locked to the existing $16/3$ inertia ratio and spherical phase projection. The communication overhead $\chi^{\mathrm{comm}}=c_0/50$ is presently an empirical choke-avoidance calibration: $\chi^{\mathrm{comm}}=c_0/16$ terminates communication too early and causes the geometric potential to grow rather than decay. Until the divisor $50$ and the post-injection fracture map are derived from the native action ledger, the result is an empirically grounded C++ probe, not a completed zero-parameter Planck-spectrum derivation.
+
 The same diagnostic gives the stripped acoustic spacing
 
 $$
@@ -3614,6 +3784,8 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | α + β = 2 action closure | §6.5 | Tested across 3×3×5 parameter grid |
 | 16/3 causal-ledger density ratio | §19 | Equipartition limit proxy; exact ratio requires dynamic trace |
 | CMB UV/domain cutoff diagnostic | §20.2 | Fundamental $\Delta x_{\mathrm{univ}}$ maps to $\ell_{\mathrm{cut}}\sim3.55\times10^{38}$-$3.87\times10^{41}$; observable cutoff requires a derived primordial consensus-domain correlation length |
+| Planck 2018 TT homogeneity check | §20.4 | Temperature anisotropy RMS is $1.67\times10^{-5}$ for $\ell=2$-$29$ and $4.06\times10^{-5}$ for $\ell=2$-$2508$; confirms smoothness target but not mechanism |
+| Decaying ledger drive first-peak probe | §20.5 | Full residual-drive target is $\Gamma/\omega_1\approx0.8283$; locked-mobility C++ daemon probe gives $\Gamma/\omega_1\approx0.8185$ ($\approx1.19\%$ low, $R^2\approx0.885$) with $\eta_{\max}=3/(16\pi)$ and calibrated $\chi^{\mathrm{comm}}=c_0/50$ |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
 | Local lattice anisotropy diagnostic and conditional theorem | §§13.12-13.13 | Official route-link convention gives algebraic far-field finite-difference error decay $\sim R^{-2}$; Section 13.13 replaces global spherical averaging with a local smoothness-threshold activation condition |
@@ -3933,10 +4105,10 @@ That single pressure (the cost of unbounded possibility) is proposed here as a c
 | $n_t$ | Number of elapsed engine ticks | non-negative integer |
 | $\mathbf{x}_{i,t}$ | Daemon $i$ grid position at tick $t$ | $\mathbb{Z}^3$ |
 | $\chi^{\text{move}}_{i,t}$ | Grid-motion overhead in $\mathcal{L}$ | $\geq 0$ |
-| $\chi^{\text{comm}}_{i,t}$ | Communication overhead in $\mathcal{L}$ | $\geq 0$ |
+| $\chi^{\text{comm}}_{i,t}$ | Communication overhead in $\mathcal{L}$; CMB probe uses calibrated $\chi^{\mathrm{comm}}=c_0/50=0.001$ | $\geq 0$ |
 | $b^{\max}_{i,t}$ | Safe cache-bias ceiling | $[0,1]$ |
 | $\bar{\pi}_{ij,t}$ | Optimal pairwise shared prior | $[0,1]$ |
-| $\eta_{ij,t}$ | Prior assimilation weight | $[0,1]$ |
+| $\eta_{ij,t}$ | Prior assimilation weight; CMB first-peak probe locks $\eta_{\max}=3/(16\pi)$ from ledger mobility plus spherical phase projection | $[0,1]$ |
 | $g_t$ | Geometry state (topology of carrier path) | admissible carrier space |
 | $V(g_t)$ | Geometry penalty | $\geq 0$, zero iff $g_t = \Gamma_{\mathrm{ZD}}^{(5)}$ |
 | $\eta_g$ | Geometry channel coupling weight | $\geq 0$ |
