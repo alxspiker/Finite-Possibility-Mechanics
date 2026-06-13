@@ -35,7 +35,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Conditional Physical Calibration Bridge | Conditional calibration ansatz |
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
-| Route-link anisotropy cancellation $\sim O(R^{-2})$ | Conditional theorem + executable diagnostic |
+| Route-link anisotropy decay $\sim O(R^{-2})$ | Conditional theorem + local threshold caveat |
 | $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $0.044\%$ high |
 | Disk Green functional $\mathscr{K}_g$ | Conditional derivation from finite-sheet shear action |
 | Morphology-locked SPARC audit | First locked audit; not full baseline validation |
@@ -49,7 +49,7 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | Dataset / Probe | Benchmark / Control | Result | Failure Condition | Current Status |
 |-----------------|---------------------|--------|-------------------|----------------|
 | SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved source-coupling scatter, rollover mismatch, or pipeline failure | Operative prediction |
-| Lattice Anisotropy Probe | Persistent cubic lattice bias | Full-shell anisotropy decays near $R^{-1.96}$ under route-link rule | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support |
+| Lattice Anisotropy Probe | Persistent cubic lattice bias | Algebraic far-field finite-difference error decays as $O((\Delta x/R)^2)$; Gaussian shell probe is non-asymptotic | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support with local threshold caveat |
 | Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$ from Landauer injection factors | Failure to derive $\mu_M$ or large deviation from measured $G$ | Conditional sub-percent bridge |
 | Disk Green Functional | Phenomenological finite-disk curve | Matched finite-sheet kernel recovers flat branch and rollover with $v(240)/v(30)=0.6487$ | Failure to recover $1/r$ middle branch and $1/r^2$ far branch | Conditional disk-source closure |
 | SPARC Morphology-Locked Audit | Per-galaxy coupling fits | $Q=1$ sample: median RMSE $23.94$ km/s, median shape correlation $0.933$, median diagnostic scale $1.021$ | Collapse of correlation or large amplitude bias under locked inputs | Preliminary empirical audit |
@@ -1219,13 +1219,14 @@ $$
 g_{\text{FPM}}(R,\hat n) \sim \Phi_\Omega\,|\partial_R \Omega|
 $$
 
-over deterministic spherical shells. A 256-direction full-shell scan finds that the cubic anisotropy decays close to second order:
+over deterministic spherical shells. Running the Gaussian-core diagnostic exactly as written is useful as a stress test, but it is not an asymptotic proof because the Gaussian derivatives decay exponentially rather than algebraically. With $R\in[15,60]$, $\chi_{\rightarrow}=0.25$, and a 256-direction Fibonacci shell, the direct fit gives:
 
 | Diagnostic | Measured decay |
 |---|---:|
-| FPM acceleration spread | $R^{-1.960545}$ |
-| FPM acceleration coefficient of variation | $R^{-1.967908}$ |
-| Leading cubic harmonic coefficient $A_4$ | $R^{-1.969554}$ |
+| Gaussian-core max-min spread | $R^{-1.4722}$ |
+| Gaussian-core leading cubic harmonic coefficient $A_4$ | $R^{-2.0548}$ |
+
+The radial-gradient factor $|\partial_R\Omega|$ does not change these normalized angular diagnostics on a fixed shell, because it multiplies every sampled direction by the same scalar. This factorization is not automatic for off-shell comparisons, anisotropic perturbations, or angularly varying $\Omega$ fields.
 
 where
 
@@ -1233,17 +1234,15 @@ $$
 A_4(\hat n)=n_x^4+n_y^4+n_z^4-\frac{3}{5}.
 $$
 
-A directed-link asymmetry sweep from symmetric links to strongly directed links remains stable:
+The more direct validation compares the finite-difference route tensor against the continuum tensor for algebraic far-field branches. For $C(R)\propto R^{-k}$, the relative tensor error scales as:
 
-| Directed-link asymmetry | FPM acceleration spread decay |
-|---:|---:|
-| $0.00$ | $R^{-1.970516}$ |
-| $0.10$ | $R^{-1.963994}$ |
-| $0.25$ | $R^{-1.960545}$ |
-| $0.50$ | $R^{-1.956214}$ |
-| $1.00$ | $R^{-1.954649}$ |
+| Algebraic branch | Mean relative error | Max relative error |
+|---:|---:|---:|
+| $k=1$ | $R^{-1.9974}$ | $R^{-2.0010}$ |
+| $k=2$ | $R^{-1.9999}$ | $R^{-2.0025}$ |
+| $k=3$ | $R^{-2.0005}$ | $R^{-2.0021}$ |
 
-This supports the working conjecture
+This supports the working asymptotic form
 
 $$
 g_{\mathrm{FPM}}(R,\hat n)
@@ -1253,7 +1252,7 @@ g_0(R)\left[1+\epsilon_4(R)A_4(\hat n)+O(R^{-3})\right],
 \epsilon_4(R)=O(R^{-2}).
 $$
 
-Because $\langle A_4\rangle_{S^2}=0$, such a theorem would justify the $4\pi$ continuum projection at leading order while preserving finite-radius lattice corrections as falsifiable residuals. Current status: executable diagnostic support; Section 13.13 supplies the route-link convention and conditional proof. A fully rigorous peer-review-grade proof remains open.
+The important caveat is architectural: the local $\mathbb{Z}^3$ daemon does not perform a God's-eye $4\pi$ spherical average. The continuum bridge therefore cannot rely on $\langle A_4\rangle_{S^2}=0$ as the primary cancellation mechanism. Section 13.13 replaces that global averaging claim with a local activation condition: once $\epsilon_4(R)$ falls below the smoothness activation threshold $\Lambda_d$, the residual cubic anisotropy is action-suppressed below the local rendering budget. This becomes a hard truncation claim only if the runtime explicitly clamps, ignores, or projects sub-threshold anisotropic corrections into the isotropic scalar channel.
 
 ### 13.13 Toward a Native Continuum Theorem
 
@@ -1326,9 +1325,9 @@ $$
 
 This is now the official microscopic route-link convention for the continuum-limit probe. Future lower-level engines may replace it only by deriving $L_i^\pm$ from a still deeper action-minimizing update rule.
 
-#### 13.13.2 Conditional Anisotropy-Cancellation Theorem
+#### 13.13.2 Conditional Anisotropy Decay and Local Activation Theorem
 
-**Theorem 6 (Conditional lattice anisotropy cancellation).** Let $\Omega(\mathbf{x})=\Omega(R)$ be a $C^5$ radial viscosity field on scales $R\gg\Delta x$, with derivatives satisfying $|\Omega^{(k)}(R)|\leq C_kR^{-k-1}$ in the far field. Let $L_i^+$ and $\mathcal{R}_{ij}$ be defined by the route-link rule above with fixed $0\leq\chi_{\rightarrow}<1$. Then the FPM acceleration proxy has the asymptotic form
+**Theorem 6 (Conditional lattice anisotropy decay and local activation).** Let $\Omega(\mathbf{x})=\Omega(R)$ be a $C^5$ radial viscosity field on scales $R\gg\Delta x$, with derivatives satisfying $|\Omega^{(m)}(R)|\leq C_mR^{-m-1}$ in the far field. Let $L_i^+$ and $\mathcal{R}_{ij}$ be defined by the route-link rule above with fixed $0\leq\chi_{\rightarrow}<1$. Then the FPM acceleration proxy has the asymptotic form
 
 $$
 \boxed{
@@ -1383,23 +1382,48 @@ $$
 O\!\left((\Delta x/R)^2\right),
 $$
 
-so $\epsilon_4(R)=O((\Delta x/R)^2)$. The next central-difference correction is $O((\Delta x/R)^4)$ at the tensor level; after contraction through $\Phi_\Omega$ and the radial gradient, central symmetry removes the odd parity pieces and the unresolved acceleration residual is bounded by $O((\Delta x/R)^3)$. The executable full-shell diagnostic finds the expected decay numerically: $R^{-1.960545}$ for the FPM acceleration spread and $R^{-1.969554}$ for the fitted $A_4$ coefficient. $\square$
+so $\epsilon_4(R)=O((\Delta x/R)^2)$. The next central-difference correction is $O((\Delta x/R)^4)$ at the tensor level; after contraction through $\Phi_\Omega$ and the radial gradient, central symmetry removes the odd parity pieces and the unresolved acceleration residual is bounded by $O((\Delta x/R)^3)$. A direct algebraic far-field comparison of the finite-difference tensor to the continuum tensor gives relative-error exponents within numerical tolerance of $-2$ for $k=1,2,3$. $\square$
 
-Since
-
-$$
-\langle A_4\rangle_{S^2}=0,
-$$
-
-the leading cubic artifact vanishes under spherical averaging:
+The continuum bridge must not use the identity $\langle A_4\rangle_{S^2}=0$ as its primary cancellation step, because the local daemon does not execute a continuous spherical integral. The native local closure is instead a smoothness-gated activation condition. Define the residual cubic amplitude as action-suppressed below the local activation threshold when
 
 $$
-\langle g_{\mathrm{route}}(R,\hat n)\rangle_{S^2}
+\boxed{
+\epsilon_4(R)\leq\Lambda_d.
+}
+$$
+
+For an algebraic branch $C(R)\propto R^{-k}$, the leading central-difference envelope is
+
+$$
+\boxed{
+\epsilon_4(R)
+\approx
+\frac{(k+1)(k+2)}{6}
+\left(\frac{\Delta x}{R}\right)^2.
+}
+$$
+
+Therefore the local activation radius is
+
+$$
+\boxed{
+R_{\mathrm{act}}
 =
-g_0(R)\left[1+O((\Delta x/R)^3)\right].
+\Delta x
+\sqrt{
+\frac{(k+1)(k+2)}{6\Lambda_d}
+}.
+}
 $$
 
-This conditionally justifies the $4\pi$ projection at macroscopic radii while predicting finite-radius cubic residuals as a possible falsification channel.
+With the benchmark threshold $\Lambda_d=0.1$, this gives
+
+| Branch | $k$ | $R_{\mathrm{act}}/\Delta x$ |
+|---|---:|---:|
+| Flat-disk/logarithmic-equivalent branch | $1$ | $\sqrt{10}=3.162278$ |
+| Keplerian point-source branch | $2$ | $\sqrt{20}=4.472136$ |
+
+These radii are not universal constants. They are conditional outputs of the chosen envelope, norm, lattice spacing, and benchmark $\Lambda_d$. They become hard runtime truncation claims only if $\Lambda_d$ is fixed by the local shear-action coefficients and the engine explicitly clamps, ignores, or projects sub-threshold anisotropy into the isotropic scalar channel. Without that explicit clamp, the safer interpretation is action suppression below the local activation threshold.
 
 #### 13.13.3 Continuum Source Coefficient
 
@@ -1427,7 +1451,7 @@ $$
 }
 $$
 
-Thus the coefficient used in Section 13.12 is not an arbitrary insertion: it is the continuum flux density of the nine directed shear channels after action normalization, conditional on the anisotropy-cancellation theorem.
+Thus the coefficient used in Section 13.12 is not an arbitrary insertion: it is the continuum flux density of the nine directed shear channels after action normalization, conditional on the anisotropy-decay and local-activation theorem.
 
 #### 13.13.4 Acceleration Conversion $\Gamma$
 
@@ -3356,7 +3380,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | 16/3 causal-ledger density ratio | §19 | Equipartition limit proxy; exact ratio requires dynamic trace |
 | Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
-| Local lattice anisotropy diagnostic and conditional theorem | §§13.12-13.13 | Official route-link convention gives full-shell FPM acceleration anisotropy decay $\sim R^{-1.96}$ and leading cubic harmonic decay $\sim R^{-1.97}$; Section 13.13 supplies a Taylor-expansion proof for $O(R^{-2})$ cancellation |
+| Local lattice anisotropy diagnostic and conditional theorem | §§13.12-13.13 | Official route-link convention gives algebraic far-field finite-difference error decay $\sim R^{-2}$; Section 13.13 replaces global spherical averaging with a local smoothness-threshold activation condition |
 | Native trace order beats reversal and shuffle | §8 | 8.83% and 17.67% overhead; tested trace family |
 | Aligned priors outperform wrong/random priors | §9 | Phase gap $\Delta\kappa = 0.9693$; false classicalization possible in forced regimes |
 | Emergent gravity slope $\approx r^{-2}$ | §13 | Within 6.4%; 55 sampled radii |
@@ -3386,7 +3410,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
 | First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | $\Lambda_d$ now follows from shear-action smoothness cost and $\mu_M$ has a finite-carrier Landauer channel derivation with $0.044\%$ residual; remaining disk-class work is validating $\mathscr{K}_d$ against morphology-resolved baryonic profiles |
 | Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Calibration Bridge; independent physical validation remains open. |
-| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-cancellation proof, conditional $\mu_M$ derivation, and matched disk Green functional now supplied; rigorous microscopic proof and morphology-resolved validation remain open |
+| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-decay/local-activation proof, conditional $\mu_M$ derivation, and matched disk Green functional now supplied; rigorous microscopic proof and morphology-resolved validation remain open |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
 | Full Standard Model topology identification | Mass ordering and scaling consistent; one-to-one particle correspondence not established |
