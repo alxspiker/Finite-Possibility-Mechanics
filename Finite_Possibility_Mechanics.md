@@ -37,9 +37,9 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 | $a_{\text{cap}} = c H_\Lambda / 2\pi$ | Empirical/cosmological bridge |
 | $\rho_L/\rho_b = 16/3$ | Executable CMB density-gate probe |
 | Route-link anisotropy decay $\sim O(R^{-2})$ | Conditional theorem + local threshold caveat |
-| $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $0.044\%$ high |
+| $G_{\mathrm{FPM}}$ from far-field limit | Conditional Landauer injection derivation; $0.044\%$ high if the four causal carrier ledgers obey independent gauge-averaged survival |
 | Disk Green functional $\mathscr{K}_g$ | Conditional derivation from finite-sheet shear action |
-| Morphology-locked SPARC audit | First locked audit; not full baseline validation |
+| Morphology-locked SPARC audit | First locked audit; split-source refinement approaches fixed RAR/MOND but is not a full baseline victory |
 | Error/baseline validation protocol | Defined; baseline execution pending |
 | Acoustic oscillator asymmetry | Native probe within ~1.2% under locked mobility projection |
 | Full CMB replacement | Open frontier: first-peak phase probe is within $\approx1.2\%$, but the communication-cost divisor, fracture map, peak heights, damping tail, polarization, and full $C_\ell$ likelihood remain open |
@@ -51,9 +51,9 @@ The architecture is unified by a single runtime currency, **route cost**: reused
 |-----------------|---------------------|--------|-------------------|----------------|
 | SPARC Database (175 Galaxies) | Constant M/L ratio (Baryon only) | Correct polarity & reduced scatter via $\Phi_{\text{EL}}$ | Unresolved source-coupling scatter, rollover mismatch, or pipeline failure | Operative prediction |
 | Lattice Anisotropy Probe | Persistent cubic lattice bias | Algebraic far-field finite-difference error decays as $O((\Delta x/R)^2)$; Gaussian shell probe is non-asymptotic | Non-decaying or order-unity axis/diagonal bias | Conditional continuum support with local threshold caveat |
-| Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$ from Landauer injection factors | Failure to derive $\mu_M$ or large deviation from measured $G$ | Conditional sub-percent bridge |
+| Far-Field $G_{\mathrm{FPM}}$ Closure | Planck-mass inversion | $G_{\mathrm{FPM}}\approx6.677\times10^{-11}$ from gauge-twirled Landauer injection factors | Failure to derive $\mu_M$, failure of independent carrier-ledger twirling, or large deviation from measured $G$ | Conditional sub-percent bridge |
 | Disk Green Functional | Phenomenological finite-disk curve | Matched finite-sheet kernel recovers flat branch and rollover with $v(240)/v(30)=0.6487$ | Failure to recover $1/r$ middle branch and $1/r^2$ far branch | Conditional disk-source closure |
-| SPARC Morphology-Locked Audit | Per-galaxy coupling fits | $Q=1$ sample: median RMSE $23.94$ km/s, median shape correlation $0.933$, median diagnostic scale $1.021$ | Collapse of correlation or large amplitude bias under locked inputs | Preliminary empirical audit |
+| SPARC Morphology-Locked Audit | Per-galaxy coupling fits | Original locked kernel: median RMSE $23.94$ km/s; split-source kernel: held-out median RMSE $13.65$ km/s, all-sample $12.75$ km/s | Failure against baryon-only/MOND/NFW under matched cuts, or collapse on held-out galaxies | Preliminary empirical audit; split-source correction identified |
 | Error Budget / Baselines | Unweighted residual comparison | Analytic uncertainty propagation and fair baseline protocol defined | Inability to compare under matched uncertainty cuts | Validation protocol ready |
 | 45.4M Point-Pair | Random graph scaling | Near electron parity $N_e \approx 1.45 \times 10^9$ | Incoherent scale closure | Executable calibration probe |
 | Planck 2018 [Planck Collaboration, 2020] ($\rho_{\text{CDM}}/\rho_b$) | $\Lambda$CDM density ratio | Ratio matches $16/3 \approx 5.333$ | Large deviation from observed $\Omega_c/\Omega_b$ | Empirical match |
@@ -397,7 +397,7 @@ Depletion limit: $e_t \to 0 \implies \kappa_t \to 0$, $\Omega_t \to \Omega_{\max
 
 ### 5.3 The Causal Energy-Depletion Theorem: The 3/4 Law
 
-**Axiom:** Action costs add in logarithmic space. Independent channel survival probabilities multiply. The scalar effective energy is the geometric mean of all required causal update channels.
+**Axiom:** Action costs add in logarithmic space. Channel survival probabilities multiply only under an explicit product-measure condition, such as independent causal channels or an independently gauge-averaged carrier selector. Under that condition, the scalar effective energy is the geometric mean of all required causal update channels.
 
 **Update geometry:** A standard spacetime update requires $d_{\text{causal}} = 4$ dimensions ($x, y, z, t$).
 
@@ -1460,6 +1460,28 @@ With the benchmark threshold $\Lambda_d=0.1$, this gives
 
 These radii are not universal constants. They are conditional outputs of the chosen envelope, norm, lattice spacing, and benchmark $\Lambda_d$. They become hard runtime truncation claims only if $\Lambda_d$ is fixed by the local shear-action coefficients and the engine explicitly clamps, ignores, or projects sub-threshold anisotropy into the isotropic scalar channel. Without that explicit clamp, the safer interpretation is action suppression below the local activation threshold.
 
+A hard Heaviside runtime clamp would create a measurable implementation artifact at this boundary. Since
+
+$$
+A_4(1,0,0)=\frac{2}{5},\qquad
+A_4\!\left(\frac{1}{\sqrt3},\frac{1}{\sqrt3},\frac{1}{\sqrt3}\right)=-\frac{4}{15},
+$$
+
+a benchmark threshold $\epsilon_4=\Lambda_d=0.1$ would produce a $4.0\%$ axis-sector jump and a $6.67\%$ axis-to-body-diagonal spread if the anisotropic term were abruptly deleted at $R_{\mathrm{act}}$. Such a shell would be a numerical barrier/well pattern, not a physical prediction of the continuum theorem. The runtime-compatible rule is therefore a continuous variational gate, e.g.
+
+$$
+g_{\mathrm{soft}}(R,\hat n)
+=
+g_0(R)
+\left[
+1+\epsilon_4(R)\,
+s\!\left(\frac{\epsilon_4(R)-\Lambda_d}{\delta}\right)
+A_4(\hat n)
+\right],
+$$
+
+where $s$ is a bounded $C^1$ transition with $0\leq s\leq1$ and finite derivative. This keeps the residual action penalty finite and makes the activation threshold a smooth suppression scale rather than an artificial lattice wall.
+
 #### 13.13.3 Continuum Source Coefficient
 
 The $9:1$ directed ledger contains nine directed shear channels. Normalize the maximum cell action by $\mathcal{L}_{\max}$ and define the dimensionless route-source charge in a cell:
@@ -1572,7 +1594,7 @@ G_{\mathrm{FPM}}
 }
 $$
 
-This is the first non-Planck-inversion path to $G$ in the framework. It also exposes the remaining obstruction cleanly: $G$ is derived only if $\mu_M$ is derived independently from the microscopic mass-injection rule.
+This is the first non-Planck-inversion path to $G$ in the framework. It also exposes the remaining obstruction cleanly: $G$ is derived only if $\mu_M$ is derived independently from the microscopic mass-injection rule, including a proof that the four causal carrier ledgers use a product measure at the far-field injection stage.
 
 Equivalently,
 
@@ -1584,7 +1606,7 @@ $$
 }
 $$
 
-is the value required for empirical closure. Using this equation to fit $\mu_M$ would be calibration, not derivation. The next unsolved mathematical task is therefore not dimensional conversion, nor the $4\pi$ projection, but the microscopic derivation of $\mu_M$ from the Landauer bottom-up injection in Section 11.
+is the value required for empirical closure. Using this equation to fit $\mu_M$ would be calibration, not derivation. The next unsolved mathematical task is therefore not dimensional conversion, nor the $4\pi$ projection, but the microscopic derivation of $\mu_M$ from the Landauer bottom-up injection in Section 11. In particular, the $N_{\text{bit-eq}}^{-4}$ factor is not justified by low covariance alone. It requires mutual independence of the four carrier-address survival events, or an explicit far-field operation that enforces the corresponding product measure.
 
 The Landauer bottom-up rule gives a four-factor suppression for the fraction of rest-energy bit burden that survives into the long-range route-curvature mode. The finite-carrier corrected form is:
 
@@ -1599,9 +1621,73 @@ $$
 }
 $$
 
-The four factors follow from local ledger counting.
+The four factors follow from local ledger counting plus the following carrier-address decorrelation condition.
 
-1. **Four-channel causal survival:** a persistent far-field source must remain coherent across the four causal update ledgers $(x,y,z,t)$. Each ledger channel has normalized coherent survival fraction $1/N_{\text{bit-eq}}$ because one coherent far-field route must be selected from the bit-equivalent substrate capacity. Independent channel survival probabilities multiply:
+**Causal Ledger Decorrelation Lemma.** Let the four causal ledgers be indexed by $a\in\{x,y,z,t\}$. For each ledger, let
+
+$$
+\mathcal{B}_a=\{1,\ldots,N_{\text{bit-eq}}\}
+$$
+
+be the finite carrier-address space, and let $B_a\in\mathcal{B}_a$ be the carrier selector induced by far-field mass injection. A persistent route-curvature source survives in ledger $a$ only if the selector lands on the unique coherent far-field address $b_a^\star$:
+
+$$
+A_a=\{B_a=b_a^\star\}.
+$$
+
+Assume carrier labels inside each causal ledger are gauge labels: the physical state is invariant under independent address permutations
+
+$$
+G_a=S_{N_{\text{bit-eq}}}.
+$$
+
+Define the far-field injection measure by independent gauge twirling,
+
+$$
+\mathcal{T}(\rho)
+=
+\frac{1}{|G_x||G_y||G_z||G_t|}
+\sum_{g_x,g_y,g_z,g_t}
+\left(U_{g_x}\otimes U_{g_y}\otimes U_{g_z}\otimes U_{g_t}\right)
+\rho
+\left(U_{g_x}\otimes U_{g_y}\otimes U_{g_z}\otimes U_{g_t}\right)^\dagger .
+$$
+
+Then the survival sigma-algebras generated by $B_x,B_y,B_z,B_t$ are mutually independent under $\mathcal{T}$, and
+
+$$
+\boxed{
+P(A_x\cap A_y\cap A_z\cap A_t)=N_{\text{bit-eq}}^{-4}.
+}
+$$
+
+**Proof.** Independent permutation invariance forces each marginal selector to be uniform:
+
+$$
+P(B_a=b)=N_{\text{bit-eq}}^{-1}.
+$$
+
+Because the twirl factors across the four causal ledgers,
+
+$$
+\mathcal{T}=\mathcal{T}_x\otimes\mathcal{T}_y\otimes\mathcal{T}_z\otimes\mathcal{T}_t,
+$$
+
+the joint selector distribution is the product of the four uniform marginals:
+
+$$
+P(B_x=b_x,B_y=b_y,B_z=b_z,B_t=b_t)
+=
+\prod_{a\in\{x,y,z,t\}}P(B_a=b_a)
+=
+N_{\text{bit-eq}}^{-4}.
+$$
+
+Setting $b_a=b_a^\star$ for every ledger gives the result. $\square$
+
+This lemma does not assert that the local route tensor $\mathcal{R}_{ij}$ is uncorrelated. The local tensor may remain strongly coupled through $S_9$, $K_1$, and $\Phi_\Omega$. The decorrelation claim is narrower: the far-field carrier-address selectors $(B_x,B_y,B_z,B_t)$ are quotient labels independently averaged by the injection operator. Without this gauge-twirled product measure, probability theory only supplies Frechet bounds; for marginal survival $p=N_{\text{bit-eq}}^{-1}$, perfect positive correlation would give $P(A_x\cap A_y\cap A_z\cap A_t)=p$, not $p^4$. Thus the theorem is a conditional closure and a falsification target, not a free independence assumption.
+
+1. **Four-channel causal survival:** a persistent far-field source must remain coherent across the four causal update ledgers $(x,y,z,t)$. Each ledger channel has normalized coherent survival fraction $1/N_{\text{bit-eq}}$ because one coherent far-field route must be selected from the bit-equivalent substrate capacity. By the Causal Ledger Decorrelation Lemma, the far-field gauge-twirled carrier selectors are mutually independent, so their survival probabilities multiply:
 
 $$
 P_{\mathrm{causal}}
@@ -2115,9 +2201,212 @@ For the broader $Q\leq2$ sample:
 | Number of galaxies | $159$ |
 | Median velocity RMSE | $22.51\ \mathrm{km/s}$ |
 | Median shape correlation | $0.929$ |
-| Median diagnostic best-fit scale | $0.995$ |
+| Median diagnostic best-fit scale | $1.003$ |
 
 This is not yet a completed SPARC validation. The remaining empirical work is to compare the locked FPM predictions against baryon-only, MOND/RAR, and NFW baselines under the same quality cuts and uncertainty model. The important closure result is narrower: the derived disk Green operator, the $R_d=R_{\mathrm{HI}}$ morphology lock, and the $16/3$ ledger inertia factor produce the correct velocity scale and high shape correlation without fitting a galaxy-level acceleration conversion.
+
+#### 13.15.5 Baseline Stress Audit and Failure Localization
+
+A local reproducibility audit was then run against the same SPARC mass-model archive to determine whether the original locked kernel constitutes a baseline victory. It does not. Under the $Q=1$ cut with at least five valid radial points, the matched fixed-law RAR/MOND diagnostic outperforms the original FPM locked kernel:
+
+| Model | Galaxies | Median RMSE | Median shape correlation | Median diagnostic scale |
+|---|---:|---:|---:|---:|
+| Baryon-only fixed $\Upsilon$ | $99$ | $46.79\ \mathrm{km/s}$ | $0.907$ | $1.804$ |
+| Original locked FPM | $99$ | $23.94\ \mathrm{km/s}$ | $0.933$ | $1.020$ |
+| Fixed RAR/MOND diagnostic | $99$ | $11.72\ \mathrm{km/s}$ | $0.955$ | $0.992$ |
+
+For the broader $Q\leq2$ sample:
+
+| Model | Galaxies | Median RMSE | Median shape correlation | Median diagnostic scale |
+|---|---:|---:|---:|---:|
+| Baryon-only fixed $\Upsilon$ | $159$ | $43.36\ \mathrm{km/s}$ | $0.907$ | $1.731$ |
+| Original locked FPM | $159$ | $22.51\ \mathrm{km/s}$ | $0.929$ | $1.003$ |
+| Fixed RAR/MOND diagnostic | $159$ | $13.49\ \mathrm{km/s}$ | $0.964$ | $0.964$ |
+
+The failure is sharply localized by the local baryonic acceleration
+
+$$
+x\equiv \frac{g_{\mathrm{bar}}}{a_0}.
+$$
+
+For $Q=1$ radial points, the original locked FPM kernel over-amplifies high-acceleration regions:
+
+| $g_{\mathrm{bar}}/a_0$ bin | Baryon RMSE | Original FPM RMSE | Fixed RAR/MOND RMSE | Original FPM bias |
+|---:|---:|---:|---:|---:|
+| $x<0.03$ | $51.91$ | $33.05$ | $12.01$ | $-14.94\ \mathrm{km/s}$ |
+| $0.03<x\leq0.1$ | $62.80$ | $48.26$ | $15.84$ | $+2.47\ \mathrm{km/s}$ |
+| $0.1<x\leq0.3$ | $74.17$ | $94.30$ | $20.71$ | $+55.59\ \mathrm{km/s}$ |
+| $0.3<x\leq1$ | $64.45$ | $122.22$ | $28.29$ | $+88.50\ \mathrm{km/s}$ |
+| $1<x\leq3$ | $52.85$ | $165.12$ | $31.56$ | $+146.39\ \mathrm{km/s}$ |
+| $3<x\leq10$ | $34.94$ | $185.99$ | $32.84$ | $+168.11\ \mathrm{km/s}$ |
+| $x>10$ | $41.78$ | $177.64$ | $41.49$ | $+143.39\ \mathrm{km/s}$ |
+
+This proves that the original $16/3$ source factor cannot be treated as a rigid local multiplier. A one-dimensional learned ledger factor,
+
+$$
+L(x),\qquad x=\frac{g_{\mathrm{bar}}}{a_0},
+$$
+
+substantially reduces the error but does not by itself beat RAR/MOND. The best regularized train-fit curve used the knots
+
+$$
+x=(0.003,0.01,0.03,0.1,0.3,1,3,10,30),
+$$
+
+with
+
+$$
+L(x)\approx(8.00,8.00,8.00,6.63,3.56,2.84,1.61,1.36,1.22).
+$$
+
+Under the same deterministic name split, this gives:
+
+| Kernel | Train median RMSE | Test median RMSE | All median RMSE | Wins vs fixed RAR/MOND |
+|---|---:|---:|---:|---:|
+| Combined-source FPM with regularized $L(x)$ | $14.31$ | $16.28$ | $15.40$ | $35/99$ |
+| Flexible one-dimensional $L(x)$ ceiling | $13.97$ | $13.83$ | $13.83$ | $45/99$ |
+| Fixed RAR/MOND diagnostic | - | - | $11.72$ | baseline |
+
+The oracle per-galaxy amplitude test isolates the remaining boundary. If the original FPM shape is allowed one diagnostic scale $s_g$ per galaxy,
+
+$$
+s_g^\star
+=
+\frac{\sum_i V_{\mathrm{FPM}}(r_i)V_{\mathrm{obs}}(r_i)}
+{\sum_i V_{\mathrm{FPM}}^2(r_i)},
+$$
+
+then the all-sample median RMSE drops to
+
+$$
+8.62\ \mathrm{km/s},
+$$
+
+with $76/99$ galaxies beating the fixed RAR/MOND diagnostic. This is not a permitted prediction because $s_g^\star$ uses the observed rotation curve, but it shows that the spatial shape often contains useful information. Attempts to predict $s_g^\star$ from simple morphology failed to generalize: ridge regression, nearest-neighbor morphology matching, surface brightness, compactness, gas fraction, $R_{\mathrm{HI}}/R_{\mathrm{disk}}$, and local shear all reverted to roughly the one-dimensional baseline on held-out galaxies.
+
+The mass-to-light hypothesis was also tested. If stellar $\Upsilon$ variation were the primary missing factor, gas-dominated galaxies should require less oracle correction. The audit did not support that simple interpretation:
+
+| Dynamic gas fraction | Galaxies | Original FPM RMSE | Oracle-scaled RMSE | Median oracle scale |
+|---:|---:|---:|---:|---:|
+| $0$-$0.1$ | $35$ | $34.79$ | $17.58$ | $1.001$ |
+| $0.1$-$0.25$ | $18$ | $13.49$ | $6.88$ | $1.019$ |
+| $0.25$-$0.5$ | $27$ | $10.41$ | $4.70$ | $1.114$ |
+| $0.5$-$0.75$ | $15$ | $14.47$ | $6.89$ | $1.183$ |
+| $0.75$-$1.0$ | $4$ | $13.86$ | $9.11$ | $1.185$ |
+
+The star-dominated group fails badly, but its median oracle scale is nearly $1$. Its remaining error is therefore not merely a stellar mass-to-light amplitude error; it points to source geometry and component topology.
+
+#### 13.15.6 Split-Source Ledger Kernel
+
+The structural correction that survived the held-out split is to stop forcing gas, stellar disk, and bulge mass through one shared monotone envelope. These components have different physical topology:
+
+1. H I gas is an extended disk and naturally uses an $R_{\mathrm{HI}}$-scale memory.
+2. The stellar disk is an extended but shorter disk and uses an $R_{\mathrm{disk}}$-scale memory.
+3. The bulge is compact, three-dimensional, and pressure-supported; it must not be exported through a disk-wide monotone memory.
+
+Define component route charges
+
+$$
+V_g^2=V_{\mathrm{gas}}|V_{\mathrm{gas}}|,\qquad
+V_d^2=\Upsilon_dV_{\mathrm{disk}}|V_{\mathrm{disk}}|,\qquad
+V_b^2=\Upsilon_bV_{\mathrm{bul}}|V_{\mathrm{bul}}|.
+$$
+
+The split-source operator is
+
+$$
+\boxed{
+Q_g(<r_i)=\max_{j\leq i}\left[A_g\,L(x_j)\,V_g^2(r_j)\right],
+}
+$$
+
+$$
+\boxed{
+Q_d(<r_i)=\max_{j\leq i}\left[A_d\,L(x_j)\,V_d^2(r_j)\right],
+}
+$$
+
+and a local bulge source
+
+$$
+\boxed{
+Q_b(r_i)=A_b\,L(x_i)\,V_b^2(r_i).
+}
+$$
+
+Each component is propagated through its own support kernel
+
+$$
+K_\eta(r;R,r_c)
+=
+\frac{rR}{(r+r_c)(r+r_c+R)}
+\left(\frac{R}{r+r_c+R}\right)^\eta.
+$$
+
+The split-source velocity prediction is
+
+$$
+\boxed{
+V_{\mathrm{FPM,split}}^2(r_i)
+=
+Q_g(<r_i)K_{\eta_g}(r_i;R_g,r_c)
++
+Q_d(<r_i)K_{\eta_d}(r_i;R_d,r_c)
++
+Q_b(r_i)K_{\eta_b}(r_i;R_b,r_c).
+}
+$$
+
+A train-fit split-source audit found the following stable structural pattern:
+
+$$
+A_g\approx1.06,\qquad
+A_d\approx1.79,\qquad
+A_b\approx1.30,
+$$
+
+$$
+R_g\approx1.06R_{\mathrm{HI}},\qquad
+R_d\approx0.87R_{\mathrm{disk}},\qquad
+R_b\approx0.82R_{\mathrm{disk}},
+$$
+
+with
+
+$$
+r_c\approx0.35R_{\mathrm{disk}},
+\qquad
+(\eta_g,\eta_d,\eta_b)\approx(-0.10,-0.41,-0.72).
+$$
+
+Using the split-source operator and refitting the one-dimensional ledger curve within that topology gave
+
+$$
+L_{\mathrm{split}}(x)
+\approx
+(13.65,11.81,9.43,6.31,3.84,2.65,1.52,1.37,1.92)
+$$
+
+on the same $x$ knots $(0.003,0.01,0.03,0.1,0.3,1,3,10,30)$. The resulting held-out performance was:
+
+| Model | Train median RMSE | Test median RMSE | All median RMSE | Wins vs fixed RAR/MOND |
+|---|---:|---:|---:|---:|
+| Combined-source FPM with regularized $L(x)$ | $14.31$ | $16.28$ | $15.40$ | $35/99$ |
+| Split-source FPM, fixed $L(x)$ | $12.30$ | $14.09$ | $13.36$ | $42/99$ |
+| Split-source FPM, refit $L_{\mathrm{split}}(x)$ | $11.87$ | $13.65$ | $12.75$ | $45/99$ |
+| Fixed RAR/MOND diagnostic | - | - | $11.72$ | baseline |
+
+Smooth three-dimensional bulge variants were also tested. They did not beat the local/non-exported bulge rule on the held-out split:
+
+| Bulge operator | Train median RMSE | Test median RMSE | All median RMSE | Wins vs fixed RAR/MOND |
+|---|---:|---:|---:|---:|
+| Local/non-exported bulge | $11.87$ | $13.65$ | $12.67$ | $44/99$ |
+| Smooth point-like $3D$ bulge | $12.24$ | $15.59$ | $13.41$ | $42/99$ |
+| Hernquist-like bulge | $13.09$ | $14.77$ | $14.28$ | $45/99$ |
+| Exponential local decay | $12.74$ | $14.87$ | $13.92$ | $41/99$ |
+| Decaying bulge memory | $11.95$ | $14.10$ | $12.56$ | $45/99$ |
+
+The conclusion is therefore narrow and falsifiable. The original combined-source monotone envelope was wrong because it exported compact bulge charge as though it were a disk-wide support source. The split-source topology is a genuine improvement and should replace the combined-source kernel in future galaxy audits. However, it still does not establish a MOND/RAR victory. A full validation must rerun the split-source kernel against baryon-only, fixed RAR/MOND, one-parameter RAR/MOND, and NFW baselines under the same quality cuts, uncertainties, and pre-registered outlier taxonomy.
 
 ### 13.16 Error Budget and Baseline Validation Protocol
 
@@ -3253,17 +3542,19 @@ while the lower-cost endpoint keeps its prior fixed for that tick. This converts
 
 3. **Deterministic parity phase:** on tick parity $\sigma_t = t \bmod 2$, only edges whose lattice color satisfies $(x_i+y_i+z_i)\bmod 2 = \sigma_t$ may initiate communication. Neighbors may respond but may not initiate a contradictory update in the same tick. This is a two-color Gauss-Seidel update on $\mathbb{Z}^3$, implemented with $O(1)$ local state and no global synchronization beyond the existing tick index.
 
+This two-color proof is valid only for a bipartite communication graph. The strict face-neighbor von Neumann graph on $\mathbb{Z}^3$ is bipartite under the parity color $(x+y+z)\bmod2$, but diagonal/Moore/CGA5-style communication edges can introduce odd cycles. On a triangle, the pigeonhole principle forces at least one edge to connect same-phase vertices, so a two-color schedule cannot guarantee global descent. Non-bipartite daemon communication therefore requires either a graph-coloring schedule with enough colors for the active neighborhood, an explicit restriction back to bipartite face-neighbor exchange, or a stronger network-level Lyapunov gate bounding collateral action increases in third-party neighbors.
+
 4. **Cooldown after rejection:** if an edge proposal fails the hysteresis test, that edge is communication-locked for $M_{\text{cool}}$ ticks:
 
 $$\chi^{\text{comm}}_{ij,t:t+M_{\text{cool}}} = \infty \quad \text{for proposal purposes only.}$$
 
 The edge remains physically present; only repeated prior queries are suppressed.
 
-The governor gives a strict local Lyapunov condition:
+The governor gives a strict pairwise local Lyapunov condition:
 
 $$\Delta\mathcal{S}_{ij,t}^{\text{accepted}} \le -\theta_{\text{comm}}.$$
 
-Since each accepted exchange lowers the two-daemon predicted action by a positive margin and each rejected edge sleeps for a finite cooldown, a finite local neighborhood cannot generate an infinite zero-gain synchronization loop. Domain walls may still become high-viscosity scars when contradictory priors are genuinely action-expensive, but ordinary vacuum cannot be converted into maximum-viscosity scar tissue solely by symmetric communication thrashing.
+On the bipartite face-neighbor runtime, each accepted exchange lowers the two-daemon predicted action by a positive margin and each rejected edge sleeps for a finite cooldown, so a finite local neighborhood cannot generate an infinite zero-gain synchronization loop through symmetric pair exchange alone. For non-bipartite communication graphs, this statement is only pairwise; a complete global theorem must add the network-level condition above. Domain walls may still become high-viscosity scars when contradictory priors are genuinely action-expensive, but ordinary vacuum cannot be converted into maximum-viscosity scar tissue solely by symmetric communication thrashing on the bipartite runtime.
 
 ### 22.8 Required State Update Order
 
@@ -3656,7 +3947,7 @@ Separately, substituting the Planck mass into its defining relation yields the s
 
 $$\boxed{G = \frac{\hbar c}{m_P^2} \approx 6.6743 \times 10^{-11}\ \text{m}^3\text{kg}^{-1}\text{s}^{-2}}$$
 
-This matches the CODATA 2018 measured value to within $0.00003\%$ because it is the inverted Planck-mass definition. The useful claim is narrower: the FPM calibration bridge is dimensionally compatible with gravitational units without an additional galaxy-fit constant at this stage. Section 13.13 gives the non-Planck-inversion route to $G_{\mathrm{FPM}}$ and supplies a finite-carrier Landauer channel derivation of $\mu_M$ that lands within approximately $0.044\%$ of CODATA $G$. The remaining task is a fully microscopic proof of the finite-carrier channel factors used in that derivation.
+This matches the CODATA 2018 measured value to within $0.00003\%$ because it is the inverted Planck-mass definition. The useful claim is narrower: the FPM calibration bridge is dimensionally compatible with gravitational units without an additional galaxy-fit constant at this stage. Section 13.13 gives the non-Planck-inversion route to $G_{\mathrm{FPM}}$ and supplies a finite-carrier Landauer channel derivation of $\mu_M$ that lands within approximately $0.044\%$ of CODATA $G$, conditional on the independent carrier-address gauge twirl in the Causal Ledger Decorrelation Lemma. The remaining task is a fully microscopic proof that the far-field mass-injection operator realizes that twirl.
 
 ### 27.5 Resulting Architecture Summary
 
@@ -3786,7 +4077,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | CMB UV/domain cutoff diagnostic | §20.2 | Fundamental $\Delta x_{\mathrm{univ}}$ maps to $\ell_{\mathrm{cut}}\sim3.55\times10^{38}$-$3.87\times10^{41}$; observable cutoff requires a derived primordial consensus-domain correlation length |
 | Planck 2018 TT homogeneity check | §20.4 | Temperature anisotropy RMS is $1.67\times10^{-5}$ for $\ell=2$-$29$ and $4.06\times10^{-5}$ for $\ell=2$-$2508$; confirms smoothness target but not mechanism |
 | Decaying ledger drive first-peak probe | §20.5 | Full residual-drive target is $\Gamma/\omega_1\approx0.8283$; locked-mobility C++ daemon probe gives $\Gamma/\omega_1\approx0.8185$ ($\approx1.19\%$ low, $R^2\approx0.885$) with $\eta_{\max}=3/(16\pi)$ and calibrated $\chi^{\mathrm{comm}}=c_0/50$ |
-| Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; not yet a SPARC-wide fit |
+| Daemon-sheet galaxy branch and flat outer-disk plateau | §13 | Synthetic continuum closure: $g_{\text{mid}} \propto r^{-1.1085}$, $v_{\text{mid}} \propto r^{-0.0543}$, $g_{\text{far}} \propto r^{-1.9215}$, flat-branch spread $8.92\%$; SPARC stress audit identifies a split-source kernel with all-sample median RMSE $12.75\ \mathrm{km/s}$, still short of fixed-RAR/MOND |
 | Visible-mass aggregation bridge | §13 | Monotone $M_{\text{disk}} \mapsto \Delta\Omega_d \mapsto V_{\infty}$ over $10^9$ to $2\times 10^{11} M_{\odot}$ with clip ceiling respected; closure constants remain calibration-dependent |
 | Local lattice anisotropy diagnostic and conditional theorem | §§13.12-13.13 | Official route-link convention gives algebraic far-field finite-difference error decay $\sim R^{-2}$; Section 13.13 replaces global spherical averaging with a local smoothness-threshold activation condition |
 | Native trace order beats reversal and shuffle | §8 | 8.83% and 17.67% overhead; tested trace family |
@@ -3804,7 +4095,7 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 | Hardware Calibration Theorem instantiated | §26 | $\Delta t = 2.5244$ s, $\Delta x = 7.568 \times 10^8$ m, $\Delta Q_t = 8.026 \times 10^{-14}$ J (secondary instantiation of Calibration Bridge) |
 | Reachability of condensate state (Theorem 4 Part II) | §23 | Requires assumptions (A1)(A9) |
 | Ω 2.0 numerical verification | §5.2 | 9 tests passed |
-| SPARC structural probes | §13.9 | 175 galaxies, 3,391 rows |
+| SPARC structural probes | §13.9 | 175 galaxies, 3,391 rows; Q=1 split-source stress audit gives held-out median RMSE $13.65\ \mathrm{km/s}$ and all-sample median RMSE $12.75\ \mathrm{km/s}$ against a fixed-RAR/MOND diagnostic baseline of $11.72\ \mathrm{km/s}$ |
 | Ω 2.72.9 held-out galaxy performance | §13.9 | Holdout log RMSE 0.338, correlation 0.943 |
 | Ω 3.0 exponent stability | §6.5 | Stable across 3×3×5 parameter grid |
 | Constitutive bridge and polarity fix | §13.10 | Polarity violations eliminated |
@@ -3815,15 +4106,15 @@ To maintain epistemic hygiene, all claims in this framework are strictly tagged 
 
 | Problem | Current Status |
 |---|---|
-| SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; large-sample observational fit still open |
-| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | $\Lambda_d$ now follows from shear-action smoothness cost and $\mu_M$ has a finite-carrier Landauer channel derivation with $0.044\%$ residual; remaining disk-class work is validating $\mathscr{K}_d$ against morphology-resolved baryonic profiles |
+| SPARC/RAR-wide fit of the daemon-sheet galaxy branch | Synthetic continuum closure now executable; split-source SPARC stress audit completed; full observational validation with uncertainty propagation, NFW/dark-halo baselines, and held-out morphology priors remains open |
+| First-principles values of $\eta_d$, $\Lambda_d$, and source coupling | $\Lambda_d$ now follows from shear-action smoothness cost and $\mu_M$ has a finite-carrier Landauer channel derivation with $0.044\%$ residual conditional on independent far-field carrier-address gauge twirling; source topology is empirically split into gas, disk, and bulge channels, but first-principles derivations of $A_g,A_d,A_b$ and $L_{\rm split}(x)$ remain open |
 | Universal/portable anchor for absolute $(\Delta x, \Delta t)$ | Partially resolved conditionally by Calibration Bridge; independent physical validation remains open. |
-| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-decay/local-activation proof, conditional $\mu_M$ derivation, and matched disk Green functional now supplied; rigorous microscopic proof and morphology-resolved validation remain open |
+| Full continuum limit of emergent gravity | Probe slope within 6.4% of Newtonian; route-link convention, conditional anisotropy-decay/local-activation proof, gauge-twirled conditional $\mu_M$ derivation, and matched disk Green functional now supplied; rigorous microscopic proof and morphology-resolved validation remain open |
 | Lindblad generalization to $H \ne 0$ | Dephasing case exact; full Hamiltonian extension open |
 | First-principles derivation of physical speed of light | Structural refinement pathway documented (Section 21.7); Nyquist-limit derivation from Action Ceiling and Landauer Floor identified but not yet completed |
 | Full Standard Model topology identification | Mass ordering and scaling consistent; one-to-one particle correspondence not established |
 | Spontaneous condensate formation without forced cooling | Conditionally resolved under Theorem 4 assumptions; unconstrained formation from generic initial conditions remains open |
-| Cross-daemon cooperation in adversarial environments | Pairwise criterion derived; multi-agent equilibria not analyzed |
+| Cross-daemon cooperation in adversarial environments | Pairwise criterion derived; two-color proof applies to bipartite face-neighbor runtime; odd-cycle/non-bipartite multi-agent equilibria require a network-level Lyapunov rule |
 | Full synthesis of a validated 3D periodic carrier | Generic target identified; family left open |
 | Constitutive relation $P(\mathbf{x},t) \to \Omega_t$ for acoustic/EM fields | Not yet supplied in present model |
 | Endogenous truth-target closure ($\tau_t$ as network aggregate) | Mean-field redefinition pathway documented (Section 9.4); formal derivation from daemon network dynamics open |
@@ -3948,7 +4239,7 @@ The framework has evolved from a single clipped viscosity formula to a formal sy
 
 At the micro-scale, the 9:1 directed routing tensor (§3) establishes the grid hardware. The nonlinear shear action with $\alpha + \beta = 2$ (§6.5) and the causal energy-depletion theorem $e(B) = (1+B)^{-3/4}$ (§5.3) are motivated by and conditionally derived from local cell geometry, rather than arbitrarily fitted.
 
-At the meso-scale, the viscosity gradient bridge reproduces SPARC rotation-curve structure in executable probes (§13) with a held-out accuracy of 0.943 correlation (though unresolved source-coupling scatter and rollover non-universality remain open), while the non-circular interpolation chain (§13.10) offers a candidate pipeline that parallels the empirical MOND interpolation function.
+At the meso-scale, the viscosity gradient bridge reproduces SPARC rotation-curve structure in executable probes (§13): the original locked kernel fails against fixed-RAR/MOND on median RMSE, while the split-source stress audit reaches held-out median RMSE $13.65\ \mathrm{km/s}$ with median correlation about $0.968$. This is a substantial repair of the source operator, but it remains behind the fixed-RAR/MOND diagnostic median RMSE of $11.72\ \mathrm{km/s}$ and still needs uncertainty-aware baseline validation.
 
 At the macro-scale, the ledger inertia ratio $\rho_{\text{ledger}}/\rho_b = 16/3 \approx 5.333$ (§19) matches the Planck 2018 dark-to-baryonic matter ratio (Planck Collaboration, 2020) within $0.5\%$, and the stripped Boltzmann oscillator (§20) reproduces CDM-like density and oscillator behavior in stripped gates.
 
